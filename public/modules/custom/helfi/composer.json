@@ -1,0 +1,5 @@
+{
+    "name": "drupal/helfi",
+    "type": "drupal-module",
+    "minimum-stability": "dev",
+}
