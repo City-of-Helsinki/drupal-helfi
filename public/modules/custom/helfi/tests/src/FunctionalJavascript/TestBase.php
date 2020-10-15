@@ -14,7 +14,7 @@ abstract class TestBase extends WebDriverTestBase {
   /**
    * {@inheritdoc}
    */
-  protected static array $modules = ['helfi'];
+  protected static $modules = ['helfi'];
 
   /**
    * The default theme.

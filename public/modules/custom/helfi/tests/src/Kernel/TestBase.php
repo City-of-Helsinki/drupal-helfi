@@ -14,7 +14,7 @@ abstract class TestBase extends KernelTestBase {
   /**
    * {@inheritdoc}
    */
-  protected static array $modules = ['helfi'];
+  protected static $modules = ['helfi'];
 
   /**
    * {@inheritdoc}

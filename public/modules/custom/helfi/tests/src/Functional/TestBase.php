@@ -14,6 +14,6 @@ abstract class TestBase extends BrowserTestBase {
   /**
    * {@inheritdoc}
    */
-  protected static array $modules = ['helfi'];
+  protected static $modules = ['helfi'];
 
 }
