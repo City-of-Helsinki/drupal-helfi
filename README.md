@@ -1,4 +1,4 @@
-# Your Drupal 8 project
+# HELFI
 
 Description of your project.
 
@@ -6,7 +6,7 @@ Description of your project.
 
 Env | Branch | Drush alias | URL
 --- | ------ | ----------- | ---
-development | * | - | http://yoursite.docker.sh/
+development | * | - | http://helfi.docker.sh/
 production | main | @main | TBD
 
 ## Requirements
