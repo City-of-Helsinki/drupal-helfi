@@ -7,6 +7,8 @@ public/modules/contrib
 public/themes/contrib
 public/sites/default/files
 vendor
+public/sites/simpletest/
+.phpunit.result.cache
 
 # Ignore the folder created by PhpStorm
 .idea/*

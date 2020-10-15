@@ -1,0 +1,25 @@
+on: [push, pull_request]
+name: Tests and code
+jobs:
+  phpunit:
+    runs-on: ubuntu-latest
+    container:
+      image: druidfi/drupal:7.4-web
+
+    services:
+      mysql:
+        image: druidfi/db:mysql5.7-drupal
+        ports:
+          - 33306:3306
+
+    steps:
+      - uses: actions/checkout@v1
+        with:
+          fetch-depth: 1
+
+      - name: Build project
+        run: |
+          make new
+
+      - name: Run PHPUnit tests
+        run: vendor/bin/phpunit -c phpunit.xml.dist --verbose
