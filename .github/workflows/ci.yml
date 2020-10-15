@@ -6,6 +6,8 @@ env:
 jobs:
   phpunit:
     runs-on: ubuntu-latest
+    container:
+      image: registry.gitlab.com/tuutti/drupal-php-docker:7.4
 
     services:
       db:
