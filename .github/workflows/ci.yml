@@ -1,11 +1,14 @@
 on: [push]
 name: Tests and code
+env:
+  SIMPLETEST_DB: "mysql://drupal:drupal@db:3306/drupal"
+  SIMPLETEST_BASE_URL: "http://127.0.0.1:8080"
 jobs:
   phpunit:
     runs-on: ubuntu-latest
 
     services:
-      mysql:
+      db:
         image: druidfi/db:mysql5.7-drupal
 
     steps:
@@ -20,7 +23,9 @@ jobs:
 
       - name: Build project
         run: |
-          make new
+          composer install
+          php -d sendmail_path=$(which true); drush --yes -v site-install --existing-config --db-url="$SIMPLETEST_DB"
+          drush runserver $SIMPLETEST_BASE_URL > /dev/null 2>&1 &
 
       - name: Run PHPUnit tests
         run: vendor/bin/phpunit -c phpunit.xml.dist --verbose
