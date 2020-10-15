@@ -13,7 +13,7 @@
 extract((new Druidfi\Omen\DrupalEnvDetector(__DIR__))->getConfiguration());
 
 // Hash salt.
-$settings['hash_salt'] = 'oNbAEGiCIhNhXU-hNBmZMLSSR11HUqnXVUdG9IwMDFBft67IXRV4xjao1W20AQ_O5pRQ07PNMg';
+$settings['hash_salt'] = 'NtT05kvVRStN-I1D5Hk02sZVDkGU06Tj83R3Ff1GttPOM3MC-Y5y2RzSsGZCWJHsv8INNaPrzw';
 
 /**
  * Only in Wodby environment. @see https://wodby.com/docs/stacks/drupal/#overriding-settings-from-wodbysettingsphp
