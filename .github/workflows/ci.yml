@@ -1,25 +1,25 @@
-on: [push, pull_request]
+on: [push]
 name: Tests and code
 jobs:
   phpunit:
     runs-on: ubuntu-latest
-    container:
-      image: druidfi/drupal:7.4-web
 
     services:
       mysql:
         image: druidfi/db:mysql5.7-drupal
-        ports:
-          - 33306:3306
 
     steps:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 1
 
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 7.4
+
       - name: Build project
         run: |
-          ls -la
           make new
 
       - name: Run PHPUnit tests
