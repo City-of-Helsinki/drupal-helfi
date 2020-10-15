@@ -4,6 +4,20 @@ env:
   SIMPLETEST_DB: "mysql://drupal:drupal@db:3306/drupal"
   SIMPLETEST_BASE_URL: "http://127.0.0.1:8080"
 jobs:
+  phpcs:
+    runs-on: ubuntu-latest
+    container:
+      # @todo (Re)Host this on Druid's docker hub/github container registry.
+      image: registry.gitlab.com/tuutti/drupal-php-docker:7.4
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+
+      - name: Run phpcs
+        run: vendor/bin/phpcs public/modules/custom/ --standard=Drupal
+
   phpunit:
     runs-on: ubuntu-latest
     container:
