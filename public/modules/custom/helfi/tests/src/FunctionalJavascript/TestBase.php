@@ -23,6 +23,6 @@ abstract class TestBase extends WebDriverTestBase {
    *
    * @todo Replace this with our custom theme.
    */
-  protected string $defaultTheme = 'stark';
+  protected $defaultTheme = 'stark';
 
 }
