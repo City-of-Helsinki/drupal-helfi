@@ -1,0 +1,6 @@
+name: helfi
+type: module
+description: Custom helfi functionality
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9
