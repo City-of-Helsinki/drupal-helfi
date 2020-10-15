@@ -13,12 +13,13 @@ jobs:
           - 33306:3306
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
         with:
           fetch-depth: 1
 
       - name: Build project
         run: |
+          ls -la
           make new
 
       - name: Run PHPUnit tests
