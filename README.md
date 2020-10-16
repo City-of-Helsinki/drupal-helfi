@@ -1,4 +1,4 @@
-# HELFI
+# City of Helsinki - Drupal 9
 
 Description of your project.
 
@@ -7,7 +7,7 @@ Description of your project.
 Env | Branch | Drush alias | URL
 --- | ------ | ----------- | ---
 development | * | - | http://helfi.docker.sh/
-production | main | @main | TBD
+production | master | @main | TBD
 
 ## Requirements
 
@@ -40,3 +40,7 @@ This will log you inside the app container:
 ```
 $ make shell
 ```
+
+## Updating testing images
+
+See [docker/ci/README.md](docker/ci/README.md) for more information.
