@@ -1,6 +1,6 @@
 PHP_VERSION ?= 7.4
 DRUSH ?= 10
-REPOSITORY = docker.pkg.github.com/city-of-helsinki/drupal-helfi/drupal-php-docker
+REPOSITORY = ghcr.io/city-of-helsinki/drupal-php-docker
 BASE_IMAGE_TAG = $(PHP_VERSION)
 
 ifeq ($(TAG),)
