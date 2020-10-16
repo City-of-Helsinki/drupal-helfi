@@ -10,7 +10,7 @@ services:
       - .:/app:delegated
       - ssh:/tmp/druid_ssh-agent:ro
     build:
-      context: .
+      context: ./docker/local
     environment:
       APP_ENV: "${APP_ENV:-dev}"
       DRUPAL_ROUTES: "https://varnish-${DRUPAL_HOSTNAME}"
