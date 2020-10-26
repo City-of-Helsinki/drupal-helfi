@@ -1,15 +1,9 @@
 {
-    "name": "druidfi/spell",
-    "description": "Spell to create a new Drupal 9 project",
+    "name": "city-of-helsinki/drupal-base",
+    "description": "Drupal 9 started project",
     "type": "project",
     "license": "MIT",
-    "homepage": "https://github.com/druidfi/spell",
-    "authors": [
-        {
-            "name": "Druid.fi",
-            "email": "info@druid.fi"
-        }
-    ],
+    "homepage": "https://github.com/City-of-Helsinki/drupal-base",
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
@@ -18,7 +12,9 @@
         "druidfi/omen": "^0.2.0",
         "drupal/core-composer-scaffold": "^9.0",
         "drupal/core-recommended": "^9.0",
-        "drush/drush": "^10.3"
+        "drush/drush": "^10.3",
+        "druid/tools": "^1.0",
+        "drupal/hdbt": "~1.0"
     },
     "require-dev": {
         "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
@@ -30,10 +26,7 @@
     },
     "config": {
         "optimize-autoloader": true,
-        "sort-packages": true,
-        "platform": {
-          "php": "7.4.0"
-        }
+        "sort-packages": true
     },
     "extra": {
         "composer-exit-on-patch-failure": true,
@@ -53,14 +46,18 @@
             "public/core": ["type:drupal-core"],
             "public/libraries/{$name}": ["type:drupal-library"],
             "public/modules/contrib/{$name}": ["type:drupal-module"],
-            "public/modules/custom/{$name}": ["type:drupal-module-custom"],
+            "public/themes/custom/{$name}": ["type:drupal-custom-theme"],
+            "public/modules/custom/{$name}": ["type:drupal-custom-module"],
             "public/profiles/{$name}": ["type:drupal-profile"],
             "public/themes/contrib/{$name}": ["type:drupal-theme"],
-            "public/themes/custom/{$name}": ["type:drupal-theme-custom"],
             "drush/{$name}": ["type:drupal-drush"]
         }
     },
     "repositories": [
+        {
+            "type": "composer",
+            "url": "https://city-of-helsinki.github.io/drupal-repository/"
+        },
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
