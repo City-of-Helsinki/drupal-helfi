@@ -1,0 +1,20 @@
+uuid: ab28f3e6-412a-4720-b572-78e5cbf9f506
+langcode: en
+status: true
+dependencies:
+  module:
+    - helfi_trp
+id: trp_unit.trp_unit.latitude
+field_name: latitude
+entity_type: trp_unit
+bundle: trp_unit
+label: Latitude
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string
