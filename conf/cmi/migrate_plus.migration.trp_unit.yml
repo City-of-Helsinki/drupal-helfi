@@ -29,7 +29,7 @@ source:
       selector: /name_fi
     -
       name: call_charge_info
-      label: Call charge info
+      label: 'Call charge info'
       selector: /call_charge_info_fi
     -
       name: latitude
