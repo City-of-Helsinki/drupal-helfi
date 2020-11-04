@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "afd919bdf3ad1e9b49d918b1c52d0364",
+    "content-hash": "040d905db58cc6c534ea439ee1e20536",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1534,6 +1534,7 @@
                 "issues": "https://github.com/doctrine/reflection/issues",
                 "source": "https://github.com/doctrine/reflection/tree/1.2.x"
             },
+            "abandoned": "roave/better-reflection",
             "time": "2020-03-27T11:06:43+00:00"
         },
         {
@@ -1590,21 +1591,21 @@
         },
         {
             "name": "drupal/address",
-            "version": "1.8.0",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/address.git",
-                "reference": "8.x-1.8"
+                "reference": "8.x-1.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/address-8.x-1.8.zip",
-                "reference": "8.x-1.8",
-                "shasum": "ded73be392ba9257fca9289719757928a8826275"
+                "url": "https://ftp.drupal.org/files/projects/address-8.x-1.9.zip",
+                "reference": "8.x-1.9",
+                "shasum": "c7e6406d88c6d6be9e8fe0091040d67012bdbf05"
             },
             "require": {
                 "commerceguys/addressing": "^1.0.7",
-                "drupal/core": "^8.7.7 || ^9"
+                "drupal/core": "^8.8 || ^9"
             },
             "require-dev": {
                 "drupal/token": "^1.0"
@@ -1612,8 +1613,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.8",
-                    "datestamp": "1583988119",
+                    "version": "8.x-1.9",
+                    "datestamp": "1604422821",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1622,7 +1623,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -2102,23 +2103,24 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base.git",
-                "reference": "5b851b48e18703ebad884be6e4862e42936c0fd4"
+                "reference": "95a20c21ae58b0d659462d9d2b0bf545fd424f44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-api-base/zipball/5b851b48e18703ebad884be6e4862e42936c0fd4",
-                "reference": "5b851b48e18703ebad884be6e4862e42936c0fd4",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-api-base/zipball/95a20c21ae58b0d659462d9d2b0bf545fd424f44",
+                "reference": "95a20c21ae58b0d659462d9d2b0bf545fd424f44",
                 "shasum": ""
             },
             "require": {
-                "drupal/api_tools": "~1.0.0"
+                "drupal/api_tools": "~1.0.0",
+                "drupal/migrate_plus": "~5.0"
             },
             "type": "drupal-custom-module",
             "support": {
                 "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base/tree/1.x",
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base/issues"
             },
-            "time": "2020-10-26T13:22:18+00:00"
+            "time": "2020-10-31T08:48:37+00:00"
         },
         {
             "name": "drupal/helfi_trp",
@@ -2126,12 +2128,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-trp.git",
-                "reference": "842e171ec6af5cb833bb6eae959a71d0136d3d5a"
+                "reference": "4f546e435eb95e6bd81d92f992796d6097483e69"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-trp/zipball/842e171ec6af5cb833bb6eae959a71d0136d3d5a",
-                "reference": "842e171ec6af5cb833bb6eae959a71d0136d3d5a",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-trp/zipball/4f546e435eb95e6bd81d92f992796d6097483e69",
+                "reference": "4f546e435eb95e6bd81d92f992796d6097483e69",
                 "shasum": ""
             },
             "require": {
@@ -2145,7 +2147,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-trp/tree/1.x",
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-trp/issues"
             },
-            "time": "2020-10-27T08:40:31+00:00"
+            "time": "2020-10-31T08:48:27+00:00"
         },
         {
             "name": "drupal/migrate_plus",
@@ -3302,28 +3304,27 @@
         },
         {
             "name": "league/uri-interfaces",
-            "version": "2.1.0",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/uri-interfaces.git",
-                "reference": "0068a469958895ceaf3afcb489c0258adfa1e406"
+                "reference": "667f150e589d65d79c89ffe662e426704f84224f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/uri-interfaces/zipball/0068a469958895ceaf3afcb489c0258adfa1e406",
-                "reference": "0068a469958895ceaf3afcb489c0258adfa1e406",
+                "url": "https://api.github.com/repos/thephpleague/uri-interfaces/zipball/667f150e589d65d79c89ffe662e426704f84224f",
+                "reference": "667f150e589d65d79c89ffe662e426704f84224f",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "php": "^7.1"
+                "php": "^7.1 || ^8.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.0",
                 "phpstan/phpstan": "^0.12",
                 "phpstan/phpstan-phpunit": "^0.12",
-                "phpstan/phpstan-strict-rules": "^0.12",
-                "phpunit/phpunit": "^7.0|^8.0"
+                "phpstan/phpstan-strict-rules": "^0.12"
             },
             "type": "library",
             "extra": {
@@ -3357,9 +3358,15 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/uri-interfaces/issues",
-                "source": "https://github.com/thephpleague/uri-interfaces/tree/master"
+                "source": "https://github.com/thephpleague/uri-interfaces/tree/2.2.0"
             },
-            "time": "2020-02-08T12:10:37+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/nyamsprod",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-10-31T13:45:51+00:00"
         },
         {
             "name": "masterminds/html5",
@@ -4646,16 +4653,16 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v4.4.15",
+            "version": "v4.4.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "ebc51494739d3b081ea543ed7c462fa73a4f74db"
+                "reference": "e74b873395b7213d44d1397bd4a605cd1632a68a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/ebc51494739d3b081ea543ed7c462fa73a4f74db",
-                "reference": "ebc51494739d3b081ea543ed7c462fa73a4f74db",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/e74b873395b7213d44d1397bd4a605cd1632a68a",
+                "reference": "e74b873395b7213d44d1397bd4a605cd1632a68a",
                 "shasum": ""
             },
             "require": {
@@ -4663,11 +4670,6 @@
                 "symfony/polyfill-ctype": "~1.8"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.4-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\Filesystem\\": ""
@@ -4693,7 +4695,7 @@
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/filesystem/tree/v4.4.15"
+                "source": "https://github.com/symfony/filesystem/tree/v4.4.16"
             },
             "funding": [
                 {
@@ -4709,31 +4711,26 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-27T13:54:16+00:00"
+            "time": "2020-10-24T11:50:19+00:00"
         },
         {
             "name": "symfony/finder",
-            "version": "v4.4.15",
+            "version": "v4.4.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "60d08560f9aa72997c44077c40d47aa28a963230"
+                "reference": "26f63b8d4e92f2eecd90f6791a563ebb001abe31"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/60d08560f9aa72997c44077c40d47aa28a963230",
-                "reference": "60d08560f9aa72997c44077c40d47aa28a963230",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/26f63b8d4e92f2eecd90f6791a563ebb001abe31",
+                "reference": "26f63b8d4e92f2eecd90f6791a563ebb001abe31",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1.3"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.4-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\Finder\\": ""
@@ -4759,7 +4756,7 @@
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/finder/tree/v4.4.15"
+                "source": "https://github.com/symfony/finder/tree/v4.4.16"
             },
             "funding": [
                 {
@@ -4775,7 +4772,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-02T07:34:48+00:00"
+            "time": "2020-10-24T11:50:19+00:00"
         },
         {
             "name": "symfony/http-foundation",
@@ -6541,16 +6538,16 @@
         },
         {
             "name": "webflo/drupal-finder",
-            "version": "1.2.0",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webflo/drupal-finder.git",
-                "reference": "123e248e14ee8dd3fbe89fb5a733a6cf91f5820e"
+                "reference": "c8e5dbe65caef285fec8057a4c718a0d4138d1ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webflo/drupal-finder/zipball/123e248e14ee8dd3fbe89fb5a733a6cf91f5820e",
-                "reference": "123e248e14ee8dd3fbe89fb5a733a6cf91f5820e",
+                "url": "https://api.github.com/repos/webflo/drupal-finder/zipball/c8e5dbe65caef285fec8057a4c718a0d4138d1ee",
+                "reference": "c8e5dbe65caef285fec8057a4c718a0d4138d1ee",
                 "shasum": ""
             },
             "require": {
@@ -6568,7 +6565,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -6579,9 +6576,9 @@
             "description": "Helper class to locate a Drupal installation from a given path.",
             "support": {
                 "issues": "https://github.com/webflo/drupal-finder/issues",
-                "source": "https://github.com/webflo/drupal-finder/tree/master"
+                "source": "https://github.com/webflo/drupal-finder/tree/1.2.2"
             },
-            "time": "2019-08-02T08:06:18+00:00"
+            "time": "2020-10-27T09:42:17+00:00"
         },
         {
             "name": "webmozart/assert",
@@ -7015,16 +7012,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "1.10.16",
+            "version": "1.10.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "217f0272673c72087862c40cf91ac07eb438d778"
+                "reference": "09d42e18394d8594be24e37923031c4b7442a1cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/217f0272673c72087862c40cf91ac07eb438d778",
-                "reference": "217f0272673c72087862c40cf91ac07eb438d778",
+                "url": "https://api.github.com/repos/composer/composer/zipball/09d42e18394d8594be24e37923031c4b7442a1cb",
+                "reference": "09d42e18394d8594be24e37923031c4b7442a1cb",
                 "shasum": ""
             },
             "require": {
@@ -7094,7 +7091,7 @@
             "support": {
                 "irc": "irc://irc.freenode.org/composer",
                 "issues": "https://github.com/composer/composer/issues",
-                "source": "https://github.com/composer/composer/tree/1.10.16"
+                "source": "https://github.com/composer/composer/tree/1.10.17"
             },
             "funding": [
                 {
@@ -7110,7 +7107,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-24T07:55:59+00:00"
+            "time": "2020-10-30T21:31:58+00:00"
         },
         {
             "name": "composer/spdx-licenses",
@@ -7559,21 +7556,21 @@
         },
         {
             "name": "fabpot/goutte",
-            "version": "v3.3.0",
+            "version": "v3.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfPHP/Goutte.git",
-                "reference": "4ab5199e3ec0ffde0ee0b5ecf568a4fb8398dbae"
+                "reference": "80a23b64f44d54dd571d114c473d9d7e9ed84ca5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/Goutte/zipball/4ab5199e3ec0ffde0ee0b5ecf568a4fb8398dbae",
-                "reference": "4ab5199e3ec0ffde0ee0b5ecf568a4fb8398dbae",
+                "url": "https://api.github.com/repos/FriendsOfPHP/Goutte/zipball/80a23b64f44d54dd571d114c473d9d7e9ed84ca5",
+                "reference": "80a23b64f44d54dd571d114c473d9d7e9ed84ca5",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/guzzle": "^6.0",
-                "php": "^7.1.3",
+                "php": ">=7.1.3",
                 "symfony/browser-kit": "^4.4|^5.0",
                 "symfony/css-selector": "^4.4|^5.0",
                 "symfony/dom-crawler": "^4.4|^5.0"
@@ -7612,9 +7609,9 @@
             ],
             "support": {
                 "issues": "https://github.com/FriendsOfPHP/Goutte/issues",
-                "source": "https://github.com/FriendsOfPHP/Goutte/tree/master"
+                "source": "https://github.com/FriendsOfPHP/Goutte/tree/v3.3.1"
             },
-            "time": "2019-12-06T13:11:18+00:00"
+            "time": "2020-11-01T09:30:18+00:00"
         },
         {
             "name": "instaclick/php-webdriver",
@@ -9448,16 +9445,16 @@
         },
         {
             "name": "symfony/browser-kit",
-            "version": "v4.4.15",
+            "version": "v4.4.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/browser-kit.git",
-                "reference": "9a1786e5020783605a30cff2ceed9aca030e8d80"
+                "reference": "99b640fd5d06877e3242ba0393b40a7877dfe534"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/9a1786e5020783605a30cff2ceed9aca030e8d80",
-                "reference": "9a1786e5020783605a30cff2ceed9aca030e8d80",
+                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/99b640fd5d06877e3242ba0393b40a7877dfe534",
+                "reference": "99b640fd5d06877e3242ba0393b40a7877dfe534",
                 "shasum": ""
             },
             "require": {
@@ -9474,11 +9471,6 @@
                 "symfony/process": ""
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.4-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\BrowserKit\\": ""
@@ -9504,7 +9496,7 @@
             "description": "Symfony BrowserKit Component",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/browser-kit/tree/v4.4.15"
+                "source": "https://github.com/symfony/browser-kit/tree/v4.4.16"
             },
             "funding": [
                 {
@@ -9520,31 +9512,26 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-02T08:38:15+00:00"
+            "time": "2020-10-24T11:50:19+00:00"
         },
         {
             "name": "symfony/css-selector",
-            "version": "v4.4.15",
+            "version": "v4.4.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
-                "reference": "bf17dc9f6ce144e41f786c32435feea4d8e11dcc"
+                "reference": "719506cffda9dba80c75d94ac50f1a2561520e4f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/css-selector/zipball/bf17dc9f6ce144e41f786c32435feea4d8e11dcc",
-                "reference": "bf17dc9f6ce144e41f786c32435feea4d8e11dcc",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/719506cffda9dba80c75d94ac50f1a2561520e4f",
+                "reference": "719506cffda9dba80c75d94ac50f1a2561520e4f",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1.3"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.4-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\CssSelector\\": ""
@@ -9574,7 +9561,7 @@
             "description": "Symfony CssSelector Component",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/css-selector/tree/v4.4.15"
+                "source": "https://github.com/symfony/css-selector/tree/v4.4.16"
             },
             "funding": [
                 {
@@ -9590,20 +9577,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-05T09:39:30+00:00"
+            "time": "2020-10-24T11:50:19+00:00"
         },
         {
             "name": "symfony/dom-crawler",
-            "version": "v4.4.15",
+            "version": "v4.4.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dom-crawler.git",
-                "reference": "bdcb7633a501770a0daefbf81d2e6b28c3864f2b"
+                "reference": "30ad9ac96a01913195bf0328d48e29d54fa53e6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/bdcb7633a501770a0daefbf81d2e6b28c3864f2b",
-                "reference": "bdcb7633a501770a0daefbf81d2e6b28c3864f2b",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/30ad9ac96a01913195bf0328d48e29d54fa53e6e",
+                "reference": "30ad9ac96a01913195bf0328d48e29d54fa53e6e",
                 "shasum": ""
             },
             "require": {
@@ -9622,11 +9609,6 @@
                 "symfony/css-selector": ""
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.4-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\DomCrawler\\": ""
@@ -9652,7 +9634,7 @@
             "description": "Symfony DomCrawler Component",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/dom-crawler/tree/v4.4.15"
+                "source": "https://github.com/symfony/dom-crawler/tree/v4.4.16"
             },
             "funding": [
                 {
@@ -9668,20 +9650,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-02T07:34:48+00:00"
+            "time": "2020-10-24T11:50:19+00:00"
         },
         {
             "name": "symfony/lock",
-            "version": "v4.4.15",
+            "version": "v4.4.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/lock.git",
-                "reference": "9d7e8148dd399f392b9b4920832b632c04ffdf64"
+                "reference": "160e5989a2d275190f4d904ae893c018e36b18f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/lock/zipball/9d7e8148dd399f392b9b4920832b632c04ffdf64",
-                "reference": "9d7e8148dd399f392b9b4920832b632c04ffdf64",
+                "url": "https://api.github.com/repos/symfony/lock/zipball/160e5989a2d275190f4d904ae893c018e36b18f3",
+                "reference": "160e5989a2d275190f4d904ae893c018e36b18f3",
                 "shasum": ""
             },
             "require": {
@@ -9696,11 +9678,6 @@
                 "predis/predis": "~1.0"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.4-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\Lock\\": ""
@@ -9734,7 +9711,7 @@
                 "semaphore"
             ],
             "support": {
-                "source": "https://github.com/symfony/lock/tree/v4.4.15"
+                "source": "https://github.com/symfony/lock/tree/v4.4.16"
             },
             "funding": [
                 {
@@ -9750,20 +9727,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-03T06:31:32+00:00"
+            "time": "2020-10-24T11:50:19+00:00"
         },
         {
             "name": "symfony/phpunit-bridge",
-            "version": "v4.4.15",
+            "version": "v4.4.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/phpunit-bridge.git",
-                "reference": "c81c1b6ada85d9d638fe271a4cf8fa81f8385ace"
+                "reference": "d53f4e6b5ac7beb6c1e95d8f30a3cdf5b592fa03"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/c81c1b6ada85d9d638fe271a4cf8fa81f8385ace",
-                "reference": "c81c1b6ada85d9d638fe271a4cf8fa81f8385ace",
+                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/d53f4e6b5ac7beb6c1e95d8f30a3cdf5b592fa03",
+                "reference": "d53f4e6b5ac7beb6c1e95d8f30a3cdf5b592fa03",
                 "shasum": ""
             },
             "require": {
@@ -9780,9 +9757,6 @@
             ],
             "type": "symfony-bridge",
             "extra": {
-                "branch-alias": {
-                    "dev-master": "4.4-dev"
-                },
                 "thanks": {
                     "name": "phpunit/phpunit",
                     "url": "https://github.com/sebastianbergmann/phpunit"
@@ -9816,7 +9790,7 @@
             "description": "Symfony PHPUnit Bridge",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/phpunit-bridge/tree/v4.4.15"
+                "source": "https://github.com/symfony/phpunit-bridge/tree/v4.4.16"
             },
             "funding": [
                 {
@@ -9832,7 +9806,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-28T20:03:26+00:00"
+            "time": "2020-10-24T12:35:18+00:00"
         },
         {
             "name": "theseer/tokenizer",
