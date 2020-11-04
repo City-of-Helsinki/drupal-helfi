@@ -16,6 +16,7 @@ module:
   file: 0
   filter: 0
   helfi_api_base: 0
+  helfi_editorial: 0
   helfi_trp: 0
   image: 0
   inline_form_errors: 0
