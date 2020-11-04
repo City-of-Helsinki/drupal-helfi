@@ -45,14 +45,37 @@
         },
         "enable-patching": true,
         "installer-paths": {
-            "public/core": ["type:drupal-core"],
-            "public/libraries/{$name}": ["type:drupal-library"],
-            "public/modules/contrib/{$name}": ["type:drupal-module"],
-            "public/themes/custom/{$name}": ["type:drupal-custom-theme"],
-            "public/modules/custom/{$name}": ["type:drupal-custom-module"],
-            "public/profiles/{$name}": ["type:drupal-profile"],
-            "public/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/{$name}": ["type:drupal-drush"]
+            "public/core": [
+                "type:drupal-core"
+            ],
+            "public/libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "public/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "public/themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ],
+            "public/modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "public/profiles/{$name}": [
+                "type:drupal-profile"
+            ],
+            "public/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/{$name}": [
+                "type:drupal-drush"
+            ]
+        },
+        "patches": {
+            "drupal/core": {
+                "https://www.drupal.org/project/drupal/issues/2868193#comment-13830917": "https://www.drupal.org/files/issues/2020-09-21/2868193-22.patch",
+                "https://www.drupal.org/project/drupal/issues/2313309#comment-13880802": "https://www.drupal.org/files/issues/2020-10-23/2313309-76.patch",
+                "https://www.drupal.org/project/drupal/issues/3054641#comment-13604223": "https://www.drupal.org/files/issues/2020-05-08/3054641-21.patch"
+            }
         }
     },
     "repositories": [
@@ -65,6 +88,5 @@
             "url": "https://packages.drupal.org/8"
         }
     ],
-    "scripts": {
-    }
+    "scripts": {}
 }
