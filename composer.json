@@ -15,7 +15,7 @@
         "drupal/core-recommended": "^9.0",
         "drupal/hdbt": "~1.0",
         "drupal/helfi_api_base": "1.x-dev",
-        "drupal/helfi_trp": "1.x-dev",
+        "drupal/helfi_tpr": "1.x-dev",
         "drush/drush": "^10.3"
     },
     "require-dev": {
