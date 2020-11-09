@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d9fdf871459c25109f88fc009a01f09a",
+    "content-hash": "b350802d6cd17d06d3e82aa1a96c9b32",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2191,16 +2191,16 @@
         },
         {
             "name": "drupal/hdbt",
-            "version": "1.0.0",
+            "version": "1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt.git",
-                "reference": "d4a5af69da706854fa37a24a873323b0c7496c30"
+                "reference": "73b75dfb8b12c74c49e61144fb8d5fbb5f4749d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/d4a5af69da706854fa37a24a873323b0c7496c30",
-                "reference": "d4a5af69da706854fa37a24a873323b0c7496c30",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/73b75dfb8b12c74c49e61144fb8d5fbb5f4749d5",
+                "reference": "73b75dfb8b12c74c49e61144fb8d5fbb5f4749d5",
                 "shasum": ""
             },
             "type": "drupal-custom-theme",
@@ -2212,14 +2212,14 @@
                 "Drupal"
             ],
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/1.0.0",
+                "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/dev",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt/issues"
             },
-            "time": "2020-10-20T06:20:04+00:00"
+            "time": "2020-11-06T14:28:48+00:00"
         },
         {
             "name": "drupal/hdbt_admin",
-            "version": "1.0.0",
+            "version": "1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt-admin.git",
@@ -10017,6 +10017,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/hdbt": 20,
+        "drupal/hdbt_admin": 20,
         "drupal/helfi_api_base": 20,
         "drupal/helfi_tpr": 20
     },
