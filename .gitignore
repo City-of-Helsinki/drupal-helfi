@@ -4,7 +4,9 @@ node_modules
 public/core
 public/libraries
 public/modules/contrib
+public/modules/custom/helfi_*
 public/themes/contrib
+public/themes/custom/hdbt*
 public/sites/default/files
 vendor
 public/sites/simpletest/
