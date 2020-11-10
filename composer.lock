@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dd489089d31a07797ef24a73ec4c49a2",
+    "content-hash": "b350802d6cd17d06d3e82aa1a96c9b32",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1974,17 +1974,137 @@
             "time": "2020-10-07T19:33:16+00:00"
         },
         {
-            "name": "drupal/hdbt",
-            "version": "1.0.0",
+            "name": "drupal/gin",
+            "version": "3.0.0-alpha28",
             "source": {
                 "type": "git",
-                "url": "https://github.com/City-of-Helsinki/drupal-hdbt.git",
-                "reference": "d4a5af69da706854fa37a24a873323b0c7496c30"
+                "url": "https://git.drupalcode.org/project/gin.git",
+                "reference": "8.x-3.0-alpha28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/d4a5af69da706854fa37a24a873323b0c7496c30",
-                "reference": "d4a5af69da706854fa37a24a873323b0c7496c30",
+                "url": "https://ftp.drupal.org/files/projects/gin-8.x-3.0-alpha28.zip",
+                "reference": "8.x-3.0-alpha28",
+                "shasum": "dd231b4c68b3fac234e9733e8ac07d94f50fdd9d"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9",
+                "drupal/gin_toolbar": "^1.0@beta"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-3.0-alpha28",
+                    "datestamp": "1604868112",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Sascha Eggenberger (saschaeggi)",
+                    "homepage": "https://www.drupal.org/u/saschaeggi",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "saschaeggi",
+                    "homepage": "https://www.drupal.org/user/1999056"
+                }
+            ],
+            "description": "For a better Admin and Content Editor Experience.",
+            "homepage": "https://www.drupal.org/project/gin",
+            "support": {
+                "source": "https://git.drupalcode.org/project/gin",
+                "issues": "https://www.drupal.org/project/issues/gin"
+            },
+            "funding": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/sponsors/saschaeggi"
+                },
+                {
+                    "type": "other",
+                    "url": "https://paypal.me/saschaeggi"
+                }
+            ]
+        },
+        {
+            "name": "drupal/gin_toolbar",
+            "version": "1.0.0-beta13",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/gin_toolbar.git",
+                "reference": "8.x-1.0-beta13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/gin_toolbar-8.x-1.0-beta13.zip",
+                "reference": "8.x-1.0-beta13",
+                "shasum": "7d80b5a2df53147326ba601f50c097788d657ef8"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-beta13",
+                    "datestamp": "1604868424",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Sascha Eggenberger (saschaeggi)",
+                    "homepage": "https://www.drupal.org/u/saschaeggi",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Gin Toolbar for Frontend use",
+            "homepage": "https://www.drupal.org/project/gin_toolbar",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/gin_toolbar",
+                "issues": "https://www.drupal.org/project/issues/gin_toolbar"
+            },
+            "funding": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/sponsors/saschaeggi"
+                },
+                {
+                    "type": "other",
+                    "url": "https://paypal.me/saschaeggi"
+                }
+            ]
+        },
+        {
+            "name": "drupal/hdbt",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/City-of-Helsinki/drupal-hdbt.git",
+                "reference": "73b75dfb8b12c74c49e61144fb8d5fbb5f4749d5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/73b75dfb8b12c74c49e61144fb8d5fbb5f4749d5",
+                "reference": "73b75dfb8b12c74c49e61144fb8d5fbb5f4749d5",
                 "shasum": ""
             },
             "type": "drupal-custom-theme",
@@ -1996,10 +2116,41 @@
                 "Drupal"
             ],
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/1.0.0",
+                "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/dev",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt/issues"
             },
-            "time": "2020-10-20T06:20:04+00:00"
+            "time": "2020-11-06T14:28:48+00:00"
+        },
+        {
+            "name": "drupal/hdbt_admin",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/City-of-Helsinki/drupal-hdbt-admin.git",
+                "reference": "54f9296c4582afe2f689bceaaeb4a5305a2cb544"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt-admin/zipball/54f9296c4582afe2f689bceaaeb4a5305a2cb544",
+                "reference": "54f9296c4582afe2f689bceaaeb4a5305a2cb544",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/gin": "^3.0"
+            },
+            "type": "drupal-custom-theme",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Helsinki Drupal Base admin theme",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://github.com/City-of-Helsinki/drupal-hdbt-admin/tree/1.0.0",
+                "issues": "https://github.com/City-of-Helsinki/drupal-hdbt-admin/issues"
+            },
+            "time": "2020-11-09T09:13:21+00:00"
         },
         {
             "name": "drupal/helfi_api_base",
@@ -9322,6 +9473,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/hdbt": 20,
+        "drupal/hdbt_admin": 20,
         "drupal/helfi_api_base": 20,
         "drupal/helfi_tpr": 20
     },
