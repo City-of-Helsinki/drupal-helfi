@@ -2279,12 +2279,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr.git",
-                "reference": "fd37cf5935c2ea4e2ef2f375a87cef0e229a8642"
+                "reference": "c305d482865df58845ec97ef3a88b27fd1803ad3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-tpr/zipball/fd37cf5935c2ea4e2ef2f375a87cef0e229a8642",
-                "reference": "fd37cf5935c2ea4e2ef2f375a87cef0e229a8642",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-tpr/zipball/c305d482865df58845ec97ef3a88b27fd1803ad3",
+                "reference": "c305d482865df58845ec97ef3a88b27fd1803ad3",
                 "shasum": ""
             },
             "require": {
@@ -2302,7 +2302,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/tree/1.x",
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/issues"
             },
-            "time": "2020-11-04T20:08:29+00:00"
+            "time": "2020-11-10T18:34:38+00:00"
         },
         {
             "name": "drupal/migrate_plus",
