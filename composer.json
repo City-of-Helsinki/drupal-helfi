@@ -13,6 +13,7 @@
         "druidfi/omen": "^0.2.0",
         "drupal/core-composer-scaffold": "^9.0",
         "drupal/core-recommended": "^9.0",
+        "drupal/features": "^3.11",
         "drupal/hdbt": "1.x-dev",
         "drupal/hdbt_admin": "1.x-dev",
         "drupal/helfi_api_base": "1.x-dev",
