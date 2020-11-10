@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "040d905db58cc6c534ea439ee1e20536",
+    "content-hash": "dd489089d31a07797ef24a73ec4c49a2",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1446,13 +1446,6 @@
                 "reflection",
                 "static"
             ],
-<<<<<<< HEAD
-=======
-            "support": {
-                "issues": "https://github.com/doctrine/reflection/issues",
-                "source": "https://github.com/doctrine/reflection/tree/1.2.x"
-            },
->>>>>>> dev
             "abandoned": "roave/better-reflection",
             "time": "2020-03-27T11:06:43+00:00"
         },
@@ -2014,37 +2007,41 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base.git",
-                "reference": "95a20c21ae58b0d659462d9d2b0bf545fd424f44"
+                "reference": "ea41bfaedd63c55e6da3930fd24d96a89990e08d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-api-base/zipball/95a20c21ae58b0d659462d9d2b0bf545fd424f44",
-                "reference": "95a20c21ae58b0d659462d9d2b0bf545fd424f44",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-api-base/zipball/ea41bfaedd63c55e6da3930fd24d96a89990e08d",
+                "reference": "ea41bfaedd63c55e6da3930fd24d96a89990e08d",
                 "shasum": ""
             },
             "require": {
                 "drupal/api_tools": "~1.0.0",
                 "drupal/migrate_plus": "~5.0"
             },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                "drupal/coder": "^8.3"
+            },
             "type": "drupal-custom-module",
             "support": {
                 "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base/tree/1.x",
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base/issues"
             },
-            "time": "2020-10-31T08:48:37+00:00"
+            "time": "2020-11-09T16:25:10+00:00"
         },
         {
-            "name": "drupal/helfi_trp",
+            "name": "drupal/helfi_tpr",
             "version": "1.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-trp.git",
-                "reference": "4f546e435eb95e6bd81d92f992796d6097483e69"
+                "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr.git",
+                "reference": "fd37cf5935c2ea4e2ef2f375a87cef0e229a8642"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-trp/zipball/4f546e435eb95e6bd81d92f992796d6097483e69",
-                "reference": "4f546e435eb95e6bd81d92f992796d6097483e69",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-tpr/zipball/fd37cf5935c2ea4e2ef2f375a87cef0e229a8642",
+                "reference": "fd37cf5935c2ea4e2ef2f375a87cef0e229a8642",
                 "shasum": ""
             },
             "require": {
@@ -2053,12 +2050,16 @@
                 "drupal/migrate_plus": "~5.0",
                 "drupal/migrate_tools": "~5.0"
             },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                "drupal/coder": "^8.3"
+            },
             "type": "drupal-custom-module",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-trp/tree/1.x",
-                "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-trp/issues"
+                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/tree/1.x",
+                "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/issues"
             },
-            "time": "2020-10-31T08:48:27+00:00"
+            "time": "2020-11-04T20:08:29+00:00"
         },
         {
             "name": "drupal/migrate_plus",
@@ -3188,13 +3189,6 @@
                 "uri",
                 "url"
             ],
-<<<<<<< HEAD
-=======
-            "support": {
-                "issues": "https://github.com/thephpleague/uri-interfaces/issues",
-                "source": "https://github.com/thephpleague/uri-interfaces/tree/2.2.0"
-            },
->>>>>>> dev
             "funding": [
                 {
                     "url": "https://github.com/sponsors/nyamsprod",
@@ -4458,12 +4452,6 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-<<<<<<< HEAD
-=======
-            "support": {
-                "source": "https://github.com/symfony/filesystem/tree/v4.4.16"
-            },
->>>>>>> dev
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -4522,12 +4510,6 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-<<<<<<< HEAD
-=======
-            "support": {
-                "source": "https://github.com/symfony/finder/tree/v4.4.16"
-            },
->>>>>>> dev
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -6275,13 +6257,6 @@
                 }
             ],
             "description": "Helper class to locate a Drupal installation from a given path.",
-<<<<<<< HEAD
-=======
-            "support": {
-                "issues": "https://github.com/webflo/drupal-finder/issues",
-                "source": "https://github.com/webflo/drupal-finder/tree/1.2.2"
-            },
->>>>>>> dev
             "time": "2020-10-27T09:42:17+00:00"
         },
         {
@@ -6763,14 +6738,6 @@
                 "dependency",
                 "package"
             ],
-<<<<<<< HEAD
-=======
-            "support": {
-                "irc": "irc://irc.freenode.org/composer",
-                "issues": "https://github.com/composer/composer/issues",
-                "source": "https://github.com/composer/composer/tree/1.10.17"
-            },
->>>>>>> dev
             "funding": [
                 {
                     "url": "https://packagist.com",
@@ -7057,11 +7024,11 @@
         },
         {
             "name": "drupal/coder",
-            "version": "8.3.10",
+            "version": "8.3.11",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/coder.git",
-                "reference": "e1d71c6bb75b94f9ed00dceb2f4f6cb7e044723d"
+                "reference": "67c1bcf2d6860237ce4b176fd55ef4c7c014d84e"
             },
             "require": {
                 "ext-mbstring": "*",
@@ -7071,7 +7038,7 @@
                 "symfony/yaml": ">=2.0.5"
             },
             "require-dev": {
-                "phpstan/phpstan": "^0.12.31",
+                "phpstan/phpstan": "^0.12.51",
                 "phpunit/phpunit": "^6.0 || ^7.0"
             },
             "type": "phpcodesniffer-standard",
@@ -7092,7 +7059,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2020-09-03T19:59:53+00:00"
+            "time": "2020-11-04T14:55:07+00:00"
         },
         {
             "name": "drupal/core-dev",
@@ -7254,13 +7221,6 @@
             "keywords": [
                 "scraper"
             ],
-<<<<<<< HEAD
-=======
-            "support": {
-                "issues": "https://github.com/FriendsOfPHP/Goutte/issues",
-                "source": "https://github.com/FriendsOfPHP/Goutte/tree/v3.3.1"
-            },
->>>>>>> dev
             "time": "2020-11-01T09:30:18+00:00"
         },
         {
@@ -9014,12 +8974,6 @@
             ],
             "description": "Symfony BrowserKit Component",
             "homepage": "https://symfony.com",
-<<<<<<< HEAD
-=======
-            "support": {
-                "source": "https://github.com/symfony/browser-kit/tree/v4.4.16"
-            },
->>>>>>> dev
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -9082,12 +9036,6 @@
             ],
             "description": "Symfony CssSelector Component",
             "homepage": "https://symfony.com",
-<<<<<<< HEAD
-=======
-            "support": {
-                "source": "https://github.com/symfony/css-selector/tree/v4.4.16"
-            },
->>>>>>> dev
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -9158,12 +9106,6 @@
             ],
             "description": "Symfony DomCrawler Component",
             "homepage": "https://symfony.com",
-<<<<<<< HEAD
-=======
-            "support": {
-                "source": "https://github.com/symfony/dom-crawler/tree/v4.4.16"
-            },
->>>>>>> dev
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -9238,12 +9180,6 @@
                 "redlock",
                 "semaphore"
             ],
-<<<<<<< HEAD
-=======
-            "support": {
-                "source": "https://github.com/symfony/lock/tree/v4.4.16"
-            },
->>>>>>> dev
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -9320,12 +9256,6 @@
             ],
             "description": "Symfony PHPUnit Bridge",
             "homepage": "https://symfony.com",
-<<<<<<< HEAD
-=======
-            "support": {
-                "source": "https://github.com/symfony/phpunit-bridge/tree/v4.4.16"
-            },
->>>>>>> dev
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -9393,7 +9323,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/helfi_api_base": 20,
-        "drupal/helfi_trp": 20
+        "drupal/helfi_tpr": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
