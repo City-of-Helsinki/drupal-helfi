@@ -1,10 +1,14 @@
-#!/bin/sh
+#!/bin/bash
 
-COMMIT_FILE=$1
-COMMIT_MSG=$(cat $1)
-JIRA_ID=$(git symbolic-ref HEAD | rev | cut -d/ -f1 | rev | grep -o -E "[A-Z]+-[0-9]+" | head -n1)
+# Get the current branch name
+current_branch=`git rev-parse --abbrev-ref HEAD`
 
-if [ ! -z "$JIRA_ID" ]; then
-    echo "$JIRA_ID $COMMIT_MSG" > $COMMIT_FILE
-        echo "JIRA ID '$JIRA_ID', matched in current branch name, prepended to commit message. (Use --no-verify to skip)"
+# Search Jira ID in a pattern such a "feature/ABCD-123-my-feature"
+id=$(echo $current_branch | sed -nE 's,[a-z]+/([A-Z]+-[0-9]+)-.+,\1,p')
+
+# only prepare commit message if pattern matched and jiraId was found
+if [[ ! -z $id ]]; then
+  # $1 is the name of the file containing the commit message
+  # Prepend "ABCD-123: "
+  sed -i.bak -E "1s/^/${id}: /" $1
 fi
