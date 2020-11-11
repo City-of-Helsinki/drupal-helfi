@@ -26,3 +26,10 @@ if (isset($_SERVER['WODBY_APP_NAME'])) {
   // Override setting from wodby.settings.php.
   $settings['config_sync_directory'] = '../conf/cmi';
 }
+
+$config['openid_connect.settings.tunnistamo']['settings']['client_id'] = getenv('TUNNISTAMO_CLIENT_ID');
+$config['openid_connect.settings.tunnistamo']['settings']['client_secret'] = getenv('TUNNISTAMO_CLIENT_SECRET');
+
+if (file_exists(__DIR__ . '/settings.local.php')) {
+  include __DIR__ . '/settings.local.php';
+}
