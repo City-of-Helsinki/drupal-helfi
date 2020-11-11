@@ -90,5 +90,12 @@
             "url": "https://packages.drupal.org/8"
         }
     ],
-    "scripts": {}
+    "scripts": {
+        "post-install-cmd": [
+            "make copy-commit-message-script"
+        ],
+        "post-update-cmd": [
+            "make copy-commit-message-script"
+        ]
+    }
 }
