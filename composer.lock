@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f4d0830ae9167ea840bb626468ac7cb4",
+    "content-hash": "e5d8f1b77df2d2bee1fe4676675a0627",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2303,6 +2303,38 @@
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/issues"
             },
             "time": "2020-11-10T18:34:38+00:00"
+        },
+        {
+            "name": "drupal/helfi_tunnistamo",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-tunnistamo.git",
+                "reference": "f410be2b6773a188f195d78b44420f2adf263c80"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-tunnistamo/zipball/f410be2b6773a188f195d78b44420f2adf263c80",
+                "reference": "f410be2b6773a188f195d78b44420f2adf263c80",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/openid_connect": "~1.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                "drupal/coder": "^8.3"
+            },
+            "type": "drupal-custom-module",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Tunnistamo integration",
+            "support": {
+                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-tunnistamo/tree/1.x",
+                "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-tunnistamo/issues"
+            },
+            "time": "2020-11-11T12:36:57+00:00"
         },
         {
             "name": "drupal/migrate_plus",
@@ -10098,6 +10130,7 @@
         "drupal/hdbt_admin": 20,
         "drupal/helfi_api_base": 20,
         "drupal/helfi_tpr": 20,
+        "drupal/helfi_tunnistamo": 20,
         "drupal/openid_connect": 5
     },
     "prefer-stable": true,
