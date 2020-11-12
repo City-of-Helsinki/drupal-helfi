@@ -85,7 +85,7 @@
     "repositories": [
         {
             "type": "composer",
-            "url": "https://city-of-helsinki.github.io/drupal-repository/"
+            "url": "https://repository.drupal.hel.ninja"
         },
         {
             "type": "composer",
