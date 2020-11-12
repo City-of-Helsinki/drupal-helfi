@@ -6,10 +6,10 @@ url:
     en: en
     fi: fi
     sv: sv
+    ru: ru
   domains:
     en: ''
     fi: ''
     sv: ''
+    ru: ''
 selected_langcode: fi
-_core:
-  default_config_hash: uEePITI9tV6WqzmsTb7MfPCi5yPWXSxAN1xeLcYFQbM
