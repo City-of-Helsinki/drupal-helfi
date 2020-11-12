@@ -18,6 +18,8 @@
         "drupal/hdbt_admin": "1.x-dev",
         "drupal/helfi_api_base": "1.x-dev",
         "drupal/helfi_tpr": "1.x-dev",
+        "drupal/helfi_tunnistamo": "1.x-dev",
+        "drupal/openid_connect": "^1.0@RC",
         "drush/drush": "^10.3"
     },
     "require-dev": {
