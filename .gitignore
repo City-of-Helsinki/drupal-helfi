@@ -11,6 +11,7 @@ public/sites/default/files
 vendor
 public/sites/simpletest/
 .phpunit.result.cache
+public/sites/default/settings.local.php
 
 # Ignore the folder created by PhpStorm
 .idea/*

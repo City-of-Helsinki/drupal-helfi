@@ -9,7 +9,6 @@
     "require": {
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.6.7",
-        "druid/tools": "^1.0",
         "druidfi/omen": "^0.2.0",
         "drupal/core-composer-scaffold": "^9.0",
         "drupal/core-recommended": "^9.0",
@@ -18,6 +17,8 @@
         "drupal/hdbt_admin": "1.x-dev",
         "drupal/helfi_api_base": "1.x-dev",
         "drupal/helfi_tpr": "1.x-dev",
+        "drupal/helfi_tunnistamo": "1.x-dev",
+        "drupal/openid_connect": "^1.0@RC",
         "drush/drush": "^10.3"
     },
     "require-dev": {
@@ -84,7 +85,7 @@
     "repositories": [
         {
             "type": "composer",
-            "url": "https://city-of-helsinki.github.io/drupal-repository/"
+            "url": "https://repository.drupal.hel.ninja"
         },
         {
             "type": "composer",
