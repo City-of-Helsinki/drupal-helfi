@@ -77,7 +77,8 @@
             "drupal/core": {
                 "https://www.drupal.org/project/drupal/issues/2868193#comment-13830917": "https://www.drupal.org/files/issues/2020-09-21/2868193-22.patch",
                 "https://www.drupal.org/project/drupal/issues/2313309#comment-13880802": "https://www.drupal.org/files/issues/2020-10-23/2313309-76.patch",
-                "https://www.drupal.org/project/drupal/issues/3054641#comment-13604223": "https://www.drupal.org/files/issues/2020-05-08/3054641-21.patch"
+                "https://www.drupal.org/project/drupal/issues/3054641#comment-13604223": "https://www.drupal.org/files/issues/2020-05-08/3054641-21.patch",
+                "https://www.drupal.org/project/drupal/issues/2845437#comment-13784958": "https://www.drupal.org/files/issues/2020-08-12/2845437-32.patch"
             }
         }
     },
@@ -100,4 +101,3 @@
         ]
     }
 }
-
