@@ -36,5 +36,6 @@ jobs:
 
       - name: Run PHPUnit tests
         run: |
+          drupal-tr run-drush-server &
           chromedriver --port=4444 > /dev/null 2>&1 &
           drupal-tr run-tests
