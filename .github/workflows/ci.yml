@@ -3,6 +3,7 @@ name: CI
 env:
   SIMPLETEST_DB: "mysql://drupal:drupal@db:3306/drupal"
   SIMPLETEST_BASE_URL: "http://127.0.0.1:8080"
+  EXISTING_CONFIG: true
 jobs:
   tests:
     runs-on: ubuntu-latest
@@ -20,17 +21,19 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Build project
-        run: composer install
+      - name: Set variables
+        run: |
+          echo "$HOME/.config/composer/vendor/bin" >> $GITHUB_PATH
+
+      - name: Setup drupal
+        run: |
+          composer global require tuutti/drupal-test-runner
+          drupal-tr
 
       - name: Run PHPCS
         run: vendor/bin/phpcs public/modules/custom/ --standard=Drupal
 
-      - name: Install Drupal
-        run: php -d sendmail_path=$(which true); drush --yes -v site-install --existing-config --db-url="$SIMPLETEST_DB"
-
       - name: Run PHPUnit tests
         run: |
-          drush runserver $SIMPLETEST_BASE_URL > /dev/null 2>&1 &
           chromedriver --port=4444 > /dev/null 2>&1 &
-          vendor/bin/phpunit -c $GITHUB_WORKSPACE/phpunit.xml.dist --verbose
+          drupal-tr run-tests
