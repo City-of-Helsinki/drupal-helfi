@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "856626db1cc2bbc0f2f1d1eca8203bf0",
+    "content-hash": "90ba60ab6140fba54d5c38335ba86e85",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2369,6 +2369,31 @@
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base/issues"
             },
             "time": "2020-11-12T19:49:08+00:00"
+        },
+        {
+            "name": "drupal/helfi_platform_config",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
+                "reference": "73de894d3e7f7f8cc3a42a72bef9a4c5e81f9dc6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/73de894d3e7f7f8cc3a42a72bef9a4c5e81f9dc6",
+                "reference": "73de894d3e7f7f8cc3a42a72bef9a4c5e81f9dc6",
+                "shasum": ""
+            },
+            "type": "drupal-custom-module",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "HELfi platform config",
+            "support": {
+                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/1.x",
+                "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
+            },
+            "time": "2020-11-17T10:20:52+00:00"
         },
         {
             "name": "drupal/helfi_tpr",
@@ -9939,6 +9964,7 @@
         "drupal/hdbt": 20,
         "drupal/hdbt_admin": 20,
         "drupal/helfi_api_base": 20,
+        "drupal/helfi_platform_config": 20,
         "drupal/helfi_tpr": 20,
         "drupal/helfi_tunnistamo": 20,
         "drupal/openid_connect": 5,
