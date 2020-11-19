@@ -13,12 +13,14 @@
         "drupal/core-composer-scaffold": "^9.0",
         "drupal/core-recommended": "^9.0",
         "drupal/features": "^3.11",
+        "drupal/focal_point": "^1.5",
         "drupal/hdbt": "1.x-dev",
         "drupal/hdbt_admin": "1.x-dev",
         "drupal/helfi_api_base": "1.x-dev",
         "drupal/helfi_platform_config": "1.x-dev",
         "drupal/helfi_tpr": "1.x-dev",
         "drupal/helfi_tunnistamo": "1.x-dev",
+        "drupal/media_entity_soundcloud": "^3.0",
         "drupal/openid_connect": "^1.0@RC",
         "drupal/paragraphs": "^1.12",
         "drupal/paragraphs_asymmetric_translation_widgets": "^1.0@beta",
@@ -88,6 +90,9 @@
             },
             "drupal/paragraphs_asymmetric_translation_widgets": {
                 "https://www.drupal.org/project/paragraphs_asymmetric_translation_widgets/issues/3171810#comment-13836806": "https://www.drupal.org/files/issues/2020-09-25/3171810-2.patch"
+            },
+            "drupal/features": {
+                "https://www.drupal.org/project/features/issues/3068461#comment-13908491": "https://www.drupal.org/files/issues/2020-11-19/features-ui_theme_agnostic_rtl-3068461-6.patch"
             }
         }
     },
