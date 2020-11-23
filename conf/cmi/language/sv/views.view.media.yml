@@ -27,25 +27,18 @@ display:
           action_title: Åtgärd
         thumbnail__target_id:
           label: Miniatyr
-          separator: ', '
         name:
           label: Medianamn
-          separator: ', '
         bundle:
           label: Typ
-          separator: ', '
         uid:
           label: Författare
-          separator: ', '
         status:
-          label: Status
           settings:
             format_custom_true: Publicerad
             format_custom_false: 'Ej publicerad'
-          separator: ', '
         changed:
           label: Uppdaterad
-          separator: ', '
         operations:
           label: Funktioner
       filters:

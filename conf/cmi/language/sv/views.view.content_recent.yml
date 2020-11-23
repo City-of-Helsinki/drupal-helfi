@@ -11,13 +11,8 @@ display:
           exposed_sorts_label: 'Sortera efter'
           sort_asc_label: Stigande
           sort_desc_label: Fallande
-      fields:
-        changed:
-          separator: ', '
       title: 'Nyligen uppdaterat innehåll'
       empty:
         area_text_custom:
           content: 'Inget innehåll tillgängligt.'
       use_more_text: Mer
-  block_1:
-    display_title: Block
