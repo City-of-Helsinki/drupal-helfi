@@ -1,0 +1,42 @@
+uuid: 5f49a4f3-6478-45a8-976b-96432893ac8b
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - helfi_ahjo
+_core:
+  default_config_hash: ykm4xOpISRlCDlgEO2MJrZ4YK9V3Edzyg5mbn4XssFg
+id: ahjo_issues
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - ahjo
+migration_group: ahjo
+label: 'Ahjo - Issue'
+source:
+  plugin: open_ahjo
+  url: 'https://dev.hel.fi/paatokset/v1/issue/?order_by=-last_modified_time'
+  track_changes: true
+process:
+  id: id
+  title:
+    plugin: substr
+    source: subject
+    start: 0
+    length: 255
+  langcode:
+    plugin: default_value
+    default_value: fi
+  changed:
+    -
+      plugin: format_date
+      source: last_modified_time
+      from_format: 'Y-m-d\TH:i:s.u'
+      to_format: 'U'
+      from_timezone: 'Europe/Helsinki'
+      to_timezone: 'UTC'
+destination:
+  plugin: 'entity:ahjo_issue'
+migration_dependencies: {  }

@@ -1,6 +1,16 @@
 # City of Helsinki - Drupal 9
 
-Description of your project.
+City of Helsinki
+
+## Includes
+
+- Drupal 9.0.x
+- Drush 10.x
+- Docker setup for development, see [docker-compose.yml](docker-compose.yml)
+- [druidfi/tools](https://github.com/druidfi/tools)
+- Web root is `/public`
+- Configuration is in `/conf/cmi`
+- Custom modules are created in `/public/modules/custom`
 
 ## Environments
 
@@ -11,11 +21,10 @@ production | master | @main | TBD
 
 ## Requirements
 
-You need to have these applications installed to operate on all environments:
+You need to have these applications installed to operate on local environment:
 
 - [Docker](https://github.com/druidfi/guidelines/blob/master/docs/docker.md)
 - [Stonehenge](https://github.com/druidfi/stonehenge)
-- For the new person: Your SSH public key needs to be added to servers
 
 ## Create and start the environment
 
