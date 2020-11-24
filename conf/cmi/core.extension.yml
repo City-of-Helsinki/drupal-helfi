@@ -23,10 +23,7 @@ module:
   hdbt_component_library: 0
   helfi_ahjo: 0
   helfi_api_base: 0
-  helfi_base_config: 0
   helfi_editorial: 0
-  helfi_languages: 0
-  helfi_platform_config: 0
   helfi_tpr: 0
   helfi_tunnistamo: 0
   image: 0
