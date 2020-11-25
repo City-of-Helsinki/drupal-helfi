@@ -68,6 +68,7 @@ WORKDIR /opt/drupal
 
 # Copy Drupal project from Git repo
 COPY / /opt/drupal
+RUN chmod +x /opt/drupal/docker/openshift/docker-entrypoint.sh
 # Install Drupal app
 RUN set -eux; \
 	export COMPOSER_HOME="$(mktemp -d)"; \
@@ -79,7 +80,6 @@ RUN set -eux; \
 ##	rm -rf "$COMPOSER_HOME"
 
 ENV PATH=${PATH}:/opt/drupal/vendor/bin
-ENV PATH=${PATH}:/opt/drupal
 
 # vim:set ft=dockerfile:
 
@@ -91,6 +91,6 @@ COPY /docker/openshift/docker-entrypoint.sh /usr/local/bin/
 
 #WORKDIR /var/www/html
 
-ENTRYPOINT ["/opt/drupal/docker-entrypoint.sh"]
+ENTRYPOINT ["/opt/drupal/docker/openshift/docker-entrypoint.sh"]
 
 CMD []
