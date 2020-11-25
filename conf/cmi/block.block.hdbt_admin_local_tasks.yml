@@ -1,11 +1,11 @@
-uuid: 72ad7c49-fc29-4a1f-aea1-17296131b19e
+uuid: 53dc5828-b53d-4668-9176-8b9d3337058e
 langcode: en
 status: true
 dependencies:
   theme:
     - hdbt_admin
 _core:
-  default_config_hash: c-06bbElRY5sKmglk74ppgTW93Et4-EJFyNiUZMb8JY
+  default_config_hash: 90y7V2eTfnNPtwIjvXxqEWn-kuAwjkW4IBeRAEnnoWw
 id: hdbt_admin_local_tasks
 theme: hdbt_admin
 region: content
