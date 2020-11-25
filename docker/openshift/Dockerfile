@@ -91,6 +91,6 @@ COPY /docker/openshift/docker-entrypoint.sh /usr/local/bin/
 
 #WORKDIR /var/www/html
 
-ENTRYPOINT ["docker-entrypoint.sh"]
+ENTRYPOINT ["/opt/drupal/docker-entrypoint.sh"]
 
 CMD []
