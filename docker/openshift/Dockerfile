@@ -79,6 +79,7 @@ RUN set -eux; \
 ##	rm -rf "$COMPOSER_HOME"
 
 ENV PATH=${PATH}:/opt/drupal/vendor/bin
+ENV PATH=${PATH}:/opt/drupal
 
 # vim:set ft=dockerfile:
 
