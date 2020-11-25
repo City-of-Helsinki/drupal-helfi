@@ -22,8 +22,6 @@ module:
   gin_toolbar: 0
   hdbt_component_library: 0
   hdbt_custom_blocks: 0
-  helfi_base_config: 0
-  helfi_languages: 0
   helfi_ahjo: 0
   helfi_api_base: 0
   helfi_editorial: 0
