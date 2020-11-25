@@ -6,7 +6,7 @@ features:
 favicon:
   use_default: 1
 enable_darkmode: 0
-preset_accent_color: null
+preset_accent_color: light_blue
 accent_color: ''
 preset_focus_color: gin
 focus_color: ''

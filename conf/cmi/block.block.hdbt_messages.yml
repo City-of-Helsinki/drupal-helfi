@@ -1,16 +1,16 @@
-uuid: dd9b3ce0-348b-4dd5-ab03-40e171735043
+uuid: 490749f3-6689-4370-8c3a-fcf5ca4e05d1
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
   theme:
     - hdbt
 _core:
-  default_config_hash: 5MNdk3fpMKx_xxBTcz2T11DL4XEU1H5SgHl8BsYdFsA
+  default_config_hash: 3CQYJQtn3-ZJCCRg4TS1okMknFvod1We7uOGXNXaaUg
 id: hdbt_messages
 theme: hdbt
-region: highlighted
+region: header_top
 weight: 0
 provider: null
 plugin: system_messages_block
