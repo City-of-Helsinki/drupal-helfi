@@ -1,4 +1,4 @@
-uuid: 93d4afe3-2722-433c-90dd-10358406a878
+uuid: fd6aa78e-d131-4289-bb1d-d32427612cbf
 langcode: en
 status: true
 dependencies:
@@ -6,12 +6,10 @@ dependencies:
     - system
   theme:
     - hdbt
-_core:
-  default_config_hash: fRKXNB91UxDvEMkzCR8ZBsawfC6Fqbme2gtobei3gu4
-id: hdbt_branding
+id: sitebranding
 theme: hdbt
-region: header
-weight: 0
+region: header_top
+weight: -4
 provider: null
 plugin: system_branding_block
 settings:
@@ -21,5 +19,5 @@ settings:
   label_display: '0'
   use_site_logo: true
   use_site_name: true
-  use_site_slogan: true
+  use_site_slogan: false
 visibility: {  }

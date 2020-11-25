@@ -1,0 +1,20 @@
+uuid: 27a25f05-189f-499a-b68a-b8085168b8a3
+langcode: en
+status: true
+dependencies:
+  module:
+    - hdbt_custom_blocks
+  theme:
+    - hdbt
+id: header_top_buttons
+theme: hdbt
+region: header_top
+weight: -3
+provider: null
+plugin: header_top_buttons_block
+settings:
+  id: header_top_buttons_block
+  label: 'Header Top buttons'
+  provider: hdbt_custom_blocks
+  label_display: '0'
+visibility: {  }
