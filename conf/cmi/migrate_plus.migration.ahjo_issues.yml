@@ -34,9 +34,9 @@ process:
       plugin: format_date
       source: last_modified_time
       from_format: 'Y-m-d\TH:i:s.u'
-      to_format: 'U'
-      from_timezone: 'Europe/Helsinki'
-      to_timezone: 'UTC'
+      to_format: U
+      from_timezone: Europe/Helsinki
+      to_timezone: UTC
 destination:
   plugin: 'entity:ahjo_issue'
 migration_dependencies: {  }
