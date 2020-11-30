@@ -2,7 +2,6 @@
 FROM php:7.4-fpm-alpine3.12
 
 # install the PHP extensions we need
-# postgresql-dev is needed for https://bugs.alpinelinux.org/issues/3642
 RUN set -eux; \
 	\
 	apk add --no-cache --virtual .build-deps \
@@ -11,7 +10,6 @@ RUN set -eux; \
 		libjpeg-turbo-dev \
 		libpng-dev \
 		libzip-dev \
-		postgresql-dev \
 	; \
 	\
 	docker-php-ext-configure gd \
@@ -23,7 +21,6 @@ RUN set -eux; \
 		gd \
 		opcache \
 		pdo_mysql \
-		pdo_pgsql \
 		zip \
 	; \
 	\
@@ -46,12 +43,6 @@ RUN { \
 		echo 'opcache.fast_shutdown=1'; \
 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 
-# https://github.com/drupal/drupal/blob/9.0.1/composer.lock#L4052-L4053
-COPY --from=composer:2.0 /usr/bin/composer /usr/local/bin/
-
-# https://www.drupal.org/node/3060/release
-ENV DRUPAL_VERSION 9.0.6
-
 # Install required tools (https://docs.acquia.com/blt/install/)
 # alpine-sdk required for the make script in composer.json
 RUN apk update && apk upgrade && \
@@ -64,32 +55,26 @@ RUN apk update && apk upgrade && \
 #      && apk del pcre-dev ${PHPIZE_DEPS} \
 #      && rm -rf /tmp/pear
 
+# This workdir is a temporary directory for the build process:
+# the files are copied to a shared volume in docker-entrypoint.sh
 WORKDIR /opt/drupal
 
-# Copy Drupal project from Git repo
 COPY / /opt/drupal
 RUN chmod +x /opt/drupal/docker/openshift/docker-entrypoint.sh
-# Install Drupal app
+
+# Install and run Composer
+COPY --from=composer:2.0 /usr/bin/composer /usr/local/bin/
 RUN set -eux; \
 	export COMPOSER_HOME="$(mktemp -d)"; \
 	composer install --no-progress --profile --prefer-dist --no-interaction
-## 	chown -R www-data:www-data web/sites web/modules web/themes; \
-## 	rmdir /var/www/html; \
-## 	ln -sf /opt/drupal/web /var/www/html; \
-##	# delete composer cache
-##	rm -rf "$COMPOSER_HOME"
 
 ENV PATH=${PATH}:/opt/drupal/vendor/bin
-
-# vim:set ft=dockerfile:
-
-# Create build artifact
-#RUN ./vendor/bin/blt artifact:build
 
 # Copy start script
 COPY /docker/openshift/docker-entrypoint.sh /usr/local/bin/
 
-#WORKDIR /var/www/html
+# Fetch certificate for the Azure MariaDB service
+RUN wget https://www.digicert.com/CACerts/BaltimoreCyberTrustRoot.crt.pem -O /usr/local/share/ca-certificates/BaltimoreCyberTrustRoot.crt.pem
 
 ENTRYPOINT ["/opt/drupal/docker/openshift/docker-entrypoint.sh"]
 
