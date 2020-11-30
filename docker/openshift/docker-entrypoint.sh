@@ -6,6 +6,7 @@ echo "Copy Drupal to the root folder of the web server"
 # copy files to Azure Disk
 rsync -vah "/opt/drupal/public/" "/var/www/html/public/" --exclude="web/sites/default/files"
 rsync -vah "/opt/drupal/vendor/" "/var/www/html/vendor/"
+rsync -vah "/opt/drupal/conf/" "/var/www/html/conf/"
 
 echo "Set cron key"
 if [[ ! -z "${DRUPAL_CRON_KEY}" ]]; then
