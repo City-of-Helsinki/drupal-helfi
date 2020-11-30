@@ -7,6 +7,14 @@ if (isset($_SERVER['WODBY_APP_NAME'])) {
   include '/var/www/conf/wodby.settings.php';
 }
 
+if ($simpletest_db = getenv('SIMPLETEST_DB')) {
+  $parts = parse_url($simpletest_db);
+  putenv(sprintf('DRUPAL_DB_NAME=%s', substr($parts['path'], 1)));
+  putenv(sprintf('DRUPAL_DB_USER=%s', $parts['user']));
+  putenv(sprintf('DRUPAL_DB_PASS=%s', $parts['pass']));
+  putenv(sprintf('DRUPAL_DB_HOST=%s', $parts['host']));
+}
+
 $settings['hash_salt'] = getenv('DRUPAL_HASH_SALT') ?: '000';
 
 $config['openid_connect.settings.tunnistamo']['settings']['client_id'] = getenv('TUNNISTAMO_CLIENT_ID');
@@ -49,6 +57,7 @@ if ($drush_options_uri && !in_array($drush_options_uri, $routes)) {
 $settings['config_sync_directory'] = '../conf/cmi';
 $settings['file_public_path'] = getenv('DRUPAL_FILES_PUBLIC') ?: 'sites/default/files';
 $settings['file_private_path'] = getenv('DRUPAL_FILES_PRIVATE');
+$settings['file_temp_path'] = getenv('DRUPAL_TMP_PATH') ?: '/tmp';
 
 if ($env = getenv('APP_ENV')) {
   if (file_exists(__DIR__ . '/' . $env . '.settings.php')) {
@@ -58,8 +67,13 @@ if ($env = getenv('APP_ENV')) {
   if (file_exists(__DIR__ . '/' . $env . '.services.yml')) {
     $settings['container_yamls'][] = __DIR__ . '/' . $env . '.services.yml';
   }
+
+  if (file_exists(__DIR__ . '/local.services.yml')) {
+    $settings['container_yamls'][] = __DIR__ . '/local.services.yml';
+  }
+
+  if (file_exists(__DIR__ . '/local.settings.php')) {
+    include __DIR__ . '/local.settings.php';
+  }
 }
 
-if (file_exists(__DIR__ . '/settings.local.php')) {
-  include __DIR__ . '/settings.local.php';
-}
