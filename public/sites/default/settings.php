@@ -48,7 +48,7 @@ if ($drush_options_uri && !in_array($drush_options_uri, $routes)) {
 
 $settings['config_sync_directory'] = '../conf/cmi';
 $settings['file_public_path'] = getenv('DRUPAL_FILES_PUBLIC') ?: 'sites/default/files';
-$settings['file_private_path'] = getenv('DRUPAL_FILES_PUBLIC');
+$settings['file_private_path'] = getenv('DRUPAL_FILES_PRIVATE');
 
 if ($env = getenv('APP_ENV')) {
   if (file_exists(__DIR__ . '/' . $env . '.settings.php')) {
