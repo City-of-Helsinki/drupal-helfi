@@ -27,11 +27,12 @@ $databases['default']['default'] = [
   'prefix' => '',
   'host' => getenv('DRUPAL_DB_HOST'),
   'port' => getenv('DRUPAL_DB_PORT') ?: 3306,
-  'namespace' => 'Drupal\\Driver\\Database\\mysql', //original driver: 'Drupal\Core\Database\Driver\mysql',
+  'namespace' => 'Drupal\Core\Database\Driver\mysql',
   'driver' => 'mysql',
 ];
 
 if ($ssl_ca_path = getenv('AZURE_SQL_SSL_CA_PATH')) {
+  $databases['default']['default']['namespace'] = 'Drupal\\Driver\\Database\\mysql';
   $databases['default']['default']['pdo'] = [
     \PDO::MYSQL_ATTR_SSL_CA => $ssl_ca_path,
     \PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT => FALSE,
