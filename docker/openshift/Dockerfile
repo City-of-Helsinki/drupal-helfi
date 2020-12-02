@@ -70,6 +70,9 @@ RUN set -eux; \
 
 ENV PATH=${PATH}:/opt/drupal/vendor/bin
 
+#RUN chmod -R g+w /opt/drupal/
+RUN chmod -R 777 /opt/drupal/
+
 # Copy start script
 COPY /docker/openshift/docker-entrypoint.sh /usr/local/bin/
 
