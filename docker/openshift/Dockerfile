@@ -68,6 +68,7 @@ RUN set -eux; \
 	export COMPOSER_HOME="$(mktemp -d)"; \
 	composer install --no-progress --profile --prefer-dist --no-interaction
 
+WORKDIR /var/www/html
 ENV PATH=${PATH}:/opt/drupal/vendor/bin
 
 # Copy start script
