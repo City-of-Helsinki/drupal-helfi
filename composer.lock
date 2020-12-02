@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7d3dbf22f20900874db0c74bd4394865",
+    "content-hash": "9338d223f02a00c519bbc2922c2c0f50",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1536,49 +1536,6 @@
             },
             "abandoned": "roave/better-reflection",
             "time": "2020-03-27T11:06:43+00:00"
-        },
-        {
-            "name": "druidfi/omen",
-            "version": "0.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/druidfi/omen.git",
-                "reference": "70aceb28b52e5994b268100c0707f2d33a7971da"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/druidfi/omen/zipball/70aceb28b52e5994b268100c0707f2d33a7971da",
-                "reference": "70aceb28b52e5994b268100c0707f2d33a7971da",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.16.0",
-                "phpunit/phpunit": "^8.5.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Druidfi\\Omen\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Druid.fi",
-                    "email": "info@druid.fi"
-                }
-            ],
-            "support": {
-                "issues": "https://github.com/druidfi/omen/issues",
-                "source": "https://github.com/druidfi/omen/tree/master"
-            },
-            "time": "2020-08-04T09:26:33+00:00"
         },
         {
             "name": "drupal/address",
