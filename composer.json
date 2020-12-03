@@ -22,6 +22,7 @@
         "drupal/helfi_tpr": "1.x-dev",
         "drupal/helfi_tunnistamo": "1.x-dev",
         "drupal/media_entity_soundcloud": "^3.0",
+        "drupal/mysql56": "^1.1",
         "drupal/menu_block_current_language": "^1.4",
         "drupal/openid_connect": "^1.0@RC",
         "drupal/paragraphs": "^1.12",

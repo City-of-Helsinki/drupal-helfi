@@ -32,6 +32,7 @@ $databases['default']['default'] = [
 ];
 
 if ($ssl_ca_path = getenv('AZURE_SQL_SSL_CA_PATH')) {
+  $databases['default']['default']['namespace'] = 'Drupal\\Driver\\Database\\mysql';
   $databases['default']['default']['pdo'] = [
     \PDO::MYSQL_ATTR_SSL_CA => $ssl_ca_path,
     \PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT => FALSE,
