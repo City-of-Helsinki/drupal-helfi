@@ -1,0 +1,48 @@
+uuid: c7597bff-5b82-4af9-813a-4da540eed199
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hero.field_hero_bg_color
+    - field.field.paragraph.hero.field_hero_desc
+    - field.field.paragraph.hero.field_hero_design
+    - field.field.paragraph.hero.field_hero_title
+    - paragraphs.paragraphs_type.hero
+  module:
+    - text
+id: paragraph.hero.default
+targetEntityType: paragraph
+bundle: hero
+mode: default
+content:
+  field_hero_bg_color:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_hero_desc:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_hero_design:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_hero_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
