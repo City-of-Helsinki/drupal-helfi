@@ -1,0 +1,18 @@
+uuid: 670c3c4d-e40c-4f7e-af6b-2bf4e596e39e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_has_hero
+field_name: field_has_hero
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -15,7 +15,9 @@ label: 'Background color'
 description: 'Choose the background color for the hero element.'
 required: true
 translatable: false
-default_value: {  }
+default_value:
+  -
+    value: coat-of-arms
 default_value_callback: ''
 settings: {  }
 field_type: list_string

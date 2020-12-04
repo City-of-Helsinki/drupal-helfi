@@ -1,0 +1,42 @@
+uuid: 05069523-79a0-47bf-8793-7a6bf280b47c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.article.field_has_hero
+    - field.field.node.article.field_hero
+    - node.type.article
+  module:
+    - entity_reference_revisions
+    - user
+id: node.article.default
+targetEntityType: node
+bundle: article
+mode: default
+content:
+  field_has_hero:
+    weight: 102
+    label: above
+    settings:
+      format: true-false
+      format_custom_true: ''
+      format_custom_false: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_hero:
+    type: entity_reference_revisions_entity_view
+    weight: 101
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
