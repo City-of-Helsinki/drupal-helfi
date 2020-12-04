@@ -4,11 +4,16 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.hero.field_hero_bg_color
+    - field.field.paragraph.hero.field_hero_cta
     - field.field.paragraph.hero.field_hero_desc
     - field.field.paragraph.hero.field_hero_design
+    - field.field.paragraph.hero.field_hero_image
+    - field.field.paragraph.hero.field_hero_text_color
     - field.field.paragraph.hero.field_hero_title
     - paragraphs.paragraphs_type.hero
   module:
+    - media_library
+    - paragraphs
     - text
 id: paragraph.hero.default
 targetEntityType: paragraph
@@ -21,6 +26,18 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
+  field_hero_cta:
+    type: entity_reference_paragraphs
+    weight: 6
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
   field_hero_desc:
     weight: 3
     settings:
@@ -31,6 +48,19 @@ content:
     region: content
   field_hero_design:
     weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_hero_image:
+    type: media_library_widget
+    weight: 5
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_hero_text_color:
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: options_select

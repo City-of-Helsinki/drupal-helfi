@@ -1,0 +1,27 @@
+uuid: 90a779d8-beae-4627-a22c-dcdd08568e5c
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_hero_text_color
+field_name: field_hero_text_color
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: black
+      label: Black
+    -
+      value: white
+      label: White
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
