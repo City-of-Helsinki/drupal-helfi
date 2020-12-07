@@ -9,14 +9,22 @@ display:
           submit_button: Suodatin
           reset_button_label: Palauta
           exposed_sorts_label: Lajittele
+          sort_asc_label: Nousevasti
+          sort_desc_label: Laskevasti
       pager:
         options:
           expose:
             items_per_page_label: 'Merkintöjä sivua kohti'
             items_per_page_options_all_label: '- Kaikki -'
+            offset_label: Offset
+          tags:
+            previous: ‹‹
+            next: ››
       fields:
         nothing:
           admin_label: Ikoni
+        wid:
+          label: WID
         severity:
           label: Vakavuus
         type:
@@ -27,6 +35,7 @@ display:
           label: Viesti
         name:
           label: Käyttäjä
+          separator: ', '
         link:
           label: Toimenpiteet
       filters:

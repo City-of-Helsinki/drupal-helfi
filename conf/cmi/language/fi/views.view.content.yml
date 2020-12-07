@@ -8,6 +8,8 @@ display:
           submit_button: Suodatin
           reset_button_label: Palauta
           exposed_sorts_label: Lajittele
+          sort_asc_label: Nousevasti
+          sort_desc_label: Laskevasti
       pager:
         options:
           tags:
@@ -20,6 +22,7 @@ display:
           label: Otsikko
         type:
           label: Sisältötyyppi
+          separator: ', '
         name:
           label: Tekijä
         status:

@@ -17,10 +17,14 @@ display:
             items_per_page_label: 'Элементов на страницу'
             items_per_page_options_all_label: '- Все -'
             offset_label: Пропустить
+          tags:
+            previous: ‹‹
+            next: ››
       arguments:
         tid:
           exception:
             title: Все
+          title: '{{ arguments.tid }}'
   feed_1:
     display_title: 'Поток данных'
   page_1:
