@@ -1,12 +1,12 @@
-uuid: dffb2730-03e2-402b-a94b-6d9896f4c401
+uuid: cb500809-e416-4444-b712-845852c48fac
 langcode: en
 status: true
 dependencies:
   config:
-    - filter.format.html
+    - filter.format.full_html
   module:
     - ckeditor
-format: html
+format: full_html
 editor: ckeditor
 settings:
   toolbar:
@@ -17,8 +17,11 @@ settings:
           items:
             - Bold
             - Italic
+            - Strike
             - Superscript
             - Subscript
+            - '-'
+            - RemoveFormat
         -
           name: Links
           items:
@@ -33,13 +36,16 @@ settings:
           name: Media
           items:
             - Blockquote
+            - Table
+            - HorizontalRule
         -
           name: Tools
           items:
             - Cut
             - Copy
+            - Paste
             - PasteFromWord
-            - RemoveFormat
+            - SpecialChar
             - Source
   plugins:
     language:

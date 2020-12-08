@@ -1,8 +1,8 @@
 langcode: en
 koro_settings:
-  koro: beat
+  koro: basic
 footer_settings:
-  footer_color: light
+  footer_color: dark
   footer_top_title: 'Contact information'
   footer_top_content:
     value: "<p><a href=\"#\">Search for contacts and phone numbers</a></p>\r\n\r\n<p><a href=\"#\">Helsinki-info 09 310 1691</a></p>\r\n"

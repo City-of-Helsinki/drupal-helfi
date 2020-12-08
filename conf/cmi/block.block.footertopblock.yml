@@ -1,0 +1,20 @@
+uuid: 4c633d33-d6b1-4c1f-846e-8bd048d3a48d
+langcode: en
+status: true
+dependencies:
+  module:
+    - hdbt_custom_blocks
+  theme:
+    - hdbt
+id: footertopblock
+theme: hdbt
+region: footer_top
+weight: -3
+provider: null
+plugin: footer_top_block
+settings:
+  id: footer_top_block
+  label: 'Footer top block'
+  provider: hdbt_custom_blocks
+  label_display: '0'
+visibility: {  }
