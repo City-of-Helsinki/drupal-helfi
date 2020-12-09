@@ -39,6 +39,8 @@ display:
           label: 'Senast åtkomst'
         operations:
           label: Funktioner
+        mail:
+          separator: ', '
       filters:
         combine:
           expose:

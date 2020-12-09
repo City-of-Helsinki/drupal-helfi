@@ -17,6 +17,9 @@ display:
             items_per_page_label: 'Inlägg per sida'
             items_per_page_options_all_label: '- Alla -'
             offset_label: Kompensera
+          tags:
+            previous: ‹‹
+            next: ››
       fields:
         nothing:
           admin_label: Ikon
@@ -32,6 +35,7 @@ display:
             alt: '{{ meddelande }}'
         name:
           label: Användare
+          separator: ', '
         link:
           label: Funktioner
       filters:

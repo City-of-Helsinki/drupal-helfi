@@ -22,6 +22,7 @@ display:
           label: Titel
         type:
           label: Innehållstyp
+          separator: ', '
         name:
           label: Författare
         status:
