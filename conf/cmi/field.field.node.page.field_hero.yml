@@ -1,17 +1,17 @@
-uuid: 463914fc-d6ff-4f4b-a3e1-86a18dbe5076
+uuid: 372b3f5a-d240-487e-9ffd-0b10d193c67f
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_hero
-    - node.type.article
+    - node.type.page
     - paragraphs.paragraphs_type.hero
   module:
     - entity_reference_revisions
-id: node.article.field_hero
+id: node.page.field_hero
 field_name: field_hero
 entity_type: node
-bundle: article
+bundle: page
 label: Hero
 description: ''
 required: false

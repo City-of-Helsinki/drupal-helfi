@@ -1,14 +1,14 @@
-uuid: 1e0c9cde-6737-4dd5-8afe-e23c647dd8e3
+uuid: 76071e5f-f4e7-4a60-a664-5a6392a8cb8d
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_has_hero
-    - node.type.article
-id: node.article.field_has_hero
+    - node.type.page
+id: node.page.field_has_hero
 field_name: field_has_hero
 entity_type: node
-bundle: article
+bundle: page
 label: Hero
 description: 'Check this box if you want to use hero-block on the page. If you choose this the heros title field will define the heading level 1 title for the page.'
 required: false

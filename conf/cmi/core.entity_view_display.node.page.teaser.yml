@@ -1,15 +1,17 @@
-uuid: eae1adb1-0fa8-4b0f-ba5a-c2a8abbd9ce4
+uuid: 25e11164-150b-4bce-8007-7494005e04f2
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - node.type.article
+    - field.field.node.page.field_has_hero
+    - field.field.node.page.field_hero
+    - node.type.page
   module:
     - user
-id: node.article.teaser
+id: node.page.teaser
 targetEntityType: node
-bundle: article
+bundle: page
 mode: teaser
 content:
   links:
@@ -18,4 +20,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_has_hero: true
+  field_hero: true
   langcode: true
