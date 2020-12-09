@@ -1,0 +1,20 @@
+uuid: 05069523-79a0-47bf-8793-7a6bf280b47c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.article
+  module:
+    - user
+id: node.article.default
+targetEntityType: node
+bundle: article
+mode: default
+content:
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

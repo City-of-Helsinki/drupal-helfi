@@ -1,0 +1,25 @@
+uuid: 25e11164-150b-4bce-8007-7494005e04f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page.field_has_hero
+    - field.field.node.page.field_hero
+    - node.type.page
+  module:
+    - user
+id: node.page.teaser
+targetEntityType: node
+bundle: page
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_has_hero: true
+  field_hero: true
+  langcode: true
