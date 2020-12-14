@@ -1,6 +1,0 @@
-name: 'HELfi - Editorial'
-type: module
-description: 'Editorial provides editorial enhancements for content editors.'
-package: Custom
-core: 8.x
-core_version_requirement: ^8 || ^9
