@@ -2,6 +2,7 @@ module:
   action: 0
   address: 0
   admin_toolbar: 0
+  admin_toolbar_tools: 0
   api_tools: 0
   block: 0
   breakpoint: 0
@@ -32,6 +33,7 @@ module:
   helfi_tpr: 0
   helfi_tunnistamo: 0
   image: 0
+  image_style_quality: 0
   inline_form_errors: 0
   language: 0
   link: 0
