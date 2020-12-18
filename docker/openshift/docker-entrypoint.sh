@@ -5,6 +5,7 @@ echo "Copy Drupal to the root folder of the web server"
 rsync -vah "/opt/drupal/public/" "/var/www/html/public/" --exclude="web/sites/default/files"
 rsync -vah "/opt/drupal/vendor/" "/var/www/html/vendor/"
 rsync -vah "/opt/drupal/conf/" "/var/www/html/conf/"
+rsync -vah "/opt/drupal/drush/" "/var/www/html/drush/"
 cp /opt/drupal/composer.* /var/www/html/
 # copy /opt/drupal/drush (and other files & folders) to /var/www/html as they become necessary
 
