@@ -12,6 +12,7 @@
         "drupal/admin_toolbar": "^2.4.0",
         "drupal/core-composer-scaffold": "^9.0",
         "drupal/core-recommended": "^9.0",
+        "drupal/easy_breadcrumb": "^1.13",
         "drupal/features": "^3.11",
         "drupal/focal_point": "^1.5",
         "drupal/hdbt": "1.x-dev",
@@ -28,6 +29,7 @@
         "drupal/openid_connect": "^1.0@RC",
         "drupal/paragraphs": "^1.12",
         "drupal/paragraphs_asymmetric_translation_widgets": "^1.0@beta",
+        "drupal/pathauto": "^1.8",
         "drupal/twig_tweak": "^2.8",
         "drush/drush": "^10.3"
     },
