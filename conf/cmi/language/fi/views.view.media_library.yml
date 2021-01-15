@@ -46,6 +46,7 @@ display:
         created:
           expose:
             label: 'Uusin ensin'
+      title: Media
       empty:
         area_text_custom:
           content: 'Ei mediaa saatavilla.'
