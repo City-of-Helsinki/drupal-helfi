@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0b0660871ecc65a4b47d7fa9156a7525",
+    "content-hash": "bf4fa50c65de70c4e9f4f067138602db",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2193,6 +2193,96 @@
             }
         },
         {
+            "name": "drupal/ctools",
+            "version": "3.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ctools.git",
+                "reference": "8.x-3.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.4.zip",
+                "reference": "8.x-3.4",
+                "shasum": "016ca5abb7ac4ca720352a72e8989f3ef0e20539"
+            },
+            "require": {
+                "drupal/core": "^8.7.7 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-3.4",
+                    "datestamp": "1585763383",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Kris Vanderwater (EclipseGc)",
+                    "homepage": "https://www.drupal.org/u/eclipsegc",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Jakob Perry (japerry)",
+                    "homepage": "https://www.drupal.org/u/japerry",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Tim Plunkett (tim.plunkett)",
+                    "homepage": "https://www.drupal.org/u/timplunkett",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "James Gilliland (neclimdul)",
+                    "homepage": "https://www.drupal.org/u/neclimdul",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Daniel Wehner (dawehner)",
+                    "homepage": "https://www.drupal.org/u/dawehner",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "joelpittet",
+                    "homepage": "https://www.drupal.org/user/160302"
+                },
+                {
+                    "name": "merlinofchaos",
+                    "homepage": "https://www.drupal.org/user/26979"
+                },
+                {
+                    "name": "neclimdul",
+                    "homepage": "https://www.drupal.org/user/48673"
+                },
+                {
+                    "name": "sdboyer",
+                    "homepage": "https://www.drupal.org/user/146719"
+                },
+                {
+                    "name": "sun",
+                    "homepage": "https://www.drupal.org/user/54136"
+                },
+                {
+                    "name": "tim.plunkett",
+                    "homepage": "https://www.drupal.org/user/241634"
+                }
+            ],
+            "description": "Provides a number of utility and helper APIs for Drupal developers and site builders.",
+            "homepage": "https://www.drupal.org/project/ctools",
+            "support": {
+                "source": "https://git.drupalcode.org/project/ctools",
+                "issues": "https://www.drupal.org/project/issues/ctools"
+            }
+        },
+        {
             "name": "drupal/default_content",
             "version": "2.0.0-alpha1",
             "source": {
@@ -2266,6 +2356,85 @@
             "homepage": "https://www.drupal.org/project/default_content",
             "support": {
                 "source": "https://git.drupalcode.org/project/default_content"
+            }
+        },
+        {
+            "name": "drupal/easy_breadcrumb",
+            "version": "1.13.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/easy_breadcrumb.git",
+                "reference": "8.x-1.13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/easy_breadcrumb-8.x-1.13.zip",
+                "reference": "8.x-1.13",
+                "shasum": "8a8be82e1de1383eb849989b1c5790dd13270ffa"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.13",
+                    "datestamp": "1595445195",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Neslee Canil Pinto",
+                    "homepage": "https://www.drupal.org/u/neslee-canil-pinto",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Greg Boggs",
+                    "homepage": "https://www.drupal.org/u/greg-boggs",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "RenatoG",
+                    "homepage": "https://www.drupal.org/user/3326031"
+                },
+                {
+                    "name": "diamondsea",
+                    "homepage": "https://www.drupal.org/user/430714"
+                },
+                {
+                    "name": "hmartens",
+                    "homepage": "https://www.drupal.org/user/622826"
+                },
+                {
+                    "name": "loopduplicate",
+                    "homepage": "https://www.drupal.org/user/717290"
+                },
+                {
+                    "name": "sonemonu",
+                    "homepage": "https://www.drupal.org/user/1667988"
+                },
+                {
+                    "name": "tatarbj",
+                    "homepage": "https://www.drupal.org/user/649590"
+                },
+                {
+                    "name": "volkswagenchick",
+                    "homepage": "https://www.drupal.org/user/3332522"
+                }
+            ],
+            "description": "Adds configuration to the system breadcrumbs.",
+            "homepage": "https://www.drupal.org/project/easy_breadcrumb",
+            "support": {
+                "source": "https://git.drupalcode.org/project/easy_breadcrumb",
+                "issues": "https://www.drupal.org/project/issues/easy_breadcrumb"
             }
         },
         {
@@ -2746,12 +2915,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt.git",
-                "reference": "85def7a7dbc7dcf56a0a4767437644ed10e99423"
+                "reference": "f6f80f2f4efb296214cbc5eb364e30be83b6b444"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/85def7a7dbc7dcf56a0a4767437644ed10e99423",
-                "reference": "85def7a7dbc7dcf56a0a4767437644ed10e99423",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/f6f80f2f4efb296214cbc5eb364e30be83b6b444",
+                "reference": "f6f80f2f4efb296214cbc5eb364e30be83b6b444",
                 "shasum": ""
             },
             "require": {
@@ -2769,7 +2938,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/latest",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt/issues"
             },
-            "time": "2021-01-14T09:16:07+00:00"
+            "time": "2021-01-15T06:59:15+00:00"
         },
         {
             "name": "drupal/hdbt_admin",
@@ -2877,17 +3046,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "8cebc1984fef7d5d546efef1b2a5d552488cdab4"
+                "reference": "e0f212879a3e41459ac9a35bb7f80240e2e1d43b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/8cebc1984fef7d5d546efef1b2a5d552488cdab4",
-                "reference": "8cebc1984fef7d5d546efef1b2a5d552488cdab4",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/e0f212879a3e41459ac9a35bb7f80240e2e1d43b",
+                "reference": "e0f212879a3e41459ac9a35bb7f80240e2e1d43b",
                 "shasum": ""
             },
             "require": {
                 "drupal/crop": "^2.1",
                 "drupal/default_content": "^2.0.0-alpha1",
+                "drupal/easy_breadcrumb": "^1.13",
                 "drupal/elasticsearch_connector": "^7.0@alpha",
                 "drupal/entity_browser": "^2.5",
                 "drupal/features": "^3.11",
@@ -2897,6 +3067,7 @@
                 "drupal/menu_block_current_language": "^1.4",
                 "drupal/paragraphs": "^1.12",
                 "drupal/paragraphs_asymmetric_translation_widgets": "^1.0-beta4",
+                "drupal/pathauto": "^1.8",
                 "drupal/search_api": "^1.0"
             },
             "type": "drupal-custom-module",
@@ -2925,7 +3096,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/1.x",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2021-01-14T09:14:16+00:00"
+            "time": "2021-01-15T06:59:33+00:00"
         },
         {
             "name": "drupal/helfi_tpr",
@@ -3570,6 +3741,74 @@
             }
         },
         {
+            "name": "drupal/pathauto",
+            "version": "1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/pathauto.git",
+                "reference": "8.x-1.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.8.zip",
+                "reference": "8.x-1.8",
+                "shasum": "ede3216abb9c4f77709338d9147334c595046329"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9",
+                "drupal/ctools": "*",
+                "drupal/token": "*"
+            },
+            "suggest": {
+                "drupal/redirect": "When installed Pathauto will provide a new \"Update Action\" in case your URLs change. This is the recommended update action and is considered the best practice for SEO and usability."
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.8",
+                    "datestamp": "1588103046",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9 || ^10"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "Freso",
+                    "homepage": "https://www.drupal.org/user/27504"
+                },
+                {
+                    "name": "greggles",
+                    "homepage": "https://www.drupal.org/user/36762"
+                }
+            ],
+            "description": "Provides a mechanism for modules to automatically generate aliases for the content they manage.",
+            "homepage": "https://www.drupal.org/project/pathauto",
+            "support": {
+                "source": "https://cgit.drupalcode.org/pathauto",
+                "issues": "https://www.drupal.org/project/issues/pathauto",
+                "documentation": "https://www.drupal.org/docs/8/modules/pathauto"
+            }
+        },
+        {
             "name": "drupal/search_api",
             "version": "1.18.0",
             "source": {
@@ -3639,6 +3878,75 @@
                 "source": "https://git.drupalcode.org/project/search_api",
                 "issues": "https://www.drupal.org/project/issues/search_api",
                 "irc": "irc://irc.freenode.org/drupal-search-api"
+            }
+        },
+        {
+            "name": "drupal/token",
+            "version": "1.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/token.git",
+                "reference": "8.x-1.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/token-8.x-1.9.zip",
+                "reference": "8.x-1.9",
+                "shasum": "a5d234382a1a0e4ba61d4c7a2fa10671ca656be4"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.9",
+                    "datestamp": "1608284866",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9 || ^10"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "eaton",
+                    "homepage": "https://www.drupal.org/user/16496"
+                },
+                {
+                    "name": "fago",
+                    "homepage": "https://www.drupal.org/user/16747"
+                },
+                {
+                    "name": "greggles",
+                    "homepage": "https://www.drupal.org/user/36762"
+                },
+                {
+                    "name": "mikeryan",
+                    "homepage": "https://www.drupal.org/user/4420"
+                }
+            ],
+            "description": "Provides a user interface for the Token API, some missing core tokens.",
+            "homepage": "https://www.drupal.org/project/token",
+            "support": {
+                "source": "https://git.drupalcode.org/project/token"
             }
         },
         {

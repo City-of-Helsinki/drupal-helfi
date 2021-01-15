@@ -11,9 +11,11 @@ module:
   config_translation: 0
   config_update: 0
   crop: 0
+  ctools: 0
   datetime: 0
   dblog: 0
   dynamic_page_cache: 0
+  easy_breadcrumb: 0
   editor: 0
   entity_reference_revisions: 0
   features: 0
@@ -61,11 +63,13 @@ module:
   system: 0
   taxonomy: 0
   text: 0
+  token: 0
   toolbar: 0
   twig_tweak: 0
   update: 0
   user: 0
   views_ui: 0
+  pathauto: 1
   content_translation: 10
   views: 10
   paragraphs: 11
