@@ -36,7 +36,8 @@
     "require-dev": {
         "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
         "drupal/coder": "^8.3",
-        "drupal/core-dev": "^9.0"
+        "drupal/core-dev": "^9.0",
+        "phpspec/prophecy-phpunit": "^2.0"
     },
     "conflict": {
         "drupal/drupal": "*"
