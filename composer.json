@@ -31,12 +31,13 @@
         "drupal/paragraphs_asymmetric_translation_widgets": "^1.0@beta",
         "drupal/pathauto": "^1.8",
         "drupal/twig_tweak": "^2.8",
-        "drush/drush": "^10.3"
+        "drush/drush": "^10.4"
     },
     "require-dev": {
         "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
         "drupal/coder": "^8.3",
-        "drupal/core-dev": "^9.0"
+        "drupal/core-dev": "^9.0",
+        "phpspec/prophecy-phpunit": "^2.0"
     },
     "conflict": {
         "drupal/drupal": "*"

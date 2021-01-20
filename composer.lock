@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bf4fa50c65de70c4e9f4f067138602db",
+    "content-hash": "f3905c8ea8a059c5fed5c3916a893be1",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -116,16 +116,16 @@
         },
         {
             "name": "commerceguys/addressing",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/commerceguys/addressing.git",
-                "reference": "2450ca97631042faf786855db206a2e48fb7dbb7"
+                "reference": "6df5c0eea9d1f370095585eef1b08f4dff73d51f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/2450ca97631042faf786855db206a2e48fb7dbb7",
-                "reference": "2450ca97631042faf786855db206a2e48fb7dbb7",
+                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/6df5c0eea9d1f370095585eef1b08f4dff73d51f",
+                "reference": "6df5c0eea9d1f370095585eef1b08f4dff73d51f",
                 "shasum": ""
             },
             "require": {
@@ -173,9 +173,9 @@
             ],
             "support": {
                 "issues": "https://github.com/commerceguys/addressing/issues",
-                "source": "https://github.com/commerceguys/addressing/tree/v1.1.0"
+                "source": "https://github.com/commerceguys/addressing/tree/v1.1.1"
             },
-            "time": "2020-11-29T18:48:07+00:00"
+            "time": "2020-12-05T18:16:35+00:00"
         },
         {
             "name": "composer/installers",
@@ -2915,12 +2915,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt.git",
-                "reference": "f6f80f2f4efb296214cbc5eb364e30be83b6b444"
+                "reference": "d32a7e43afb4a8dcfe45c4bc217730ee012c756e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/f6f80f2f4efb296214cbc5eb364e30be83b6b444",
-                "reference": "f6f80f2f4efb296214cbc5eb364e30be83b6b444",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/d32a7e43afb4a8dcfe45c4bc217730ee012c756e",
+                "reference": "d32a7e43afb4a8dcfe45c4bc217730ee012c756e",
                 "shasum": ""
             },
             "require": {
@@ -2938,7 +2938,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/latest",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt/issues"
             },
-            "time": "2021-01-15T06:59:15+00:00"
+            "time": "2021-01-18T14:52:29+00:00"
         },
         {
             "name": "drupal/hdbt_admin",
@@ -2946,12 +2946,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt-admin.git",
-                "reference": "395e01360159373a98d1ab711864c0978651c74e"
+                "reference": "897cb615c73542703ef7ceceb89267e25099e933"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt-admin/zipball/395e01360159373a98d1ab711864c0978651c74e",
-                "reference": "395e01360159373a98d1ab711864c0978651c74e",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt-admin/zipball/897cb615c73542703ef7ceceb89267e25099e933",
+                "reference": "897cb615c73542703ef7ceceb89267e25099e933",
                 "shasum": ""
             },
             "require": {
@@ -2967,10 +2967,10 @@
                 "Drupal"
             ],
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-hdbt-admin/tree/1.x",
+                "source": "https://github.com/City-of-Helsinki/drupal-hdbt-admin/tree/1.0.8",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt-admin/issues"
             },
-            "time": "2020-12-17T15:20:53+00:00"
+            "time": "2021-01-18T15:43:44+00:00"
         },
         {
             "name": "drupal/helfi_ahjo",
@@ -2978,18 +2978,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-ahjo.git",
-                "reference": "aa27727dc2ca28e1c7dcaab28f6e2f487a734bf8"
+                "reference": "313707e1fadd537d0dc0a44b64c1dc263718daf7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-ahjo/zipball/aa27727dc2ca28e1c7dcaab28f6e2f487a734bf8",
-                "reference": "aa27727dc2ca28e1c7dcaab28f6e2f487a734bf8",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-ahjo/zipball/313707e1fadd537d0dc0a44b64c1dc263718daf7",
+                "reference": "313707e1fadd537d0dc0a44b64c1dc263718daf7",
                 "shasum": ""
             },
             "require": {
                 "drupal/helfi_api_base": "*",
-                "drupal/migrate_plus": "~5.0",
-                "drupal/migrate_tools": "~5.0",
                 "ext-json": "*"
             },
             "require-dev": {
@@ -3005,7 +3003,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-ahjo/tree/1.x",
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-ahjo/issues"
             },
-            "time": "2020-12-14T13:58:29+00:00"
+            "time": "2021-01-19T13:43:04+00:00"
         },
         {
             "name": "drupal/helfi_api_base",
@@ -3013,17 +3011,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base.git",
-                "reference": "7519a3b8933744703a58b36b85fe23b964616041"
+                "reference": "91a38ac2d7882b6f57e24411c232b2d6aa7dc67d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-api-base/zipball/7519a3b8933744703a58b36b85fe23b964616041",
-                "reference": "7519a3b8933744703a58b36b85fe23b964616041",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-api-base/zipball/91a38ac2d7882b6f57e24411c232b2d6aa7dc67d",
+                "reference": "91a38ac2d7882b6f57e24411c232b2d6aa7dc67d",
                 "shasum": ""
             },
             "require": {
-                "drupal/api_tools": "~1.0.0",
-                "drupal/migrate_plus": "~5.0"
+                "drupal/api_tools": "~1.0.0"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
@@ -3035,10 +3032,10 @@
             ],
             "description": "Helfi - API Base",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base/tree/1.0.2",
+                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base/tree/1.0.3",
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base/issues"
             },
-            "time": "2020-12-09T11:04:16+00:00"
+            "time": "2021-01-19T13:05:29+00:00"
         },
         {
             "name": "drupal/helfi_platform_config",
@@ -3046,12 +3043,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "e0f212879a3e41459ac9a35bb7f80240e2e1d43b"
+                "reference": "be09e094b9653c78787106a8f77c5f09022b5397"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/e0f212879a3e41459ac9a35bb7f80240e2e1d43b",
-                "reference": "e0f212879a3e41459ac9a35bb7f80240e2e1d43b",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/be09e094b9653c78787106a8f77c5f09022b5397",
+                "reference": "be09e094b9653c78787106a8f77c5f09022b5397",
                 "shasum": ""
             },
             "require": {
@@ -3093,10 +3090,10 @@
             ],
             "description": "HELfi platform config",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/1.x",
+                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/1.0.14",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2021-01-15T06:59:33+00:00"
+            "time": "2021-01-15T14:15:41+00:00"
         },
         {
             "name": "drupal/helfi_tpr",
@@ -3104,19 +3101,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr.git",
-                "reference": "bbc1e1272ced5b727f82709f9333f5fbfb8091de"
+                "reference": "8e7693645d8562d484e1cf741aaeee8208e71ea1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-tpr/zipball/bbc1e1272ced5b727f82709f9333f5fbfb8091de",
-                "reference": "bbc1e1272ced5b727f82709f9333f5fbfb8091de",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-tpr/zipball/8e7693645d8562d484e1cf741aaeee8208e71ea1",
+                "reference": "8e7693645d8562d484e1cf741aaeee8208e71ea1",
                 "shasum": ""
             },
             "require": {
                 "drupal/address": "~1.0",
-                "drupal/helfi_api_base": "*",
-                "drupal/migrate_plus": "~5.0",
-                "drupal/migrate_tools": "~5.0"
+                "drupal/helfi_api_base": "*"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
@@ -3129,10 +3124,10 @@
             ],
             "description": "TPR integration",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/tree/1.1.2",
+                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/tree/1.x",
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/issues"
             },
-            "time": "2020-12-10T12:33:30+00:00"
+            "time": "2021-01-20T09:17:05+00:00"
         },
         {
             "name": "drupal/helfi_tunnistamo",
@@ -3140,12 +3135,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-tunnistamo.git",
-                "reference": "a993a806b9c88038b69b8d3969fdd74745f3e3df"
+                "reference": "6a15e5c8a83651f80235e1b8192510a124b13bee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-tunnistamo/zipball/a993a806b9c88038b69b8d3969fdd74745f3e3df",
-                "reference": "a993a806b9c88038b69b8d3969fdd74745f3e3df",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-tunnistamo/zipball/6a15e5c8a83651f80235e1b8192510a124b13bee",
+                "reference": "6a15e5c8a83651f80235e1b8192510a124b13bee",
                 "shasum": ""
             },
             "require": {
@@ -3164,7 +3159,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-tunnistamo/tree/1.x",
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-tunnistamo/issues"
             },
-            "time": "2020-11-17T11:17:14+00:00"
+            "time": "2021-01-19T10:50:11+00:00"
         },
         {
             "name": "drupal/image_style_quality",
@@ -3329,134 +3324,6 @@
             "homepage": "https://www.drupal.org/project/menu_block_current_language",
             "support": {
                 "source": "https://git.drupalcode.org/project/menu_block_current_language"
-            }
-        },
-        {
-            "name": "drupal/migrate_plus",
-            "version": "5.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/migrate_plus.git",
-                "reference": "8.x-5.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/migrate_plus-8.x-5.1.zip",
-                "reference": "8.x-5.1",
-                "shasum": "1257427ab0c64459c3c1e42bb2a98d3114b77163"
-            },
-            "require": {
-                "drupal/core": "^8.8 || ^9",
-                "php": ">=7.1"
-            },
-            "require-dev": {
-                "drupal/migrate_example_advanced_setup": "*",
-                "drupal/migrate_example_setup": "*"
-            },
-            "suggest": {
-                "ext-soap": "*",
-                "sainsburys/guzzle-oauth2-plugin": "3.0 required for the OAuth2 authentication plugin"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-5.1",
-                    "datestamp": "1588261060",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Mike Ryan",
-                    "homepage": "https://www.drupal.org/u/mikeryan",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Lucas Hedding",
-                    "homepage": "https://www.drupal.org/u/heddn",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "Enhancements to core migration support.",
-            "homepage": "https://www.drupal.org/project/migrate_plus",
-            "support": {
-                "source": "https://git.drupalcode.org/project/migrate_plus",
-                "issues": "https://www.drupal.org/project/issues/migrate_plus",
-                "slack": "#migrate"
-            }
-        },
-        {
-            "name": "drupal/migrate_tools",
-            "version": "5.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/migrate_tools.git",
-                "reference": "8.x-5.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/migrate_tools-8.x-5.0.zip",
-                "reference": "8.x-5.0",
-                "shasum": "b7c91aa6f7de9d6d548f65f83c8736e47e5926a1"
-            },
-            "require": {
-                "drupal/core": "^8.8 | ^9",
-                "drupal/migrate_plus": "^5",
-                "php": ">=7.1"
-            },
-            "require-dev": {
-                "drupal/migrate_plus": "^5",
-                "drupal/migrate_source_csv": "^3",
-                "drush/drush": "^10"
-            },
-            "suggest": {
-                "drush/drush": "^9 || ^10"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-5.0",
-                    "datestamp": "1588260531",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                },
-                "drush": {
-                    "services": {
-                        "drush.services.yml": "^9 || ^10"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Mike Ryan",
-                    "homepage": "https://www.drupal.org/u/mikeryan",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Lucas Hedding",
-                    "homepage": "https://www.drupal.org/u/heddn",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "Tools to assist in developing and running migrations.",
-            "homepage": "http://drupal.org/project/migrate_tools",
-            "support": {
-                "source": "https://git.drupalcode.org/project/migrate_tools",
-                "issues": "https://www.drupal.org/project/issues/migrate_tools",
-                "slack": "#migrate"
             }
         },
         {
@@ -4004,16 +3871,16 @@
         },
         {
             "name": "drush/drush",
-            "version": "10.3.6",
+            "version": "10.4.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "fc985a95c6010e04891a2dbcf3f39984b8c9ef0a"
+                "reference": "f4a2f73066714ef0c464c8c71ca3945e7bd94d38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/fc985a95c6010e04891a2dbcf3f39984b8c9ef0a",
-                "reference": "fc985a95c6010e04891a2dbcf3f39984b8c9ef0a",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/f4a2f73066714ef0c464c8c71ca3945e7bd94d38",
+                "reference": "f4a2f73066714ef0c464c8c71ca3945e7bd94d38",
                 "shasum": ""
             },
             "require": {
@@ -4038,6 +3905,10 @@
                 "webflo/drupal-finder": "^1.2",
                 "webmozart/path-util": "^2.1.0"
             },
+            "conflict": {
+                "drupal/migrate_run": "*",
+                "drupal/migrate_tools": "<= 5"
+            },
             "require-dev": {
                 "composer/installers": "^1.7",
                 "cweagans/composer-patches": "~1.0",
@@ -4045,9 +3916,10 @@
                 "drupal/alinks": "1.0.0",
                 "drupal/core-recommended": "^8.8",
                 "lox/xhprof": "dev-master",
-                "phpunit/phpunit": "^4.8.36 || ^6.1",
+                "phpunit/phpunit": ">=7.5.20",
                 "squizlabs/php_codesniffer": "^2.7 || ^3",
-                "vlucas/phpdotenv": "^2.4"
+                "vlucas/phpdotenv": "^2.4",
+                "yoast/phpunit-polyfills": "^0.2.0"
             },
             "bin": [
                 "drush"
@@ -4132,7 +4004,7 @@
                 "irc": "irc://irc.freenode.org/drush",
                 "issues": "https://github.com/drush-ops/drush/issues",
                 "slack": "https://drupal.slack.com/messages/C62H9CWQM",
-                "source": "https://github.com/drush-ops/drush/tree/10.3.6"
+                "source": "https://github.com/drush-ops/drush/tree/10.4.0-rc1"
             },
             "funding": [
                 {
@@ -4140,7 +4012,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-11-11T04:36:51+00:00"
+            "time": "2021-01-04T17:31:48+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -6010,16 +5882,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.10.5",
+            "version": "v0.10.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "7c710551d4a2653afa259c544508dc18a9098956"
+                "reference": "6f990c19f91729de8b31e639d6e204ea59f19cf3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/7c710551d4a2653afa259c544508dc18a9098956",
-                "reference": "7c710551d4a2653afa259c544508dc18a9098956",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/6f990c19f91729de8b31e639d6e204ea59f19cf3",
+                "reference": "6f990c19f91729de8b31e639d6e204ea59f19cf3",
                 "shasum": ""
             },
             "require": {
@@ -6048,7 +5920,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.10.x-dev"
+                    "dev-main": "0.10.x-dev"
                 }
             },
             "autoload": {
@@ -6080,9 +5952,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bobthecow/psysh/issues",
-                "source": "https://github.com/bobthecow/psysh/tree/v0.10.5"
+                "source": "https://github.com/bobthecow/psysh/tree/v0.10.6"
             },
-            "time": "2020-12-04T02:51:30+00:00"
+            "time": "2021-01-18T15:53:43+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -6184,12 +6056,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ruflin/Elastica.git",
-                "reference": "b1b6c980cce2ffc3f278e0d3d02e61b174cee52e"
+                "reference": "ba6d790dc42de7458c963d7f87eb832d9db10657"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ruflin/Elastica/zipball/b1b6c980cce2ffc3f278e0d3d02e61b174cee52e",
-                "reference": "b1b6c980cce2ffc3f278e0d3d02e61b174cee52e",
+                "url": "https://api.github.com/repos/ruflin/Elastica/zipball/ba6d790dc42de7458c963d7f87eb832d9db10657",
+                "reference": "ba6d790dc42de7458c963d7f87eb832d9db10657",
                 "shasum": ""
             },
             "require": {
@@ -6244,7 +6116,7 @@
                 "issues": "https://github.com/ruflin/Elastica/issues",
                 "source": "https://github.com/ruflin/Elastica/tree/master"
             },
-            "time": "2020-12-10T11:55:39+00:00"
+            "time": "2021-01-18T08:13:37+00:00"
         },
         {
             "name": "stack/builder",
@@ -10626,6 +10498,58 @@
             "time": "2020-12-19T10:15:11+00:00"
         },
         {
+            "name": "phpspec/prophecy-phpunit",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpspec/prophecy-phpunit.git",
+                "reference": "2d7a9df55f257d2cba9b1d0c0963a54960657177"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpspec/prophecy-phpunit/zipball/2d7a9df55f257d2cba9b1d0c0963a54960657177",
+                "reference": "2d7a9df55f257d2cba9b1d0c0963a54960657177",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3 || ^8",
+                "phpspec/prophecy": "^1.3",
+                "phpunit/phpunit": "^9.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Prophecy\\PhpUnit\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christophe Coevoet",
+                    "email": "stof@notk.org"
+                }
+            ],
+            "description": "Integrating the Prophecy mocking library in PHPUnit test cases",
+            "homepage": "http://phpspec.net",
+            "keywords": [
+                "phpunit",
+                "prophecy"
+            ],
+            "support": {
+                "issues": "https://github.com/phpspec/prophecy-phpunit/issues",
+                "source": "https://github.com/phpspec/prophecy-phpunit/tree/v2.0.1"
+            },
+            "time": "2020-07-09T08:33:42+00:00"
+        },
+        {
             "name": "phpunit/php-code-coverage",
             "version": "9.2.5",
             "source": {
@@ -10945,16 +10869,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "9.5.0",
+            "version": "9.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "8e16c225d57c3d6808014df6b1dd7598d0a5bbbe"
+                "reference": "e7bdf4085de85a825f4424eae52c99a1cec2f360"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/8e16c225d57c3d6808014df6b1dd7598d0a5bbbe",
-                "reference": "8e16c225d57c3d6808014df6b1dd7598d0a5bbbe",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/e7bdf4085de85a825f4424eae52c99a1cec2f360",
+                "reference": "e7bdf4085de85a825f4424eae52c99a1cec2f360",
                 "shasum": ""
             },
             "require": {
@@ -11032,7 +10956,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.5.0"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.5.1"
             },
             "funding": [
                 {
@@ -11044,7 +10968,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-12-04T05:05:53+00:00"
+            "time": "2021-01-17T07:42:25+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -12123,16 +12047,16 @@
         },
         {
             "name": "sirbrillig/phpcs-variable-analysis",
-            "version": "v2.10.1",
+            "version": "v2.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sirbrillig/phpcs-variable-analysis.git",
-                "reference": "c6716a98fe7bee25d31306e14fb62c3ffa16d70a"
+                "reference": "0775e0c683badad52c03b11c2cd86a9fdecb937a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sirbrillig/phpcs-variable-analysis/zipball/c6716a98fe7bee25d31306e14fb62c3ffa16d70a",
-                "reference": "c6716a98fe7bee25d31306e14fb62c3ffa16d70a",
+                "url": "https://api.github.com/repos/sirbrillig/phpcs-variable-analysis/zipball/0775e0c683badad52c03b11c2cd86a9fdecb937a",
+                "reference": "0775e0c683badad52c03b11c2cd86a9fdecb937a",
                 "shasum": ""
             },
             "require": {
@@ -12172,7 +12096,7 @@
                 "source": "https://github.com/sirbrillig/phpcs-variable-analysis",
                 "wiki": "https://github.com/sirbrillig/phpcs-variable-analysis/wiki"
             },
-            "time": "2020-12-12T18:28:57+00:00"
+            "time": "2021-01-08T16:31:05+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
