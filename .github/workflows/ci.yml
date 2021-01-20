@@ -36,6 +36,8 @@ jobs:
 
       - name: Run PHPUnit tests
         run: |
+          # Remove mysql56 driver
+          composer remove drupal/mysql56
           drupal-tr run-drush-server &
           chromedriver --port=4444 > /dev/null 2>&1 &
           drupal-tr run-tests
