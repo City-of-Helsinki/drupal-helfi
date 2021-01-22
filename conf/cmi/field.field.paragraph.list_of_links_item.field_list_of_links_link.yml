@@ -1,20 +1,20 @@
-uuid: 7531496a-889b-4233-95e6-e173edaa24a5
+uuid: a2602ce7-51bf-46ed-a729-be4fc3eb1187
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_list_of_links_link
-    - paragraphs.paragraphs_type.list_of_links
+    - paragraphs.paragraphs_type.list_of_links_item
   module:
     - link
-id: paragraph.list_of_links.field_list_of_links_link
+id: paragraph.list_of_links_item.field_list_of_links_link
 field_name: field_list_of_links_link
 entity_type: paragraph
-bundle: list_of_links
+bundle: list_of_links_item
 label: Link
 description: 'Internal or external link to the desired location. Link text is displayed for the site user.'
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

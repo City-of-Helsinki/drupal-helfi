@@ -1,19 +1,19 @@
-uuid: 01193e7e-fd89-40c1-895c-3821e3ed4edb
+uuid: 99301146-215a-44b4-bc65-4065c09cf322
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_list_of_links_image
     - media.type.image
-    - paragraphs.paragraphs_type.list_of_links
-id: paragraph.list_of_links.field_list_of_links_image
+    - paragraphs.paragraphs_type.list_of_links_item
+id: paragraph.list_of_links_item.field_list_of_links_image
 field_name: field_list_of_links_image
 entity_type: paragraph
-bundle: list_of_links
+bundle: list_of_links_item
 label: Image
 description: 'Image to be used as thumbnail of the link.'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
