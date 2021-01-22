@@ -1,17 +1,17 @@
-uuid: a331bb31-6466-4a4a-ba94-dfcc1b8841ce
+uuid: 01193e7e-fd89-40c1-895c-3821e3ed4edb
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_hero_image
+    - field.storage.paragraph.field_list_of_links_image
     - media.type.image
-    - paragraphs.paragraphs_type.hero
-id: paragraph.hero.field_hero_image
-field_name: field_hero_image
+    - paragraphs.paragraphs_type.list_of_links
+id: paragraph.list_of_links.field_list_of_links_image
+field_name: field_list_of_links_image
 entity_type: paragraph
-bundle: hero
+bundle: list_of_links
 label: Image
-description: 'Image to be used as an illustration or as a background of the hero depending on what design you chose.'
+description: 'Image to be used as thumbnail of the link.'
 required: false
 translatable: false
 default_value: {  }
