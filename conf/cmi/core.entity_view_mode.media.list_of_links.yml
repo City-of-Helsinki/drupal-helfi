@@ -1,0 +1,10 @@
+uuid: 87505fac-4594-40b9-9e84-9b36dc708dae
+langcode: fi
+status: true
+dependencies:
+  module:
+    - media
+id: media.list_of_links
+label: 'List of Links'
+targetEntityType: media
+cache: true

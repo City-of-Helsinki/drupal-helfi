@@ -1,0 +1,46 @@
+uuid: dc9aa391-887d-4129-b5ed-b30026b1bf77
+langcode: fi
+status: true
+dependencies:
+  config:
+    - image.style.1_1_s
+    - image.style.1_1_s_2x
+    - image.style.1_1_xs
+    - image.style.1_1_xs_2x
+  theme:
+    - hdbt
+id: list_of_links__thumbnail
+label: 'List of Links Thumbnail'
+image_style_mappings:
+  -
+    breakpoint_id: hdbt.s
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: 1_1_s
+  -
+    breakpoint_id: hdbt.s
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: 1_1_s_2x
+  -
+    breakpoint_id: hdbt.xs
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: 1_1_xs
+  -
+    breakpoint_id: hdbt.xs
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: 1_1_xs_2x
+  -
+    breakpoint_id: hdbt.xxs
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: 1_1_xs_2x
+  -
+    breakpoint_id: hdbt.xxs
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: 1_1_xs_2x
+breakpoint_group: hdbt
+fallback_image_style: 1_1_s
