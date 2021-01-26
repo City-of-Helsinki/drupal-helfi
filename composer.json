@@ -30,8 +30,10 @@
         "drupal/paragraphs": "^1.12",
         "drupal/paragraphs_asymmetric_translation_widgets": "^1.0@beta",
         "drupal/pathauto": "^1.8",
+        "drupal/select2": "^1.12",
         "drupal/twig_tweak": "^2.8",
-        "drush/drush": "^10.4"
+        "drush/drush": "^10.4",
+        "select2/select2": "^4.0"
     },
     "require-dev": {
         "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
@@ -101,7 +103,8 @@
             },
             "drupal/features": {
                 "https://www.drupal.org/project/features/issues/3068461#comment-13908491": "https://www.drupal.org/files/issues/2020-11-19/features-ui_theme_agnostic_rtl-3068461-6.patch",
-                "https://www.drupal.org/project/features/issues/3147028": "https://www.drupal.org/files/issues/2020-10-14/3147028-features_templates.patch"
+                "https://www.drupal.org/project/features/issues/3147028": "https://www.drupal.org/files/issues/2020-10-14/3147028-features_templates.patch",
+                "https://www.drupal.org/project/features/issues/2869336": "https://www.drupal.org/files/issues/features_export-config-translation-2869336-2.patch"
             }
         }
     },
