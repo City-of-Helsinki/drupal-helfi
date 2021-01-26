@@ -1,6 +1,4 @@
 langcode: en
-koro_settings:
-  koro: basic
 footer_settings:
   footer_color: dark
   footer_top_title: 'Contact information'
@@ -9,3 +7,7 @@ footer_settings:
     format: full_html
 _core:
   default_config_hash: eVdGTiXTp44lBBOWzgZiL_sNdnzTQmnFlR2PNQeh-XA
+site_settings:
+  theme_color: coat-of-arms
+  default_icon: home-smoke
+  koro: basic
