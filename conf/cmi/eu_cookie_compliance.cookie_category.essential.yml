@@ -1,0 +1,11 @@
+uuid: d35b623a-9d25-4c9e-abc6-f6e36a3723bb
+langcode: en
+status: true
+dependencies: {  }
+id: essential
+label: Essential
+description:
+  value: "<p>Basic cookies required for the site to function.</p>\r\n\r\n<p><em>Details of cookies to be added.</em></p>\r\n"
+  format: full_html
+checkbox_default_state: required
+weight: -9
