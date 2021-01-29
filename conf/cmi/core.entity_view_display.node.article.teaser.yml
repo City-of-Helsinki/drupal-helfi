@@ -4,6 +4,11 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.article.field_author
+    - field.field.node.article.field_content
+    - field.field.node.article.field_keywords
+    - field.field.node.article.field_lead
+    - field.field.node.article.field_liftup_image
     - node.type.article
   module:
     - user
@@ -18,4 +23,9 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_author: true
+  field_content: true
+  field_keywords: true
+  field_lead: true
+  field_liftup_image: true
   langcode: true
