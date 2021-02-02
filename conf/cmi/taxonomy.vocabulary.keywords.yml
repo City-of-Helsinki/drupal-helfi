@@ -1,0 +1,8 @@
+uuid: 1974c3d4-d757-4409-a70e-5c68ece9ea23
+langcode: en
+status: true
+dependencies: {  }
+name: Keywords
+vid: keywords
+description: ''
+weight: 0

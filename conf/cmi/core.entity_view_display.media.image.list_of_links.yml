@@ -1,26 +1,27 @@
-uuid: 458f69f3-b20c-4949-8e6d-a8caf274c3af
+uuid: 62dd4e7d-6182-4a43-8185-cb457712864e
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.list_of_links
     - field.field.media.image.field_media_image
-    - image.style.large
     - media.type.image
+    - responsive_image.styles.list_of_links__thumbnail
   module:
-    - image
-id: media.image.default
+    - responsive_image
+id: media.image.list_of_links
 targetEntityType: media
 bundle: image
-mode: default
+mode: list_of_links
 content:
   field_media_image:
     label: hidden
     weight: 0
     settings:
-      image_style: large
+      responsive_image_style: list_of_links__thumbnail
       image_link: ''
     third_party_settings: {  }
-    type: image
+    type: responsive_image
     region: content
 hidden:
   created: true

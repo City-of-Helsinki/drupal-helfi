@@ -1,19 +1,18 @@
-uuid: f3ced57c-ccde-4dd4-8574-5f5ffe7e286c
+uuid: 5a77785b-eca6-44fa-a921-fb0c700ffd15
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_content
-    - node.type.page
+    - node.type.article
     - paragraphs.paragraphs_type.link
-    - paragraphs.paragraphs_type.list_of_links
     - paragraphs.paragraphs_type.text
   module:
     - entity_reference_revisions
-id: node.page.field_content
+id: node.article.field_content
 field_name: field_content
 entity_type: node
-bundle: page
+bundle: article
 label: Content
 description: ''
 required: false
@@ -27,7 +26,6 @@ settings:
     target_bundles:
       link: link
       text: text
-      list_of_links: list_of_links
     target_bundles_drag_drop:
       hero:
         weight: 4
@@ -35,9 +33,6 @@ settings:
       link:
         enabled: true
         weight: 5
-      list_of_links:
-        enabled: true
-        weight: 7
       text:
         enabled: true
         weight: 6
