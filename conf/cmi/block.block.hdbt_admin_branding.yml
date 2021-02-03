@@ -1,0 +1,25 @@
+uuid: 98a9387c-07ab-409e-b95d-4e3ad4b6567d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hdbt_admin
+_core:
+  default_config_hash: qpUGAnSlVmtpMhA58Vs1zUwuiNA2v_Nq4k2PAE9d8qc
+id: hdbt_admin_branding
+theme: hdbt_admin
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

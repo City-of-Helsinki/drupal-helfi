@@ -1,0 +1,8 @@
+uuid: f5bdb503-d26d-4765-8943-9154d5ca16c3
+langcode: und
+status: true
+dependencies: {  }
+id: footer-bottom-navigation
+label: 'Footer - Bottom navigation'
+description: 'Bottom navigation for footer block.'
+locked: false

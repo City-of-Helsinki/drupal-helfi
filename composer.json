@@ -1,0 +1,134 @@
+{
+    "name": "city-of-helsinki/drupal-helfi-platform",
+    "description": "Drupal 9 started project",
+    "type": "project",
+    "license": "MIT",
+    "homepage": "https://github.com/City-of-Helsinki/drupal-helfi-platform",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "composer/installers": "^1.9",
+        "cweagans/composer-patches": "^1.6.7",
+        "drupal/admin_toolbar": "^2.4.0",
+        "drupal/core-composer-scaffold": "^9.0",
+        "drupal/core-recommended": "^9.0",
+        "drupal/easy_breadcrumb": "^1.13",
+        "drupal/eu_cookie_compliance": "^1.14",
+        "drupal/features": "^3.11",
+        "drupal/focal_point": "^1.5",
+        "drupal/hdbt": "1.x-dev",
+        "drupal/hdbt_admin": "1.x-dev",
+        "drupal/helfi_ahjo": "1.x-dev",
+        "drupal/helfi_api_base": "1.x-dev",
+        "drupal/helfi_platform_config": "1.x-dev",
+        "drupal/helfi_tpr": "1.x-dev",
+        "drupal/helfi_tunnistamo": "1.x-dev",
+        "drupal/image_style_quality": "^1.4",
+        "drupal/media_entity_soundcloud": "^3.0",
+        "drupal/menu_block_current_language": "^1.4",
+        "drupal/mysql56": "^1.1",
+        "drupal/openid_connect": "^1.0@RC",
+        "drupal/paragraphs": "^1.12",
+        "drupal/paragraphs_asymmetric_translation_widgets": "^1.0@beta",
+        "drupal/pathauto": "^1.8",
+        "drupal/select2": "^1.12",
+        "drupal/social_media": "^1.8",
+        "drupal/twig_tweak": "^2.8",
+        "drush/drush": "^10.4"
+    },
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+        "drupal/coder": "^8.3",
+        "drupal/core-dev": "^9.0",
+        "phpspec/prophecy-phpunit": "^2.0"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "extra": {
+        "composer-exit-on-patch-failure": true,
+        "drupal-scaffold": {
+            "allowed-packages": [
+                "drupal/core"
+            ],
+            "locations": {
+                "web-root": "./public"
+            },
+            "file-mapping": {
+                "[project-root]/.editorconfig": false
+            }
+        },
+        "enable-patching": true,
+        "installer-paths": {
+            "public/core": [
+                "type:drupal-core"
+            ],
+            "public/libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "public/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "public/themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ],
+            "public/modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "public/profiles/{$name}": [
+                "type:drupal-profile"
+            ],
+            "public/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/{$name}": [
+                "type:drupal-drush"
+            ]
+        },
+        "patches": {
+            "drupal/core": {
+                "https://www.drupal.org/project/drupal/issues/2868193#comment-13830917": "https://www.drupal.org/files/issues/2020-09-21/2868193-22.patch",
+                "https://www.drupal.org/project/drupal/issues/2313309#comment-13880802": "https://www.drupal.org/files/issues/2020-10-23/2313309-76.patch",
+                "https://www.drupal.org/project/drupal/issues/3054641#comment-13604223": "https://www.drupal.org/files/issues/2020-05-08/3054641-21.patch",
+                "https://www.drupal.org/project/drupal/issues/2845437#comment-13784958": "https://www.drupal.org/files/issues/2020-08-12/2845437-32.patch",
+                "https://www.drupal.org/project/drupal/issues/3092181#comment-13931509": "https://www.drupal.org/files/issues/2020-12-08/3092181-142-9X_0.patch"
+            },
+            "drupal/paragraphs": {
+                "https://www.drupal.org/project/paragraphs/issues/2904705#comment-13836790": "https://www.drupal.org/files/issues/2020-09-25/2904705-115.patch"
+            },
+            "drupal/paragraphs_asymmetric_translation_widgets": {
+                "https://www.drupal.org/project/paragraphs_asymmetric_translation_widgets/issues/3171810#comment-13836806": "https://www.drupal.org/files/issues/2020-09-25/3171810-2.patch"
+            },
+            "drupal/features": {
+                "https://www.drupal.org/project/features/issues/3068461#comment-13908491": "https://www.drupal.org/files/issues/2020-11-19/features-ui_theme_agnostic_rtl-3068461-6.patch",
+                "https://www.drupal.org/project/features/issues/3147028": "https://www.drupal.org/files/issues/2020-10-14/3147028-features_templates.patch",
+                "https://www.drupal.org/project/features/issues/2869336": "https://www.drupal.org/files/issues/features_export-config-translation-2869336-2.patch"
+            },
+            "drupal/eu_cookie_compliance": {
+                "Helfi-specific customizations to EU Cookie Compliance": "./patches/eu_cookie_compliance_block.patch"
+            }
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repository.drupal.hel.ninja"
+        },
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "scripts": {
+        "post-install-cmd": [
+            "make copy-commit-message-script"
+        ],
+        "post-update-cmd": [
+            "make copy-commit-message-script"
+        ]
+    }
+}

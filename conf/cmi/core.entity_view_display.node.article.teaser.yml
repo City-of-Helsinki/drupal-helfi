@@ -1,0 +1,31 @@
+uuid: eae1adb1-0fa8-4b0f-ba5a-c2a8abbd9ce4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.article.field_author
+    - field.field.node.article.field_content
+    - field.field.node.article.field_keywords
+    - field.field.node.article.field_lead
+    - field.field.node.article.field_liftup_image
+    - node.type.article
+  module:
+    - user
+id: node.article.teaser
+targetEntityType: node
+bundle: article
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_author: true
+  field_content: true
+  field_keywords: true
+  field_lead: true
+  field_liftup_image: true
+  langcode: true

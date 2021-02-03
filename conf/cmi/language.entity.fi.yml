@@ -1,0 +1,11 @@
+uuid: a77b3d3e-4325-47ac-95ca-284153007699
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: y6gIaFh_r2g2NeRmaD_tvYHIkZ-PjmGhKvnUjORa480
+id: fi
+label: Finnish
+direction: ltr
+weight: -10
+locked: false

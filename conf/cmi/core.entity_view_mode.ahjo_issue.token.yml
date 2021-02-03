@@ -1,0 +1,10 @@
+uuid: a46240c9-4427-429a-8ebf-a06880395da5
+langcode: en
+status: true
+dependencies:
+  module:
+    - helfi_ahjo
+id: ahjo_issue.token
+label: Token
+targetEntityType: ahjo_issue
+cache: true

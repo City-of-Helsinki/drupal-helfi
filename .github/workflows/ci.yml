@@ -1,0 +1,43 @@
+on: [push]
+name: CI
+env:
+  SIMPLETEST_DB: "mysql://drupal:drupal@db:3306/drupal"
+  SIMPLETEST_BASE_URL: "http://127.0.0.1:8888"
+  EXISTING_CONFIG: true
+  INSTALLER_TYPE: composer-project
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/city-of-helsinki/drupal-php-docker:7.4
+
+    services:
+      db:
+        image: druidfi/db:mysql5.7-drupal
+        ports:
+          - 3306:3306
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+
+      - name: Set variables
+        run: |
+          echo "$HOME/.config/composer/vendor/bin" >> $GITHUB_PATH
+
+      - name: Setup drupal
+        run: |
+          composer global require tuutti/drupal-test-runner
+          drupal-tr
+
+      - name: Run PHPCS
+        run: vendor/bin/phpcs public/modules/custom/ --standard=Drupal
+
+      - name: Run PHPUnit tests
+        run: |
+          # Remove mysql56 driver
+          composer remove drupal/mysql56
+          drupal-tr run-drush-server &
+          chromedriver --port=4444 > /dev/null 2>&1 &
+          drupal-tr run-tests
