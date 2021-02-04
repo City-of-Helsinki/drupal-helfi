@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_content
     - node.type.article
+    - paragraphs.paragraphs_type.columns
     - paragraphs.paragraphs_type.link
     - paragraphs.paragraphs_type.text
   module:
@@ -24,16 +25,26 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      link: link
+      columns: columns
       text: text
+      link: link
     target_bundles_drag_drop:
+      columns:
+        enabled: true
+        weight: -12
       hero:
-        weight: 4
+        weight: -13
         enabled: false
       link:
         enabled: true
-        weight: 5
+        weight: -10
+      list_of_links:
+        weight: -9
+        enabled: false
+      list_of_links_item:
+        weight: -8
+        enabled: false
       text:
         enabled: true
-        weight: 6
+        weight: -11
 field_type: entity_reference_revisions
