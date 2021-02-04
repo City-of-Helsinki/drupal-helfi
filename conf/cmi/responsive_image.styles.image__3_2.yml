@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - image.style.3_2_l
+    - image.style.3_2_l_2x
     - image.style.3_2_m
     - image.style.3_2_m_2x
     - image.style.3_2_s
@@ -16,6 +18,16 @@ dependencies:
 id: image__3_2
 label: 'Image 3:2'
 image_style_mappings:
+  -
+    breakpoint_id: hdbt.l
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: 3_2_l
+  -
+    breakpoint_id: hdbt.l
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: 3_2_l_2x
   -
     breakpoint_id: hdbt.m
     multiplier: 1x
