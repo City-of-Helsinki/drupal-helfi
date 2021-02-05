@@ -1,0 +1,10 @@
+uuid: 62c0cfda-86fc-400f-af2b-8ba3d76ddcdc
+langcode: en
+status: true
+dependencies: {  }
+id: gallery
+label: Gallery
+icon_uuid: null
+icon_default: null
+description: 'Using this paragraph you can create galleries from multiple images.'
+behavior_plugins: {  }
