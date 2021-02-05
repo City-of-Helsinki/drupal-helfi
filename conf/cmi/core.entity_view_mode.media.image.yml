@@ -1,0 +1,10 @@
+uuid: 8f200b8d-601d-4494-9b4d-8a3839830ef2
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.image
+label: Image
+targetEntityType: media
+cache: true

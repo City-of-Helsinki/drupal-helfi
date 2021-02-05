@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_content
     - node.type.page
     - paragraphs.paragraphs_type.columns
+    - paragraphs.paragraphs_type.image
     - paragraphs.paragraphs_type.link
     - paragraphs.paragraphs_type.list_of_links
     - paragraphs.paragraphs_type.text
@@ -28,6 +29,7 @@ settings:
     target_bundles:
       columns: columns
       text: text
+      image: image
       list_of_links: list_of_links
       link: link
     target_bundles_drag_drop:
@@ -37,6 +39,9 @@ settings:
       hero:
         weight: -13
         enabled: false
+      image:
+        enabled: true
+        weight: 7
       link:
         enabled: true
         weight: -9
