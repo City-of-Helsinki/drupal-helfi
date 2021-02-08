@@ -1,11 +1,9 @@
-uuid: 5a77785b-eca6-44fa-a921-fb0c700ffd15
+uuid: 1e2cdad4-27eb-4fbb-ae3c-10c74a00da1b
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_content
-    - node.type.article
-    - paragraphs.paragraphs_type.gallery
+    - field.storage.paragraph.field_columns_left_column
     - paragraphs.paragraphs_type.columns
     - paragraphs.paragraphs_type.image
     - paragraphs.paragraphs_type.link
@@ -13,14 +11,14 @@ dependencies:
     - paragraphs.paragraphs_type.text
   module:
     - entity_reference_revisions
-id: node.article.field_content
-field_name: field_content
-entity_type: node
-bundle: article
-label: Content
+id: paragraph.columns.field_columns_left_column
+field_name: field_columns_left_column
+entity_type: paragraph
+bundle: columns
+label: 'Left column'
 description: ''
-required: false
-translatable: true
+required: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
@@ -28,31 +26,26 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      columns: columns
       text: text
+      list_of_links: list_of_links
       link: link
       image: image
-      gallery: gallery
-      list_of_links: list_of_links
     target_bundles_drag_drop:
-      gallery:
-        enabled: true
-        weight: 8
       columns:
-        enabled: true
-        weight: -13
-      hero:
         weight: -14
+        enabled: false
+      hero:
+        weight: -13
         enabled: false
       image:
         enabled: true
         weight: -12
       link:
         enabled: true
-        weight: -10
-      list_of_links:
         weight: -9
-        enabled: false
+      list_of_links:
+        enabled: true
+        weight: -10
       list_of_links_item:
         weight: -8
         enabled: false
