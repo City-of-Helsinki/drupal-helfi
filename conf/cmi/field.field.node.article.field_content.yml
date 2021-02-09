@@ -35,12 +35,12 @@ settings:
       gallery: gallery
       list_of_links: list_of_links
     target_bundles_drag_drop:
-      gallery:
-        enabled: true
-        weight: 8
       columns:
         enabled: true
         weight: -13
+      gallery:
+        enabled: true
+        weight: 8
       hero:
         weight: -14
         enabled: false
