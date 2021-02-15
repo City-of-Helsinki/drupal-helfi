@@ -5,9 +5,11 @@ dependencies:
   config:
     - field.storage.node.field_content
     - node.type.article
+    - paragraphs.paragraphs_type.gallery
     - paragraphs.paragraphs_type.columns
     - paragraphs.paragraphs_type.image
     - paragraphs.paragraphs_type.link
+    - paragraphs.paragraphs_type.list_of_links
     - paragraphs.paragraphs_type.text
   module:
     - entity_reference_revisions
@@ -30,10 +32,15 @@ settings:
       text: text
       link: link
       image: image
+      gallery: gallery
+      list_of_links: list_of_links
     target_bundles_drag_drop:
       columns:
         enabled: true
         weight: -13
+      gallery:
+        enabled: true
+        weight: 8
       hero:
         weight: -14
         enabled: false
