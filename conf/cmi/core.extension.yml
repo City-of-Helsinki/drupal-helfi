@@ -49,7 +49,6 @@ module:
   menu_ui: 0
   migrate: 0
   node: 0
-  notification_message: 0
   openid_connect: 0
   options: 0
   page_cache: 0
