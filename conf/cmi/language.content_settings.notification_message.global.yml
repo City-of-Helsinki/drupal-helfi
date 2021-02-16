@@ -1,0 +1,20 @@
+uuid: 6bd8a97b-9081-4dd8-ba67-f3e7c1c40c35
+langcode: en
+status: true
+dependencies:
+  config:
+    - notification_message.type.global
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+_core:
+  default_config_hash: brOyW0z9QZv4RvA6rHx_HzSqV4jiFCva2gL0hz2subg
+id: notification_message.global
+target_entity_type_id: notification_message
+target_bundle: global
+default_langcode: fi
+language_alterable: true

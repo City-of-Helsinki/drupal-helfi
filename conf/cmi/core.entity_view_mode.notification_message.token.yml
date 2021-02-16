@@ -1,0 +1,12 @@
+uuid: 00ce4c8c-0bde-4285-842d-821a5dd1ce49
+langcode: en
+status: true
+dependencies:
+  module:
+    - notification_message
+_core:
+  default_config_hash: IrcuBuNVLV0SshfpJqflobwqtdePIWjT9m98XT3kQSA
+id: notification_message.token
+label: Token
+targetEntityType: notification_message
+cache: true
