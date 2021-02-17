@@ -1,0 +1,26 @@
+uuid: 4d0e0820-c0b6-43fb-bb2b-9809fed32710
+langcode: en
+status: true
+dependencies:
+  config:
+    - notification_message.type.global
+  module:
+    - text
+_core:
+  default_config_hash: 1ZDN9wj8fwqMHJk_V-WVyWjZid94KjOx6LSmMAfj1Vw
+id: notification_message.global.default
+targetEntityType: notification_message
+bundle: global
+mode: default
+content:
+  message:
+    label: hidden
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+hidden:
+  label: true
+  langcode: true
+  uid: true

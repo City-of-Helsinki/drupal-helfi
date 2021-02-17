@@ -1,0 +1,12 @@
+uuid: 0c350d6c-6c33-43c6-9e72-d27e4b567a2c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 2o4YfHwCeCwjPPrpUYTI5S8GfSMTOI-18kaGT3ozRl8
+id: global
+label: Global
+description: 'The <em>global</em> should be used to show notification messages throughout the site.'
+help: ''
+allow_condition: true
+condition_datatype: {  }
