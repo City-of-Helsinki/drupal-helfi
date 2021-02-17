@@ -1,12 +1,5 @@
 <?php
 
-// Only in Wodby environment.
-// @see https://wodby.com/docs/stacks/drupal/#overriding-settings-from-wodbysettingsphp
-if (isset($_SERVER['WODBY_APP_NAME'])) {
-  // The include won't be added automatically if it's already there.
-  include '/var/www/conf/wodby.settings.php';
-}
-
 if ($simpletest_db = getenv('SIMPLETEST_DB')) {
   $parts = parse_url($simpletest_db);
   putenv(sprintf('DRUPAL_DB_NAME=%s', substr($parts['path'], 1)));
@@ -37,6 +30,13 @@ if ($ssl_ca_path = getenv('AZURE_SQL_SSL_CA_PATH')) {
     \PDO::MYSQL_ATTR_SSL_CA => $ssl_ca_path,
     \PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT => FALSE,
   ];
+}
+
+// Only in Wodby environment.
+// @see https://wodby.com/docs/stacks/drupal/#overriding-settings-from-wodbysettingsphp
+if (isset($_SERVER['WODBY_APP_NAME'])) {
+  // The include won't be added automatically if it's already there.
+  include '/var/www/conf/wodby.settings.php';
 }
 
 // Drupal route(s).
