@@ -1,0 +1,31 @@
+pipeline:
+
+  - name: Update demo branch from City-of-Helsinki/drupal-helfi-platform-config
+    type: command
+    command: composer require drupal/helfi_platform_config:dev-demo
+    directory: $APP_ROOT
+
+  - name: Update demo branch from City-of-Helsinki/drupal-hdbt
+    type: command
+    command: composer require drupal/hdbt:dev-demo
+    directory: $APP_ROOT
+
+  - name: Update demo branch from City-of-Helsinki/drupal-hdbt-admin
+    type: command
+    command: composer require drupal/hdbt_admin:dev-demo
+    directory: $APP_ROOT
+
+  - name: Install dependencies
+    type: command
+    command: composer install --prefer-dist -n --no-dev
+    directory: $APP_ROOT
+
+  - name: Make sure the files privileges are correct
+    type: command
+    command: |
+      sudo files_chown /mnt/files/public && sudo files_chmod /mnt/files/public
+
+  - name: Drush deploy
+    type: command
+    command: drush deploy
+    directory: $HTTP_ROOT
