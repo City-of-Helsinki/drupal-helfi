@@ -1,22 +1,21 @@
-uuid: 4a56fafb-94aa-4ea2-858e-11edab241416
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: page_content_pattern
-label: 'Page content pattern'
+id: landing_page_content_pattern
+label: 'Landing page content pattern'
 type: 'canonical_entities:node'
 pattern: '[node:menu-link:parents:join-path]/[node:title]'
 selection_criteria:
-  c22ccdfa-0a1c-4d36-b456-dc0320d4351f:
+  bbac8406-a5b0-41da-b72f-b79434db6b98:
     id: node_type
     bundles:
-      page: page
+      landing_page: landing_page
     negate: false
     context_mapping:
       node: node
-    uuid: c22ccdfa-0a1c-4d36-b456-dc0320d4351f
+    uuid: bbac8406-a5b0-41da-b72f-b79434db6b98
 selection_logic: and
 weight: -5
 relationships: {  }
