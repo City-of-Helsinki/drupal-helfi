@@ -5,8 +5,9 @@ dependencies:
   config:
     - field.storage.node.field_content
     - node.type.article
-    - paragraphs.paragraphs_type.gallery
+    - paragraphs.paragraphs_type.accordion
     - paragraphs.paragraphs_type.columns
+    - paragraphs.paragraphs_type.gallery
     - paragraphs.paragraphs_type.image
     - paragraphs.paragraphs_type.link
     - paragraphs.paragraphs_type.list_of_links
@@ -29,18 +30,28 @@ settings:
     negate: 0
     target_bundles:
       columns: columns
+      image: image
       text: text
       link: link
-      image: image
       gallery: gallery
+      accordion: accordion
       list_of_links: list_of_links
     target_bundles_drag_drop:
+      accordion:
+        enabled: true
+        weight: 12
+      accordion_item:
+        weight: 13
+        enabled: false
       columns:
         enabled: true
         weight: -13
       gallery:
         enabled: true
         weight: 8
+      gallery_slide:
+        weight: 16
+        enabled: false
       hero:
         weight: -14
         enabled: false
