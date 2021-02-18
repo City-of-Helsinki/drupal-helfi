@@ -6,7 +6,6 @@ dependencies:
     - field.storage.paragraph.field_accordion_item_content
     - paragraphs.paragraphs_type.accordion_item
     - paragraphs.paragraphs_type.columns
-    - paragraphs.paragraphs_type.image
     - paragraphs.paragraphs_type.text
   module:
     - entity_reference_revisions
@@ -26,7 +25,6 @@ settings:
     negate: 0
     target_bundles:
       columns: columns
-      image: image
       text: text
     target_bundles_drag_drop:
       accordion:
@@ -48,8 +46,8 @@ settings:
         weight: 17
         enabled: false
       image:
-        enabled: true
         weight: 18
+        enabled: false
       link:
         weight: 19
         enabled: false
