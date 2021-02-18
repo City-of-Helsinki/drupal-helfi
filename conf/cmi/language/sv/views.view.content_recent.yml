@@ -19,3 +19,5 @@ display:
         area_text_custom:
           content: 'Inget innehåll tillgängligt.'
       use_more_text: Mer
+  block_1:
+    display_title: Block

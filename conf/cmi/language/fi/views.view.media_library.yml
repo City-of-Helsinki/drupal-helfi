@@ -86,7 +86,7 @@ display:
         name:
           label: Nimi
         uid:
-          label: Tekijä
+          label: Kirjoittaja
         changed:
           label: Päivitetty
       filters:

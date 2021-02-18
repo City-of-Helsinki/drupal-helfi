@@ -33,7 +33,7 @@ display:
           label: Tyyppi
           separator: ', '
         uid:
-          label: Tekijä
+          label: Kirjoittaja
           separator: ', '
         status:
           label: Tila
