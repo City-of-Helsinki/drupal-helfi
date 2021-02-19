@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "660e966acf6043b99755225d8e275a24",
+    "content-hash": "80611c118b5d7ad3c710f7c94440cff1",
     "packages": [
         {
             "name": "City-of-Helsinki/php-hauki-client",
@@ -3170,16 +3170,16 @@
         },
         {
             "name": "drupal/helfi_hauki",
-            "version": "1.0.1",
+            "version": "1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-hauki.git",
-                "reference": "fd55e90d0831f148f70496f42decb958dc1a7feb"
+                "reference": "ad331ac52b7075cbf21f2ed708c3bb7404932a30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-hauki/zipball/fd55e90d0831f148f70496f42decb958dc1a7feb",
-                "reference": "fd55e90d0831f148f70496f42decb958dc1a7feb",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-hauki/zipball/ad331ac52b7075cbf21f2ed708c3bb7404932a30",
+                "reference": "ad331ac52b7075cbf21f2ed708c3bb7404932a30",
                 "shasum": ""
             },
             "require": {
@@ -3198,10 +3198,10 @@
             ],
             "description": "Hauki integration",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-hauki/tree/1.0.1",
+                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-hauki/tree/1.x",
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-hauki/issues"
             },
-            "time": "2021-02-12T13:26:34+00:00"
+            "time": "2021-02-16T13:09:38+00:00"
         },
         {
             "name": "drupal/helfi_platform_config",
@@ -12929,6 +12929,7 @@
         "drupal/hdbt_admin": 20,
         "drupal/helfi_ahjo": 20,
         "drupal/helfi_api_base": 20,
+        "drupal/helfi_hauki": 20,
         "drupal/helfi_platform_config": 20,
         "drupal/helfi_tpr": 20,
         "drupal/helfi_tunnistamo": 20,
