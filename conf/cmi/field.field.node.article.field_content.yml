@@ -32,17 +32,23 @@ settings:
       text: text
       image: image
       columns: columns
-      list_of_links: list_of_links
       gallery: gallery
+      list_of_links: list_of_links
     target_bundles_drag_drop:
+      accordion:
+        weight: 12
+        enabled: false
+      accordion_item:
+        weight: 13
+        enabled: false
       columns:
         enabled: true
         weight: 3
       gallery:
         enabled: true
-        weight: 4
+        weight: 8
       gallery_slide:
-        weight: 5
+        weight: 16
         enabled: false
       hero:
         weight: 0
