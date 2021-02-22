@@ -49,6 +49,7 @@ display:
         name_1:
           expose:
             label: 'Namn (Z-A)'
+      title: Media
       empty:
         area_text_custom:
           content: 'Ingen media tillgänglig.'
@@ -71,6 +72,7 @@ display:
             alt: 'Radera {{ name }}'
           text: Radera
   widget:
+    display_title: Widget
     display_options:
       filters:
         name:

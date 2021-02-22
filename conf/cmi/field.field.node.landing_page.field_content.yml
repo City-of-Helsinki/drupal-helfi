@@ -1,0 +1,57 @@
+uuid: fcda0811-1599-4d7d-8cf2-92b3311b7303
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.landing_page
+    - paragraphs.paragraphs_type.columns
+    - paragraphs.paragraphs_type.list_of_links
+  module:
+    - entity_reference_revisions
+id: node.landing_page.field_content
+field_name: field_content
+entity_type: node
+bundle: landing_page
+label: Content
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      columns: columns
+      list_of_links: list_of_links
+    target_bundles_drag_drop:
+      columns:
+        enabled: true
+        weight: 10
+      gallery:
+        weight: 11
+        enabled: false
+      gallery_slide:
+        weight: 12
+        enabled: false
+      hero:
+        weight: 13
+        enabled: false
+      image:
+        weight: 14
+        enabled: false
+      link:
+        weight: 15
+        enabled: false
+      list_of_links:
+        enabled: true
+        weight: 16
+      list_of_links_item:
+        weight: 17
+        enabled: false
+      text:
+        weight: 18
+        enabled: false
+field_type: entity_reference_revisions
