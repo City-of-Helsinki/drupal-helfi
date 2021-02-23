@@ -4,14 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.hero.field_hero_bg_color
-    - field.field.paragraph.hero.field_hero_cta
     - field.field.paragraph.hero.field_hero_desc
     - field.field.paragraph.hero.field_hero_design
     - field.field.paragraph.hero.field_hero_image
     - field.field.paragraph.hero.field_hero_title
     - paragraphs.paragraphs_type.hero
   module:
-    - entity_reference_revisions
     - options
     - text
 id: paragraph.hero.default
@@ -25,15 +23,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: list_key
-    region: content
-  field_hero_cta:
-    type: entity_reference_revisions_entity_view
-    weight: 3
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
     region: content
   field_hero_desc:
     weight: 2
