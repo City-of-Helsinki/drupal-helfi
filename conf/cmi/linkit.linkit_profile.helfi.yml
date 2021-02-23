@@ -1,0 +1,21 @@
+uuid: c3eacf4b-393b-49ce-90d2-2a6074c4eb53
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: helfi
+label: Helfi
+description: 'Linkit profile for Helfi platform.'
+matchers:
+  aafedaea-7504-4071-9067-c77ae0a7fd2a:
+    uuid: aafedaea-7504-4071-9067-c77ae0a7fd2a
+    id: 'entity:node'
+    weight: 0
+    settings:
+      include_unpublished: true
+      metadata: '[entity:node]'
+      bundles: {  }
+      group_by_bundle: false
+      substitution_type: canonical
+      limit: 100
