@@ -1,0 +1,17 @@
+uuid: e4be6843-ead1-4a01-b1a0-7ef3b7a6294d
+langcode: en
+status: true
+dependencies:
+  module:
+    - content_translation
+    - helfi_hauki
+third_party_settings:
+  content_translation:
+    enabled: true
+_core:
+  default_config_hash: prQ5sp4oq_QOt3R_a0XVVJvASc35-pWLPPuPNu4-LAM
+id: hauki_resource.hauki_resource
+target_entity_type_id: hauki_resource
+target_bundle: hauki_resource
+default_langcode: site_default
+language_alterable: true
