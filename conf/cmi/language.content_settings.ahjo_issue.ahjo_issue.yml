@@ -1,0 +1,19 @@
+uuid: fd7ec9e2-9d13-4e77-a2da-5fe534573453
+langcode: en
+status: true
+dependencies:
+  module:
+    - content_translation
+    - helfi_ahjo
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+_core:
+  default_config_hash: vxl-dZJYT9CAnbNoi7DlDIlJsVzAiQKJIc5udAqd3LA
+id: ahjo_issue.ahjo_issue
+target_entity_type_id: ahjo_issue
+target_bundle: ahjo_issue
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,43 @@
+display:
+  default:
+    display_title: Isäntä
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Käytä
+          reset_button_label: Palauta
+          exposed_sorts_label: Lajittele
+          sort_asc_label: Nousevasti
+          sort_desc_label: Laskevasti
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Ensimmäinen'
+            last: 'Viimeinen »'
+          expose:
+            items_per_page_label: 'Merkintöjä sivua kohti'
+            items_per_page_options_all_label: '- Kaikki -'
+            offset_label: Offset
+      fields:
+        tpr_unit_bulk_form:
+          label: Massapäivitys
+          action_title: Toiminto
+        id:
+          label: ID
+          separator: ', '
+        name:
+          label: Nimi
+          separator: ', '
+        changed:
+          label: Muuttunut
+          separator: ', '
+        operations:
+          label: Toimenpiteet
+      filters:
+        combine:
+          expose:
+            label: Etsi
+  page_1:
+    display_title: Sivu
