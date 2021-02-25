@@ -1,0 +1,10 @@
+uuid: a1a95652-3bfd-4690-8762-7f6c751cb4b4
+langcode: en
+status: true
+dependencies: {  }
+id: liftup_with_image
+label: 'Liftup with image'
+icon_uuid: null
+icon_default: null
+description: 'Liftup with image is a fairly large element that you can use to promote content with large image next to the text.'
+behavior_plugins: {  }
