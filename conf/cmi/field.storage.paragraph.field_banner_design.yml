@@ -1,0 +1,27 @@
+uuid: f27d2a6f-4cf6-4dc1-8a8e-5b1cbe0d5d47
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_banner_design
+field_name: field_banner_design
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: align-center
+      label: 'Aligned to the center'
+    -
+      value: align-left
+      label: 'Aligned to the left'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
