@@ -9,7 +9,6 @@ dependencies:
     - paragraphs.paragraphs_type.columns
     - paragraphs.paragraphs_type.gallery
     - paragraphs.paragraphs_type.image
-    - paragraphs.paragraphs_type.link
     - paragraphs.paragraphs_type.list_of_links
     - paragraphs.paragraphs_type.text
   module:
@@ -29,13 +28,12 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      columns: columns
-      image: image
       text: text
+      image: image
       list_of_links: list_of_links
-      link: link
-      accordion: accordion
+      columns: columns
       gallery: gallery
+      accordion: accordion
     target_bundles_drag_drop:
       accordion:
         enabled: true
@@ -45,10 +43,10 @@ settings:
         enabled: false
       columns:
         enabled: true
-        weight: -13
+        weight: 3
       gallery:
         weight: 15
-        enabled: false
+        enabled: true
       gallery_slide:
         weight: 16
         enabled: false
@@ -58,11 +56,8 @@ settings:
       image:
         enabled: true
         weight: 2
-      link:
-        enabled: true
-        weight: 6
       list_of_links:
-        enabled: false
+        enabled: true
         weight: 7
       list_of_links_item:
         weight: 8

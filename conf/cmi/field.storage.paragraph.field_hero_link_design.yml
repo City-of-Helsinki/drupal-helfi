@@ -1,25 +1,27 @@
-uuid: f8563b18-5c95-4daa-8884-eb420938e005
+uuid: 601ab418-2d57-42ae-a4e5-a330a3b47c7c
 langcode: en
 status: true
 dependencies:
   module:
     - options
     - paragraphs
-id: paragraph.field_link_design
-field_name: field_link_design
+_core:
+  default_config_hash: qadrUGzzsC0DfaFrHg_HHkLuF0ORU4k0wuCywZZ1xhs
+id: paragraph.field_hero_link_design
+field_name: field_hero_link_design
 entity_type: paragraph
 type: list_string
 settings:
   allowed_values:
     -
       value: primary
-      label: 'Button primary'
+      label: 'Full colour background'
     -
       value: secondary
-      label: 'Button secondary'
+      label: 'Only borders'
     -
       value: supplementary
-      label: 'Button supplementary'
+      label: 'No borders or background colour'
   allowed_values_function: ''
 module: options
 locked: false

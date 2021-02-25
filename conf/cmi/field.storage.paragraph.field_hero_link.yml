@@ -1,18 +1,20 @@
-uuid: 0aa30f1f-2342-46af-adef-c02b48b935ff
+uuid: de8dca27-385c-497a-8cd7-b06a52a48f7b
 langcode: en
 status: true
 dependencies:
   module:
     - link
     - paragraphs
-id: paragraph.field_link_link
-field_name: field_link_link
+_core:
+  default_config_hash: rC-HvcpIRh3G99RX5WVosI2MyNtGwPS8y_dyF1af2NM
+id: paragraph.field_hero_link
+field_name: field_hero_link
 entity_type: paragraph
 type: link
 settings: {  }
 module: link
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false
