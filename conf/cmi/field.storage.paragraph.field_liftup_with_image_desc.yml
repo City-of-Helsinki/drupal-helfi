@@ -1,0 +1,19 @@
+uuid: fc0092be-2838-429b-b2d8-330ca1b3e42a
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_liftup_with_image_desc
+field_name: field_liftup_with_image_desc
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
