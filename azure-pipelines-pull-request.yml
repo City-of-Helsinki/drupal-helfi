@@ -16,7 +16,8 @@ trigger: none
 pr:
   branches:
     include:
-    - master
+    - main
+    - dev
 
 # By default, use self-hosted agents
 pool: Default
