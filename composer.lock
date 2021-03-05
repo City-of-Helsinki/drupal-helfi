@@ -3209,12 +3209,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "da1241134b80f99045ce2c02b9c0b4ba76501d60"
+                "reference": "4cff04980f22c68881496450639f69ea6a80c74b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/da1241134b80f99045ce2c02b9c0b4ba76501d60",
-                "reference": "da1241134b80f99045ce2c02b9c0b4ba76501d60",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/4cff04980f22c68881496450639f69ea6a80c74b",
+                "reference": "4cff04980f22c68881496450639f69ea6a80c74b",
                 "shasum": ""
             },
             "require": {
@@ -3241,7 +3241,7 @@
             "extra": {
                 "patches": {
                     "drupal/core": {
-                        "[#UHF-181] Hide untranslated menu links": "https://www.drupal.org/files/issues/2019-10-30/3091246-allow-menu-tree-manipulators-alter-5.patch"
+                        "[#UHF-181] Hide untranslated menu links": "https://www.drupal.org/files/issues/2021-03-05/3091246-allow-menu-tree-manipulators-alter-12-1.patch"
                     },
                     "drupal/default_content": {
                         "https://www.drupal.org/project/default_content/issues/2698425#comment-13809863": "https://www.drupal.org/files/issues/2020-09-02/default_content-integrity_constrait_violation-3162987-2.patch"
@@ -3265,10 +3265,10 @@
             ],
             "description": "HELfi platform config",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/1.1.5",
+                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/1.x",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2021-03-05T10:25:12+00:00"
+            "time": "2021-03-05T12:28:50+00:00"
         },
         {
             "name": "drupal/helfi_tpr",
