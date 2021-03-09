@@ -543,7 +543,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: admin/content/tpr-unit
+      path: admin/content/integrations/tpr-unit
       rendering_language: '***LANGUAGE_language_content***'
     cache_metadata:
       max-age: 0
