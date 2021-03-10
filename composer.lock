@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "63bc225d27bce39f71c39188f16def9e",
+    "content-hash": "fa6b61e4c15e7a36cb98eda42ba7e537",
     "packages": [
         {
             "name": "City-of-Helsinki/php-hauki-client",
@@ -3205,16 +3205,16 @@
         },
         {
             "name": "drupal/helfi_platform_config",
-            "version": "1.x-dev",
+            "version": "dev-UHF-919",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "4cff04980f22c68881496450639f69ea6a80c74b"
+                "reference": "2c333b2daa1725c898fb0e09c0d7a2402da83244"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/4cff04980f22c68881496450639f69ea6a80c74b",
-                "reference": "4cff04980f22c68881496450639f69ea6a80c74b",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/2c333b2daa1725c898fb0e09c0d7a2402da83244",
+                "reference": "2c333b2daa1725c898fb0e09c0d7a2402da83244",
                 "shasum": ""
             },
             "require": {
@@ -3235,6 +3235,7 @@
                 "drupal/pathauto": "^1.8",
                 "drupal/search_api": "^1.0",
                 "drupal/select2": "^1.12",
+                "drupal/simple_sitemap": "^3.0",
                 "drupal/social_media": "^1.8"
             },
             "type": "drupal-custom-module",
@@ -3265,10 +3266,10 @@
             ],
             "description": "HELfi platform config",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/1.x",
+                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/UHF-919",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2021-03-05T12:28:50+00:00"
+            "time": "2021-03-09T11:01:49+00:00"
         },
         {
             "name": "drupal/helfi_tpr",
@@ -4023,6 +4024,64 @@
             "homepage": "https://www.drupal.org/project/select2",
             "support": {
                 "source": "https://git.drupalcode.org/project/select2"
+            }
+        },
+        {
+            "name": "drupal/simple_sitemap",
+            "version": "3.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/simple_sitemap.git",
+                "reference": "8.x-3.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/simple_sitemap-8.x-3.9.zip",
+                "reference": "8.x-3.9",
+                "shasum": "4892f2196e35e6fc67f3da8748825815efe6462d"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "ext-xmlwriter": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-3.9",
+                    "datestamp": "1614984547",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9 || ^10"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Pawel Ginalski (gbyte.co)",
+                    "homepage": "https://www.drupal.org/u/gbyte.co",
+                    "email": "contact@gbyte.co",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "gbyte",
+                    "homepage": "https://www.drupal.org/user/2381352"
+                }
+            ],
+            "description": "Creates a standard conform hreflang XML sitemap of the site content and provides a framework for developing other sitemap types.",
+            "homepage": "https://drupal.org/project/simple_sitemap",
+            "support": {
+                "source": "https://cgit.drupalcode.org/simple_sitemap",
+                "issues": "https://drupal.org/project/issues/simple_sitemap",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
             }
         },
         {
