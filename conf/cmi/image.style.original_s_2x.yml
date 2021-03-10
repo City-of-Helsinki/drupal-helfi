@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - image_style_quality
+_core:
+  default_config_hash: dajqe8CFvo_O603-6OPa3e3s1A1ez3X5jec0fWcEKPk
 name: original_s_2x
 label: 'Original S (2x)'
 effects:

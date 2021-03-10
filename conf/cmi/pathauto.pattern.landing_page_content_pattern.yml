@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: Ent8eD7KV9MWP8HWX49gt3gEeXFcn-y7MjVul67jUpE
 id: landing_page_content_pattern
 label: 'Landing page content pattern'
 type: 'canonical_entities:node'

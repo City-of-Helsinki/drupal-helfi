@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - focal_point
+_core:
+  default_config_hash: DQfB1_5Pa4BJkDDo1TX_IjGVK6EFtlIetYOyaXOQ46I
 name: 1_1_l
 label: '1:1 L'
 effects:

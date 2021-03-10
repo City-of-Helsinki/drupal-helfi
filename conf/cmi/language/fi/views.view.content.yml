@@ -24,7 +24,10 @@ display:
           label: Sisältötyyppi
           separator: ', '
         name:
-          label: Kirjoittaja
+          label: Tekijä
+        langcode:
+          label: Kieli
+          separator: ', '
         status:
           label: Tila
           settings:

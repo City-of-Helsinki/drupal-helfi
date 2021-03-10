@@ -2,6 +2,8 @@ uuid: 1974c3d4-d757-4409-a70e-5c68ece9ea23
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: d5rETFNsjsIV5l3mRop-SdWxiSRJFUvK2YnOGFn4pUw
 name: Keywords
 vid: keywords
 description: ''

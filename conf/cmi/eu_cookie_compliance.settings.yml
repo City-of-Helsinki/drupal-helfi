@@ -67,7 +67,7 @@ settings_tab_enabled: false
 reload_options: 0
 reload_routes_list: ''
 cookie_policy_version: 1.0.0
-_core:
-  default_config_hash: Wph0IY6FThC4QuHAGcSQDx6S8gysoclVsF2tkm4Lu8o
 cookie_session: 0
 set_cookie_session_zero_on_disagree: 0
+_core:
+  default_config_hash: hQ7DNLHTlQh0_X_bDls8Gwa7MA_vHoOePmKn2NASjM4

@@ -2,6 +2,8 @@ uuid: 6e26eabc-2aaa-4e68-9921-66c724dd0123
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: VPramHw6U2dwEG85TCqmDI6pOBERZP5PfQHNxiQBQZU
 name: original_s
 label: 'Original S'
 effects:

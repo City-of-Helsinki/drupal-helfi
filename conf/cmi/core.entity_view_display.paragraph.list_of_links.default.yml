@@ -10,6 +10,8 @@ dependencies:
   module:
     - entity_reference_revisions
     - options
+_core:
+  default_config_hash: '-kv5ZkyOVZsNuXcvVE4nOW6VvlNLiM6vH5pXvMKmmoc'
 id: paragraph.list_of_links.default
 targetEntityType: paragraph
 bundle: list_of_links

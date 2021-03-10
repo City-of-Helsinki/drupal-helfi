@@ -12,6 +12,8 @@ dependencies:
   module:
     - link
     - text
+_core:
+  default_config_hash: R2pq430qBreSf3vg7kSHiKoV-Af5nknExFjqALv_IxQ
 id: paragraph.banner.default
 targetEntityType: paragraph
 bundle: banner

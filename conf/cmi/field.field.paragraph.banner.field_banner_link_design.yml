@@ -7,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.banner
   module:
     - options
+_core:
+  default_config_hash: riS2zxp8sHrbbA_Ys2M4hTz5_fGaDCFKLjWCEwPjfYI
 id: paragraph.banner.field_banner_link_design
 field_name: field_banner_link_design
 entity_type: paragraph

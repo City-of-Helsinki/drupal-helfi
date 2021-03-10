@@ -12,6 +12,8 @@ dependencies:
     - media_library
     - paragraphs
     - path
+_core:
+  default_config_hash: 3NE7RTbvp62bswLY4fzyYm9iOCctoBUqCCRV2qUjenw
 id: node.landing_page.default
 targetEntityType: node
 bundle: landing_page

@@ -15,6 +15,8 @@ dependencies:
     - image.style.3_2_xxs_2x
   theme:
     - hdbt
+_core:
+  default_config_hash: kLqFW8YkiSheLplOEONalLhJszKWnEySuu_JefXuraM
 id: image__3_2
 label: 'Image 3:2'
 image_style_mappings:

@@ -8,6 +8,8 @@ dependencies:
     - paragraphs.paragraphs_type.gallery_slide
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: chUpfG8WoHEzVqzgzNbN7FPgqi7OzWoBhaD57wGyVBE
 id: paragraph.gallery.field_gallery_slides
 field_name: field_gallery_slides
 entity_type: paragraph

@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - focal_point
+_core:
+  default_config_hash: rJCBYGmT7Mk3bMRHTgvqadr0AsWLCDV2AYrxq2TKOz4
 name: 3_2_xxs
 label: '3:2 XXS'
 effects:

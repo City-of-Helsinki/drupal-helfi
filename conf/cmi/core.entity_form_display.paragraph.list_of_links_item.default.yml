@@ -10,6 +10,8 @@ dependencies:
   module:
     - link
     - media_library
+_core:
+  default_config_hash: 9ElpMw3fHqZspnclfXzt4bkZQZCgDAZfel_Kk40HOFM
 id: paragraph.list_of_links_item.default
 targetEntityType: paragraph
 bundle: list_of_links_item

@@ -8,6 +8,8 @@ dependencies:
     - paragraphs.paragraphs_type.hero
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: NaOVa8WmZbEsmaM4pl6uHvFO6Tw-t9IGIQ3XZXUiamA
 id: node.page.field_hero
 field_name: field_hero
 entity_type: node

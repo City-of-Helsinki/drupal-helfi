@@ -2,6 +2,8 @@ uuid: d35b623a-9d25-4c9e-abc6-f6e36a3723bb
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: vjybRPsIhHcmXtNdQXg1lW8Aq_r5VInc3xKS6gKOl6g
 id: essential
 label: Essential
 description:

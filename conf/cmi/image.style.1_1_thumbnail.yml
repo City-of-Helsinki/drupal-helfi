@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - focal_point
+_core:
+  default_config_hash: 0gVaNNhfqQoqK15AJob30IX8mGpWd_u3J1wK_fBSUyc
 name: 1_1_thumbnail
 label: '1:1 thumbnail'
 effects:

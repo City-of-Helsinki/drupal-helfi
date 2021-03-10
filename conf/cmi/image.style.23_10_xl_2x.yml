@@ -5,6 +5,8 @@ dependencies:
   module:
     - focal_point
     - image_style_quality
+_core:
+  default_config_hash: ONGS19X5Ueud7RuCZsVTrW685M2WOn07v2_O1bUeUSo
 name: 23_10_xl_2x
 label: '2.3:1 XL (2x)'
 effects:

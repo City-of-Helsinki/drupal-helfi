@@ -7,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.hero
   module:
     - options
+_core:
+  default_config_hash: oBcxkQvh42-sDZQOEHuml4LAI9GzDoFVzO7bmbnyVAA
 id: paragraph.hero.field_hero_bg_color
 field_name: field_hero_bg_color
 entity_type: paragraph

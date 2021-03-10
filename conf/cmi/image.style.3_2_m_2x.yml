@@ -5,6 +5,8 @@ dependencies:
   module:
     - focal_point
     - image_style_quality
+_core:
+  default_config_hash: VV6QgDb8_KH_-CLt2DBTHBWziTl7VU2nL1d7aWCgrX4
 name: 3_2_m_2x
 label: '3:2 M (2x)'
 effects:

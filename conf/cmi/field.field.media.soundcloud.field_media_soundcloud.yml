@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.storage.media.field_media_soundcloud
     - media.type.soundcloud
+_core:
+  default_config_hash: nY2BVv6WaL_ezffwOJQANvAXSANsFyuwALUpZcOF21Q
 id: media.soundcloud.field_media_soundcloud
 field_name: field_media_soundcloud
 entity_type: media

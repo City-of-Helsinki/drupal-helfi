@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - image_style_quality
+_core:
+  default_config_hash: '-M5lzYtqIaR9JhPpIqnMfqURzup-qtAJKk1CH2JlBlE'
 name: original_xxs_2x
 label: 'Original XXS (2x)'
 effects:

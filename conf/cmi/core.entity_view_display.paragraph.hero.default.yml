@@ -15,6 +15,8 @@ dependencies:
     - link
     - options
     - text
+_core:
+  default_config_hash: GRVaUN67oC71zZ5vVDzT9UeXRL4OigipNALvmVSIGWM
 id: paragraph.hero.default
 targetEntityType: paragraph
 bundle: hero
