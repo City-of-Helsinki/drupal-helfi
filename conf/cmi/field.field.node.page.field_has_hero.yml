@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.storage.node.field_has_hero
     - node.type.page
+_core:
+  default_config_hash: UbjGp6wg5DExILmejz8_QRNJHWfaNhdPgK3lOJNuB_8
 id: node.page.field_has_hero
 field_name: field_has_hero
 entity_type: node

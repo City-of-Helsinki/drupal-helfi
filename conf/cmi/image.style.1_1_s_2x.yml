@@ -5,6 +5,8 @@ dependencies:
   module:
     - focal_point
     - image_style_quality
+_core:
+  default_config_hash: gnUxrhxYUUp9zXVl2wTHz2I2Khsf5yMiSd-PUE7l2wg
 name: 1_1_s_2x
 label: '1:1 S (2x)'
 effects:

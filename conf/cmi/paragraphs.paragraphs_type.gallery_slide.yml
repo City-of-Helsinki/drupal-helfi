@@ -2,6 +2,8 @@ uuid: 8be8f30c-30f9-433e-9256-a32f2b10549c
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: L8uP-RIaTgYX_jt7seKb2nUAQgfc7rED0pP30-QZhAo
 id: gallery_slide
 label: 'Gallery slide'
 icon_uuid: null

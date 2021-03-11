@@ -6,6 +6,8 @@ dependencies:
     - field.storage.node.field_keywords
     - node.type.article
     - taxonomy.vocabulary.keywords
+_core:
+  default_config_hash: LSKCct3_vvTchT4_8ijyWaV3tYa0K1ihTS_cxpSBCxM
 id: node.article.field_keywords
 field_name: field_keywords
 entity_type: node

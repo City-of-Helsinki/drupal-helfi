@@ -9,6 +9,8 @@ dependencies:
 third_party_settings:
   content_translation:
     enabled: true
+_core:
+  default_config_hash: ZMPJneHpl3fQ2L7855yQOIVii5Xn-TQaqljhB7tP-7o
 id: taxonomy_term.keywords
 target_entity_type_id: taxonomy_term
 target_bundle: keywords

@@ -7,6 +7,8 @@ dependencies:
     - media.type.soundcloud
   module:
     - path
+_core:
+  default_config_hash: OitJLLobQkcoTc6H1QQm3hauSRpY3SRH4yu8yd_zygs
 id: media.soundcloud.default
 targetEntityType: media
 bundle: soundcloud

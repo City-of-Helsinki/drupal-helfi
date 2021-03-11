@@ -11,13 +11,15 @@ display:
           sort_desc_label: 'По убыванию'
       pager:
         options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Первая'
+            last: 'Последняя »'
           expose:
             items_per_page_label: 'Элементов на страницу'
             items_per_page_options_all_label: '- Все -'
             offset_label: Пропустить
-          tags:
-            previous: ‹‹
-            next: ››
       fields:
         id:
           label: ID
@@ -31,5 +33,8 @@ display:
         combine:
           expose:
             label: Поиск
+      footer:
+        result:
+          content: 'Отображается с @start по @end из @total'
   page_1:
     display_title: Страница

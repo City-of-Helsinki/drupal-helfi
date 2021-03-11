@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.storage.node.field_lead
     - node.type.article
+_core:
+  default_config_hash: UpidPkJhIQUXDr4jTw0GyPITTFySAehEK6KObN5e22I
 id: node.article.field_lead
 field_name: field_lead
 entity_type: node

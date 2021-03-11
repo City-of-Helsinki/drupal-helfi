@@ -11,6 +11,8 @@ dependencies:
     - image.style.3_2_xs_2x
   theme:
     - hdbt
+_core:
+  default_config_hash: mY5bTsCWwX9xKLt8efT_zthpmCZgUxtu4dq7QuKDtbU
 id: hero__left_right
 label: 'Hero Left/Right'
 image_style_mappings:

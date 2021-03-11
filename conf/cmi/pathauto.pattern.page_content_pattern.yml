@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: NPeIDcdnIVh4Ouubxz6NcH7ks_z8buKUD0ZmzPACvtE
 id: page_content_pattern
 label: 'Page content pattern'
 type: 'canonical_entities:node'

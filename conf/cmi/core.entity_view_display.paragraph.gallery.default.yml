@@ -7,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.gallery
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: 03N84RGsiK3XYwdqocpeNrtbUl1fLTPm2GgdmU4QpoM
 id: paragraph.gallery.default
 targetEntityType: paragraph
 bundle: gallery

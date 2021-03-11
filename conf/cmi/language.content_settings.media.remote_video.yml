@@ -9,6 +9,8 @@ dependencies:
 third_party_settings:
   content_translation:
     enabled: true
+_core:
+  default_config_hash: W7YfIhAOIwvyPQmKlhuh5d94_oZSSsj83AYQaegVafs
 id: media.remote_video
 target_entity_type_id: media
 target_bundle: remote_video

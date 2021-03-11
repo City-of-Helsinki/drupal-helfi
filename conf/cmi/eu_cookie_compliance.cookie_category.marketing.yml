@@ -2,6 +2,8 @@ uuid: 19414f2a-edd8-42b2-bf84-605146e25a10
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: wa_zmdwSs-6ufH07Ky5QzIOeWw1S9xoutR3PyEI_rtg
 id: marketing
 label: Marketing
 description:

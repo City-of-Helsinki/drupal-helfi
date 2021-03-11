@@ -8,6 +8,8 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
+_core:
+  default_config_hash: lhxBxKc1b6XNQeNYJRSS8Xz_HUb-GB1QYZ1DBNqf9AQ
 name: Article
 type: article
 description: 'Content type for article-like content with rich editing capabilities.'

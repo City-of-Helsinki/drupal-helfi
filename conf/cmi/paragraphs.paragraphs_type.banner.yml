@@ -2,6 +2,8 @@ uuid: e75e8412-4292-45a4-8068-9d704c05ab49
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: zaZVGfy2puLJ985O9lxNqODW1qzpWSQ66LahLMxozow
 id: banner
 label: Banner
 icon_uuid: null

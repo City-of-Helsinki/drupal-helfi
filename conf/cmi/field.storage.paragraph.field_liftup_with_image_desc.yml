@@ -5,6 +5,8 @@ dependencies:
   module:
     - paragraphs
     - text
+_core:
+  default_config_hash: 0A4F9maMTW9IsIvKpWtAA4eXUNCj2R9nCN7Rx-3AgDs
 id: paragraph.field_liftup_with_image_desc
 field_name: field_liftup_with_image_desc
 entity_type: paragraph

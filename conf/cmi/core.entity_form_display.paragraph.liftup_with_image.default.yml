@@ -11,6 +11,8 @@ dependencies:
   module:
     - media_library
     - text
+_core:
+  default_config_hash: R6P-wid0f4fCxCNzIgDS-wZfBZT2gnamwRcUYorxURU
 id: paragraph.liftup_with_image.default
 targetEntityType: paragraph
 bundle: liftup_with_image

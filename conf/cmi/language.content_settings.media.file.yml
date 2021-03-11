@@ -9,6 +9,8 @@ dependencies:
 third_party_settings:
   content_translation:
     enabled: true
+_core:
+  default_config_hash: rup-w6uPAmGhsqOpxHkoHNx1E2nof8peWIMR3CHUOu8
 id: media.file
 target_entity_type_id: media
 target_bundle: file

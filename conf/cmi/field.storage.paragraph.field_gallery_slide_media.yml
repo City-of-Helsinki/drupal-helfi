@@ -5,6 +5,8 @@ dependencies:
   module:
     - media
     - paragraphs
+_core:
+  default_config_hash: L4UjS1L5rrRoKjjyQju60zNUbsA_qmBys_KBmsLMx2Q
 id: paragraph.field_gallery_slide_media
 field_name: field_gallery_slide_media
 entity_type: paragraph

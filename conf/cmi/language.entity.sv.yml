@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: X0OXpd6tKvNTB0uv2_sTudu6CQ_2GIIJI2lQ5gKU5zA
+  default_config_hash: 8gSrLKfBh5zTLIcJDdArcXFhUb2gQPBhj6w9313IhYI
 id: sv
 label: Swedish
 direction: ltr

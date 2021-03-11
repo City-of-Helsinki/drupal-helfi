@@ -11,13 +11,15 @@ display:
           sort_desc_label: Laskevasti
       pager:
         options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Ensimmäinen'
+            last: 'Viimeinen »'
           expose:
             items_per_page_label: 'Merkintöjä sivua kohti'
             items_per_page_options_all_label: '- Kaikki -'
             offset_label: Offset
-          tags:
-            previous: ‹‹
-            next: ››
       fields:
         name:
           label: Otsikko

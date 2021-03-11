@@ -15,6 +15,8 @@ dependencies:
     - link
     - media_library
     - text
+_core:
+  default_config_hash: 6VIA2r5jBZlCoC2cBKB3com9lCjgi1D0OwdsalLoiok
 id: paragraph.hero.default
 targetEntityType: paragraph
 bundle: hero
@@ -42,7 +44,7 @@ content:
     region: content
   field_hero_image:
     type: media_library_widget
-    weight: 4
+    weight: 5
     settings:
       media_types: {  }
     third_party_settings: {  }
@@ -56,7 +58,7 @@ content:
     type: link_default
     region: content
   field_hero_link_design:
-    weight: 5
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     type: options_select

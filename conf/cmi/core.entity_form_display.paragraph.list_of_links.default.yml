@@ -9,6 +9,8 @@ dependencies:
     - paragraphs.paragraphs_type.list_of_links
   module:
     - paragraphs
+_core:
+  default_config_hash: gVaSt1YY1jPLkVLna6p1vW1cViRVy6ukGHmVLrva0Z4
 id: paragraph.list_of_links.default
 targetEntityType: paragraph
 bundle: list_of_links
