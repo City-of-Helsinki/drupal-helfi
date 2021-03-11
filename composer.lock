@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fa6b61e4c15e7a36cb98eda42ba7e537",
+    "content-hash": "a81518f86a8f156b06d9d1348d5880a3",
     "packages": [
         {
             "name": "City-of-Helsinki/php-hauki-client",
@@ -3353,21 +3353,22 @@
         },
         {
             "name": "drupal/helfi_platform_config",
-            "version": "dev-UHF-919",
+            "version": "1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "2c333b2daa1725c898fb0e09c0d7a2402da83244"
+                "reference": "3ce4472edf703013aea0da2c6882b3b30f3eb9d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/2c333b2daa1725c898fb0e09c0d7a2402da83244",
-                "reference": "2c333b2daa1725c898fb0e09c0d7a2402da83244",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/3ce4472edf703013aea0da2c6882b3b30f3eb9d2",
+                "reference": "3ce4472edf703013aea0da2c6882b3b30f3eb9d2",
                 "shasum": ""
             },
             "require": {
                 "drupal/crop": "^2.1",
                 "drupal/default_content": "^2.0.0-alpha1",
+                "drupal/diff": "^1.0",
                 "drupal/easy_breadcrumb": "^1.13",
                 "drupal/elasticsearch_connector": "^7.0@alpha",
                 "drupal/entity_browser": "^2.5",
@@ -3414,10 +3415,10 @@
             ],
             "description": "HELfi platform config",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/UHF-919",
+                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/1.1.9",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2021-03-09T11:01:49+00:00"
+            "time": "2021-03-11T16:02:45+00:00"
         },
         {
             "name": "drupal/helfi_tpr",

@@ -22,7 +22,7 @@
         "drupal/helfi_ahjo": "1.x-dev",
         "drupal/helfi_api_base": "1.x-dev",
         "drupal/helfi_hauki": "1.x-dev",
-        "drupal/helfi_platform_config": "dev-UHF-919",
+        "drupal/helfi_platform_config": "1.x-dev",
         "drupal/helfi_tpr": "1.x-dev",
         "drupal/helfi_tunnistamo": "1.x-dev",
         "drupal/image_style_quality": "^1.4",
