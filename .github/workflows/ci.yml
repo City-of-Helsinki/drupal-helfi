@@ -5,6 +5,7 @@ env:
   SIMPLETEST_BASE_URL: "http://127.0.0.1:8888"
   EXISTING_CONFIG: true
   INSTALLER_TYPE: composer-project
+  SYMFONY_DEPRECATIONS_HELPER: max[direct]=0
 jobs:
   tests:
     runs-on: ubuntu-latest
