@@ -11,6 +11,7 @@ dependencies:
     - field.field.paragraph.banner.field_icon
     - paragraphs.paragraphs_type.banner
   module:
+    - hdbt_admin_editorial
     - link
     - select2_icon
     - text
@@ -40,8 +41,9 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
+      link_target: ''
     third_party_settings: {  }
-    type: link_default
+    type: link_target_field_widget
     region: content
   field_banner_link_design:
     weight: 5
