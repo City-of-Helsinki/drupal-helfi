@@ -10,7 +10,7 @@ dependencies:
     - field.field.paragraph.banner.field_banner_title
     - paragraphs.paragraphs_type.banner
   module:
-    - link
+    - hdbt_admin_editorial
     - text
 _core:
   default_config_hash: R2pq430qBreSf3vg7kSHiKoV-Af5nknExFjqALv_IxQ
@@ -38,8 +38,9 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
+      link_target: ''
     third_party_settings: {  }
-    type: link_default
+    type: link_target_field_widget
     region: content
   field_banner_link_design:
     weight: 4
