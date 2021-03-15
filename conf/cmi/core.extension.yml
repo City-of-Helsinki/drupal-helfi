@@ -70,8 +70,10 @@ module:
   path: 0
   path_alias: 0
   rdf: 0
+  redirect: 0
   responsive_image: 0
   select2: 0
+  select2_icon: 0
   serialization: 0
   simple_sitemap: 0
   social_media: 0
