@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "10a095f46753135fe86796c14777d3a9",
+    "content-hash": "007bcd1418d6374d9799c3144e7df718",
     "packages": [
         {
             "name": "City-of-Helsinki/php-hauki-client",
@@ -1759,6 +1759,59 @@
             }
         },
         {
+            "name": "drupal/aet",
+            "version": "2.0.0-alpha6",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/aet.git",
+                "reference": "2.0.0-alpha6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/aet-2.0.0-alpha6.zip",
+                "reference": "2.0.0-alpha6",
+                "shasum": "7477f7f3963698e728e11cbf3f5c803b0e8229bf"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9",
+                "drupal/token": "^1.7"
+            },
+            "require-dev": {
+                "drupal/token_filter": "^1.2"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-alpha6",
+                    "datestamp": "1597192052",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Eyal Shalev",
+                    "homepage": "https://www.drupal.org/user/1418090"
+                },
+                {
+                    "name": "colan",
+                    "homepage": "https://www.drupal.org/user/58704"
+                }
+            ],
+            "description": "Queries the database for entities using tokens",
+            "homepage": "https://www.drupal.org/project/aet",
+            "support": {
+                "source": "https://git.drupalcode.org/project/aet",
+                "issues": "https://www.drupal.org/project/issues/aet"
+            }
+        },
+        {
             "name": "drupal/api_tools",
             "version": "1.0.0",
             "source": {
@@ -3318,16 +3371,16 @@
         },
         {
             "name": "drupal/helfi_platform_config",
-            "version": "1.x-dev",
+            "version": "dev-UHF-X_Token_demo",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "996101dca795bf3b9108d4b432a3492f9e7e4429"
+                "reference": "5ed12fbb665b96c84f99cee5f4b2bf821c24c4f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/996101dca795bf3b9108d4b432a3492f9e7e4429",
-                "reference": "996101dca795bf3b9108d4b432a3492f9e7e4429",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/5ed12fbb665b96c84f99cee5f4b2bf821c24c4f1",
+                "reference": "5ed12fbb665b96c84f99cee5f4b2bf821c24c4f1",
                 "shasum": ""
             },
             "require": {
@@ -3382,10 +3435,10 @@
             ],
             "description": "HELfi platform config",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/1.1.13",
+                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/UHF-X_Token_demo",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2021-03-18T08:43:47+00:00"
+            "time": "2021-03-18T10:25:34+00:00"
         },
         {
             "name": "drupal/helfi_tpr",
@@ -4371,6 +4424,75 @@
             "homepage": "https://www.drupal.org/project/token",
             "support": {
                 "source": "https://git.drupalcode.org/project/token"
+            }
+        },
+        {
+            "name": "drupal/token_filter",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/token_filter.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/token_filter-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "4d22feb0c96aeb747152d947499258e49769c237"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/token": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1588029999",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Darvanen",
+                    "homepage": "https://www.drupal.org/user/1068770"
+                },
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "Deciphered",
+                    "homepage": "https://www.drupal.org/user/103796"
+                },
+                {
+                    "name": "ademarco",
+                    "homepage": "https://www.drupal.org/user/186696"
+                },
+                {
+                    "name": "asciikewl",
+                    "homepage": "https://www.drupal.org/user/147292"
+                },
+                {
+                    "name": "pescetti",
+                    "homepage": "https://www.drupal.org/user/436244"
+                },
+                {
+                    "name": "pvhee",
+                    "homepage": "https://www.drupal.org/user/108811"
+                }
+            ],
+            "description": "This is a very simple module to make global token values available as an input filter.",
+            "homepage": "https://www.drupal.org/project/token_filter",
+            "support": {
+                "source": "https://git.drupalcode.org/project/token_filter"
             }
         },
         {
@@ -13318,6 +13440,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/aet": 15,
         "drupal/hdbt": 20,
         "drupal/hdbt_admin": 20,
         "drupal/helfi_ahjo": 20,
