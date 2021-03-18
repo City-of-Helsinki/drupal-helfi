@@ -1,0 +1,31 @@
+uuid: 9acc0d8e-45fd-4162-a2b6-e01d2fc8e28c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.tpr_test
+  module:
+    - views
+name: tpr
+label: TPR
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select TPR unit for preview'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  4a7b5cea-859c-4e21-8597-b57aea3f912f:
+    settings:
+      view: tpr_test
+      view_display: entity_browser_1
+      submit_text: 'Select TPR unit'
+      auto_select: false
+    uuid: 4a7b5cea-859c-4e21-8597-b57aea3f912f
+    weight: 1
+    label: view
+    id: view

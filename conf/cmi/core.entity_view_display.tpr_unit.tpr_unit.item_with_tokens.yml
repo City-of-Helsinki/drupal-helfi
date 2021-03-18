@@ -1,0 +1,98 @@
+uuid: 3197f434-295d-46a8-aa5d-323d33b88d3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.tpr_unit.item_with_tokens
+  module:
+    - address
+    - helfi_tpr
+    - link
+id: tpr_unit.tpr_unit.item_with_tokens
+targetEntityType: tpr_unit
+bundle: tpr_unit
+mode: item_with_tokens
+content:
+  address:
+    type: address_default
+    weight: 5
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  created:
+    type: timestamp
+    weight: 7
+    region: content
+    label: above
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  email:
+    type: string
+    weight: 4
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  langcode:
+    type: language
+    weight: 2
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
+  name:
+    type: string
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  phone:
+    type: string
+    weight: 3
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  service_map_embed:
+    label: above
+    type: service_map_embed
+    weight: 1
+    region: content
+    settings:
+      iframe_title: 'Service map'
+      link_title: 'View larger map'
+      target: true
+    third_party_settings: {  }
+  www:
+    type: link
+    weight: 6
+    region: content
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+hidden:
+  accessibility_email: true
+  accessibility_phone: true
+  accessibility_www: true
+  address_postal: true
+  call_charge_info: true
+  description: true
+  latitude: true
+  longitude: true
+  services: true
+  streetview_entrance_url: true

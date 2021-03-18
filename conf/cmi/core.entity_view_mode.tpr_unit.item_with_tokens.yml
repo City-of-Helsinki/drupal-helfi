@@ -1,0 +1,10 @@
+uuid: f3ab624d-e6d4-4819-ab40-722e8c6627eb
+langcode: en
+status: true
+dependencies:
+  module:
+    - helfi_tpr
+id: tpr_unit.item_with_tokens
+label: 'Item with tokens'
+targetEntityType: tpr_unit
+cache: true
