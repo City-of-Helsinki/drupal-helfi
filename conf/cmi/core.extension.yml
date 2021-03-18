@@ -87,6 +87,9 @@ module:
   update: 0
   user: 0
   views_ui: 0
+  entity_browser: 0
+  aet: 0
+  token_filter: 0
   pathauto: 1
   content_translation: 10
   views: 10
