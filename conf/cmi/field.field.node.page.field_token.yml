@@ -1,0 +1,21 @@
+uuid: 4aac1c8b-b950-4464-a385-cfbf0b21d399
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_token
+    - node.type.page
+  module:
+    - text
+id: node.page.field_token
+field_name: field_token
+entity_type: node
+bundle: page
+label: Token
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

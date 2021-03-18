@@ -3,6 +3,7 @@ module:
   address: 0
   admin_toolbar: 0
   admin_toolbar_tools: 0
+  aet: 0
   api_tools: 0
   block: 0
   breakpoint: 0
@@ -19,6 +20,7 @@ module:
   dynamic_page_cache: 0
   easy_breadcrumb: 0
   editor: 0
+  entity_browser: 0
   entity_reference_revisions: 0
   features: 0
   features_ui: 0
@@ -44,6 +46,7 @@ module:
   helfi_languages: 0
   helfi_media: 0
   helfi_platform_config: 0
+  helfi_token_button: 0
   helfi_tpr: 0
   helfi_tunnistamo: 0
   image: 0
@@ -81,14 +84,12 @@ module:
   taxonomy: 0
   text: 0
   token: 0
+  token_filter: 0
   toolbar: 0
   twig_tweak: 0
   update: 0
   user: 0
   views_ui: 0
-  entity_browser: 0
-  aet: 0
-  token_filter: 0
   pathauto: 1
   content_translation: 10
   views: 10

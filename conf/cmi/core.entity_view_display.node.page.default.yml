@@ -7,9 +7,12 @@ dependencies:
     - field.field.node.page.field_has_hero
     - field.field.node.page.field_hero
     - field.field.node.page.field_liftup_image
+    - field.field.node.page.field_test
+    - field.field.node.page.field_token
     - node.type.page
   module:
     - entity_reference_revisions
+    - text
     - user
 _core:
   default_config_hash: i22XraOl4gS7_CJgs4Rz9EUcPl88E0ripb7VPtyUGho
@@ -36,6 +39,13 @@ content:
     third_party_settings: {  }
     type: entity_reference_revisions_entity_view
     region: content
+  field_token:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
   links:
     weight: 0
     region: content
@@ -44,4 +54,5 @@ content:
 hidden:
   field_has_hero: true
   field_liftup_image: true
+  field_test: true
   langcode: true
