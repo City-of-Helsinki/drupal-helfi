@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "007bcd1418d6374d9799c3144e7df718",
+    "content-hash": "a18f830ca012980ddf96e87e7738fb90",
     "packages": [
         {
             "name": "City-of-Helsinki/php-hauki-client",
@@ -3371,16 +3371,16 @@
         },
         {
             "name": "drupal/helfi_platform_config",
-            "version": "dev-UHF-X_Token_demo",
+            "version": "1.1.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "5ed12fbb665b96c84f99cee5f4b2bf821c24c4f1"
+                "reference": "996101dca795bf3b9108d4b432a3492f9e7e4429"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/5ed12fbb665b96c84f99cee5f4b2bf821c24c4f1",
-                "reference": "5ed12fbb665b96c84f99cee5f4b2bf821c24c4f1",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/996101dca795bf3b9108d4b432a3492f9e7e4429",
+                "reference": "996101dca795bf3b9108d4b432a3492f9e7e4429",
                 "shasum": ""
             },
             "require": {
@@ -3435,10 +3435,10 @@
             ],
             "description": "HELfi platform config",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/UHF-X_Token_demo",
+                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/1.1.13",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2021-03-18T10:25:34+00:00"
+            "time": "2021-03-18T08:43:47+00:00"
         },
         {
             "name": "drupal/helfi_tpr",
@@ -13446,7 +13446,6 @@
         "drupal/helfi_ahjo": 20,
         "drupal/helfi_api_base": 20,
         "drupal/helfi_hauki": 20,
-        "drupal/helfi_platform_config": 20,
         "drupal/helfi_tpr": 20,
         "drupal/helfi_tunnistamo": 20,
         "drupal/linkit": 10,
