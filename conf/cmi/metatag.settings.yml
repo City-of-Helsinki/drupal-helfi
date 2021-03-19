@@ -1,0 +1,11 @@
+entity_type_groups:
+  node:
+    article:
+      basic: basic
+      open_graph: open_graph
+    landing_page:
+      basic: basic
+      open_graph: open_graph
+    page:
+      basic: basic
+      open_graph: open_graph

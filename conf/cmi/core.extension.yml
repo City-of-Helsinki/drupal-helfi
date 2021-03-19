@@ -60,6 +60,10 @@ module:
   menu_block_current_language: 0
   menu_link_content: 0
   menu_ui: 0
+  metatag: 0
+  metatag_hreflang: 0
+  metatag_open_graph: 0
+  metatag_views: 0
   migrate: 0
   node: 0
   openid_connect: 0
