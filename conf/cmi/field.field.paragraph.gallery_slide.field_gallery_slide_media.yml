@@ -6,6 +6,8 @@ dependencies:
     - field.storage.paragraph.field_gallery_slide_media
     - media.type.image
     - paragraphs.paragraphs_type.gallery_slide
+_core:
+  default_config_hash: ByblKBmQd3E0yLagSUYcYzLDK108X4mN8k2jA-ZA8zs
 id: paragraph.gallery_slide.field_gallery_slide_media
 field_name: field_gallery_slide_media
 entity_type: paragraph

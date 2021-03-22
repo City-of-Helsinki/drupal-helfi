@@ -8,6 +8,8 @@ dependencies:
     - paragraphs.paragraphs_type.gallery_slide
   module:
     - media_library
+_core:
+  default_config_hash: FZVe1sPeUnFriMlSCLF3hot0HbZ_JIgrRczo9TVbBp4
 id: paragraph.gallery_slide.default
 targetEntityType: paragraph
 bundle: gallery_slide

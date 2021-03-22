@@ -5,6 +5,8 @@ dependencies:
   module:
     - media
     - paragraphs
+_core:
+  default_config_hash: E3bc8y7QDTgvcY-sGiEXFfgvo9YC6_6kv3fMh4zb2so
 id: paragraph.field_list_of_links_image
 field_name: field_list_of_links_image
 entity_type: paragraph

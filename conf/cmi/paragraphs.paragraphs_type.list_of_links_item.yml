@@ -2,6 +2,8 @@ uuid: 17678f19-ba43-4f91-829a-430ea4b3054d
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: JJbV-c48oaLAnXbQQmvKk3j5QaOWCX84DFicAqITi68
 id: list_of_links_item
 label: 'List of links item'
 icon_uuid: null

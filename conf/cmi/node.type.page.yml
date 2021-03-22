@@ -6,8 +6,11 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus: {  }
-    parent: ''
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: _BhpJzkKyfByF3bLZ56eV_kN67Rm6pXG5IJ9ao-mJP4
 name: Page
 type: page
 description: 'Content type for pages that include information that doesn''t age as quickly as for example article or news content.'

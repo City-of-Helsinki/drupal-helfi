@@ -10,6 +10,8 @@ dependencies:
   module:
     - entity_reference_revisions
     - options
+_core:
+  default_config_hash: Kf-lllXWYfMcNxfGxs6pz4f2EWTl77d_UsLTIL6rhNM
 id: paragraph.accordion.default
 targetEntityType: paragraph
 bundle: accordion
@@ -17,14 +19,14 @@ mode: default
 content:
   field_accordion_design:
     weight: 0
-    label: hidden
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_key
     region: content
   field_accordion_heading_level:
     weight: 1
-    label: hidden
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_key

@@ -9,6 +9,8 @@ dependencies:
     - paragraphs.paragraphs_type.image
   module:
     - media_library
+_core:
+  default_config_hash: O8iGrVUXLpTDbk7UIkhPgVIPzm04oWVf3vbj83CIISc
 id: paragraph.image.default
 targetEntityType: paragraph
 bundle: image

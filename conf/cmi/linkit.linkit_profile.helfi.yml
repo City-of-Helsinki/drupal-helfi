@@ -4,17 +4,19 @@ status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: 9MilJc3w4sqLnabw-oBXlTosaHizFXK0TP6QbZbsIzw
 id: helfi
 label: Helfi
-description: 'Linkit profile for Helfi platform.'
+description: 'A Linkit profile for Helfi.'
 matchers:
-  aafedaea-7504-4071-9067-c77ae0a7fd2a:
-    uuid: aafedaea-7504-4071-9067-c77ae0a7fd2a
+  49b7eb26-ed0f-47be-8b6b-3c2ab7a70069:
+    uuid: 49b7eb26-ed0f-47be-8b6b-3c2ab7a70069
     id: 'entity:node'
     weight: 0
     settings:
-      include_unpublished: true
-      metadata: '[entity:node]'
+      include_unpublished: false
+      metadata: 'by [node:author] | [node:created:medium]'
       bundles: {  }
       group_by_bundle: false
       substitution_type: canonical

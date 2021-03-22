@@ -7,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.hero
   module:
     - options
+_core:
+  default_config_hash: 9KgNBd64HSwUebcuo0heXEkb24dttr05fyWT52PJfQ0
 id: paragraph.hero.field_hero_design
 field_name: field_hero_design
 entity_type: paragraph

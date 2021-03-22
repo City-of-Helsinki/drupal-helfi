@@ -23,8 +23,6 @@ dependencies:
   enforced:
     module:
       - easy_breadcrumb
-_core:
-  default_config_hash: ey8bRwK17YbAVEX7GEm09YR5UneOQ_Nqzh6a3V-rIP0
 include_invalid_paths: false
 add_structured_data_json_ld: 0
 excluded_paths: ''
@@ -32,3 +30,5 @@ replaced_titles: ''
 custom_paths: ''
 title_segment_as_link: false
 capitalizator_forced_words: ''
+_core:
+  default_config_hash: rUC8_U8NGNZTVwd-i73IX0GkqK4QS5PW6hW4TpxbuvU

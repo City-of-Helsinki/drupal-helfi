@@ -4,7 +4,8 @@ status: true
 dependencies:
   module:
     - linkit
-    - media
+_core:
+  default_config_hash: xpLSr9WoVOW2SAHrxY02hUPmBUOf1TNQMcjZ7UqpfkU
 name: HTML
 format: full_html
 weight: 0
@@ -37,15 +38,6 @@ filters:
     weight: 0
     settings:
       filter_url_length: 120
-  media_embed:
-    id: media_embed
-    provider: media
-    status: false
-    weight: 100
-    settings:
-      default_view_mode: default
-      allowed_media_types: {  }
-      allowed_view_modes: {  }
   linkit:
     id: linkit
     provider: linkit

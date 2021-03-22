@@ -9,6 +9,9 @@ rsync -vah "/opt/drupal/drush/" "/var/www/html/drush/" --delete
 cp /opt/drupal/composer.* /var/www/html/
 # copy /opt/drupal/drush (and other files & folders) to /var/www/html as they become necessary
 
+# mount permanent storage (public_files)
+ln -s /var/www/public_files /var/www/html/public/sites/default/files
+
 echo "Set cron key"
 if [[ ! -z "${DRUPAL_CRON_KEY}" ]]; then
     echo ${DRUPAL_CRON_KEY}

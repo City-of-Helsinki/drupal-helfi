@@ -9,6 +9,8 @@ dependencies:
     - image.style.1_1_xs_2x
   theme:
     - hdbt
+_core:
+  default_config_hash: NuriQB70Hu9_irYO0uyCTx6ChH38pAdEoZn48rmtfqo
 id: list_of_links__thumbnail
 label: 'List of Links Thumbnail'
 image_style_mappings:

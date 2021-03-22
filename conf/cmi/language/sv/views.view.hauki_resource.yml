@@ -11,13 +11,15 @@ display:
           sort_desc_label: Fallande
       pager:
         options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Första'
+            last: 'Sista »'
           expose:
             items_per_page_label: 'Inlägg per sida'
             items_per_page_options_all_label: '- Alla -'
             offset_label: Kompensera
-          tags:
-            previous: ‹‹
-            next: ››
       fields:
         name:
           label: Titel
@@ -28,5 +30,8 @@ display:
         combine:
           expose:
             label: Sök
+      footer:
+        result:
+          content: 'Visar @start - @end av @total'
   page_1:
     display_title: Sida

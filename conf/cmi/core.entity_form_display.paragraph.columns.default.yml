@@ -10,6 +10,8 @@ dependencies:
     - paragraphs.paragraphs_type.columns
   module:
     - paragraphs
+_core:
+  default_config_hash: epEWSZ1PtLCc7zcGls3RWqhFaaCFGlehVQb8QLysEX0
 id: paragraph.columns.default
 targetEntityType: paragraph
 bundle: columns

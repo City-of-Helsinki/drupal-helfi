@@ -7,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.gallery
   module:
     - paragraphs
+_core:
+  default_config_hash: CsReu5p4kTl-igdjFoboHRGqocgTVa7oem6ESDudOW4
 id: paragraph.gallery.default
 targetEntityType: paragraph
 bundle: gallery

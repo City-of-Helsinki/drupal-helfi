@@ -23,7 +23,7 @@ display:
         title:
           label: Otsikko
         name:
-          label: Kirjoittaja
+          label: Tekijä
         changed:
           label: 'Viimeksi päivitetty'
   attachment_1:
