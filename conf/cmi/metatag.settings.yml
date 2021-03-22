@@ -3,9 +3,12 @@ entity_type_groups:
     article:
       basic: basic
       open_graph: open_graph
+      twitter_cards: twitter_cards
     landing_page:
       basic: basic
       open_graph: open_graph
+      twitter_cards: twitter_cards
     page:
       basic: basic
       open_graph: open_graph
+      twitter_cards: twitter_cards
