@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "10a095f46753135fe86796c14777d3a9",
+    "content-hash": "7a3f2f15a8f325d6ce670b19fb046927",
     "packages": [
         {
             "name": "City-of-Helsinki/php-hauki-client",
@@ -3721,6 +3721,70 @@
             }
         },
         {
+            "name": "drupal/metatag",
+            "version": "1.16.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/metatag.git",
+                "reference": "8.x-1.16"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/metatag-8.x-1.16.zip",
+                "reference": "8.x-1.16",
+                "shasum": "1c0028f4ff4583dc6601035657dd631c351b290c"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/token": "^1.0"
+            },
+            "require-dev": {
+                "drupal/devel": "^4.0",
+                "drupal/metatag_dc": "*",
+                "drupal/metatag_open_graph": "*",
+                "drupal/page_manager": "4.x-dev",
+                "drupal/panelizer": "4.x-dev",
+                "drupal/redirect": "1.x-dev"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.16",
+                    "datestamp": "1615820867",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "See contributors",
+                    "homepage": "https://www.drupal.org/node/640498/committers",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                }
+            ],
+            "description": "Manage meta tags for all entities.",
+            "homepage": "https://www.drupal.org/project/metatag",
+            "keywords": [
+                "Drupal",
+                "seo"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/metatag",
+                "issues": "https://www.drupal.org/project/issues/metatag",
+                "docs": "https://www.drupal.org/docs/8/modules/metatag"
+            }
+        },
+        {
             "name": "drupal/openid_connect",
             "version": "1.0.0",
             "source": {
@@ -6792,12 +6856,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ruflin/Elastica.git",
-                "reference": "f384f62a3c17f164c59b14ed8c29589a7cd5701f"
+                "reference": "f55f08e1ebf4e81cd3b451081139568a95a9e6f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ruflin/Elastica/zipball/f384f62a3c17f164c59b14ed8c29589a7cd5701f",
-                "reference": "f384f62a3c17f164c59b14ed8c29589a7cd5701f",
+                "url": "https://api.github.com/repos/ruflin/Elastica/zipball/f55f08e1ebf4e81cd3b451081139568a95a9e6f5",
+                "reference": "f55f08e1ebf4e81cd3b451081139568a95a9e6f5",
                 "shasum": ""
             },
             "require": {
@@ -6852,7 +6916,7 @@
                 "issues": "https://github.com/ruflin/Elastica/issues",
                 "source": "https://github.com/ruflin/Elastica/tree/master"
             },
-            "time": "2021-03-17T17:45:45+00:00"
+            "time": "2021-03-18T14:47:32+00:00"
         },
         {
             "name": "stack/builder",
