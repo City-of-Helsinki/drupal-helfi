@@ -8,9 +8,11 @@ dependencies:
     - field.field.node.article.field_keywords
     - field.field.node.article.field_lead
     - field.field.node.article.field_liftup_image
+    - field.field.node.article.field_metatags
     - node.type.article
   module:
     - entity_reference_revisions
+    - metatag
     - user
 _core:
   default_config_hash: FYYyQKnbt3iwuxMA9vDrA5docsN-l9cy_g0J0RfBzq8
@@ -50,6 +52,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: basic_string
+    region: content
+  field_metatags:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
     region: content
   links:
     weight: 0
