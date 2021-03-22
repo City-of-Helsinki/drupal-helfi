@@ -71,6 +71,7 @@ module:
   rdf: 0
   redirect: 0
   responsive_image: 0
+  scheduler: 0
   select2: 0
   select2_icon: 0
   serialization: 0
