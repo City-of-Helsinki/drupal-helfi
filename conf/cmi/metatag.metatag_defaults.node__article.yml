@@ -1,0 +1,11 @@
+uuid: 4839c25d-f384-4427-9edd-b5fa1fbd95f5
+langcode: en
+status: true
+dependencies: {  }
+id: node__article
+label: 'Content: Article'
+tags:
+  description: '[node:field_lead]'
+  article_tag: '[node:field_keywords]'
+  og_description: '[node:field_lead]'
+  twitter_cards_description: '[node:field_lead]'
