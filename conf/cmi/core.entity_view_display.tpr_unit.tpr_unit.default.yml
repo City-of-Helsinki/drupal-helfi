@@ -1,0 +1,61 @@
+uuid: 620464b9-78a7-494a-ab86-5b03fe19c1f6
+langcode: en
+status: true
+dependencies:
+  module:
+    - helfi_tpr
+    - text
+id: tpr_unit.tpr_unit.default
+targetEntityType: tpr_unit
+bundle: tpr_unit
+mode: default
+content:
+  description:
+    type: text_default
+    weight: 1
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  picture_url:
+    type: string
+    weight: 2
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  service_map_embed:
+    label: above
+    type: service_map_embed
+    weight: 3
+    region: content
+    settings:
+      iframe_title: 'Service map'
+      link_title: 'View larger map'
+      target: true
+    third_party_settings: {  }
+hidden:
+  accessibility_email: true
+  accessibility_phone: true
+  accessibility_www: true
+  address: true
+  address_postal: true
+  call_charge_info: true
+  created: true
+  email: true
+  langcode: true
+  latitude: true
+  longitude: true
+  phone: true
+  services: true
+  streetview_entrance_url: true
+  www: true
