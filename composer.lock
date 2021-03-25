@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c8cfa4826e6afab807d4f12aa8fc5007",
+    "content-hash": "f136b2160007c6ba8c555695d9fc6af7",
     "packages": [
         {
             "name": "City-of-Helsinki/php-hauki-client",
@@ -3255,12 +3255,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base.git",
-                "reference": "57d3f45180893319d670e5ee384fe0ddf4aa94d2"
+                "reference": "fef8f7d06bf1d573b874823bbb7b1f3e5d73a121"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-api-base/zipball/57d3f45180893319d670e5ee384fe0ddf4aa94d2",
-                "reference": "57d3f45180893319d670e5ee384fe0ddf4aa94d2",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-api-base/zipball/fef8f7d06bf1d573b874823bbb7b1f3e5d73a121",
+                "reference": "fef8f7d06bf1d573b874823bbb7b1f3e5d73a121",
                 "shasum": ""
             },
             "require": {
@@ -3276,10 +3276,10 @@
             ],
             "description": "Helfi - API Base",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base/tree/1.x",
+                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base/tree/1.0.13",
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base/issues"
             },
-            "time": "2021-03-19T12:14:19+00:00"
+            "time": "2021-03-25T13:01:30+00:00"
         },
         {
             "name": "drupal/helfi_hauki",
@@ -3322,12 +3322,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "1377bd3c6642765bd80aa6784a07c4d013d86408"
+                "reference": "d5f9a6ca3ee14b8e91caffd11fe07efb0eb7605e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/1377bd3c6642765bd80aa6784a07c4d013d86408",
-                "reference": "1377bd3c6642765bd80aa6784a07c4d013d86408",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/d5f9a6ca3ee14b8e91caffd11fe07efb0eb7605e",
+                "reference": "d5f9a6ca3ee14b8e91caffd11fe07efb0eb7605e",
                 "shasum": ""
             },
             "require": {
@@ -3372,9 +3372,6 @@
                     "drupal/paragraphs_asymmetric_translation_widgets": {
                         "https://www.drupal.org/project/paragraphs_asymmetric_translation_widgets/issues/3171810#comment-13836806": "https://www.drupal.org/files/issues/2020-09-25/3171810-2.patch"
                     },
-                    "drupal/features": {
-                        "https://www.drupal.org/project/features/issues/2869336": "https://www.drupal.org/files/issues/features_export-config-translation-2869336-2.patch"
-                    },
                     "drupal/eu_cookie_compliance": {
                         "Helfi-specific customizations to EU Cookie Compliance": "https://gist.githubusercontent.com/tuutti/68890713f0d0d9e00499823150c41f7e/raw/c5be8d708d4c17cd0edefc1a2588514da6d33eda/eu_cookie_compliance_block.patch"
                     }
@@ -3388,7 +3385,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/latest",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2021-03-23T08:24:34+00:00"
+            "time": "2021-03-25T13:30:20+00:00"
         },
         {
             "name": "drupal/helfi_tpr",
@@ -3396,12 +3393,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr.git",
-                "reference": "8591924ea43a3304897de4368a3d7f1ff6354cad"
+                "reference": "b26b862058f25e813195ced67bb70de19d47dd54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-tpr/zipball/8591924ea43a3304897de4368a3d7f1ff6354cad",
-                "reference": "8591924ea43a3304897de4368a3d7f1ff6354cad",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-tpr/zipball/b26b862058f25e813195ced67bb70de19d47dd54",
+                "reference": "b26b862058f25e813195ced67bb70de19d47dd54",
                 "shasum": ""
             },
             "require": {
@@ -3419,10 +3416,10 @@
             ],
             "description": "TPR integration",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/tree/1.1.7",
+                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/tree/1.1.8",
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/issues"
             },
-            "time": "2021-03-09T10:18:02+00:00"
+            "time": "2021-03-25T13:40:33+00:00"
         },
         {
             "name": "drupal/helfi_tunnistamo",
@@ -4774,26 +4771,25 @@
         },
         {
             "name": "elasticsearch/elasticsearch",
-            "version": "v7.11.0",
+            "version": "v7.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/elastic/elasticsearch-php.git",
-                "reference": "277cd5e182827c59c23e146a836a30470c0f879d"
+                "reference": "25522ef4f16adcf49d7a1db149f2fcf010655b7f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/elastic/elasticsearch-php/zipball/277cd5e182827c59c23e146a836a30470c0f879d",
-                "reference": "277cd5e182827c59c23e146a836a30470c0f879d",
+                "url": "https://api.github.com/repos/elastic/elasticsearch-php/zipball/25522ef4f16adcf49d7a1db149f2fcf010655b7f",
+                "reference": "25522ef4f16adcf49d7a1db149f2fcf010655b7f",
                 "shasum": ""
             },
             "require": {
                 "ext-json": ">=1.3.7",
                 "ezimuel/ringphp": "^1.1.2",
-                "php": "^7.1 || ^8.0",
+                "php": "^7.3 || ^8.0",
                 "psr/log": "~1.0"
             },
             "require-dev": {
-                "cpliakas/git-wrapper": "~2.0 || ~3.0",
                 "doctrine/inflector": "^1.3",
                 "ext-yaml": "*",
                 "ext-zip": "*",
@@ -4802,7 +4798,8 @@
                 "phpunit/phpunit": "^7.5 || ^8.5 || ^9.3",
                 "squizlabs/php_codesniffer": "^3.4",
                 "symfony/finder": "~4.0",
-                "symfony/yaml": "~4.0"
+                "symfony/yaml": "~4.0",
+                "symplify/git-wrapper": "~9.0"
             },
             "suggest": {
                 "ext-curl": "*",
@@ -4837,9 +4834,9 @@
             ],
             "support": {
                 "issues": "https://github.com/elastic/elasticsearch-php/issues",
-                "source": "https://github.com/elastic/elasticsearch-php/tree/v7.11.0"
+                "source": "https://github.com/elastic/elasticsearch-php/tree/v7.12.0"
             },
-            "time": "2021-02-11T11:04:51+00:00"
+            "time": "2021-03-23T18:08:45+00:00"
         },
         {
             "name": "enlightn/security-checker",
@@ -6930,12 +6927,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ruflin/Elastica.git",
-                "reference": "8ca6b4233533646f460fde8ea9bd5fd02f8fb763"
+                "reference": "8ecc5cdadd5bf0b69c1eb20e56246a940b43bdb7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ruflin/Elastica/zipball/8ca6b4233533646f460fde8ea9bd5fd02f8fb763",
-                "reference": "8ca6b4233533646f460fde8ea9bd5fd02f8fb763",
+                "url": "https://api.github.com/repos/ruflin/Elastica/zipball/8ecc5cdadd5bf0b69c1eb20e56246a940b43bdb7",
+                "reference": "8ecc5cdadd5bf0b69c1eb20e56246a940b43bdb7",
                 "shasum": ""
             },
             "require": {
@@ -6988,9 +6985,9 @@
             ],
             "support": {
                 "issues": "https://github.com/ruflin/Elastica/issues",
-                "source": "https://github.com/ruflin/Elastica/tree/master"
+                "source": "https://github.com/ruflin/Elastica/tree/7.1.1"
             },
-            "time": "2021-03-22T20:41:25+00:00"
+            "time": "2021-03-24T14:35:48+00:00"
         },
         {
             "name": "stack/builder",

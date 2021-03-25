@@ -1,4 +1,5 @@
 label: Media
+description: 'Etsi ja ylläpidä mediatiedostoja.'
 display:
   default:
     display_title: Isäntä
@@ -28,12 +29,13 @@ display:
           label: Pienoiskuva
           separator: ', '
         name:
+          label: 'Mediatiedoston nimi'
           separator: ', '
         bundle:
           label: Tyyppi
           separator: ', '
         uid:
-          label: Tekijä
+          label: Kirjoittaja
           separator: ', '
         status:
           label: Tila
@@ -47,6 +49,9 @@ display:
         operations:
           label: Toimenpiteet
       filters:
+        name:
+          expose:
+            label: 'Mediatiedoston nimi'
         bundle:
           expose:
             label: Tyyppi
@@ -66,7 +71,7 @@ display:
       title: Media
       empty:
         area_text_custom:
-          content: 'Ei mediaa saatavilla.'
+          content: 'Ei mediatiedostoja saatavilla.'
   media_page_list:
     display_title: Media
     display_options:
