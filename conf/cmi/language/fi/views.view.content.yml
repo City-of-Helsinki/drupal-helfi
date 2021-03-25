@@ -24,7 +24,7 @@ display:
           label: Sisältötyyppi
           separator: ', '
         name:
-          label: Tekijä
+          label: Kirjoittaja
         langcode:
           label: Kieli
           separator: ', '

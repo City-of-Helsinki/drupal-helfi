@@ -1,4 +1,5 @@
 label: Luokittelutermi
+description: 'Sisältö, joka kuuluu tiettyyn taksonomiatermiin.'
 display:
   default:
     display_title: Isäntä

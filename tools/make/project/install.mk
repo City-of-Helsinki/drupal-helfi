@@ -1,6 +1,6 @@
-ifeq ($(DRUPAL_CONF_EXISTS)$(DRUPAL_VERSION),no8)
+ifeq ($(DRUPAL_CONF_EXISTS)$(DRUPAL_VERSION),yes8)
     DRUPAL_NEW_TARGETS := up build drush-si drush-enable-modules drush-locale-import drush-uli
-    DRUPAL_FRESH_TARGETS := up build sync post-install drush-locale-import
+    DRUPAL_POST_INSTALL_TARGETS := drush-updb drush-cim drush-locale-import drush-uli
 endif
 
 PHONY += drush-enable-modules
@@ -11,4 +11,4 @@ drush-enable-modules: ## Enable modules and base configurations.
 PHONY += drush-locale-import
 drush-locale-import: ## Import locale PO files
 	$(call step,Import locale PO files...)
-	$(call drush_on_${RUN_ON},helfi:locale-import helfi_platform_config)
+	$(call drush_on_docker,helfi:locale-import helfi_platform_config)

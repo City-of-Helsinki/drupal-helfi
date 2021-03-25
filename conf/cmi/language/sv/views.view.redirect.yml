@@ -1,5 +1,5 @@
-label: Omdirigera
-description: 'Lista över omdirigeringar'
+label: Redirect
+description: 'List of redirects'
 display:
   default:
     display_title: Huvud
@@ -24,7 +24,7 @@ display:
             offset_label: Kompensera
       fields:
         redirect_bulk_form:
-          action_title: 'Med urval'
+          action_title: 'With selection'
         redirect_source__path:
           label: Från
           separator: ', '
@@ -39,15 +39,15 @@ display:
             label: Till
         status_code:
           expose:
-            label: Statuskod
+            label: 'Status code'
           group_info:
-            label: Statuskod
+            label: 'Status code'
         language:
           expose:
             label: Ursprungsspråk
-      title: Omdirigera
+      title: Redirect
       empty:
         area_text_custom:
-          content: 'Det finns ingen omdirigering ännu.'
+          content: 'There is no redirect yet.'
   page_1:
     display_title: Sida
