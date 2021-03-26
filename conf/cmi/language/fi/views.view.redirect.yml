@@ -1,4 +1,5 @@
 label: Redirect
+description: Uudelleenohjaukset
 display:
   default:
     display_title: Isäntä
@@ -37,7 +38,10 @@ display:
           expose:
             label: Osoitteeseen
         status_code:
+          expose:
+            label: Tilakoodi
           group_info:
+            label: Tilakoodi
             group_items:
               1:
                 title: '300 Useita valintoja'
@@ -57,5 +61,8 @@ display:
           expose:
             label: 'Alkuperäinen kieli'
       title: Redirect
+      empty:
+        area_text_custom:
+          content: 'Ei ole vielä uudelleenohjaksia.'
   page_1:
     display_title: Sivu

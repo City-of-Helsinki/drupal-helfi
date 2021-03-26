@@ -1,1 +1,2 @@
 label: 'Päivämäärä lyhyessä muodossa'
+pattern: 'j.n.Y - H:i'

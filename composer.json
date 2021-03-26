@@ -111,9 +111,6 @@
             "drupal/paragraphs_asymmetric_translation_widgets": {
                 "https://www.drupal.org/project/paragraphs_asymmetric_translation_widgets/issues/3171810#comment-13836806": "https://www.drupal.org/files/issues/2020-09-25/3171810-2.patch"
             },
-            "drupal/features": {
-                "https://www.drupal.org/project/features/issues/2869336": "https://www.drupal.org/files/issues/features_export-config-translation-2869336-2.patch"
-            },
             "drupal/eu_cookie_compliance": {
                 "Helfi-specific customizations to EU Cookie Compliance": "./patches/eu_cookie_compliance_block.patch"
             }
