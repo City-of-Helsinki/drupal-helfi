@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - linkit
+    - media
+    - token_filter
 _core:
   default_config_hash: xpLSr9WoVOW2SAHrxY02hUPmBUOf1TNQMcjZ7UqpfkU
 name: HTML
@@ -45,3 +47,19 @@ filters:
     weight: 0
     settings:
       title: true
+  media_embed:
+    id: media_embed
+    provider: media
+    status: false
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_media_types: {  }
+      allowed_view_modes: {  }
+  token_filter:
+    id: token_filter
+    provider: token_filter
+    status: true
+    weight: 0
+    settings:
+      replace_empty: '0'

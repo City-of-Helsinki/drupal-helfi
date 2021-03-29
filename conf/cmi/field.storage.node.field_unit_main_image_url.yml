@@ -1,0 +1,22 @@
+uuid: b90867f4-9d1d-4a94-a0d6-0997cdbf63d8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+_core:
+  default_config_hash: oESbGe3sVB_F6JNv4hDajBz63vZLw5_PxDpn3gMiJ_4
+id: node.field_unit_main_image_url
+field_name: field_unit_main_image_url
+entity_type: node
+type: text
+settings:
+  max_length: 2048
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
