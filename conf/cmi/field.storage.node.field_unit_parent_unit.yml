@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: M4V9RDTcR6tAVjSdA0ML58RiuO6XTLfH8ShV6gtvF08
 id: node.field_unit_parent_unit
 field_name: field_unit_parent_unit
 entity_type: node

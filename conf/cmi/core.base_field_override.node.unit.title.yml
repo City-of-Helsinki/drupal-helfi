@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - node.type.unit
+_core:
+  default_config_hash: HJXEycFlPs-awzB1LKMdQgld1ibEcp8fTCrkAnLqQNU
 id: node.unit.title
 field_name: title
 entity_type: node

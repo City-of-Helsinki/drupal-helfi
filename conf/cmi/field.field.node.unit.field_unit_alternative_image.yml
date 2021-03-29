@@ -6,6 +6,8 @@ dependencies:
     - field.storage.node.field_unit_alternative_image
     - media.type.image
     - node.type.unit
+_core:
+  default_config_hash: E6DKDtR0jvFOXsaU4_hHSs9rrSqn2CL74Iv6QbKg0Ps
 id: node.unit.field_unit_alternative_image
 field_name: field_unit_alternative_image
 entity_type: node

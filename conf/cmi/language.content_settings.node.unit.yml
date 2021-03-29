@@ -9,6 +9,8 @@ dependencies:
 third_party_settings:
   content_translation:
     enabled: true
+_core:
+  default_config_hash: e_8PvMmswHrSijySFlkLTW-cXk_ilqa2hFml142KtDw
 id: node.unit
 target_entity_type_id: node
 target_bundle: unit

@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - node.type.unit
+_core:
+  default_config_hash: '-YENQs-HIfgZwyuL-RwegHUtxoqsYM2OF3xUf2z2NUQ'
 id: node.unit.promote
 field_name: promote
 entity_type: node

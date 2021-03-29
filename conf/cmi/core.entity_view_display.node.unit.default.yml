@@ -14,6 +14,8 @@ dependencies:
   module:
     - text
     - user
+_core:
+  default_config_hash: DS5ez2trpFU-APLjaLq4YgZxB7zm_3cl6GEybbue6Ig
 id: node.unit.default
 targetEntityType: node
 bundle: unit

@@ -7,6 +7,8 @@ dependencies:
     - node.type.unit
   module:
     - text
+_core:
+  default_config_hash: eoJHQEHuoz_yG73Cc-xZnNAAd7uWKAWjr9pyKnH3_n0
 id: node.unit.field_unit_visible_title
 field_name: field_unit_visible_title
 entity_type: node

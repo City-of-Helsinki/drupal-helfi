@@ -7,6 +7,8 @@ dependencies:
     - node.type.unit
   module:
     - text
+_core:
+  default_config_hash: rymkYvbVXh0p8tlw1qiW6sLHCJf2087vM0-Df8ORqUQ
 id: node.unit.field_unit_short_description
 field_name: field_unit_short_description
 entity_type: node

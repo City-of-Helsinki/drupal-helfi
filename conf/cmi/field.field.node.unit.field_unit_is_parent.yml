@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.storage.node.field_unit_is_parent
     - node.type.unit
+_core:
+  default_config_hash: qdRJtrPAvUsQQWkdBLF1jwCH_vXudmz44aYScpHx0ts
 id: node.unit.field_unit_is_parent
 field_name: field_unit_is_parent
 entity_type: node

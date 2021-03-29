@@ -14,6 +14,8 @@ dependencies:
     - node.type.unit
   module:
     - user
+_core:
+  default_config_hash: YZaoYlbdqOTczpynFVkMEvyhTvMmecFQg_d0IkcIIbc
 id: node.unit.teaser
 targetEntityType: node
 bundle: unit
