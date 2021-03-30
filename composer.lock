@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "233a18b32da0ad0e82647067d7b83989",
+    "content-hash": "30a60981fb8c467b17df4a1ba7e362e1",
     "packages": [
         {
             "name": "City-of-Helsinki/php-hauki-client",
@@ -3375,15 +3375,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "d5f9a6ca3ee14b8e91caffd11fe07efb0eb7605e"
+                "reference": "d160bef3f186472c71c07d309c284722c7b99684"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/d5f9a6ca3ee14b8e91caffd11fe07efb0eb7605e",
-                "reference": "d5f9a6ca3ee14b8e91caffd11fe07efb0eb7605e",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/d160bef3f186472c71c07d309c284722c7b99684",
+                "reference": "d160bef3f186472c71c07d309c284722c7b99684",
                 "shasum": ""
             },
             "require": {
+                "drupal/aet": "^2.0@alpha",
                 "drupal/crop": "^2.1",
                 "drupal/default_content": "^2.0.0-alpha1",
                 "drupal/diff": "^1.0",
@@ -3394,6 +3395,7 @@
                 "drupal/features": "^3.12",
                 "drupal/focal_point": "^1.5",
                 "drupal/image_style_quality": "^1.4",
+                "drupal/imagecache_external": "^3.0",
                 "drupal/linkit": "^6.0@beta",
                 "drupal/media_entity_soundcloud": "^3.0.0",
                 "drupal/menu_block_current_language": "^1.5",
@@ -3406,7 +3408,9 @@
                 "drupal/search_api": "^1.0",
                 "drupal/select2": "^1.12",
                 "drupal/simple_sitemap": "^3.0",
-                "drupal/social_media": "^1.8"
+                "drupal/social_media": "^1.8",
+                "drupal/token": "^1.9",
+                "drupal/token_filter": "^1.2"
             },
             "type": "drupal-custom-module",
             "extra": {
@@ -3438,7 +3442,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/latest",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2021-03-25T13:30:20+00:00"
+            "time": "2021-03-29T16:32:35+00:00"
         },
         {
             "name": "drupal/helfi_tpr",
