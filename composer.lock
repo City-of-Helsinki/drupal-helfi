@@ -1759,6 +1759,59 @@
             }
         },
         {
+            "name": "drupal/aet",
+            "version": "2.0.0-alpha6",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/aet.git",
+                "reference": "2.0.0-alpha6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/aet-2.0.0-alpha6.zip",
+                "reference": "2.0.0-alpha6",
+                "shasum": "7477f7f3963698e728e11cbf3f5c803b0e8229bf"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9",
+                "drupal/token": "^1.7"
+            },
+            "require-dev": {
+                "drupal/token_filter": "^1.2"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-alpha6",
+                    "datestamp": "1597192052",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Eyal Shalev",
+                    "homepage": "https://www.drupal.org/user/1418090"
+                },
+                {
+                    "name": "colan",
+                    "homepage": "https://www.drupal.org/user/58704"
+                }
+            ],
+            "description": "Queries the database for entities using tokens",
+            "homepage": "https://www.drupal.org/project/aet",
+            "support": {
+                "source": "https://git.drupalcode.org/project/aet",
+                "issues": "https://www.drupal.org/project/issues/aet"
+            }
+        },
+        {
             "name": "drupal/api_tools",
             "version": "1.0.0",
             "source": {
@@ -3159,12 +3212,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt.git",
-                "reference": "6a79255b6cea5e22c2cb80aa6f17f54857f31772"
+                "reference": "d8a7fc26bdbadfc6c2563a84bab774712eff09aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/6a79255b6cea5e22c2cb80aa6f17f54857f31772",
-                "reference": "6a79255b6cea5e22c2cb80aa6f17f54857f31772",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/d8a7fc26bdbadfc6c2563a84bab774712eff09aa",
+                "reference": "d8a7fc26bdbadfc6c2563a84bab774712eff09aa",
                 "shasum": ""
             },
             "require": {
@@ -3182,7 +3235,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/latest",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt/issues"
             },
-            "time": "2021-03-22T15:34:38+00:00"
+            "time": "2021-03-30T15:40:07+00:00"
         },
         {
             "name": "drupal/hdbt_admin",
@@ -3255,12 +3308,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base.git",
-                "reference": "fef8f7d06bf1d573b874823bbb7b1f3e5d73a121"
+                "reference": "ca0ec4b1a34c5fd0350c62267c62bf24f8a2bd7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-api-base/zipball/fef8f7d06bf1d573b874823bbb7b1f3e5d73a121",
-                "reference": "fef8f7d06bf1d573b874823bbb7b1f3e5d73a121",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-api-base/zipball/ca0ec4b1a34c5fd0350c62267c62bf24f8a2bd7e",
+                "reference": "ca0ec4b1a34c5fd0350c62267c62bf24f8a2bd7e",
                 "shasum": ""
             },
             "require": {
@@ -3276,10 +3329,10 @@
             ],
             "description": "Helfi - API Base",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base/tree/1.0.13",
+                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base/tree/1.0.16",
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base/issues"
             },
-            "time": "2021-03-25T13:01:30+00:00"
+            "time": "2021-03-30T15:32:09+00:00"
         },
         {
             "name": "drupal/helfi_hauki",
@@ -3322,15 +3375,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "d5f9a6ca3ee14b8e91caffd11fe07efb0eb7605e"
+                "reference": "816098964649aa96b452980cbe5f6d79fa1c3c0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/d5f9a6ca3ee14b8e91caffd11fe07efb0eb7605e",
-                "reference": "d5f9a6ca3ee14b8e91caffd11fe07efb0eb7605e",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/816098964649aa96b452980cbe5f6d79fa1c3c0b",
+                "reference": "816098964649aa96b452980cbe5f6d79fa1c3c0b",
                 "shasum": ""
             },
             "require": {
+                "drupal/aet": "^2.0@alpha",
                 "drupal/crop": "^2.1",
                 "drupal/default_content": "^2.0.0-alpha1",
                 "drupal/diff": "^1.0",
@@ -3341,6 +3395,7 @@
                 "drupal/features": "^3.12",
                 "drupal/focal_point": "^1.5",
                 "drupal/image_style_quality": "^1.4",
+                "drupal/imagecache_external": "^3.0",
                 "drupal/linkit": "^6.0@beta",
                 "drupal/media_entity_soundcloud": "^3.0.0",
                 "drupal/menu_block_current_language": "^1.5",
@@ -3353,7 +3408,9 @@
                 "drupal/search_api": "^1.0",
                 "drupal/select2": "^1.12",
                 "drupal/simple_sitemap": "^3.0",
-                "drupal/social_media": "^1.8"
+                "drupal/social_media": "^1.8",
+                "drupal/token": "^1.9",
+                "drupal/token_filter": "^1.2"
             },
             "type": "drupal-custom-module",
             "extra": {
@@ -3385,7 +3442,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/latest",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2021-03-25T13:30:20+00:00"
+            "time": "2021-03-31T07:41:54+00:00"
         },
         {
             "name": "drupal/helfi_tpr",
@@ -3502,6 +3559,54 @@
             "homepage": "https://www.drupal.org/project/image_style_quality",
             "support": {
                 "source": "https://git.drupalcode.org/project/image_style_quality"
+            }
+        },
+        {
+            "name": "drupal/imagecache_external",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/imagecache_external.git",
+                "reference": "3.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/imagecache_external-3.0.0.zip",
+                "reference": "3.0.0",
+                "shasum": "8975bf8229dcfae47600502b872b01861eee1440"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.0",
+                    "datestamp": "1605799095",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "BarisW",
+                    "homepage": "https://www.drupal.org/user/107229"
+                },
+                {
+                    "name": "larowlan",
+                    "homepage": "https://www.drupal.org/user/395439"
+                }
+            ],
+            "description": "Allows you to fetch external images and use image styles on them.",
+            "homepage": "https://www.drupal.org/project/imagecache_external",
+            "support": {
+                "source": "https://git.drupalcode.org/project/imagecache_external"
             }
         },
         {
@@ -4506,6 +4611,75 @@
             "homepage": "https://www.drupal.org/project/token",
             "support": {
                 "source": "https://git.drupalcode.org/project/token"
+            }
+        },
+        {
+            "name": "drupal/token_filter",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/token_filter.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/token_filter-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "4d22feb0c96aeb747152d947499258e49769c237"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/token": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1588029999",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Darvanen",
+                    "homepage": "https://www.drupal.org/user/1068770"
+                },
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "Deciphered",
+                    "homepage": "https://www.drupal.org/user/103796"
+                },
+                {
+                    "name": "ademarco",
+                    "homepage": "https://www.drupal.org/user/186696"
+                },
+                {
+                    "name": "asciikewl",
+                    "homepage": "https://www.drupal.org/user/147292"
+                },
+                {
+                    "name": "pescetti",
+                    "homepage": "https://www.drupal.org/user/436244"
+                },
+                {
+                    "name": "pvhee",
+                    "homepage": "https://www.drupal.org/user/108811"
+                }
+            ],
+            "description": "This is a very simple module to make global token values available as an input filter.",
+            "homepage": "https://www.drupal.org/project/token_filter",
+            "support": {
+                "source": "https://git.drupalcode.org/project/token_filter"
             }
         },
         {
@@ -7649,16 +7823,16 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v4.4.20",
+            "version": "v4.4.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "715e7a531bdae109a828f9e91629e5b3b2926beb"
+                "reference": "940826c465be2690c9fae91b2793481e5cbd6834"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/715e7a531bdae109a828f9e91629e5b3b2926beb",
-                "reference": "715e7a531bdae109a828f9e91629e5b3b2926beb",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/940826c465be2690c9fae91b2793481e5cbd6834",
+                "reference": "940826c465be2690c9fae91b2793481e5cbd6834",
                 "shasum": ""
             },
             "require": {
@@ -7691,7 +7865,7 @@
             "description": "Provides basic utilities for the filesystem",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/filesystem/tree/v4.4.20"
+                "source": "https://github.com/symfony/filesystem/tree/v4.4.21"
             },
             "funding": [
                 {
@@ -7707,7 +7881,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-11T19:34:41+00:00"
+            "time": "2021-03-28T09:59:32+00:00"
         },
         {
             "name": "symfony/finder",
@@ -10369,16 +10543,16 @@
         },
         {
             "name": "composer/xdebug-handler",
-            "version": "1.4.5",
+            "version": "1.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/xdebug-handler.git",
-                "reference": "f28d44c286812c714741478d968104c5e604a1d4"
+                "reference": "f27e06cd9675801df441b3656569b328e04aa37c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/f28d44c286812c714741478d968104c5e604a1d4",
-                "reference": "f28d44c286812c714741478d968104c5e604a1d4",
+                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/f27e06cd9675801df441b3656569b328e04aa37c",
+                "reference": "f27e06cd9675801df441b3656569b328e04aa37c",
                 "shasum": ""
             },
             "require": {
@@ -10386,7 +10560,8 @@
                 "psr/log": "^1.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.35 || ^5.7 || 6.5 - 8"
+                "phpstan/phpstan": "^0.12.55",
+                "symfony/phpunit-bridge": "^4.2 || ^5"
             },
             "type": "library",
             "autoload": {
@@ -10412,7 +10587,7 @@
             "support": {
                 "irc": "irc://irc.freenode.org/composer",
                 "issues": "https://github.com/composer/xdebug-handler/issues",
-                "source": "https://github.com/composer/xdebug-handler/tree/1.4.5"
+                "source": "https://github.com/composer/xdebug-handler/tree/1.4.6"
             },
             "funding": [
                 {
@@ -10428,7 +10603,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-11-13T08:04:11+00:00"
+            "time": "2021-03-25T17:01:18+00:00"
         },
         {
             "name": "dealerdirect/phpcodesniffer-composer-installer",
@@ -11427,16 +11602,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "9.2.5",
+            "version": "9.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "f3e026641cc91909d421802dd3ac7827ebfd97e1"
+                "reference": "f6293e1b30a2354e8428e004689671b83871edde"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/f3e026641cc91909d421802dd3ac7827ebfd97e1",
-                "reference": "f3e026641cc91909d421802dd3ac7827ebfd97e1",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/f6293e1b30a2354e8428e004689671b83871edde",
+                "reference": "f6293e1b30a2354e8428e004689671b83871edde",
                 "shasum": ""
             },
             "require": {
@@ -11492,7 +11667,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
-                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.5"
+                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.6"
             },
             "funding": [
                 {
@@ -11500,7 +11675,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-11-28T06:44:49+00:00"
+            "time": "2021-03-28T07:26:59+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -13241,16 +13416,16 @@
         },
         {
             "name": "symfony/lock",
-            "version": "v4.4.20",
+            "version": "v4.4.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/lock.git",
-                "reference": "5004691f5b01616d55b41dc9e1f22d4bbd0c15a3"
+                "reference": "e95b36dd178eb43b02e84b90635399da4a9c3120"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/lock/zipball/5004691f5b01616d55b41dc9e1f22d4bbd0c15a3",
-                "reference": "5004691f5b01616d55b41dc9e1f22d4bbd0c15a3",
+                "url": "https://api.github.com/repos/symfony/lock/zipball/e95b36dd178eb43b02e84b90635399da4a9c3120",
+                "reference": "e95b36dd178eb43b02e84b90635399da4a9c3120",
                 "shasum": ""
             },
             "require": {
@@ -13298,7 +13473,7 @@
                 "semaphore"
             ],
             "support": {
-                "source": "https://github.com/symfony/lock/tree/v4.4.20"
+                "source": "https://github.com/symfony/lock/tree/v4.4.21"
             },
             "funding": [
                 {
@@ -13314,20 +13489,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-14T12:29:41+00:00"
+            "time": "2021-03-24T08:30:27+00:00"
         },
         {
             "name": "symfony/phpunit-bridge",
-            "version": "v5.2.4",
+            "version": "v5.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/phpunit-bridge.git",
-                "reference": "9d85d900c1afe29138a0d5854505eb684bc3ac6d"
+                "reference": "f2f94fd78379cdcdef09dd5025af791301913968"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/9d85d900c1afe29138a0d5854505eb684bc3ac6d",
-                "reference": "9d85d900c1afe29138a0d5854505eb684bc3ac6d",
+                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/f2f94fd78379cdcdef09dd5025af791301913968",
+                "reference": "f2f94fd78379cdcdef09dd5025af791301913968",
                 "shasum": ""
             },
             "require": {
@@ -13381,7 +13556,7 @@
             "description": "Provides utilities for PHPUnit, especially user deprecation notices management",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/phpunit-bridge/tree/v5.2.4"
+                "source": "https://github.com/symfony/phpunit-bridge/tree/v5.2.6"
             },
             "funding": [
                 {
@@ -13397,7 +13572,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-04T18:05:54+00:00"
+            "time": "2021-03-23T20:42:04+00:00"
         },
         {
             "name": "theseer/tokenizer",
