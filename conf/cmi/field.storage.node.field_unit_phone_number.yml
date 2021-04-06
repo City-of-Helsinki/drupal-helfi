@@ -1,16 +1,17 @@
-uuid: 58f7529f-3011-4b11-b0dc-e7c0d95f00b0
+uuid: 9770b44d-bb77-4d7d-ae21-8da77e7715d9
 langcode: en
 status: true
 dependencies:
   module:
-    - address
     - node
-id: node.field_unit_alternative_address
-field_name: field_unit_alternative_address
+    - text
+id: node.field_unit_phone_number
+field_name: field_unit_phone_number
 entity_type: node
-type: address
-settings: {  }
-module: address
+type: text
+settings:
+  max_length: 255
+module: text
 locked: false
 cardinality: 1
 translatable: true
