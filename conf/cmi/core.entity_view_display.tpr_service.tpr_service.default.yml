@@ -1,0 +1,30 @@
+uuid: 1c486952-15a2-4566-b5cc-b345b91722dd
+langcode: en
+status: true
+dependencies:
+  module:
+    - helfi_tpr
+    - text
+id: tpr_service.tpr_service.default
+targetEntityType: tpr_service
+bundle: tpr_service
+mode: default
+content:
+  description:
+    type: text_default
+    weight: 1
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
