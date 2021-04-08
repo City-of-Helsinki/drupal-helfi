@@ -1,0 +1,24 @@
+uuid: a155f27d-bd84-46cf-9136-bc5e43f71e79
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: kib7lNAuMquBvCQnSxC1qZqtZs_c_GCTg7gVrNDeQ4s
+id: unit_page_pattern
+label: 'Unit page pattern'
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parents:join-path]/[node:field_unit_visible_title]'
+selection_criteria:
+  542e821f-eafe-4e05-bf79-fe1042e4f418:
+    id: node_type
+    bundles:
+      unit: unit
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 542e821f-eafe-4e05-bf79-fe1042e4f418
+selection_logic: and
+weight: -5
+relationships: {  }

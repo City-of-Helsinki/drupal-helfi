@@ -30,5 +30,8 @@ display:
         combine:
           expose:
             label: Etsi
+      footer:
+        result:
+          content: 'Näytetään @start - @end / @total'
   page_1:
     display_title: Sivu

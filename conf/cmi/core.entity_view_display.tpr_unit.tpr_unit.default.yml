@@ -1,0 +1,133 @@
+uuid: 620464b9-78a7-494a-ab86-5b03fe19c1f6
+langcode: en
+status: true
+dependencies:
+  module:
+    - address
+    - helfi_tpr
+    - link
+    - text
+id: tpr_unit.tpr_unit.default
+targetEntityType: tpr_unit
+bundle: tpr_unit
+mode: default
+content:
+  accessibility_email:
+    type: string
+    weight: 11
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  accessibility_phone:
+    type: string
+    weight: 10
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  accessibility_www:
+    type: link
+    weight: 12
+    region: content
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  address:
+    type: address_default
+    weight: 4
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  address_postal:
+    type: string
+    weight: 5
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  call_charge_info:
+    type: string
+    weight: 7
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  description:
+    type: text_default
+    weight: 1
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  email:
+    type: string
+    weight: 8
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  name:
+    type: string
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  phone:
+    type: string
+    weight: 6
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  picture_url:
+    type: string
+    weight: 2
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  service_map_embed:
+    label: above
+    type: service_map_embed
+    weight: 3
+    region: content
+    settings:
+      iframe_title: 'Service map'
+      link_title: 'View larger map'
+      target: true
+    third_party_settings: {  }
+  www:
+    type: link
+    weight: 9
+    region: content
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  latitude: true
+  longitude: true
+  services: true
+  streetview_entrance_url: true

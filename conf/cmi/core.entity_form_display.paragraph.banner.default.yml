@@ -12,7 +12,6 @@ dependencies:
     - paragraphs.paragraphs_type.banner
   module:
     - hdbt_admin_editorial
-    - link
     - select2_icon
     - text
 _core:
@@ -34,7 +33,7 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+    type: design_field_widget
     region: content
   field_banner_link:
     weight: 4
@@ -49,7 +48,7 @@ content:
     weight: 5
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+    type: design_field_widget
     region: content
   field_banner_title:
     weight: 1
