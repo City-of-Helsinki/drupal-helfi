@@ -2,6 +2,7 @@
 FROM php:7.4-fpm-alpine3.12
 
 # install the PHP extensions we need
+ENV MAGICK_HOME=/usr
 RUN set -eux; \
 	\
 	apk add --no-cache --virtual .build-deps \
@@ -10,8 +11,16 @@ RUN set -eux; \
 		libjpeg-turbo-dev \
 		libpng-dev \
 		libzip-dev \
+    imagemagick \
+    imagemagick-dev \
+    autoconf \
+    g++ \
+    libtool \
+    make \
 	; \
 	\
+	pecl install imagick; \
+  \
 	docker-php-ext-configure gd \
 		--with-freetype \
 		--with-jpeg=/usr/include \
@@ -24,6 +33,8 @@ RUN set -eux; \
 		zip \
 	; \
 	\
+	docker-php-ext-enable imagick; \
+  \
 	runDeps="$( \
 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local \
 			| tr ',' '\n' \
@@ -42,6 +53,14 @@ RUN { \
 		echo 'opcache.revalidate_freq=60'; \
 		echo 'opcache.fast_shutdown=1'; \
 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
+
+# override memory limit and upload max filesize and post max size
+# to enable bigger uploads
+RUN { \
+		echo 'memory_limit=512M'; \
+		echo 'upload_max_filesize=32M'; \
+		echo 'post_max_size=32M'; \
+	} > /usr/local/etc/php/conf.d/php-overrides.ini
 
 # Install required tools (https://docs.acquia.com/blt/install/)
 # alpine-sdk required for the make script in composer.json
