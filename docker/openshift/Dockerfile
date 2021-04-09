@@ -2,6 +2,7 @@
 FROM php:7.4-fpm-alpine3.12
 
 # install the PHP extensions we need
+ENV MAGICK_HOME=/usr
 RUN set -eux; \
 	\
 	apk add --no-cache --virtual .build-deps \
@@ -10,8 +11,16 @@ RUN set -eux; \
 		libjpeg-turbo-dev \
 		libpng-dev \
 		libzip-dev \
+    imagemagick \
+    imagemagick-dev \
+    autoconf \
+    g++ \
+    libtool \
+    make \
 	; \
 	\
+	pecl install imagick; \
+  \
 	docker-php-ext-configure gd \
 		--with-freetype \
 		--with-jpeg=/usr/include \
@@ -24,6 +33,8 @@ RUN set -eux; \
 		zip \
 	; \
 	\
+	docker-php-ext-enable imagick; \
+  \
 	runDeps="$( \
 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local \
 			| tr ',' '\n' \
