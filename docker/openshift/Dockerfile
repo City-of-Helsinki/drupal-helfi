@@ -43,6 +43,14 @@ RUN { \
 		echo 'opcache.fast_shutdown=1'; \
 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 
+# override memory limit and upload max filesize and post max size
+# to enable bigger uploads
+RUN { \
+		echo 'memory_limit=512M'; \
+		echo 'upload_max_filesize=32M'; \
+		echo 'post_max_size=32M'; \
+	} > /usr/local/etc/php/conf.d/php-overrides.ini
+
 # Install required tools (https://docs.acquia.com/blt/install/)
 # alpine-sdk required for the make script in composer.json
 RUN apk update && apk upgrade && \
