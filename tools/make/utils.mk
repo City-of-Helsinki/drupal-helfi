@@ -17,6 +17,10 @@ define step
 	@printf "\n⚡ ${YELLOW}${1}${NO_COLOR}\n\n"
 endef
 
+define sub_step
+	@printf "\n   ${YELLOW}${1}${NO_COLOR}\n\n"
+endef
+
 define warn
 	@printf "\n⚠️  ${1}\n\n"
 endef

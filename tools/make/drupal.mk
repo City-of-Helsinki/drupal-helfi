@@ -24,6 +24,8 @@ LINT_PATHS_JS += ./$(WEBROOT)/themes/custom/*/js
 LINT_PATHS_PHP += -v $(CURDIR)/drush:/app/drush:rw,consistent
 LINT_PATHS_PHP += -v $(CURDIR)/$(WEBROOT)/modules/custom:/app/$(WEBROOT)/modules/custom:rw,consistent
 LINT_PATHS_PHP += -v $(CURDIR)/$(WEBROOT)/themes/custom:/app/$(WEBROOT)/themes/custom:rw,consistent
+LINT_PHP_TARGETS += lint-drupal
+FIX_TARGETS += fix-drupal
 
 # TODO Remove this when DRUPAL_WEBROOT vars are removed from projects
 ifdef DRUPAL_WEBROOT
@@ -33,7 +35,7 @@ endif
 PHONY += drupal-update
 drupal-update: ## Update Drupal core with Composer
 	$(call step,Update Drupal core with Composer...)
-	@composer update "drupal/core-*" --with-dependencies
+	@composer update -W "drupal/core-*"
 
 PHONY += drush-cex
 drush-cex: ## Export configuration
@@ -116,7 +118,7 @@ PHONY += drush-sync-db
 drush-sync-db: ## Sync database
 ifeq ($(DUMP_SQL_EXISTS),yes)
 	$(call step,Import local SQL dump...)
-	$(call drush_on_${RUN_ON},sql-cli < ${DOCKER_PROJECT_ROOT}/$(DUMP_SQL_FILENAME))
+	$(call drush_on_${RUN_ON},sql-query --file=${DOCKER_PROJECT_ROOT}/$(DUMP_SQL_FILENAME))
 else
 	$(call step,Sync database from @$(DRUPAL_SYNC_SOURCE)...)
 	$(call drush_on_${RUN_ON},sql-sync -y --structure-tables-key=common @$(DRUPAL_SYNC_SOURCE) @self)
@@ -136,10 +138,31 @@ else
 endif
 endif
 
+PHONY += drush-create-dump
+drush-create-dump: FLAGS := --structure-tables-key=common --extra-dump=--no-tablespaces
+drush-create-dump: ## Create database dump to dump.sql
+	$(call drush_on_${RUN_ON},sql-dump $(FLAGS) --result-file=${DOCKER_PROJECT_ROOT}/$(DUMP_SQL_FILENAME))
+
 PHONY += drush-download-dump
 drush-download-dump: DOCKER_COMPOSE_EXEC := docker-compose exec
 drush-download-dump: ## Download database dump to dump.sql
 	$(call drush_on_${RUN_ON},-Dssh.tty=0 @$(DRUPAL_SYNC_SOURCE) sql-dump > ${DOCKER_PROJECT_ROOT}/$(DUMP_SQL_FILENAME))
+
+PHONY += fix-drupal
+fix-drupal: VOLUMES := $(subst $(space),,$(LINT_PATHS_PHP))
+fix-drupal: ## Fix Drupal code style
+	$(eval PHP_VERSION := $(shell docker run --rm -it $(DRUPAL_IMAGE) bash -c "php -v | grep ^PHP | cut -d' ' -f2 | cut -c0-3"))
+	$(eval IMG := druidfi/qa:php-$(PHP_VERSION))
+	$(call step,Fix Drupal code style...)
+	@docker run --rm -it $(VOLUMES) $(IMG) bash -c "phpcbf --runtime-set drupal_core_version $(DRUPAL_VERSION) ."
+
+PHONY += lint-drupal
+lint-drupal: VOLUMES := $(subst $(space),,$(LINT_PATHS_PHP))
+lint-drupal: ## Lint Drupal code style
+	$(eval PHP_VERSION := $(shell docker run --rm -it $(DRUPAL_IMAGE) bash -c "php -v | grep ^PHP | cut -d' ' -f2 | cut -c0-3"))
+	$(eval IMG := druidfi/qa:php-$(PHP_VERSION))
+	$(call step,Lint Drupal code style with $(PHP_VERSION)...)
+	@docker run --rm -it $(VOLUMES) $(IMG) bash -c "phpcs --runtime-set drupal_core_version $(DRUPAL_VERSION) ."
 
 mmfix: MODULE := MISSING_MODULE
 mmfix:

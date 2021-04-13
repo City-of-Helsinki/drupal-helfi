@@ -28,10 +28,12 @@ endif
 
 ifeq ($(INSTALLED_NODE_VERSION),$(NODE_VERSION))
 define node_run
+	$(call sub_step,Using local $(JS_PACKAGE_MANAGER)...)
 	@$(JS_PACKAGE_MANAGER) $(1)
 endef
 else
 define node_run
+	$(call sub_step,Using $(NODE_IMG) Docker image...)
 	@docker run --rm -v $(CURDIR):/app $(NODE_IMG) /bin/bash -c "$(JS_PACKAGE_MANAGER) $(1)"
 endef
 endif

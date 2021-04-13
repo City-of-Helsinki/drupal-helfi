@@ -57,7 +57,7 @@ shell-%: EXTRA = $(INSTANCE_$*_EXTRA)
 shell-%: ## Login to remote instance
 	ssh $(OPTS) $(USER)@$(HOST) $(EXTRA)
 
-PHONY += self-update
+PHONY += sync
 sync: ## Sync data from other environments
 	$(call step,Start sync:\n- Following targets will be run: $(SYNC_TARGETS))
 	@$(MAKE) $(SYNC_TARGETS) ENV=$(ENV)
