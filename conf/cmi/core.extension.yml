@@ -9,6 +9,7 @@ module:
   breakpoint: 0
   ckeditor: 0
   config: 0
+  config_replace: 0
   config_translation: 0
   config_update: 0
   crop: 0
