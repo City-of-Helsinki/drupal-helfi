@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "93aee063808faede13768f53e6f5cf8d",
+    "content-hash": "5b68250d95972e84e9650cf5a777b16a",
     "packages": [
         {
             "name": "City-of-Helsinki/php-hauki-client",
@@ -3223,12 +3223,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt.git",
-                "reference": "87c018d55cbf3d29b15e6656386499722f0be09c"
+                "reference": "dfc13d065eb9528b58dfa713ff89653670ffdb19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/87c018d55cbf3d29b15e6656386499722f0be09c",
-                "reference": "87c018d55cbf3d29b15e6656386499722f0be09c",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/dfc13d065eb9528b58dfa713ff89653670ffdb19",
+                "reference": "dfc13d065eb9528b58dfa713ff89653670ffdb19",
                 "shasum": ""
             },
             "require": {
@@ -3246,7 +3246,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/latest",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt/issues"
             },
-            "time": "2021-04-13T08:30:52+00:00"
+            "time": "2021-04-15T10:33:02+00:00"
         },
         {
             "name": "drupal/hdbt_admin",
@@ -3386,16 +3386,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "8a3c1d3639c5e347566424b50b053d5b646c41b2"
+                "reference": "4c1f0bd3c6ad8f4e4e7a874e521cd4560f5c8120"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/8a3c1d3639c5e347566424b50b053d5b646c41b2",
-                "reference": "8a3c1d3639c5e347566424b50b053d5b646c41b2",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/4c1f0bd3c6ad8f4e4e7a874e521cd4560f5c8120",
+                "reference": "4c1f0bd3c6ad8f4e4e7a874e521cd4560f5c8120",
                 "shasum": ""
             },
             "require": {
                 "drupal/aet": "^2.0@alpha",
+                "drupal/config_replace": "^2.0",
                 "drupal/crop": "^2.1",
                 "drupal/default_content": "^2.0.0-alpha1",
                 "drupal/diff": "^1.0",
@@ -3456,7 +3457,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/latest",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2021-04-13T08:34:30+00:00"
+            "time": "2021-04-15T07:39:20+00:00"
         },
         {
             "name": "drupal/helfi_tpr",
@@ -4188,60 +4189,6 @@
                 "source": "https://cgit.drupalcode.org/pathauto",
                 "issues": "https://www.drupal.org/project/issues/pathauto",
                 "documentation": "https://www.drupal.org/docs/8/modules/pathauto"
-            }
-        },
-        {
-            "name": "drupal/potx",
-            "version": "dev-1.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/potx.git",
-                "reference": "6feff4b0ead148e2e654f8319a97472448dd8c36"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-alpha1+2-dev",
-                    "datestamp": "1599569465",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
-                    }
-                },
-                "drush": {
-                    "services": {
-                        "drush.services.yml": "^9"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL"
-            ],
-            "authors": [
-                {
-                    "name": "Gábor Hojtsy",
-                    "homepage": "https://www.drupal.org/user/4166"
-                },
-                {
-                    "name": "SebCorbin",
-                    "homepage": "https://www.drupal.org/user/412171"
-                },
-                {
-                    "name": "herom",
-                    "homepage": "https://www.drupal.org/user/1866898"
-                }
-            ],
-            "description": "Translation template extractor",
-            "homepage": "https://www.drupal.org/project/potx",
-            "support": {
-                "source": "https://git.drupalcode.org/project/potx"
             }
         },
         {
@@ -13705,8 +13652,7 @@
         "drupal/helfi_tunnistamo": 20,
         "drupal/linkit": 10,
         "drupal/openid_connect": 5,
-        "drupal/paragraphs_asymmetric_translation_widgets": 10,
-        "drupal/potx": 20
+        "drupal/paragraphs_asymmetric_translation_widgets": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,
