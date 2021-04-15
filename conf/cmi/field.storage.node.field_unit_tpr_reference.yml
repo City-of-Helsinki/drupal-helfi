@@ -1,0 +1,20 @@
+uuid: eb5ce1b1-c960-48c7-9430-f3f14b6148c1
+langcode: en
+status: true
+dependencies:
+  module:
+    - helfi_tpr
+    - node
+id: node.field_unit_tpr_reference
+field_name: field_unit_tpr_reference
+entity_type: node
+type: entity_reference
+settings:
+  target_type: tpr_unit
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

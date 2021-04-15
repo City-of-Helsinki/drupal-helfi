@@ -112,6 +112,14 @@ content:
       link_title: 'View larger map'
       target: true
     third_party_settings: {  }
+  services:
+    type: entity_reference_label
+    weight: 13
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
   www:
     type: link
     weight: 9
@@ -129,5 +137,4 @@ hidden:
   langcode: true
   latitude: true
   longitude: true
-  services: true
   streetview_entrance_url: true
