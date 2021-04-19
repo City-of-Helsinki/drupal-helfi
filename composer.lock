@@ -3319,12 +3319,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base.git",
-                "reference": "ca0ec4b1a34c5fd0350c62267c62bf24f8a2bd7e"
+                "reference": "f3ff77aab08a783765567e20aa3717fa787dec99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-api-base/zipball/ca0ec4b1a34c5fd0350c62267c62bf24f8a2bd7e",
-                "reference": "ca0ec4b1a34c5fd0350c62267c62bf24f8a2bd7e",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-api-base/zipball/f3ff77aab08a783765567e20aa3717fa787dec99",
+                "reference": "f3ff77aab08a783765567e20aa3717fa787dec99",
                 "shasum": ""
             },
             "require": {
@@ -3340,10 +3340,10 @@
             ],
             "description": "Helfi - API Base",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base/tree/1.0.16",
+                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base/tree/1.x",
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base/issues"
             },
-            "time": "2021-03-30T15:32:09+00:00"
+            "time": "2021-04-19T08:05:30+00:00"
         },
         {
             "name": "drupal/helfi_hauki",
@@ -3386,12 +3386,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "4c1f0bd3c6ad8f4e4e7a874e521cd4560f5c8120"
+                "reference": "7787ed74723c9769b292b8a24ebb7cc8fbd4de69"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/4c1f0bd3c6ad8f4e4e7a874e521cd4560f5c8120",
-                "reference": "4c1f0bd3c6ad8f4e4e7a874e521cd4560f5c8120",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/7787ed74723c9769b292b8a24ebb7cc8fbd4de69",
+                "reference": "7787ed74723c9769b292b8a24ebb7cc8fbd4de69",
                 "shasum": ""
             },
             "require": {
@@ -3438,14 +3438,17 @@
                     "drupal/easy_breadcrumb": {
                         "https://www.drupal.org/project/easy_breadcrumb/issues/3204336": "https://www.drupal.org/files/issues/2021-03-18/easy_breadcrumb-n3204336-3.patch"
                     },
+                    "drupal/eu_cookie_compliance": {
+                        "Helfi-specific customizations to EU Cookie Compliance": "https://gist.githubusercontent.com/tuutti/68890713f0d0d9e00499823150c41f7e/raw/c5be8d708d4c17cd0edefc1a2588514da6d33eda/eu_cookie_compliance_block.patch"
+                    },
+                    "drupal/features": {
+                        "https://www.drupal.org/project/features/issues/2869336": "https://www.drupal.org/files/issues/features_export-config-translation-2869336-2.patch"
+                    },
                     "drupal/paragraphs": {
                         "https://www.drupal.org/project/paragraphs/issues/2904705#comment-13836790": "https://www.drupal.org/files/issues/2020-09-25/2904705-115.patch"
                     },
                     "drupal/paragraphs_asymmetric_translation_widgets": {
                         "https://www.drupal.org/project/paragraphs_asymmetric_translation_widgets/issues/3171810#comment-13836806": "https://www.drupal.org/files/issues/2020-09-25/3171810-2.patch"
-                    },
-                    "drupal/eu_cookie_compliance": {
-                        "Helfi-specific customizations to EU Cookie Compliance": "https://gist.githubusercontent.com/tuutti/68890713f0d0d9e00499823150c41f7e/raw/c5be8d708d4c17cd0edefc1a2588514da6d33eda/eu_cookie_compliance_block.patch"
                     }
                 }
             },
@@ -3457,7 +3460,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/latest",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2021-04-15T07:39:20+00:00"
+            "time": "2021-04-19T08:03:55+00:00"
         },
         {
             "name": "drupal/helfi_tpr",
@@ -3465,17 +3468,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr.git",
-                "reference": "b26b862058f25e813195ced67bb70de19d47dd54"
+                "reference": "9b99bc2f9dd3fa4dd8c6ef16d51a90b6a1fe2945"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-tpr/zipball/b26b862058f25e813195ced67bb70de19d47dd54",
-                "reference": "b26b862058f25e813195ced67bb70de19d47dd54",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-tpr/zipball/9b99bc2f9dd3fa4dd8c6ef16d51a90b6a1fe2945",
+                "reference": "9b99bc2f9dd3fa4dd8c6ef16d51a90b6a1fe2945",
                 "shasum": ""
             },
             "require": {
                 "drupal/address": "~1.0",
-                "drupal/helfi_api_base": "*"
+                "drupal/helfi_api_base": "*",
+                "drupal/readonly_field_widget": "^1.0"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
@@ -3488,10 +3492,10 @@
             ],
             "description": "TPR integration",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/tree/1.1.8",
+                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/tree/1.x",
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/issues"
             },
-            "time": "2021-03-25T13:40:33+00:00"
+            "time": "2021-04-19T11:40:03+00:00"
         },
         {
             "name": "drupal/helfi_tunnistamo",
@@ -4189,6 +4193,50 @@
                 "source": "https://cgit.drupalcode.org/pathauto",
                 "issues": "https://www.drupal.org/project/issues/pathauto",
                 "documentation": "https://www.drupal.org/docs/8/modules/pathauto"
+            }
+        },
+        {
+            "name": "drupal/readonly_field_widget",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/readonly_field_widget.git",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/readonly_field_widget-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "79aa2211ffc4bdab4e30c43487c76df5a80d8893"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1590394864",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "thtas",
+                    "homepage": "https://www.drupal.org/user/287467"
+                }
+            ],
+            "description": "Provides a field widget which can display the field formatter version of a field on the edit form",
+            "homepage": "https://www.drupal.org/project/readonly_field_widget",
+            "support": {
+                "source": "https://git.drupalcode.org/project/readonly_field_widget"
             }
         },
         {
