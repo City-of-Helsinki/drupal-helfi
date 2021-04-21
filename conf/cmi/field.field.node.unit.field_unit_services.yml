@@ -1,0 +1,29 @@
+uuid: 929947f1-7115-4cef-b4aa-6e3fa5a5cbcf
+langcode: fi
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_unit_services
+    - node.type.service
+    - node.type.unit
+id: node.unit.field_unit_services
+field_name: field_unit_services
+entity_type: node
+bundle: unit
+label: Services
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      service: service
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
