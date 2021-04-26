@@ -14,7 +14,9 @@ dependencies:
     - field.field.node.unit.field_unit_parent_unit
     - field.field.node.unit.field_unit_phone_number
     - field.field.node.unit.field_unit_postal_address_tpr
+    - field.field.node.unit.field_unit_service_list_title
     - field.field.node.unit.field_unit_services
+    - field.field.node.unit.field_unit_services_list
     - field.field.node.unit.field_unit_short_description
     - field.field.node.unit.field_unit_tpr_reference
     - field.field.node.unit.field_unit_visible_title
@@ -23,7 +25,9 @@ dependencies:
     - address
     - media_library
     - path
+    - select2
     - text
+    - viewsreference
 _core:
   default_config_hash: wPNInkyyFPeDpJhbE-MuD1sNxDzvbINe8WltTjqLR3M
 id: node.unit.default
@@ -121,15 +125,29 @@ content:
     third_party_settings: {  }
     type: text_textfield
     region: content
-  field_unit_services:
-    weight: 26
+  field_unit_service_list_title:
+    weight: 24
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: string_textfield
+    region: content
+  field_unit_services:
+    weight: 23
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      autocomplete: false
+      width: 100%
+    third_party_settings: {  }
+    type: select2_entity_reference
+    region: content
+  field_unit_services_list:
+    weight: 25
+    settings: {  }
+    third_party_settings: {  }
+    type: viewsreference_select
     region: content
   field_unit_short_description:
     weight: 6

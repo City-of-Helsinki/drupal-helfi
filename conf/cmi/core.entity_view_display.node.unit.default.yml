@@ -14,7 +14,9 @@ dependencies:
     - field.field.node.unit.field_unit_parent_unit
     - field.field.node.unit.field_unit_phone_number
     - field.field.node.unit.field_unit_postal_address_tpr
+    - field.field.node.unit.field_unit_service_list_title
     - field.field.node.unit.field_unit_services
+    - field.field.node.unit.field_unit_services_list
     - field.field.node.unit.field_unit_short_description
     - field.field.node.unit.field_unit_tpr_reference
     - field.field.node.unit.field_unit_visible_title
@@ -23,6 +25,7 @@ dependencies:
     - address
     - text
     - user
+    - viewsreference
 _core:
   default_config_hash: DS5ez2trpFU-APLjaLq4YgZxB7zm_3cl6GEybbue6Ig
 id: node.unit.default
@@ -114,13 +117,14 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
-  field_unit_services:
+  field_unit_services_list:
     weight: 14
-    label: above
+    label: hidden
     settings:
-      link: true
+      plugin_types:
+        - block
     third_party_settings: {  }
-    type: entity_reference_label
+    type: viewsreference_formatter
     region: content
   field_unit_short_description:
     weight: 4
@@ -142,5 +146,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_unit_service_list_title: true
+  field_unit_services: true
   field_unit_tpr_reference: true
   langcode: true
