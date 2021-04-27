@@ -13,5 +13,6 @@ enabled_entity_types:
   - node
   - taxonomy_term
   - menu_link_content
+entities_per_queue_item: 50
 _core:
   default_config_hash: LWI5gcV7qtIl5h1xg7AWMtepAzBAvTaw_TOmsQbw9Tk
