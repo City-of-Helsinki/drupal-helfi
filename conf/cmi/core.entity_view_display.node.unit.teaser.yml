@@ -42,14 +42,14 @@ content:
     third_party_settings: {  }
   field_unit_alt_address:
     type: address_default
-    weight: 2
+    weight: 3
     region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
   field_unit_phone_number:
     type: text_default
-    weight: 3
+    weight: 2
     region: content
     label: hidden
     settings: {  }
@@ -59,6 +59,11 @@ content:
     weight: 0
     region: content
     label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 4
+    region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
@@ -76,4 +81,3 @@ hidden:
   field_unit_short_description: true
   field_unit_tpr_reference: true
   langcode: true
-  links: true
