@@ -3228,12 +3228,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt.git",
-                "reference": "e28d636e8b18ee2f1b0a59268d61c80e1232177b"
+                "reference": "54300deb4475c48dbd03f3ecd1eae9ce241fe2f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/e28d636e8b18ee2f1b0a59268d61c80e1232177b",
-                "reference": "e28d636e8b18ee2f1b0a59268d61c80e1232177b",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/54300deb4475c48dbd03f3ecd1eae9ce241fe2f5",
+                "reference": "54300deb4475c48dbd03f3ecd1eae9ce241fe2f5",
                 "shasum": ""
             },
             "require": {
@@ -3251,7 +3251,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/latest",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt/issues"
             },
-            "time": "2021-04-28T13:24:08+00:00"
+            "time": "2021-04-28T13:52:03+00:00"
         },
         {
             "name": "drupal/hdbt_admin",
@@ -3324,12 +3324,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base.git",
-                "reference": "f3ff77aab08a783765567e20aa3717fa787dec99"
+                "reference": "e22755ca1b95a9ee142f2edeadc4a1d99a98cb17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-api-base/zipball/f3ff77aab08a783765567e20aa3717fa787dec99",
-                "reference": "f3ff77aab08a783765567e20aa3717fa787dec99",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-api-base/zipball/e22755ca1b95a9ee142f2edeadc4a1d99a98cb17",
+                "reference": "e22755ca1b95a9ee142f2edeadc4a1d99a98cb17",
                 "shasum": ""
             },
             "require": {
@@ -3345,10 +3345,10 @@
             ],
             "description": "Helfi - API Base",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base/tree/UHF-1336_translations",
+                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base/tree/1.0.18",
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base/issues"
             },
-            "time": "2021-04-19T08:05:30+00:00"
+            "time": "2021-04-29T07:34:21+00:00"
         },
         {
             "name": "drupal/helfi_hauki",
@@ -3391,12 +3391,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "cf29c2d8fad4dcd8ad0382f5d5e6fb02cb944273"
+                "reference": "1d19b95f0b2c6c4f8a046fa93bab6fb5d938fbd7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/cf29c2d8fad4dcd8ad0382f5d5e6fb02cb944273",
-                "reference": "cf29c2d8fad4dcd8ad0382f5d5e6fb02cb944273",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/1d19b95f0b2c6c4f8a046fa93bab6fb5d938fbd7",
+                "reference": "1d19b95f0b2c6c4f8a046fa93bab6fb5d938fbd7",
                 "shasum": ""
             },
             "require": {
@@ -3467,7 +3467,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/latest",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2021-04-28T13:22:52+00:00"
+            "time": "2021-04-29T14:10:59+00:00"
         },
         {
             "name": "drupal/helfi_tpr",
