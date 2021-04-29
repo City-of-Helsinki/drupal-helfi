@@ -3391,12 +3391,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "cf29c2d8fad4dcd8ad0382f5d5e6fb02cb944273"
+                "reference": "013bbf54e6b742c53254d868be5d2551d6cf5a5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/cf29c2d8fad4dcd8ad0382f5d5e6fb02cb944273",
-                "reference": "cf29c2d8fad4dcd8ad0382f5d5e6fb02cb944273",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/013bbf54e6b742c53254d868be5d2551d6cf5a5f",
+                "reference": "013bbf54e6b742c53254d868be5d2551d6cf5a5f",
                 "shasum": ""
             },
             "require": {
@@ -3467,7 +3467,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/latest",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2021-04-28T13:22:52+00:00"
+            "time": "2021-04-29T09:11:08+00:00"
         },
         {
             "name": "drupal/helfi_tpr",
