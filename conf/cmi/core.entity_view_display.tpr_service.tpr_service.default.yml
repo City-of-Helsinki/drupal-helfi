@@ -27,4 +27,7 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  errand_services: true
   langcode: true
+  links: true
+  name_override: true

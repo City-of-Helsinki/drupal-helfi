@@ -137,4 +137,5 @@ hidden:
   langcode: true
   latitude: true
   longitude: true
+  name_override: true
   streetview_entrance_url: true
