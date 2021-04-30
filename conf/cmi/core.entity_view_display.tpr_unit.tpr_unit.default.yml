@@ -15,7 +15,7 @@ mode: default
 content:
   accessibility_email:
     type: string
-    weight: 12
+    weight: 13
     region: content
     label: above
     settings:
@@ -23,7 +23,7 @@ content:
     third_party_settings: {  }
   accessibility_phone:
     type: string
-    weight: 11
+    weight: 12
     region: content
     label: above
     settings:
@@ -31,7 +31,7 @@ content:
     third_party_settings: {  }
   accessibility_www:
     type: link
-    weight: 13
+    weight: 14
     region: content
     label: above
     settings:
@@ -43,14 +43,14 @@ content:
     third_party_settings: {  }
   address:
     type: address_default
-    weight: 4
+    weight: 5
     region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
   address_postal:
     type: string
-    weight: 7
+    weight: 8
     region: content
     label: hidden
     settings:
@@ -58,21 +58,21 @@ content:
     third_party_settings: {  }
   call_charge_info:
     type: text_default
-    weight: 9
+    weight: 10
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   description:
     type: text_default
-    weight: 1
+    weight: 2
     region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
   email:
     type: string
-    weight: 6
+    weight: 7
     region: content
     label: hidden
     settings:
@@ -88,15 +88,15 @@ content:
     third_party_settings: {  }
   name_override:
     type: string
-    weight: 15
+    weight: 1
     region: content
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
   phone:
     type: string
-    weight: 5
+    weight: 6
     region: content
     label: hidden
     settings:
@@ -104,7 +104,7 @@ content:
     third_party_settings: {  }
   picture_url:
     type: imagecache_external_responsive_image
-    weight: 2
+    weight: 3
     region: content
     label: hidden
     settings:
@@ -113,7 +113,7 @@ content:
     third_party_settings: {  }
   picture_url_override:
     type: entity_reference_entity_view
-    weight: 3
+    weight: 4
     region: content
     label: hidden
     settings:
@@ -123,7 +123,7 @@ content:
   service_map_embed:
     label: above
     type: service_map_embed
-    weight: 8
+    weight: 9
     region: content
     settings:
       iframe_title: 'Service map'
@@ -132,7 +132,7 @@ content:
     third_party_settings: {  }
   services:
     type: entity_reference_label
-    weight: 14
+    weight: 15
     region: content
     label: above
     settings:
@@ -140,7 +140,7 @@ content:
     third_party_settings: {  }
   www:
     type: link
-    weight: 10
+    weight: 11
     region: content
     label: above
     settings:
