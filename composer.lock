@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d6f46b2d4204a40552bc6ce855862fb9",
+    "content-hash": "20d9ce00f16bcd6feef31f547190fa0f",
     "packages": [
         {
             "name": "City-of-Helsinki/php-hauki-client",
@@ -3228,16 +3228,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt.git",
-                "reference": "54300deb4475c48dbd03f3ecd1eae9ce241fe2f5"
+                "reference": "282124f6f5e60d77c3cb94f3ff1631bc2092c93b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/54300deb4475c48dbd03f3ecd1eae9ce241fe2f5",
-                "reference": "54300deb4475c48dbd03f3ecd1eae9ce241fe2f5",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/282124f6f5e60d77c3cb94f3ff1631bc2092c93b",
+                "reference": "282124f6f5e60d77c3cb94f3ff1631bc2092c93b",
                 "shasum": ""
             },
             "require": {
-                "drupal/twig_tweak": "^2.8"
+                "drupal/twig_tweak": "^2.0 || ^3.0"
             },
             "type": "drupal-custom-theme",
             "license": [
@@ -3251,7 +3251,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/latest",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt/issues"
             },
-            "time": "2021-04-28T13:52:03+00:00"
+            "time": "2021-04-30T15:13:16+00:00"
         },
         {
             "name": "drupal/hdbt_admin",
@@ -4754,21 +4754,23 @@
         },
         {
             "name": "drupal/twig_tweak",
-            "version": "2.9.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/twig_tweak.git",
-                "reference": "8.x-2.9"
+                "reference": "3.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/twig_tweak-8.x-2.9.zip",
-                "reference": "8.x-2.9",
-                "shasum": "c45ba1a41e323a432d1ff36d0a72344b88595a39"
+                "url": "https://ftp.drupal.org/files/projects/twig_tweak-3.0.0.zip",
+                "reference": "3.0.0",
+                "shasum": "c8596addb06cbc67ad7914533c7e96e97ecbd54a"
             },
             "require": {
-                "drupal/core": "^8.7 || ^9.0",
-                "twig/twig": "^1.41 || ^2.12"
+                "drupal/core": "^9.0",
+                "ext-json": "*",
+                "php": ">=7.3",
+                "twig/twig": "^2.12"
             },
             "suggest": {
                 "symfony/var-dumper": "Better dump() function for debugging Twig variables"
@@ -4776,8 +4778,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.9",
-                    "datestamp": "1608093728",
+                    "version": "3.0.0",
+                    "datestamp": "1608096220",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4786,7 +4788,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {

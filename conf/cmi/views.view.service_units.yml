@@ -275,9 +275,9 @@ display:
         - 'languages:language_interface'
         - url
       tags: {  }
-  block_1:
+  service_units:
     display_plugin: block
-    id: block_1
+    id: service_units
     display_title: Block
     position: 1
     display_options:
