@@ -15,7 +15,7 @@ mode: default
 content:
   accessibility_email:
     type: string
-    weight: 11
+    weight: 12
     region: content
     label: above
     settings:
@@ -23,7 +23,7 @@ content:
     third_party_settings: {  }
   accessibility_phone:
     type: string
-    weight: 10
+    weight: 11
     region: content
     label: above
     settings:
@@ -31,7 +31,7 @@ content:
     third_party_settings: {  }
   accessibility_www:
     type: link
-    weight: 12
+    weight: 13
     region: content
     label: above
     settings:
@@ -43,14 +43,14 @@ content:
     third_party_settings: {  }
   address:
     type: address_default
-    weight: 3
+    weight: 4
     region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
   address_postal:
     type: string
-    weight: 6
+    weight: 7
     region: content
     label: hidden
     settings:
@@ -58,7 +58,7 @@ content:
     third_party_settings: {  }
   call_charge_info:
     type: text_default
-    weight: 8
+    weight: 9
     region: content
     label: above
     settings: {  }
@@ -72,7 +72,7 @@ content:
     third_party_settings: {  }
   email:
     type: string
-    weight: 5
+    weight: 6
     region: content
     label: hidden
     settings:
@@ -86,9 +86,17 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+  name_override:
+    type: string
+    weight: 15
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
   phone:
     type: string
-    weight: 4
+    weight: 5
     region: content
     label: hidden
     settings:
@@ -103,10 +111,19 @@ content:
       imagecache_external_responsive_style: image__3_2
       imagecache_external_link: ''
     third_party_settings: {  }
+  picture_url_override:
+    type: entity_reference_entity_view
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      view_mode: image
+      link: false
+    third_party_settings: {  }
   service_map_embed:
     label: above
     type: service_map_embed
-    weight: 7
+    weight: 8
     region: content
     settings:
       iframe_title: 'Service map'
@@ -115,7 +132,7 @@ content:
     third_party_settings: {  }
   services:
     type: entity_reference_label
-    weight: 13
+    weight: 14
     region: content
     label: above
     settings:
@@ -123,7 +140,7 @@ content:
     third_party_settings: {  }
   www:
     type: link
-    weight: 9
+    weight: 10
     region: content
     label: above
     settings:
@@ -138,6 +155,4 @@ hidden:
   langcode: true
   latitude: true
   longitude: true
-  name_override: true
-  picture_url_override: true
   streetview_entrance_url: true
