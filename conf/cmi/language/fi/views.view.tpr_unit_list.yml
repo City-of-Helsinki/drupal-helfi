@@ -1,26 +1,14 @@
 display:
   default:
-    display_title: Isäntä
     display_options:
-      exposed_form:
-        options:
-          submit_button: Käytä
-          reset_button_label: Palauta
-          exposed_sorts_label: Lajittele
-          sort_asc_label: Nousevasti
-          sort_desc_label: Laskevasti
-      pager:
-        options:
-          tags:
-            previous: ‹‹
-            next: ››
-            first: '« Ensimmäinen'
-            last: 'Viimeinen »'
-          expose:
-            items_per_page_label: 'Merkintöjä sivua kohti'
-            items_per_page_options_all_label: '- Kaikki -'
-            offset_label: Offset
       fields:
+        langcode:
+          label: Kieli
+        content_translation_status:
+          label: Tila
+          settings:
+            format_custom_true: Julkaistu
+            format_custom_false: Julkaisematon
         tpr_unit_bulk_form:
           label: Massapäivitys
           action_title: Toiminto
@@ -36,11 +24,37 @@ display:
         operations:
           label: Toimenpiteet
       filters:
+        langcode:
+          expose:
+            label: Kieli
         combine:
           expose:
             label: Etsi
-      footer:
-        result:
-          content: 'Näytetään @start - @end / @total'
+      empty:
+        area:
+          content:
+            format: plain_text
+            value: 'Toimipisteitä ei löytynyt.'
+      exposed_form:
+        options:
+          submit_button: Käytä
+          reset_button_label: Palauta
+          exposed_sorts_label: Lajittele
+          sort_asc_label: Nousevasti
+          sort_desc_label: Laskevasti
+      pager:
+        options:
+          tags:
+            previous: '‹ Edellinen'
+            next: 'Seuraava ›'
+            first: '« Ensimmäinen'
+            last: 'Viimeinen »'
+          expose:
+            items_per_page_label: 'Merkintöjä sivua kohti'
+            items_per_page_options_all_label: '- Kaikki -'
+            offset_label: Offset
+      title: 'TPR Toimipisteet'
+    display_title: Isäntä
   page_1:
     display_title: Sivu
+label: 'TPR Toimipisteet'

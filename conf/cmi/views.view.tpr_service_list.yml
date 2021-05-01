@@ -1,35 +1,44 @@
-uuid: 68ff1258-5472-4cd7-b6e7-acfdb0ef648b
+uuid: d70c02cd-41ef-4d31-9248-ec42bb309a48
 langcode: en
 status: true
 dependencies:
   module:
-    - node
+    - helfi_tpr
     - user
-_core:
-  default_config_hash: 8s8cQXcPZsZ95T3AP-WDUWRpe6CCAyzSYA2fO5LImhc
-id: content
-label: Content
-module: node
-description: 'Find and manage content.'
-tag: default
-base_table: node_field_data
-base_field: nid
+id: tpr_service_list
+label: 'TPR service list'
+module: views
+description: ''
+tag: ''
+base_table: tpr_service_field_data
+base_field: id
 display:
   default:
+    display_plugin: default
+    id: default
+    display_title: Master
+    position: 0
     display_options:
       access:
         type: perm
         options:
-          perm: 'access content overview'
+          perm: 'access remote entities overview'
       cache:
         type: tag
+        options: {  }
       query:
         type: views_query
+        options:
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_comment: ''
+          query_tags: {  }
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
-          reset_button: true
+          submit_button: Apply
+          reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
@@ -39,9 +48,12 @@ display:
         type: full
         options:
           items_per_page: 50
+          offset: 0
+          id: 0
+          total_pages: null
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
+            previous: ‹‹
+            next: ››
             first: '« First'
             last: 'Last »'
           expose:
@@ -60,33 +72,24 @@ display:
           row_class: ''
           default_row_class: true
           override: true
-          sticky: true
+          sticky: false
           caption: ''
           summary: ''
           description: ''
           columns:
-            node_bulk_form: node_bulk_form
-            title: title
-            type: type
+            tpr_service_bulk_form: tpr_service_bulk_form
+            id: id
             name: name
             langcode: langcode
-            status: status
             changed: changed
             operations: operations
           info:
-            node_bulk_form:
+            tpr_service_bulk_form:
               align: ''
               separator: ''
               empty_column: false
               responsive: ''
-            title:
-              sortable: true
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            type:
+            id:
               sortable: true
               default_sort_order: asc
               align: ''
@@ -99,15 +102,8 @@ display:
               align: ''
               separator: ''
               empty_column: false
-              responsive: priority-low
-            langcode:
-              sortable: true
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
               responsive: ''
-            status:
+            langcode:
               sortable: true
               default_sort_order: asc
               align: ''
@@ -120,61 +116,25 @@ display:
               align: ''
               separator: ''
               empty_column: false
-              responsive: priority-low
+              responsive: ''
             operations:
               align: ''
               separator: ''
               empty_column: false
               responsive: ''
           default: changed
-          empty_table: true
+          empty_table: false
       row:
         type: fields
       fields:
-        node_bulk_form:
-          id: node_bulk_form
-          table: node
-          field: node_bulk_form
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-          element_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          plugin_id: node_bulk_form
-          entity_type: node
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          label: Title
-          exclude: false
-          alter:
-            alter_text: false
-          element_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          entity_type: node
-          entity_field: title
-          type: string
-          settings:
-            link_to_entity: true
-          plugin_id: field
-        type:
-          id: type
-          table: node_field_data
-          field: type
+        tpr_service_bulk_form:
+          id: tpr_service_bulk_form
+          table: tpr_service
+          field: tpr_service_bulk_form
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Content type'
+          label: 'Bulk update'
           exclude: false
           alter:
             alter_text: false
@@ -215,11 +175,64 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
+          action_title: Action
+          include_exclude: exclude
+          selected_actions: {  }
+          entity_type: tpr_service
+          plugin_id: bulk_form
+        id:
+          id: id
+          table: tpr_service_field_data
+          field: id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ID
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
           settings:
-            link: false
-          group_column: target_id
+            link_to_entity: true
+          group_column: entity_id
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -229,31 +242,77 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: node
-          entity_field: type
+          entity_type: tpr_service
+          entity_field: id
           plugin_id: field
         name:
           id: name
-          table: users_field_data
+          table: tpr_service_field_data
           field: name
-          relationship: uid
-          label: Author
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: Name
           exclude: false
           alter:
             alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
           element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
           element_default_classes: true
           empty: ''
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          plugin_id: field
-          type: user_name
-          entity_type: user
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: null
           entity_field: name
+          plugin_id: field
         langcode:
           id: langcode
-          table: node_field_data
+          table: tpr_service_field_data
           field: langcode
           relationship: none
           group_type: group
@@ -314,56 +373,146 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: node
+          entity_type: tpr_service
           entity_field: langcode
           plugin_id: field
-        status:
-          id: status
-          table: node_field_data
-          field: status
+        content_translation_status:
+          id: content_translation_status
+          table: tpr_service_field_data
+          field: content_translation_status
+          relationship: none
+          group_type: group
+          admin_label: ''
           label: Status
           exclude: false
           alter:
             alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
           element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
           element_default_classes: true
           empty: ''
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
+          click_sort_column: value
           type: boolean
           settings:
             format: custom
             format_custom_true: Published
             format_custom_false: Unpublished
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: tpr_service
+          entity_field: content_translation_status
           plugin_id: field
-          entity_type: node
-          entity_field: status
         changed:
           id: changed
-          table: node_field_data
+          table: tpr_service_field_data
           field: changed
+          relationship: none
+          group_type: group
+          admin_label: ''
           label: Updated
           exclude: false
           alter:
             alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
           element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
           element_default_classes: true
           empty: ''
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
+          click_sort_column: value
           type: timestamp
           settings:
-            date_format: short
+            date_format: long
             custom_date_format: ''
             timezone: ''
-          plugin_id: field
-          entity_type: node
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: tpr_service
           entity_field: changed
+          plugin_id: field
         operations:
           id: operations
-          table: node
+          table: tpr_service
           field: operations
           relationship: none
           group_type: group
@@ -409,36 +558,37 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          destination: true
+          destination: false
+          entity_type: tpr_service
           plugin_id: entity_operations
       filters:
-        title:
-          id: title
-          table: node_field_data
-          field: title
+        combine:
+          id: combine
+          table: views
+          field: combine
           relationship: none
           group_type: group
           admin_label: ''
-          operator: contains
+          operator: allwords
           value: ''
           group: 1
           exposed: true
           expose:
-            operator_id: title_op
-            label: Title
+            operator_id: combine_op
+            label: Search
             description: ''
             use_operator: false
-            operator: title_op
-            identifier: title
+            operator: combine_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: search
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
-              administrator: '0'
-            operator_limit_selection: false
-            operator_list: {  }
+            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -451,103 +601,13 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: string
-          entity_type: node
-          entity_field: title
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: in
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: type_op
-            label: 'Content type'
-            description: ''
-            use_operator: false
-            operator: type_op
-            identifier: type
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-            reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          plugin_id: bundle
-          entity_type: node
-          entity_field: type
-        status:
-          id: status
-          table: node_field_data
-          field: status
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: '='
-          value: '1'
-          group: 1
-          exposed: true
-          expose:
-            operator_id: ''
-            label: Status
-            description: ''
-            use_operator: false
-            operator: status_op
-            identifier: status
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            operator_limit_selection: false
-            operator_list: {  }
-          is_grouped: true
-          group_info:
-            label: 'Published status'
-            description: ''
-            identifier: status
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items:
-              1:
-                title: Published
-                operator: '='
-                value: '1'
-              2:
-                title: Unpublished
-                operator: '='
-                value: '0'
-          plugin_id: boolean
-          entity_type: node
-          entity_field: status
+          fields:
+            id: id
+            name: name
+          plugin_id: combine
         langcode:
           id: langcode
-          table: node_field_data
+          table: tpr_service_field_data
           field: langcode
           relationship: none
           group_type: group
@@ -590,91 +650,56 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: language
-          entity_type: node
+          entity_type: tpr_service
           entity_field: langcode
-        status_extra:
-          id: status_extra
-          table: node_field_data
-          field: status_extra
-          operator: '='
-          value: false
-          plugin_id: node_status
-          group: 1
-          entity_type: node
-          expose:
-            operator_limit_selection: false
-            operator_list: {  }
+          plugin_id: language
       sorts: {  }
-      title: Content
+      title: 'TPR Services'
+      header: {  }
+      footer: {  }
       empty:
-        area_text_custom:
-          id: area_text_custom
+        area:
+          id: area
           table: views
-          field: area_text_custom
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
           empty: true
-          content: 'No content available.'
-          plugin_id: text_custom
+          tokenize: false
+          content:
+            value: 'No results found.'
+            format: plain_text
+          plugin_id: text
+      relationships: {  }
       arguments: {  }
-      relationships:
-        uid:
-          id: uid
-          table: node_field_data
-          field: uid
-          admin_label: author
-          required: true
-          plugin_id: standard
-      show_admin_links: false
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
       display_extenders: {  }
-    display_plugin: default
-    display_title: Master
-    id: default
-    position: 0
+      group_by: false
     cache_metadata:
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
         - url.query_args
-        - user
-        - 'user.node_grants:view'
         - user.permissions
-      max-age: 0
       tags: {  }
   page_1:
+    display_plugin: page
+    id: page_1
+    display_title: Page
+    position: 1
     display_options:
-      path: admin/content/node
-      menu:
-        type: 'default tab'
-        title: Content
-        description: ''
-        menu_name: admin
-        weight: -10
-        context: ''
-      tab_options:
-        type: normal
-        title: Content
-        description: 'Find and manage content'
-        menu_name: admin
-        weight: -10
       display_extenders:
         metatag_display_extender: {  }
-    display_plugin: page
-    display_title: Page
-    id: page_1
-    position: 1
+      path: admin/content/integrations/tpr-service
+      rendering_language: '***LANGUAGE_entity_translation***'
     cache_metadata:
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
         - url.query_args
-        - user
-        - 'user.node_grants:view'
         - user.permissions
-      max-age: 0
       tags: {  }

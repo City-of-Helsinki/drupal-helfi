@@ -36,6 +36,11 @@ display:
         name:
           expose:
             label: Namn
+        bundle:
+          expose:
+            label: Mediatyp
+          group_info:
+            label: Mediatyp
         langcode:
           expose:
             label: Språk
