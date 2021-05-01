@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - helfi_tpr
     - helfi_api_base
 id: tpr_service_update_action
 label: Update
