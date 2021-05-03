@@ -96,9 +96,7 @@ module:
   twig_tweak: 0
   update: 0
   user: 0
-  views_infinite_scroll: 0
   views_ui: 0
-  viewsreference: 0
   pathauto: 1
   content_translation: 10
   views: 10
