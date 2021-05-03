@@ -1,4 +1,3 @@
-uuid: d70c02cd-41ef-4d31-9248-ec42bb309a48
 langcode: en
 status: true
 dependencies:
@@ -655,7 +654,17 @@ display:
           plugin_id: language
       sorts: {  }
       title: 'TPR Services'
-      header: {  }
+      header:
+        result:
+          id: result
+          table: views
+          field: result
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          content: 'Displaying @start - @end of @total'
+          plugin_id: result
       footer: {  }
       empty:
         area:
@@ -690,8 +699,7 @@ display:
     display_title: Page
     position: 1
     display_options:
-      display_extenders:
-        metatag_display_extender: {  }
+      display_extenders: {  }
       path: admin/content/integrations/tpr-service
       rendering_language: '***LANGUAGE_entity_translation***'
     cache_metadata:
