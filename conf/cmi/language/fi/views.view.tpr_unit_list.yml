@@ -54,6 +54,9 @@ display:
             items_per_page_options_all_label: '- Kaikki -'
             offset_label: Offset
       title: 'TPR Toimipisteet'
+      header:
+        result:
+          content: 'Näytetään @start - @end / @total'
     display_title: Isäntä
   page_1:
     display_title: Sivu

@@ -42,6 +42,9 @@ display:
           expose:
             label: Kieli
       title: 'TPR Palvelut'
+      header:
+        result:
+          content: 'Näytetään @start - @end / @total'
       empty:
         area:
           content:
@@ -49,3 +52,4 @@ display:
             format: plain_text
   page_1:
     display_title: Sivu
+label: 'TPR Palvelut'
