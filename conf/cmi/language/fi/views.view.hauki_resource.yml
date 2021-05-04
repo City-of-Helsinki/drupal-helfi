@@ -12,8 +12,8 @@ display:
       pager:
         options:
           tags:
-            previous: ‹‹
-            next: ››
+            previous: '‹ Edellinen'
+            next: 'Seuraava ›'
             first: '« Ensimmäinen'
             last: 'Viimeinen »'
           expose:
@@ -33,5 +33,9 @@ display:
       footer:
         result:
           content: 'Näytetään @start - @end / @total'
+      empty:
+        area:
+          content:
+            value: 'Sisältöä ei löytynyt.'
   page_1:
     display_title: Sivu

@@ -1,3 +1,4 @@
+label: 'TPR units'
 display:
   default:
     display_title: Huvud
@@ -39,8 +40,6 @@ display:
         combine:
           expose:
             label: Sök
-      footer:
-        result:
-          content: 'Visar @start - @end av @total'
+      title: 'TPR units'
   page_1:
     display_title: Sida
