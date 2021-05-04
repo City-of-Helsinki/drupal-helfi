@@ -45,7 +45,6 @@
         "drupal/token_filter": "^1.2",
         "drupal/twig_tweak": "^3.0",
         "drupal/views_infinite_scroll": "^1.8",
-        "drupal/viewsreference": "^2.0@beta",
         "drush/drush": "^10.4"
     },
     "require-dev": {

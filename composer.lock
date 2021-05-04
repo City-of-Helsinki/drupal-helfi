@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "20d9ce00f16bcd6feef31f547190fa0f",
+    "content-hash": "2eaca1b6da4facea4de079d8be2886fb",
     "packages": [
         {
             "name": "City-of-Helsinki/php-hauki-client",
@@ -3425,12 +3425,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "ee0de1dc95c0ff67bcc92498a0fd5b839c6697cf"
+                "reference": "d81d7e034a789fd8870c6e9f19e365a0c2942435"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/ee0de1dc95c0ff67bcc92498a0fd5b839c6697cf",
-                "reference": "ee0de1dc95c0ff67bcc92498a0fd5b839c6697cf",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/d81d7e034a789fd8870c6e9f19e365a0c2942435",
+                "reference": "d81d7e034a789fd8870c6e9f19e365a0c2942435",
                 "shasum": ""
             },
             "require": {
@@ -3461,9 +3461,7 @@
                 "drupal/simple_sitemap": "^3.0",
                 "drupal/social_media": "^1.8",
                 "drupal/token": "^1.9",
-                "drupal/token_filter": "^1.2",
-                "drupal/views_infinite_scroll": "^1.8",
-                "drupal/viewsreference": "^2.0@beta"
+                "drupal/token_filter": "^1.2"
             },
             "type": "drupal-custom-module",
             "extra": {
@@ -3501,7 +3499,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/latest",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2021-05-04T07:30:06+00:00"
+            "time": "2021-05-04T11:33:11+00:00"
         },
         {
             "name": "drupal/helfi_tpr",
@@ -4788,22 +4786,23 @@
         },
         {
             "name": "drupal/twig_tweak",
-            "version": "3.0.0",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/twig_tweak.git",
-                "reference": "3.0.0"
+                "reference": "3.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/twig_tweak-3.0.0.zip",
-                "reference": "3.0.0",
-                "shasum": "c8596addb06cbc67ad7914533c7e96e97ecbd54a"
+                "url": "https://ftp.drupal.org/files/projects/twig_tweak-3.1.1.zip",
+                "reference": "3.1.1",
+                "shasum": "818cc2aaa248d4bbf11d13e4d53653d2ced9e8f0"
             },
             "require": {
                 "drupal/core": "^9.0",
                 "ext-json": "*",
                 "php": ">=7.3",
+                "symfony/polyfill-php80": "^1.17",
                 "twig/twig": "^2.12"
             },
             "suggest": {
@@ -4812,8 +4811,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0",
-                    "datestamp": "1608096220",
+                    "version": "3.1.1",
+                    "datestamp": "1619981432",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4895,69 +4894,6 @@
             "homepage": "https://www.drupal.org/project/views_infinite_scroll",
             "support": {
                 "source": "https://git.drupalcode.org/project/views_infinite_scroll"
-            }
-        },
-        {
-            "name": "drupal/viewsreference",
-            "version": "2.0.0-beta2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/viewsreference.git",
-                "reference": "8.x-2.0-beta2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/viewsreference-8.x-2.0-beta2.zip",
-                "reference": "8.x-2.0-beta2",
-                "shasum": "146bf8c68e6cbb3805b4368b508d43931fe77c67"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9"
-            },
-            "conflict": {
-                "drupal/viewsreferennce": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-2.0-beta2",
-                    "datestamp": "1597243219",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "New Zeal",
-                    "homepage": "https://www.drupal.org/user/93571"
-                },
-                {
-                    "name": "jasonawant",
-                    "homepage": "https://www.drupal.org/user/589890"
-                },
-                {
-                    "name": "joekers",
-                    "homepage": "https://www.drupal.org/user/2229066"
-                },
-                {
-                    "name": "seanB",
-                    "homepage": "https://www.drupal.org/user/545912"
-                }
-            ],
-            "description": "Views reference",
-            "homepage": "http://drupal.org/project/viewsreference",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "https://git.drupalcode.org/project/viewsreference",
-                "issues": "https://www.drupal.org/project/issues/viewsreference"
             }
         },
         {
@@ -13771,8 +13707,7 @@
         "drupal/helfi_tunnistamo": 20,
         "drupal/linkit": 10,
         "drupal/openid_connect": 5,
-        "drupal/paragraphs_asymmetric_translation_widgets": 10,
-        "drupal/viewsreference": 10
+        "drupal/paragraphs_asymmetric_translation_widgets": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,
