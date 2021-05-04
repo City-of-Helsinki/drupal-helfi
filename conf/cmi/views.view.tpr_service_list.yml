@@ -1,18 +1,15 @@
-uuid: e5d54b67-b2e3-4709-925e-042b99c49476
 langcode: en
 status: true
 dependencies:
   module:
     - helfi_tpr
     - user
-_core:
-  default_config_hash: sfz3UeXfVRzeywUCZw5SimduAuGRiKPzHgcu8sz3csk
-id: tpr_unit_list
-label: 'TPR unit list'
+id: tpr_service_list
+label: 'TPR service list'
 module: views
 description: ''
 tag: ''
-base_table: tpr_unit_field_data
+base_table: tpr_service_field_data
 base_field: id
 display:
   default:
@@ -79,14 +76,14 @@ display:
           summary: ''
           description: ''
           columns:
-            tpr_unit_bulk_form: tpr_unit_bulk_form
+            tpr_service_bulk_form: tpr_service_bulk_form
             id: id
             name: name
             langcode: langcode
             changed: changed
             operations: operations
           info:
-            tpr_unit_bulk_form:
+            tpr_service_bulk_form:
               align: ''
               separator: ''
               empty_column: false
@@ -129,10 +126,10 @@ display:
       row:
         type: fields
       fields:
-        tpr_unit_bulk_form:
-          id: tpr_unit_bulk_form
-          table: tpr_unit
-          field: tpr_unit_bulk_form
+        tpr_service_bulk_form:
+          id: tpr_service_bulk_form
+          table: tpr_service
+          field: tpr_service_bulk_form
           relationship: none
           group_type: group
           admin_label: ''
@@ -180,11 +177,11 @@ display:
           action_title: Action
           include_exclude: exclude
           selected_actions: {  }
-          entity_type: tpr_unit
+          entity_type: tpr_service
           plugin_id: bulk_form
         id:
           id: id
-          table: tpr_unit_field_data
+          table: tpr_service_field_data
           field: id
           relationship: none
           group_type: group
@@ -244,12 +241,12 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: tpr_unit
+          entity_type: tpr_service
           entity_field: id
           plugin_id: field
         name:
           id: name
-          table: tpr_unit_field_data
+          table: tpr_service_field_data
           field: name
           relationship: none
           group_type: group
@@ -314,7 +311,7 @@ display:
           plugin_id: field
         langcode:
           id: langcode
-          table: tpr_unit_field_data
+          table: tpr_service_field_data
           field: langcode
           relationship: none
           group_type: group
@@ -375,12 +372,12 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: tpr_unit
+          entity_type: tpr_service
           entity_field: langcode
           plugin_id: field
         content_translation_status:
           id: content_translation_status
-          table: tpr_unit_field_data
+          table: tpr_service_field_data
           field: content_translation_status
           relationship: none
           group_type: group
@@ -442,12 +439,12 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: tpr_unit
+          entity_type: tpr_service
           entity_field: content_translation_status
           plugin_id: field
         changed:
           id: changed
-          table: tpr_unit_field_data
+          table: tpr_service_field_data
           field: changed
           relationship: none
           group_type: group
@@ -509,12 +506,12 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: tpr_unit
+          entity_type: tpr_service
           entity_field: changed
           plugin_id: field
         operations:
           id: operations
-          table: tpr_unit
+          table: tpr_service
           field: operations
           relationship: none
           group_type: group
@@ -561,7 +558,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           destination: false
-          entity_type: tpr_unit
+          entity_type: tpr_service
           plugin_id: entity_operations
       filters:
         combine:
@@ -609,7 +606,7 @@ display:
           plugin_id: combine
         langcode:
           id: langcode
-          table: tpr_unit_field_data
+          table: tpr_service_field_data
           field: langcode
           relationship: none
           group_type: group
@@ -652,11 +649,11 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: tpr_unit
+          entity_type: tpr_service
           entity_field: langcode
           plugin_id: language
       sorts: {  }
-      title: 'TPR Units'
+      title: 'TPR Services'
       header:
         result:
           id: result
@@ -703,7 +700,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: admin/content/integrations/tpr-unit
+      path: admin/content/integrations/tpr-service
       rendering_language: '***LANGUAGE_entity_translation***'
     cache_metadata:
       max-age: 0

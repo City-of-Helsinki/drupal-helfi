@@ -1,3 +1,4 @@
+label: 'TPR units'
 display:
   default:
     display_title: Основной
@@ -39,8 +40,6 @@ display:
         combine:
           expose:
             label: Поиск
-      footer:
-        result:
-          content: 'Отображается с @start по @end из @total'
+      title: 'TPR units'
   page_1:
     display_title: Страница
