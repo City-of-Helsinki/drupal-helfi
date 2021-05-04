@@ -4,7 +4,6 @@ module:
   admin_toolbar: 0
   admin_toolbar_tools: 0
   aet: 0
-  api_tools: 0
   block: 0
   breakpoint: 0
   ckeditor: 0
@@ -21,6 +20,7 @@ module:
   dynamic_page_cache: 0
   easy_breadcrumb: 0
   editor: 0
+  entity: 0
   entity_reference_revisions: 0
   features: 0
   features_ui: 0
