@@ -6,6 +6,8 @@ dependencies:
     - core.entity_view_mode.tpr_unit.teaser
   module:
     - helfi_tpr
+    - user
+    - views_infinite_scroll
 id: service_units
 label: 'Service units'
 module: views
@@ -21,8 +23,9 @@ display:
     position: 0
     display_options:
       access:
-        type: none
-        options: {  }
+        type: perm
+        options:
+          perm: 'access content'
       cache:
         type: tag
         options: {  }
@@ -45,9 +48,27 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
-        type: none
+        type: infinite_scroll
         options:
+          items_per_page: 8
           offset: 0
+          id: 0
+          total_pages: null
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          views_infinite_scroll:
+            button_text: 'Load more units'
+            automatically_load_content: false
+            initially_load_all_pages: false
       style:
         type: default
       row:
@@ -268,12 +289,15 @@ display:
           entity_field: id
           plugin_id: string
       display_extenders: {  }
+      use_ajax: true
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
+        - url.query_args
+        - user.permissions
       tags: {  }
   service_units:
     display_plugin: block
@@ -290,4 +314,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
+        - url.query_args
+        - user.permissions
       tags: {  }
