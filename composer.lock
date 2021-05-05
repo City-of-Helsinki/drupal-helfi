@@ -3507,18 +3507,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr.git",
-                "reference": "4ea44ed949e9479af11045716ace6329b897ad8b"
+                "reference": "8a4dabb354ac13392c19c5d4e5ba1a561f09beb3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-tpr/zipball/4ea44ed949e9479af11045716ace6329b897ad8b",
-                "reference": "4ea44ed949e9479af11045716ace6329b897ad8b",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-tpr/zipball/8a4dabb354ac13392c19c5d4e5ba1a561f09beb3",
+                "reference": "8a4dabb354ac13392c19c5d4e5ba1a561f09beb3",
                 "shasum": ""
             },
             "require": {
                 "drupal/address": "~1.0",
                 "drupal/helfi_api_base": "*",
-                "drupal/readonly_field_widget": "^1.0"
+                "drupal/readonly_field_widget": "^1.0",
+                "drupal/twig_tweak": "^2.0 || ^3.0",
+                "drupal/views_infinite_scroll": "^1.8"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
@@ -3534,7 +3536,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/tree/1.x",
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/issues"
             },
-            "time": "2021-05-04T06:15:47+00:00"
+            "time": "2021-05-05T10:58:41+00:00"
         },
         {
             "name": "drupal/helfi_tunnistamo",
