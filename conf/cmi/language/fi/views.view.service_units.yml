@@ -5,7 +5,7 @@ display:
         options:
           submit_button: Apply
           reset_button_label: Palauta
-          exposed_sorts_label: 'Järjestä'
+          exposed_sorts_label: Järjestä
           sort_asc_label: Nouseva
           sort_desc_label: Laskeva
       pager:
