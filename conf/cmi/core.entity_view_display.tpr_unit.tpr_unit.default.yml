@@ -2,11 +2,14 @@ uuid: 620464b9-78a7-494a-ab86-5b03fe19c1f6
 langcode: en
 status: true
 dependencies:
+  config:
+    - field.field.tpr_unit.tpr_unit.field_metatags
   module:
     - address
     - helfi_tpr
     - imagecache_external
     - link
+    - metatag
     - text
 id: tpr_unit.tpr_unit.default
 targetEntityType: tpr_unit
@@ -78,6 +81,13 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+  field_metatags:
+    weight: 16
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
   name:
     type: string
     weight: 0
