@@ -12,7 +12,7 @@ tags:
   article_modified_time: '[tpr_service:created:html_datetime]'
   article_published_time: '[tpr_service:created:html_datetime]'
   og_site_name: '[site:name]'
-  og_title: '[tpr_service:name]'
+  og_title: '[tpr_service:label]'
   og_description: '[tpr_service:description:summary]'
   og_updated_time: '[tpr_service:changed:html_datetime]'
   og_url: '[current-page:url:absolute]'
