@@ -3,7 +3,7 @@ FROM php:${BASE_IMAGE_TAG}
 ARG DRUSH
 
 # Install PHP and composer dependencies
-RUN apt-get update -yqq && apt-get install git libzip-dev zip libpng-dev mariadb-client chromium-driver -yqq
+RUN apt-get update -yqq && apt-get install git libzip-dev zip libpng-dev mariadb-client chromium-driver jq -yqq
 
 # Install needed extensions
 RUN docker-php-ext-install gd pdo_mysql zip bcmath
