@@ -1,14 +1,16 @@
-uuid: 1c486952-15a2-4566-b5cc-b345b91722dd
+uuid: 7ddc5fdc-4d8e-41a6-899c-36ee639ee31b
 langcode: en
 status: true
 dependencies:
+  config:
+    - core.entity_view_mode.tpr_service.teaser
   module:
     - helfi_tpr
     - text
-id: tpr_service.tpr_service.default
+id: tpr_service.tpr_service.teaser
 targetEntityType: tpr_service
 bundle: tpr_service
-mode: default
+mode: teaser
 content:
   description:
     type: text_default

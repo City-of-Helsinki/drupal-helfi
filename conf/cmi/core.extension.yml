@@ -89,6 +89,7 @@ module:
   syslog: 0
   system: 0
   taxonomy: 0
+  telephone: 0
   text: 0
   token: 0
   token_filter: 0
@@ -96,6 +97,7 @@ module:
   twig_tweak: 0
   update: 0
   user: 0
+  views_infinite_scroll: 0
   views_ui: 0
   pathauto: 1
   content_translation: 10
