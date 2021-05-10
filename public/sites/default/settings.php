@@ -46,6 +46,8 @@ if (isset($_SERVER['WODBY_APP_NAME'])) {
 
 $config['openid_connect.settings.tunnistamo']['settings']['client_id'] = getenv('TUNNISTAMO_CLIENT_ID');
 $config['openid_connect.settings.tunnistamo']['settings']['client_secret'] = getenv('TUNNISTAMO_CLIENT_SECRET');
+$config['openid_connect.settings.tunnistamo']['settings']['is_production'] = getenv('TUNNISTAMO_ENV') === 'production';
+
 // Drupal route(s).
 $routes = (getenv('DRUPAL_ROUTES')) ? explode(',', getenv('DRUPAL_ROUTES')) : [];
 
