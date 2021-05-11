@@ -45,7 +45,7 @@ content:
       target: ''
     third_party_settings: {  }
   address:
-    type: address_default
+    type: address_plain
     weight: 5
     region: content
     label: hidden
