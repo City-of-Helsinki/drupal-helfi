@@ -1,17 +1,17 @@
-uuid: 1c486952-15a2-4566-b5cc-b345b91722dd
+uuid: 7ddc5fdc-4d8e-41a6-899c-36ee639ee31b
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.tpr_service.teaser
     - field.field.tpr_service.tpr_service.field_metatags
   module:
     - helfi_tpr
-    - metatag
     - text
-id: tpr_service.tpr_service.default
+id: tpr_service.tpr_service.teaser
 targetEntityType: tpr_service
 bundle: tpr_service
-mode: default
+mode: teaser
 content:
   description:
     type: text_default
@@ -20,13 +20,6 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-  field_metatags:
-    weight: 3
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: metatag_empty_formatter
-    region: content
   name:
     type: string
     weight: 0
@@ -46,5 +39,6 @@ content:
 hidden:
   created: true
   errand_services: true
+  field_metatags: true
   langcode: true
   links: true
