@@ -13,7 +13,7 @@ bundle: tpr_unit
 mode: teaser
 content:
   address:
-    type: address_default
+    type: address_plain
     weight: 1
     region: content
     label: hidden
