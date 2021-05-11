@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.tpr_unit.teaser
+    - field.field.tpr_unit.tpr_unit.field_metatags
   module:
     - address
     - helfi_tpr
@@ -44,6 +45,7 @@ hidden:
   created: true
   description: true
   email: true
+  field_metatags: true
   langcode: true
   latitude: true
   longitude: true

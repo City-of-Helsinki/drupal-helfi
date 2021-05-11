@@ -2,8 +2,11 @@ uuid: 91f87d34-7e23-49ee-a20a-c69a018df1e9
 langcode: en
 status: true
 dependencies:
+  config:
+    - field.field.tpr_service.tpr_service.field_metatags
   module:
     - helfi_tpr
+    - metatag
     - path
     - readonly_field_widget
 id: tpr_service.tpr_service.default
@@ -31,6 +34,13 @@ content:
       formatter_settings: null
       show_description: false
     third_party_settings: {  }
+  field_metatags:
+    weight: 26
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
   langcode:
     type: language_select
     weight: 0
