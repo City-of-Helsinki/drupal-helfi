@@ -8,6 +8,8 @@ dependencies:
   module:
     - address
     - helfi_tpr
+_core:
+  default_config_hash: PQbM11d67iC5F04mdC2y3XBJMpH_-SHK6bbThn5Rx-Y
 id: tpr_unit.tpr_unit.teaser
 targetEntityType: tpr_unit
 bundle: tpr_unit

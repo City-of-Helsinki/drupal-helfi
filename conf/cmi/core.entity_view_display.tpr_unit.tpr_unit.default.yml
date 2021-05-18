@@ -11,6 +11,8 @@ dependencies:
     - link
     - metatag
     - text
+_core:
+  default_config_hash: zeIZgnO7dmftQ4pBdnaPjqLBKPRDsSMUSMJjQhEe54A
 id: tpr_unit.tpr_unit.default
 targetEntityType: tpr_unit
 bundle: tpr_unit

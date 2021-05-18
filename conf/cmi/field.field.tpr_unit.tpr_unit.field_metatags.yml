@@ -7,6 +7,8 @@ dependencies:
   module:
     - helfi_tpr
     - metatag
+_core:
+  default_config_hash: W1NAXHJMlL-zwKt4zHWC3omPwPsBgqQrTtxVBwlTjj8
 id: tpr_unit.tpr_unit.field_metatags
 field_name: field_metatags
 entity_type: tpr_unit

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2eaca1b6da4facea4de079d8be2886fb",
+    "content-hash": "117898d13cdf8ec9f3e1d7d2ecb31a6a",
     "packages": [
         {
             "name": "City-of-Helsinki/php-hauki-client",
@@ -239,16 +239,16 @@
         },
         {
             "name": "commerceguys/addressing",
-            "version": "v1.2.0",
+            "version": "v1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/commerceguys/addressing.git",
-                "reference": "00c263fa945e7f78524bbb6b99d331f3b493be2a"
+                "reference": "311040bd78ea2ea82105dd1f17205c449ac8de47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/00c263fa945e7f78524bbb6b99d331f3b493be2a",
-                "reference": "00c263fa945e7f78524bbb6b99d331f3b493be2a",
+                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/311040bd78ea2ea82105dd1f17205c449ac8de47",
+                "reference": "311040bd78ea2ea82105dd1f17205c449ac8de47",
                 "shasum": ""
             },
             "require": {
@@ -296,9 +296,9 @@
             ],
             "support": {
                 "issues": "https://github.com/commerceguys/addressing/issues",
-                "source": "https://github.com/commerceguys/addressing/tree/v1.2.0"
+                "source": "https://github.com/commerceguys/addressing/tree/v1.2.1"
             },
-            "time": "2021-03-14T20:04:10+00:00"
+            "time": "2021-05-17T08:05:21+00:00"
         },
         {
             "name": "composer/installers",
@@ -2318,17 +2318,17 @@
         },
         {
             "name": "drupal/ctools",
-            "version": "3.5.0",
+            "version": "3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ctools.git",
-                "reference": "8.x-3.5"
+                "reference": "8.x-3.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.5.zip",
-                "reference": "8.x-3.5",
-                "shasum": "0113cd1e787ff3bde088c836c2d79d14136b0013"
+                "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.6.zip",
+                "reference": "8.x-3.6",
+                "shasum": "9a849bb6ac9f4d02603d04b3265b35b7329e1ef5"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9"
@@ -2336,8 +2336,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.5",
-                    "datestamp": "1618592931",
+                    "version": "8.x-3.6",
+                    "datestamp": "1620838181",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3086,6 +3086,70 @@
             }
         },
         {
+            "name": "drupal/field_group",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/field_group.git",
+                "reference": "8.x-3.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/field_group-8.x-3.1.zip",
+                "reference": "8.x-3.1",
+                "shasum": "8a719eaea594f0ba874172831cb28da93c66b77a"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "require-dev": {
+                "drupal/jquery_ui_accordion": "^1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-3.1",
+                    "datestamp": "1591772567",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Hydra",
+                    "homepage": "https://www.drupal.org/user/647364"
+                },
+                {
+                    "name": "Stalski",
+                    "homepage": "https://www.drupal.org/user/322618"
+                },
+                {
+                    "name": "jyve",
+                    "homepage": "https://www.drupal.org/user/591438"
+                },
+                {
+                    "name": "nils.destoop",
+                    "homepage": "https://www.drupal.org/user/361625"
+                },
+                {
+                    "name": "swentel",
+                    "homepage": "https://www.drupal.org/user/107403"
+                }
+            ],
+            "description": "Provides the field_group module.",
+            "homepage": "https://www.drupal.org/project/field_group",
+            "support": {
+                "source": "https://git.drupalcode.org/project/field_group",
+                "issues": "https://www.drupal.org/project/issues/field_group"
+            }
+        },
+        {
             "name": "drupal/focal_point",
             "version": "1.5.0",
             "source": {
@@ -3158,7 +3222,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-3.0-alpha34",
-                    "datestamp": "1620394439",
+                    "datestamp": "1620747333",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -3218,7 +3282,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-1.0-beta15",
-                    "datestamp": "1620393971",
+                    "datestamp": "1620476166",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -3358,12 +3422,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base.git",
-                "reference": "9f1480d971bae1261e7d1bd674f8fd0f0ae225ff"
+                "reference": "a21ce47189f237b6722fbf58a5ebf35a839d977a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-api-base/zipball/9f1480d971bae1261e7d1bd674f8fd0f0ae225ff",
-                "reference": "9f1480d971bae1261e7d1bd674f8fd0f0ae225ff",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-api-base/zipball/a21ce47189f237b6722fbf58a5ebf35a839d977a",
+                "reference": "a21ce47189f237b6722fbf58a5ebf35a839d977a",
                 "shasum": ""
             },
             "require": {
@@ -3379,10 +3443,10 @@
             ],
             "description": "Helfi - API Base",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base/tree/1.1.3",
+                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base/tree/1.1.4",
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base/issues"
             },
-            "time": "2021-05-12T10:55:35+00:00"
+            "time": "2021-05-17T12:04:12+00:00"
         },
         {
             "name": "drupal/helfi_hauki",
@@ -3508,12 +3572,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr.git",
-                "reference": "441a7ad600e289353179451386d54cf699787668"
+                "reference": "111ca85d2331b45d7bca926778590e3a6cd55b6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-tpr/zipball/441a7ad600e289353179451386d54cf699787668",
-                "reference": "441a7ad600e289353179451386d54cf699787668",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-tpr/zipball/111ca85d2331b45d7bca926778590e3a6cd55b6a",
+                "reference": "111ca85d2331b45d7bca926778590e3a6cd55b6a",
                 "shasum": ""
             },
             "require": {
@@ -3534,10 +3598,10 @@
             ],
             "description": "TPR integration",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/tree/1.2.2",
+                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/tree/1.x",
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/issues"
             },
-            "time": "2021-05-12T11:11:35+00:00"
+            "time": "2021-05-12T13:59:19+00:00"
         },
         {
             "name": "drupal/helfi_tunnistamo",
@@ -13569,16 +13633,16 @@
         },
         {
             "name": "symfony/phpunit-bridge",
-            "version": "v5.2.7",
+            "version": "v5.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/phpunit-bridge.git",
-                "reference": "f530f0153f4a871b2c65dd6b295d7b8d03a16eac"
+                "reference": "b3cf2c3f7f6196fb498002920c1ae9036d9e5619"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/f530f0153f4a871b2c65dd6b295d7b8d03a16eac",
-                "reference": "f530f0153f4a871b2c65dd6b295d7b8d03a16eac",
+                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/b3cf2c3f7f6196fb498002920c1ae9036d9e5619",
+                "reference": "b3cf2c3f7f6196fb498002920c1ae9036d9e5619",
                 "shasum": ""
             },
             "require": {
@@ -13632,7 +13696,7 @@
             "description": "Provides utilities for PHPUnit, especially user deprecation notices management",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/phpunit-bridge/tree/v5.2.7"
+                "source": "https://github.com/symfony/phpunit-bridge/tree/v5.2.8"
             },
             "funding": [
                 {
@@ -13648,7 +13712,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-04-11T22:55:21+00:00"
+            "time": "2021-05-07T12:56:09+00:00"
         },
         {
             "name": "theseer/tokenizer",

@@ -1,0 +1,10 @@
+uuid: 10d9576d-e22b-4af7-9f8f-f19ca5518fe4
+langcode: en
+status: true
+dependencies: {  }
+id: unit_search
+label: 'Unit search'
+icon_uuid: null
+icon_default: null
+description: 'With unit search paragraph content producer can create unit search forms for the end user.'
+behavior_plugins: {  }

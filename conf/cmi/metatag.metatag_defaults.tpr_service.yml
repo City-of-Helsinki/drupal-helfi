@@ -2,6 +2,8 @@ uuid: 5b743d0b-3d7c-429e-be2c-4ec1e4a40494
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: AirS2279F4JcJXH0PNP3DqJRUqBx5VRTXaQ2O206zbQ
 id: tpr_service
 label: 'TPR - Service'
 tags:
