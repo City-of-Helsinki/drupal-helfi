@@ -10,6 +10,8 @@ dependencies:
     - metatag
     - path
     - readonly_field_widget
+_core:
+  default_config_hash: 0v7EPJz4W73gRzKEJ6lacRIolZWWVdI9HKAE3K2Kh4M
 id: tpr_unit.tpr_unit.default
 targetEntityType: tpr_unit
 bundle: tpr_unit

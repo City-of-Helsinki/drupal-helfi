@@ -8,6 +8,8 @@ dependencies:
     - helfi_tpr
     - metatag
     - text
+_core:
+  default_config_hash: O6B2q3iV9DgC6EcarOKKgKBeVPvlpOkqdQQUOcsVmsA
 id: tpr_service.tpr_service.default
 targetEntityType: tpr_service
 bundle: tpr_service
