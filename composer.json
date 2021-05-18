@@ -18,6 +18,7 @@
         "drupal/easy_breadcrumb": "^1.13",
         "drupal/eu_cookie_compliance": "^1.14",
         "drupal/features": "^3.11",
+        "drupal/field_group": "^3.1",
         "drupal/focal_point": "^1.5",
         "drupal/hdbt": "1.x-dev",
         "drupal/hdbt_admin": "1.x-dev",
@@ -105,7 +106,8 @@
                 "https://www.drupal.org/project/drupal/issues/2868193#comment-13830917": "https://www.drupal.org/files/issues/2020-09-21/2868193-22.patch",
                 "https://www.drupal.org/project/drupal/issues/2313309#comment-13880802": "https://www.drupal.org/files/issues/2020-10-23/2313309-76.patch",
                 "https://www.drupal.org/project/drupal/issues/3054641#comment-13604223": "https://www.drupal.org/files/issues/2020-05-08/3054641-21.patch",
-                "https://www.drupal.org/project/drupal/issues/2845437#comment-13784958": "https://www.drupal.org/files/issues/2020-08-12/2845437-32.patch"
+                "https://www.drupal.org/project/drupal/issues/2845437#comment-13784958": "https://www.drupal.org/files/issues/2020-08-12/2845437-32.patch",
+                "[#UHF-949] Drupal.views.ajaxView is not initializing pagers in nested views (https://www.drupal.org/project/drupal/issues/2858890).": "https://www.drupal.org/files/issues/2020-11-29/2858890-58.patch"
             },
             "drupal/eu_cookie_compliance": {
                 "Helfi-specific customizations to EU Cookie Compliance": "./patches/eu_cookie_compliance_block.patch"

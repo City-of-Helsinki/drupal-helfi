@@ -13,8 +13,6 @@ display:
       pager:
         options:
           tags:
-            previous: ‹‹
-            next: ››
             first: '« Första'
             last: 'Sista »'
           expose:
@@ -25,21 +23,28 @@ display:
         tpr_unit_bulk_form:
           label: Massuppdatera
           action_title: Åtgärd
-        id:
-          label: ID
-          separator: ', '
         name:
           label: Namn
-          separator: ', '
+        langcode:
+          label: Språk
+        content_translation_status:
+          settings:
+            format_custom_true: Publicerad
+            format_custom_false: 'Ej publicerad'
         changed:
           label: Ändrad
-          separator: ', '
         operations:
           label: Funktioner
       filters:
         combine:
           expose:
             label: Sök
+        langcode:
+          expose:
+            label: Språk
       title: 'TPR units'
+      header:
+        result:
+          content: 'Visar @start - @end av @total'
   page_1:
     display_title: Sida

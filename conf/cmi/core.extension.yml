@@ -25,6 +25,7 @@ module:
   features: 0
   features_ui: 0
   field: 0
+  field_group: 0
   field_ui: 0
   file: 0
   filter: 0
@@ -47,6 +48,7 @@ module:
   helfi_media: 0
   helfi_platform_config: 0
   helfi_tpr: 0
+  helfi_tpr_config: 0
   helfi_tunnistamo: 0
   image: 0
   image_style_quality: 0

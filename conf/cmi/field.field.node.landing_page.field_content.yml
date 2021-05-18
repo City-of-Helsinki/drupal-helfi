@@ -10,6 +10,7 @@ dependencies:
     - paragraphs.paragraphs_type.content_cards
     - paragraphs.paragraphs_type.liftup_with_image
     - paragraphs.paragraphs_type.list_of_links
+    - paragraphs.paragraphs_type.unit_search
   module:
     - entity_reference_revisions
 _core:
@@ -34,6 +35,7 @@ settings:
       list_of_links: list_of_links
       liftup_with_image: liftup_with_image
       content_cards: content_cards
+      unit_search: unit_search
     target_bundles_drag_drop:
       accordion:
         weight: -22
@@ -74,4 +76,7 @@ settings:
       text:
         weight: -15
         enabled: false
+      unit_search:
+        enabled: true
+        weight: 28
 field_type: entity_reference_revisions

@@ -2,9 +2,14 @@ uuid: 1c486952-15a2-4566-b5cc-b345b91722dd
 langcode: en
 status: true
 dependencies:
+  config:
+    - field.field.tpr_service.tpr_service.field_metatags
   module:
     - helfi_tpr
+    - metatag
     - text
+_core:
+  default_config_hash: O6B2q3iV9DgC6EcarOKKgKBeVPvlpOkqdQQUOcsVmsA
 id: tpr_service.tpr_service.default
 targetEntityType: tpr_service
 bundle: tpr_service
@@ -17,6 +22,13 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
+  field_metatags:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
   name:
     type: string
     weight: 0
