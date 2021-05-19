@@ -1,10 +1,9 @@
-uuid: f3ced57c-ccde-4dd4-8574-5f5ffe7e286c
+uuid: f82aa969-34e0-469c-bcc8-4cb6be044652
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_content
-    - node.type.page
+    - field.storage.tpr_service.field_secondary_content
     - paragraphs.paragraphs_type.accordion
     - paragraphs.paragraphs_type.columns
     - paragraphs.paragraphs_type.content_cards
@@ -12,16 +11,14 @@ dependencies:
     - paragraphs.paragraphs_type.image
     - paragraphs.paragraphs_type.list_of_links
     - paragraphs.paragraphs_type.text
-    - paragraphs.paragraphs_type.unit_search
   module:
     - entity_reference_revisions
-_core:
-  default_config_hash: HeIFaD6AhJzNT9WOX0T8FIbGJL4YwN7ywxtHqAwqLeI
-id: node.page.field_content
-field_name: field_content
-entity_type: node
-bundle: page
-label: 'Main content'
+    - helfi_tpr
+id: tpr_service.tpr_service.field_secondary_content
+field_name: field_secondary_content
+entity_type: tpr_service
+bundle: tpr_service
+label: 'Secondary content'
 description: ''
 required: false
 translatable: true
@@ -39,48 +36,47 @@ settings:
       gallery: gallery
       list_of_links: list_of_links
       content_cards: content_cards
-      unit_search: unit_search
     target_bundles_drag_drop:
       accordion:
         enabled: true
-        weight: -25
+        weight: -27
       accordion_item:
-        weight: -20
+        weight: -22
         enabled: false
       banner:
-        weight: -16
+        weight: -21
         enabled: false
       columns:
         enabled: true
-        weight: -26
+        weight: -28
       content_cards:
         enabled: true
-        weight: -21
+        weight: -23
       gallery:
         enabled: true
-        weight: -23
+        weight: -25
       gallery_slide:
-        weight: -19
+        weight: -20
         enabled: false
       hero:
-        weight: -18
+        weight: -19
         enabled: false
       image:
         enabled: true
-        weight: -24
+        weight: -26
       liftup_with_image:
-        weight: -15
+        weight: -18
         enabled: false
       list_of_links:
         enabled: true
-        weight: -22
+        weight: -24
       list_of_links_item:
         weight: -17
         enabled: false
       text:
         enabled: true
-        weight: -27
+        weight: -29
       unit_search:
-        enabled: true
-        weight: 28
+        weight: -16
+        enabled: false
 field_type: entity_reference_revisions
