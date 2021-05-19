@@ -17,4 +17,4 @@ display:
             items_per_page_label: 'Kohteita sivulla'
             items_per_page_options_all_label: '- Kaikki -'
           views_infinite_scroll:
-            button_text: 'Lataa lisää palveluita'
+            button_text: 'Lataa lisää palvelupaikkoja'
