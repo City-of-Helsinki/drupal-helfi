@@ -8,6 +8,7 @@ dependencies:
   module:
     - address
     - helfi_tpr
+    - telephone
 _core:
   default_config_hash: PQbM11d67iC5F04mdC2y3XBJMpH_-SHK6bbThn5Rx-Y
 id: tpr_unit.tpr_unit.teaser
@@ -31,12 +32,12 @@ content:
       link_to_entity: false
     third_party_settings: {  }
   phone:
-    type: string
+    type: telephone_link
     weight: 2
     region: content
     label: hidden
     settings:
-      link_to_entity: false
+      title: ''
     third_party_settings: {  }
 hidden:
   accessibility_email: true
