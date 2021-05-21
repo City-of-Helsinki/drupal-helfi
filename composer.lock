@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "117898d13cdf8ec9f3e1d7d2ecb31a6a",
+    "content-hash": "52e4fdeedaf71357b572b67cc3930082",
     "packages": [
         {
             "name": "City-of-Helsinki/php-hauki-client",
@@ -3447,6 +3447,35 @@
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-api-base/issues"
             },
             "time": "2021-05-21T08:50:43+00:00"
+        },
+        {
+            "name": "drupal/helfi_azure_fs",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-azure-fs.git",
+                "reference": "3517bfa85af889a0efcca58291b0795b013909bf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-azure-fs/zipball/3517bfa85af889a0efcca58291b0795b013909bf",
+                "reference": "3517bfa85af889a0efcca58291b0795b013909bf",
+                "shasum": ""
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                "drupal/coder": "^8.3"
+            },
+            "type": "drupal-module",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Helfi - Azure FS",
+            "support": {
+                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-azure-fs/tree/1.x",
+                "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-azure-fs/issues"
+            },
+            "time": "2021-05-21T08:51:13+00:00"
         },
         {
             "name": "drupal/helfi_hauki",
@@ -13775,6 +13804,7 @@
         "drupal/hdbt_admin": 20,
         "drupal/helfi_ahjo": 20,
         "drupal/helfi_api_base": 20,
+        "drupal/helfi_azure_fs": 20,
         "drupal/helfi_hauki": 20,
         "drupal/helfi_platform_config": 20,
         "drupal/helfi_tpr": 20,
