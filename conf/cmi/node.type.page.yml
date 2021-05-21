@@ -25,7 +25,7 @@ third_party_settings:
     unpublish_revision: false
 _core:
   default_config_hash: _BhpJzkKyfByF3bLZ56eV_kN67Rm6pXG5IJ9ao-mJP4
-name: Page
+name: 'Basic page'
 type: page
 description: 'Content type for pages that include information that doesn''t age as quickly as for example article or news content.'
 help: ''
