@@ -10,6 +10,7 @@ dependencies:
     - imagecache_external
     - link
     - metatag
+    - telephone
     - text
 _core:
   default_config_hash: zeIZgnO7dmftQ4pBdnaPjqLBKPRDsSMUSMJjQhEe54A
@@ -107,12 +108,12 @@ content:
       link_to_entity: false
     third_party_settings: {  }
   phone:
-    type: string
+    type: telephone_link
     weight: 6
     region: content
     label: hidden
     settings:
-      link_to_entity: false
+      title: ''
     third_party_settings: {  }
   picture_url:
     type: imagecache_external_responsive_image
@@ -163,6 +164,7 @@ content:
       target: ''
     third_party_settings: {  }
 hidden:
+  accessibility_sentences: true
   created: true
   langcode: true
   latitude: true
