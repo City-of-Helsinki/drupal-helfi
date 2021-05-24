@@ -4,9 +4,13 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.tpr_unit.teaser
+    - field.field.tpr_unit.tpr_unit.field_metatags
   module:
     - address
     - helfi_tpr
+    - telephone
+_core:
+  default_config_hash: PQbM11d67iC5F04mdC2y3XBJMpH_-SHK6bbThn5Rx-Y
 id: tpr_unit.tpr_unit.teaser
 targetEntityType: tpr_unit
 bundle: tpr_unit
@@ -28,12 +32,12 @@ content:
       link_to_entity: false
     third_party_settings: {  }
   phone:
-    type: string
+    type: telephone_link
     weight: 2
     region: content
     label: hidden
     settings:
-      link_to_entity: false
+      title: ''
     third_party_settings: {  }
 hidden:
   accessibility_email: true
@@ -44,6 +48,7 @@ hidden:
   created: true
   description: true
   email: true
+  field_metatags: true
   langcode: true
   latitude: true
   longitude: true

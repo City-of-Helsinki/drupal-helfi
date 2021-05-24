@@ -4,9 +4,12 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.tpr_service.teaser
+    - field.field.tpr_service.tpr_service.field_metatags
   module:
     - helfi_tpr
     - text
+_core:
+  default_config_hash: KVVLTF4MlHLi_G2VN0nuP8HED7EieeuNYbu9NN-UCNk
 id: tpr_service.tpr_service.teaser
 targetEntityType: tpr_service
 bundle: tpr_service
@@ -38,5 +41,6 @@ content:
 hidden:
   created: true
   errand_services: true
+  field_metatags: true
   langcode: true
   links: true
