@@ -10,8 +10,8 @@ _core:
   default_config_hash: 5sk-cSdyTTWS94bn2_LgFES519tkIaFtRBWLSoc4zS8
 id: hdbt_page_title
 theme: hdbt
-region: content
-weight: -3
+region: before_content
+weight: -6
 provider: null
 plugin: page_title_block
 settings:

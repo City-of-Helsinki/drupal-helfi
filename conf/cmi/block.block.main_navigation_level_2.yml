@@ -33,7 +33,6 @@ visibility:
     bundles:
       article: article
       landing_page: landing_page
-      page: page
-    negate: false
+    negate: true
     context_mapping:
       node: '@node.node_route_context:node'
