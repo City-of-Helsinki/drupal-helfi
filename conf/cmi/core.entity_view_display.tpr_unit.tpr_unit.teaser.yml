@@ -58,6 +58,7 @@ hidden:
   latitude: true
   longitude: true
   name_override: true
+  opening_hours: true
   picture_url: true
   picture_url_override: true
   service_map_embed: true

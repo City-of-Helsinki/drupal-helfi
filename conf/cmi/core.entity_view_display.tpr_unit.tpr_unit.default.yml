@@ -190,4 +190,5 @@ hidden:
   langcode: true
   latitude: true
   longitude: true
+  opening_hours: true
   streetview_entrance_url: true
