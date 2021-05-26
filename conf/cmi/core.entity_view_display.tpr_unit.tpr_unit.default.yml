@@ -164,6 +164,7 @@ content:
       target: ''
     third_party_settings: {  }
 hidden:
+  accessibility_sentences: true
   created: true
   langcode: true
   latitude: true
