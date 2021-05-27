@@ -1,14 +1,14 @@
-uuid: eef82b81-9917-4ce2-b47b-62216bdb728e
+uuid: 4b8a6a31-2687-4baf-abcf-8f8a63a8b7b0
 langcode: en
 status: true
 dependencies:
   module:
     - entity_reference_revisions
-    - node
+    - helfi_tpr
     - paragraphs
-id: node.field_secondary_content
-field_name: field_secondary_content
-entity_type: node
+id: tpr_service.field_lower_content
+field_name: field_lower_content
+entity_type: tpr_service
 type: entity_reference_revisions
 settings:
   target_type: paragraph
