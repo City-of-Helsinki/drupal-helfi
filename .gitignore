@@ -4,9 +4,10 @@ node_modules
 public/core
 public/libraries
 public/modules/contrib
-public/modules/custom/helfi_*
+!public/modules/contrib/helfi_*
 public/themes/contrib
-public/themes/custom/hdbt*
+!public/themes/contrib/hdbt
+!public/themes/contrib/hdbt_admin
 public/sites/default/files
 vendor
 public/sites/simpletest/
