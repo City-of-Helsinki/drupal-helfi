@@ -81,13 +81,6 @@ content:
       media_types: {  }
     third_party_settings: {  }
     region: content
-  field_metatags:
-    weight: 51
-    settings:
-      sidebar: false
-    third_party_settings: {  }
-    type: metatag_firehose
-    region: content
   field_lower_content:
     type: paragraphs
     weight: 52
@@ -106,6 +99,13 @@ content:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
+    region: content
+  field_metatags:
+    weight: 51
+    settings:
+      sidebar: false
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   langcode:
     type: language_select
