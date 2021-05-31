@@ -1,7 +1,7 @@
 ifeq ($(RUN_ON), docker)
-	PATH_TO_PLATFORM_CONFIG := ./modules/custom/helfi_platform_config/translations
+	PATH_TO_PLATFORM_CONFIG := ./modules/contrib/helfi_platform_config/translations
 else
-	PATH_TO_PLATFORM_CONFIG := ./public/modules/custom/helfi_platform_config/translations
+	PATH_TO_PLATFORM_CONFIG := ./public/modules/contrib/helfi_platform_config/translations
 endif
 
 PHONY += drush-locale-export

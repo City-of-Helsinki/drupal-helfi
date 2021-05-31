@@ -1,0 +1,20 @@
+uuid: c6f5060b-5cb9-493d-bda1-be1ce3096f8a
+langcode: en
+status: true
+dependencies:
+  module:
+    - hdbt_content
+  theme:
+    - hdbt
+id: lowercontentblock
+theme: hdbt
+region: after_content
+weight: -6
+provider: null
+plugin: lower_content_block
+settings:
+  id: lower_content_block
+  label: 'Lower content block'
+  provider: hdbt_content
+  label_display: '0'
+visibility: {  }
