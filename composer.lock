@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe7323c3c5729ca949add51ccd49178e",
+    "content-hash": "58702028e1bb0ede942dd3fe20e94b67",
     "packages": [
         {
             "name": "City-of-Helsinki/php-hauki-client",
@@ -3270,17 +3270,17 @@
         },
         {
             "name": "drupal/gin",
-            "version": "3.0.0-alpha34",
+            "version": "3.0.0-alpha35",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin.git",
-                "reference": "8.x-3.0-alpha34"
+                "reference": "8.x-3.0-alpha35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/gin-8.x-3.0-alpha34.zip",
-                "reference": "8.x-3.0-alpha34",
-                "shasum": "9ef1388695e371b0c5239088ab19aa746a02173b"
+                "url": "https://ftp.drupal.org/files/projects/gin-8.x-3.0-alpha35.zip",
+                "reference": "8.x-3.0-alpha35",
+                "shasum": "c93ba01d464e855cf456595d588570c68fab6785"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
@@ -3289,8 +3289,8 @@
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.0-alpha34",
-                    "datestamp": "1620747333",
+                    "version": "8.x-3.0-alpha35",
+                    "datestamp": "1622412154",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -3586,15 +3586,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "ad550992328cc84d8c5a22ca2ccc7372cc644a20"
+                "reference": "d157701a2d448c3a3b5d92ceb752ef0dd497bd6c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/ad550992328cc84d8c5a22ca2ccc7372cc644a20",
-                "reference": "ad550992328cc84d8c5a22ca2ccc7372cc644a20",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/d157701a2d448c3a3b5d92ceb752ef0dd497bd6c",
+                "reference": "d157701a2d448c3a3b5d92ceb752ef0dd497bd6c",
                 "shasum": ""
             },
             "require": {
+                "drupal/admin_toolbar": "^2.4.0",
                 "drupal/aet": "^2.0@alpha",
                 "drupal/config_replace": "^2.0",
                 "drupal/crop": "^2.1",
@@ -3663,7 +3664,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/latest",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2021-05-27T13:01:29+00:00"
+            "time": "2021-05-28T08:00:31+00:00"
         },
         {
             "name": "drupal/helfi_tpr",
@@ -3697,7 +3698,7 @@
             ],
             "description": "TPR integration",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/tree/1.x",
+                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/tree/1.2.9",
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/issues"
             },
             "time": "2021-05-27T13:00:33+00:00"
@@ -13729,26 +13730,26 @@
         },
         {
             "name": "symfony/phpunit-bridge",
-            "version": "v5.2.9",
+            "version": "v5.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/phpunit-bridge.git",
-                "reference": "ea24e42c1ee04792f5d814da6f0814b20ece2907"
+                "reference": "15cab721487b7bf43ad545a1e7d0095782e26f8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/ea24e42c1ee04792f5d814da6f0814b20ece2907",
-                "reference": "ea24e42c1ee04792f5d814da6f0814b20ece2907",
+                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/15cab721487b7bf43ad545a1e7d0095782e26f8c",
+                "reference": "15cab721487b7bf43ad545a1e7d0095782e26f8c",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.9"
+                "php": ">=7.1.3",
+                "symfony/deprecation-contracts": "^2.1"
             },
             "conflict": {
-                "phpunit/phpunit": "<4.8.35|<5.4.3,>=5.0|<6.4,>=6.0|9.1.2"
+                "phpunit/phpunit": "<7.5|9.1.2"
             },
             "require-dev": {
-                "symfony/deprecation-contracts": "^2.1",
                 "symfony/error-handler": "^4.4|^5.0"
             },
             "suggest": {
@@ -13792,7 +13793,7 @@
             "description": "Provides utilities for PHPUnit, especially user deprecation notices management",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/phpunit-bridge/tree/v5.2.9"
+                "source": "https://github.com/symfony/phpunit-bridge/tree/v5.3.0"
             },
             "funding": [
                 {
@@ -13808,7 +13809,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-16T13:07:46+00:00"
+            "time": "2021-05-26T17:57:12+00:00"
         },
         {
             "name": "theseer/tokenizer",
