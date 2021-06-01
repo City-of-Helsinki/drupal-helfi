@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "52e4fdeedaf71357b572b67cc3930082",
+    "content-hash": "58702028e1bb0ede942dd3fe20e94b67",
     "packages": [
         {
             "name": "City-of-Helsinki/php-hauki-client",
@@ -13868,6 +13868,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/aet": 15,
+        "drupal/entity_usage": 10,
         "drupal/hdbt": 20,
         "drupal/hdbt_admin": 20,
         "drupal/helfi_ahjo": 20,
