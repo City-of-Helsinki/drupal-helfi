@@ -1,7 +1,12 @@
 uuid: a13e8e7a-d84f-4257-a666-a7bc82c0cab1
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
 id: content_cards
 label: 'Content cards'
 icon_uuid: null

@@ -1,7 +1,12 @@
 uuid: b307338f-7710-4deb-b6cb-17cd366a7c72
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
 _core:
   default_config_hash: orJFXvwu2gBLMtrtkLMovwShKNNom05orGPW0VfSfHk
 id: list_of_links

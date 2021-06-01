@@ -1,0 +1,12 @@
+uuid: 5368b77d-d3aa-4fcc-822a-0596789604db
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: OJUwL6xTTiHbXZy10swc5Fckkr7qhSm4b0nK3326LO8
+id: from_library
+label: 'From library'
+icon_uuid: null
+icon_default: null
+description: 'The reusable paragraph allows you to insert a specific paragraph to multiple pages.'
+behavior_plugins: {  }

@@ -1,7 +1,12 @@
 uuid: a1a95652-3bfd-4690-8762-7f6c751cb4b4
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
 _core:
   default_config_hash: oTntLu4hOI-a_bRMPM6I79X4Ah0MldQKR2YxFjFwLqw
 id: liftup_with_image
