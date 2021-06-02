@@ -8,8 +8,8 @@ dependencies:
     - hdbt
 id: language_switcher
 theme: hdbt
-region: header_top
-weight: 0
+region: header_branding
+weight: -6
 provider: null
 plugin: 'language_block:language_content'
 settings:
