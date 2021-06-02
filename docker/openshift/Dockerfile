@@ -5,5 +5,5 @@ WORKDIR /var/www/html
 RUN composer install --no-progress --profile --prefer-dist --no-interaction --no-dev
 
 # Copy deploy script
-COPY entrypoints/90-deploy.sh /entrypoints
+COPY docker/openshift/entrypoints/90-deploy.sh /entrypoints
 RUN chmod +x /entrypoints/90-deploy.sh
