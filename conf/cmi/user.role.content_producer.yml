@@ -2,6 +2,8 @@ uuid: 481f18e8-2a84-4181-b955-b3f3e074f04b
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: vrZv05Y6x-5ZH874GNgfIMO8AetqjY7vB0pzfvXDtUY
 id: content_producer
 label: 'Content producer'
 weight: 3

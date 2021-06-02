@@ -5,6 +5,8 @@ dependencies:
   module:
     - paragraphs
     - select2_icon
+_core:
+  default_config_hash: FmQFOWb6K1mY_dccIuzSLACHd08uf9e5yk6MogBX1MI
 id: paragraph.field_icon
 field_name: field_icon
 entity_type: paragraph
