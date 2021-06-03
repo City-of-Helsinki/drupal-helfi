@@ -16,7 +16,7 @@ City of Helsinki
 
 Env | Branch | Drush alias | URL
 --- | ------ | ----------- | ---
-development | * | - | http://helfi.docker.sh/
+development | * | - | http://helfi.docker.so/
 production | master | @main | TBD
 
 ## Requirements
