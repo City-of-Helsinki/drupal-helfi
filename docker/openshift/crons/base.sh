@@ -2,6 +2,8 @@
 
 echo "Running cron"
 
+exec "/crons/drupal.sh" &
+
 while true
 do
   drush migrate:import tpr_unit
