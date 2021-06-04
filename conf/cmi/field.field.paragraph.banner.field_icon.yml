@@ -7,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.banner
   module:
     - select2_icon
+_core:
+  default_config_hash: YjDB77W8py1v-akIwDnWiJ7y0cijdsqaLT3hQNqOQHc
 id: paragraph.banner.field_icon
 field_name: field_icon
 entity_type: paragraph

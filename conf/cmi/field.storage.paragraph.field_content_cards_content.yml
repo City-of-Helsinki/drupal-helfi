@@ -5,6 +5,8 @@ dependencies:
   module:
     - node
     - paragraphs
+_core:
+  default_config_hash: JInQvFzZbBGtWvT_67C_gOzxaqr10T9ZyuiGysPmGYo
 id: paragraph.field_content_cards_content
 field_name: field_content_cards_content
 entity_type: paragraph
