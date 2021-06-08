@@ -36,6 +36,6 @@ display:
       empty:
         area:
           content:
-            value: 'Sisältöä ei löytynyt.'
+            value: 'Ei tuloksia.'
   page_1:
     display_title: Sivu
