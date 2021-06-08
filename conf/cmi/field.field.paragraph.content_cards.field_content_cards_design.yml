@@ -7,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.content_cards
   module:
     - options
+_core:
+  default_config_hash: KJhQ87wQxdu0K-hlTmjbMd2v-4MMrDv9PbL6ajqitfM
 id: paragraph.content_cards.field_content_cards_design
 field_name: field_content_cards_design
 entity_type: paragraph

@@ -16,6 +16,8 @@ dependencies:
   module:
     - entity_reference_revisions
     - paragraphs_library
+_core:
+  default_config_hash: 1q3kdhNu6cQRAG89NkQ3ahKTmg_d3cHIofeCdeX7viA
 id: paragraphs_library_item.paragraphs_library_item.paragraphs
 field_name: paragraphs
 entity_type: paragraphs_library_item

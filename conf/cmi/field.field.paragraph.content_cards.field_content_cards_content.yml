@@ -8,6 +8,8 @@ dependencies:
     - node.type.landing_page
     - node.type.page
     - paragraphs.paragraphs_type.content_cards
+_core:
+  default_config_hash: Xkb5_579rSl4LyBtgj6bZWaXsIFbZUAGAFR7kZPMTdo
 id: paragraph.content_cards.field_content_cards_content
 field_name: field_content_cards_content
 entity_type: paragraph
