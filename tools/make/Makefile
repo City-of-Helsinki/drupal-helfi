@@ -3,12 +3,12 @@
 BUILD_TARGETS :=
 CLEAN_FOLDERS :=
 COMPOSER_BIN := $(shell which composer || echo no)
-COMPOSER_JSON_EXISTS := $(shell test -f composer.json && echo yes || echo no)
+COMPOSER_JSON_PATH ?= .
 DOCKER_COMPOSE_BIN := $(shell which docker-compose > /dev/null 2>&1 && which docker-compose || echo no)
 DOCKER_COMPOSE_YML_EXISTS := $(shell test -f docker-compose.yml && echo yes || echo no)
 DRUIDFI_TOOLS_MAKE_DIR := $(dir $(lastword $(MAKEFILE_LIST)))
 ENV := dev
-PACKAGE_JSON_EXISTS := $(shell test -f package.json && echo yes || echo no)
+PACKAGE_JSON_PATH ?= .
 PHP_BIN := $(shell which php)
 UNAME_S := $(shell uname -s)
 # Shorten with https://git.io/ : https://raw.githubusercontent.com/druidfi/tools/master/update.sh

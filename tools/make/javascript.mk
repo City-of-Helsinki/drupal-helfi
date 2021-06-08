@@ -1,7 +1,7 @@
 BUILD_TARGETS += js-install
-CLEAN_FOLDERS += node_modules
+CLEAN_FOLDERS += $(PACKAGE_JSON_PATH)/node_modules
 JS_PACKAGE_MANAGER ?= yarn
-INSTALLED_NODE_VERSION := $(shell node --version | cut -c2-3 || echo no)
+INSTALLED_NODE_VERSION := $(shell which node > /dev/null && node --version | cut -c2-3 || echo no)
 NODE_BIN := $(shell which node || echo no)
 NPM_BIN := $(shell which npm || echo no)
 YARN_BIN := $(shell which yarn || echo no)
@@ -26,14 +26,19 @@ else
 	$(call node_run,install --engine-strict true)
 endif
 
+PHONY += js-outdated
+js-outdated: ## Show outdated JS packages
+	$(call step,Show outdated JS packages with $(JS_PACKAGE_MANAGER)...)
+	$(call node_run,outdated)
+
 ifeq ($(INSTALLED_NODE_VERSION),$(NODE_VERSION))
 define node_run
 	$(call sub_step,Using local $(JS_PACKAGE_MANAGER)...)
-	@$(JS_PACKAGE_MANAGER) $(1)
+	@$(JS_PACKAGE_MANAGER) --cwd $(PACKAGE_JSON_PATH) $(1)
 endef
 else
 define node_run
 	$(call sub_step,Using $(NODE_IMG) Docker image...)
-	@docker run --rm -v $(CURDIR):/app $(NODE_IMG) /bin/bash -c "$(JS_PACKAGE_MANAGER) $(1)"
+	@docker run --rm -v $(PACKAGE_JSON_PATH):/app $(NODE_IMG) /bin/bash -c "$(JS_PACKAGE_MANAGER) --cwd $(PACKAGE_JSON_PATH) $(1)"
 endef
 endif
