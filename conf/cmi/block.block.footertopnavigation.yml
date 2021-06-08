@@ -8,6 +8,8 @@ dependencies:
     - menu_block_current_language
   theme:
     - hdbt
+_core:
+  default_config_hash: BcYtE1a1a0HAZb1HQdR-Qh5xb9-pDKS9lqkDHSv6Pdw
 id: footertopnavigation
 theme: hdbt
 region: footer_top

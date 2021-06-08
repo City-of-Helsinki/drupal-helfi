@@ -7,6 +7,8 @@ dependencies:
     - hdbt_content
   theme:
     - hdbt
+_core:
+  default_config_hash: nH8M6u66xNnGzjplyiDZAKKeyzDR6NFyTMXNwDYzldk
 id: heroblock
 theme: hdbt
 region: before_content

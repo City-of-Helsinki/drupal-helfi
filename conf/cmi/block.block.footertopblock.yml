@@ -6,6 +6,8 @@ dependencies:
     - hdbt_content
   theme:
     - hdbt
+_core:
+  default_config_hash: IsZxrQIR5fs_5xZDQ1BJ8K5LXwiaRAM3Gk-HY4vuVb4
 id: footertopblock
 theme: hdbt
 region: footer_top

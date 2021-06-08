@@ -8,6 +8,8 @@ dependencies:
     - system
   theme:
     - hdbt
+_core:
+  default_config_hash: Ofp5Nv8E3DryORBw9DXtbN860LdYomjt-klGkC0fCHs
 id: eucookiecomplianceblock
 theme: hdbt
 region: after_content

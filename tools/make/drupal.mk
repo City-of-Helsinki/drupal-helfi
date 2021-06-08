@@ -121,6 +121,9 @@ ifeq ($(DUMP_SQL_EXISTS),yes)
 	$(call drush_on_${RUN_ON},sql-query --file=${DOCKER_PROJECT_ROOT}/$(DUMP_SQL_FILENAME))
 else
 	$(call step,Sync database from @$(DRUPAL_SYNC_SOURCE)...)
+ifeq ($(DRUPAL_VERSION),7)
+	$(call drush_on_${RUN_ON},sql-drop -y)
+endif
 	$(call drush_on_${RUN_ON},sql-sync -y --structure-tables-key=common @$(DRUPAL_SYNC_SOURCE) @self)
 endif
 
@@ -178,5 +181,5 @@ define drush_on_docker
 endef
 
 define drush_on_host
-	@drush -r ${DOCKER_PROJECT_ROOT}/${WEBROOT} --ansi --strict=0 $(1)
+	@cd $(COMPOSER_JSON_PATH)/${WEBROOT} && drush --ansi --strict=0 $(1)
 endef

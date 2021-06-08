@@ -6,10 +6,12 @@ dependencies:
     - language
   theme:
     - hdbt
+_core:
+  default_config_hash: exT4lfsQK-ekjJqsVu1l0uJ7eGvkRqcwOZdzEXQFBqw
 id: language_switcher
 theme: hdbt
 region: header_branding
-weight: -6
+weight: 2
 provider: null
 plugin: 'language_block:language_content'
 settings:

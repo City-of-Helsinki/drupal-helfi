@@ -6,6 +6,8 @@ dependencies:
     - hdbt_content
   theme:
     - hdbt
+_core:
+  default_config_hash: tNA-kZeJYbWgoVL9w2tJxX5TkbOqzXQVOVardatKtk8
 id: lowercontentblock
 theme: hdbt
 region: after_content

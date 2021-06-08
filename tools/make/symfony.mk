@@ -1,6 +1,7 @@
 SF_FRESH_TARGETS := up build sf-cw sf-about sf-open
 FIX_TARGETS += fix-symfony
 LINT_PHP_TARGETS += lint-symfony
+CLEAN_FOLDERS += $(COMPOSER_JSON_PATH)/var
 
 PHONY += sf-about
 sf-about: ## Displays information about the current project
