@@ -6,6 +6,8 @@ dependencies:
     - system
   theme:
     - hdbt
+_core:
+  default_config_hash: X6F3oSAls1r1jwOVU5n7EG6Uaz0yFqo-GQcEXDzxxLk
 id: breadcrumbs
 theme: hdbt
 region: breadcrumb

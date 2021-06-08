@@ -9,6 +9,8 @@ dependencies:
     - menu_block_current_language
   theme:
     - hdbt
+_core:
+  default_config_hash: zS9zgTlcanrv75vk0WibXcekGUttnN4EwP1pwFdTAcM
 id: main_navigation_level_2
 theme: hdbt
 region: sidebar_first
