@@ -43,6 +43,7 @@ settings:
       content_cards: content_cards
       from_library: from_library
       remote_video: remote_video
+      unit_search: unit_search
     target_bundles_drag_drop:
       accordion:
         enabled: true
