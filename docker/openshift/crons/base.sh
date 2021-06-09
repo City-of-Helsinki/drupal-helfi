@@ -1,15 +1,27 @@
 #!/bin/bash
 
-echo "Running cron"
+echo "Starting cron: $(date)"
 
-exec "/crons/drupal.sh" &
+# You can add any additional cron "daemons" here:
+#
+# exec "/crons/some-command.sh" &
+#
+# Example cron (docker/openshift/crons/some-command.sh):
+# @code
+# #!/bin/bash
+# while true
+# do
+#   drush some-command
+#   sleep 600
+# done
+# @endcode
+
+exec "/crons/migrate-tpr.sh" &
 
 while true
 do
-  drush migrate:import tpr_unit
-  drush migrate:import tpr_service
-  drush migrate:import tpr_errand_service
-  drush migrate:import tpr_service_channel
-  # Sleep for 6 hours.
-  sleep 21600
+  echo "Running cron: $(date)\n"
+  drush cron
+  # Sleep for 10 minutes.
+  sleep 600
 done
