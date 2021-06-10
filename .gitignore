@@ -14,6 +14,7 @@ public/sites/simpletest/
 .phpunit.result.cache
 public/sites/default/local.settings.php
 public/sites/default/local.services.yml
+helfi-test-automation-python/
 
 # Ignore the folder created by PhpStorm
 .idea/*
