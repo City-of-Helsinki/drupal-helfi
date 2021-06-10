@@ -1,0 +1,12 @@
+uuid: 8040b59d-f44d-4619-b7de-4aced735799a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: WTAPpeTZCHB5rS01AM02G5tEkQ7LMFLOfPD-MW0Hir4
+id: remote_video
+label: 'Remote video'
+icon_uuid: null
+icon_default: null
+description: 'Remote video paragraph that lets you add any video from video providers. Currently only YouTube.'
+behavior_plugins: {  }
