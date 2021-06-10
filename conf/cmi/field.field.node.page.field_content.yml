@@ -12,6 +12,7 @@ dependencies:
     - paragraphs.paragraphs_type.gallery
     - paragraphs.paragraphs_type.image
     - paragraphs.paragraphs_type.list_of_links
+    - paragraphs.paragraphs_type.map
     - paragraphs.paragraphs_type.remote_video
     - paragraphs.paragraphs_type.text
     - paragraphs.paragraphs_type.unit_search
@@ -44,6 +45,7 @@ settings:
       from_library: from_library
       remote_video: remote_video
       unit_search: unit_search
+      map: map
     target_bundles_drag_drop:
       accordion:
         enabled: true
@@ -84,6 +86,9 @@ settings:
       list_of_links_item:
         weight: -17
         enabled: false
+      map:
+        enabled: true
+        weight: 31
       remote_video:
         enabled: true
         weight: 27
