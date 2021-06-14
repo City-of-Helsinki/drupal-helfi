@@ -1,35 +1,5 @@
 version: '3.7'
-
 services:
-  app:
-    hostname: "${DRUPAL_HOSTNAME}"
-    container_name: "${COMPOSE_PROJECT_NAME}-app"
-    image: "${DRUPAL_IMAGE}"
-    volumes:
-      - .:/app:delegated
-    environment:
-      APP_ENV: "${APP_ENV:-dev}"
-      DRUSH_OPTIONS_URI: "https://${DRUPAL_HOSTNAME}"
-      DRUPAL_ROUTES: "http://helfi-app.helfi_internal:8080"
-    networks:
-      - internal
-      - stonehenge-network
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.${COMPOSE_PROJECT_NAME}-app.entrypoints=https"
-      - "traefik.http.routers.${COMPOSE_PROJECT_NAME}-app.rule=Host(`${DRUPAL_HOSTNAME}`)"
-      - "traefik.http.routers.${COMPOSE_PROJECT_NAME}-app.tls=true"
-      - "traefik.http.services.${COMPOSE_PROJECT_NAME}-app.loadbalancer.server.port=8080"
-      - "traefik.docker.network=stonehenge-network"
-  db:
-    container_name: "${COMPOSE_PROJECT_NAME}-db"
-    image: druidfi/db:mysql5.7-drupal
-    volumes:
-      - db_data:/var/lib/mysql
-    ports:
-      - 3306
-    networks:
-      - internal
   robo:
     container_name: "python-automation"
     image: "ghcr.io/city-of-helsinki/helfi-test-automation-python:1.0"
@@ -43,6 +13,3 @@ networks:
     external: false
   stonehenge-network:
     external: true
-
-volumes:
-  db_data:
