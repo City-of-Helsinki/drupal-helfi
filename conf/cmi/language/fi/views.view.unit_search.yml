@@ -12,5 +12,5 @@ display:
       empty:
         area:
           content:
-            value: "<p>No results</p>\r\n"
+            value: "<p>Ei tuloksia</p>\r\n"
             format: full_html
