@@ -1,0 +1,15 @@
+uuid: 50ff5c46-2d90-4b8b-9f59-3f300fa0911a
+langcode: en
+status: true
+dependencies:
+  module:
+    - helfi_media_map
+id: hel_map
+label: 'Map (kartta.hel.fi, palvelukartta.hel.fi)'
+description: null
+source: hel_map
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_hel_map
+field_map: {  }
