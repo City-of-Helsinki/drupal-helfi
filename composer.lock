@@ -3394,12 +3394,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt.git",
-                "reference": "2f0c4f7e0a6f65934acc7a4bb3e9d694de49fbdf"
+                "reference": "56c148845cba3229cda4571a8401b2ea738b4552"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/2f0c4f7e0a6f65934acc7a4bb3e9d694de49fbdf",
-                "reference": "2f0c4f7e0a6f65934acc7a4bb3e9d694de49fbdf",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/56c148845cba3229cda4571a8401b2ea738b4552",
+                "reference": "56c148845cba3229cda4571a8401b2ea738b4552",
                 "shasum": ""
             },
             "require": {
@@ -3417,7 +3417,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/latest",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt/issues"
             },
-            "time": "2021-06-08T09:41:15+00:00"
+            "time": "2021-06-16T07:16:06+00:00"
         },
         {
             "name": "drupal/hdbt_admin",
@@ -3425,12 +3425,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt-admin.git",
-                "reference": "a07806605f680e35ed57ae2dbfe298a7797fc8bd"
+                "reference": "29db27768cc85dde5fc57942020fc8360cf57ec2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt-admin/zipball/a07806605f680e35ed57ae2dbfe298a7797fc8bd",
-                "reference": "a07806605f680e35ed57ae2dbfe298a7797fc8bd",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt-admin/zipball/29db27768cc85dde5fc57942020fc8360cf57ec2",
+                "reference": "29db27768cc85dde5fc57942020fc8360cf57ec2",
                 "shasum": ""
             },
             "require": {
@@ -3449,7 +3449,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-hdbt-admin/tree/latest",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt-admin/issues"
             },
-            "time": "2021-06-04T11:06:08+00:00"
+            "time": "2021-06-16T07:22:19+00:00"
         },
         {
             "name": "drupal/helfi_ahjo",
@@ -3586,12 +3586,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-media-map.git",
-                "reference": "8ef86128903b3eeb4581279ee4f6a307880e9fde"
+                "reference": "b21f31c302bbc340cd8ed783e16474bbb60c9369"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-media-map/zipball/8ef86128903b3eeb4581279ee4f6a307880e9fde",
-                "reference": "8ef86128903b3eeb4581279ee4f6a307880e9fde",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-media-map/zipball/b21f31c302bbc340cd8ed783e16474bbb60c9369",
+                "reference": "b21f31c302bbc340cd8ed783e16474bbb60c9369",
                 "shasum": ""
             },
             "require": {
@@ -3611,7 +3611,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-media-map/tree/1.x",
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-media-map/issues"
             },
-            "time": "2021-06-04T06:44:02+00:00"
+            "time": "2021-06-13T07:35:07+00:00"
         },
         {
             "name": "drupal/helfi_platform_config",
@@ -3619,12 +3619,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "dda1a6af9e52ec560473a7f8ac8da3e63334aa40"
+                "reference": "f54a5432462f730a8c466e2507ad68f05abd9ab9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/dda1a6af9e52ec560473a7f8ac8da3e63334aa40",
-                "reference": "dda1a6af9e52ec560473a7f8ac8da3e63334aa40",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/f54a5432462f730a8c466e2507ad68f05abd9ab9",
+                "reference": "f54a5432462f730a8c466e2507ad68f05abd9ab9",
                 "shasum": ""
             },
             "require": {
@@ -3643,6 +3643,7 @@
                 "drupal/field_group": "^3.1",
                 "drupal/focal_point": "^1.5",
                 "drupal/gin_toolbar": "^1.0@beta",
+                "drupal/helfi_media_map": "1.x-dev",
                 "drupal/image_style_quality": "^1.4",
                 "drupal/imagecache_external": "^3.0",
                 "drupal/linkit": "^6.0@beta",
@@ -3699,7 +3700,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/latest",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2021-06-08T09:42:23+00:00"
+            "time": "2021-06-16T07:19:32+00:00"
         },
         {
             "name": "drupal/helfi_tpr",
@@ -3707,12 +3708,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr.git",
-                "reference": "7201a51deabe22f9ee27d4da1829aaa38dcb1515"
+                "reference": "50400c6d32d7da1a5cd30b85ce9f5ee0253650f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-tpr/zipball/7201a51deabe22f9ee27d4da1829aaa38dcb1515",
-                "reference": "7201a51deabe22f9ee27d4da1829aaa38dcb1515",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-tpr/zipball/50400c6d32d7da1a5cd30b85ce9f5ee0253650f9",
+                "reference": "50400c6d32d7da1a5cd30b85ce9f5ee0253650f9",
                 "shasum": ""
             },
             "require": {
@@ -3733,10 +3734,10 @@
             ],
             "description": "TPR integration",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/tree/1.x",
+                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/tree/1.3.1",
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/issues"
             },
-            "time": "2021-06-07T06:37:11+00:00"
+            "time": "2021-06-15T17:32:57+00:00"
         },
         {
             "name": "drupal/helfi_tunnistamo",
@@ -5359,16 +5360,16 @@
         },
         {
             "name": "elasticsearch/elasticsearch",
-            "version": "v7.13.0",
+            "version": "v7.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/elastic/elasticsearch-php.git",
-                "reference": "7343050106bf73ef9f63cf21490024e001829c81"
+                "reference": "45e17adacd3319958d6135e4ee3a21dbbe36a24b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/elastic/elasticsearch-php/zipball/7343050106bf73ef9f63cf21490024e001829c81",
-                "reference": "7343050106bf73ef9f63cf21490024e001829c81",
+                "url": "https://api.github.com/repos/elastic/elasticsearch-php/zipball/45e17adacd3319958d6135e4ee3a21dbbe36a24b",
+                "reference": "45e17adacd3319958d6135e4ee3a21dbbe36a24b",
                 "shasum": ""
             },
             "require": {
@@ -5419,9 +5420,9 @@
             ],
             "support": {
                 "issues": "https://github.com/elastic/elasticsearch-php/issues",
-                "source": "https://github.com/elastic/elasticsearch-php/tree/v7.13.0"
+                "source": "https://github.com/elastic/elasticsearch-php/tree/v7.13.1"
             },
-            "time": "2021-05-25T20:30:27+00:00"
+            "time": "2021-06-15T18:36:52+00:00"
         },
         {
             "name": "enlightn/security-checker",
@@ -13014,16 +13015,16 @@
         },
         {
             "name": "sebastian/global-state",
-            "version": "5.0.2",
+            "version": "5.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/global-state.git",
-                "reference": "a90ccbddffa067b51f574dea6eb25d5680839455"
+                "reference": "23bd5951f7ff26f12d4e3242864df3e08dec4e49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/global-state/zipball/a90ccbddffa067b51f574dea6eb25d5680839455",
-                "reference": "a90ccbddffa067b51f574dea6eb25d5680839455",
+                "url": "https://api.github.com/repos/sebastianbergmann/global-state/zipball/23bd5951f7ff26f12d4e3242864df3e08dec4e49",
+                "reference": "23bd5951f7ff26f12d4e3242864df3e08dec4e49",
                 "shasum": ""
             },
             "require": {
@@ -13066,7 +13067,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/global-state/issues",
-                "source": "https://github.com/sebastianbergmann/global-state/tree/5.0.2"
+                "source": "https://github.com/sebastianbergmann/global-state/tree/5.0.3"
             },
             "funding": [
                 {
@@ -13074,7 +13075,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-10-26T15:55:19+00:00"
+            "time": "2021-06-11T13:31:12+00:00"
         },
         {
             "name": "sebastian/lines-of-code",
@@ -13365,16 +13366,16 @@
         },
         {
             "name": "sebastian/type",
-            "version": "2.3.2",
+            "version": "2.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/type.git",
-                "reference": "0d1c587401514d17e8f9258a27e23527cb1b06c1"
+                "reference": "b8cd8a1c753c90bc1a0f5372170e3e489136f914"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/type/zipball/0d1c587401514d17e8f9258a27e23527cb1b06c1",
-                "reference": "0d1c587401514d17e8f9258a27e23527cb1b06c1",
+                "url": "https://api.github.com/repos/sebastianbergmann/type/zipball/b8cd8a1c753c90bc1a0f5372170e3e489136f914",
+                "reference": "b8cd8a1c753c90bc1a0f5372170e3e489136f914",
                 "shasum": ""
             },
             "require": {
@@ -13409,7 +13410,7 @@
             "homepage": "https://github.com/sebastianbergmann/type",
             "support": {
                 "issues": "https://github.com/sebastianbergmann/type/issues",
-                "source": "https://github.com/sebastianbergmann/type/tree/2.3.2"
+                "source": "https://github.com/sebastianbergmann/type/tree/2.3.4"
             },
             "funding": [
                 {
@@ -13417,7 +13418,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-06-04T13:02:07+00:00"
+            "time": "2021-06-15T12:49:02+00:00"
         },
         {
             "name": "sebastian/version",
@@ -14135,5 +14136,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
