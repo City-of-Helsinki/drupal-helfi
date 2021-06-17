@@ -27,6 +27,7 @@
         "drupal/helfi_api_base": "1.x-dev",
         "drupal/helfi_azure_fs": "1.x-dev",
         "drupal/helfi_hauki": "1.x-dev",
+        "drupal/helfi_media_map": "1.x-dev",
         "drupal/helfi_platform_config": "1.x-dev",
         "drupal/helfi_tpr": "1.x-dev",
         "drupal/helfi_tunnistamo": "1.x-dev",

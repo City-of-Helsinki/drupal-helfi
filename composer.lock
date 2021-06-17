@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2d876d2fd918fcc0362acd32a0250027",
+    "content-hash": "bb801a90ae832102397c0edc67bca106",
     "packages": [
         {
             "name": "City-of-Helsinki/php-hauki-client",
@@ -14187,6 +14187,7 @@
         "drupal/helfi_api_base": 20,
         "drupal/helfi_azure_fs": 20,
         "drupal/helfi_hauki": 20,
+        "drupal/helfi_media_map": 20,
         "drupal/helfi_platform_config": 20,
         "drupal/helfi_tpr": 20,
         "drupal/helfi_tunnistamo": 20,
