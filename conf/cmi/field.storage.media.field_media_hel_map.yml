@@ -5,6 +5,8 @@ dependencies:
   module:
     - link
     - media
+_core:
+  default_config_hash: vbleWrj8_V2DjBoBU1oIT_J4TlbrChZzdZOC5glJ54U
 id: media.field_media_hel_map
 field_name: field_media_hel_map
 entity_type: media

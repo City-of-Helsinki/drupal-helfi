@@ -9,6 +9,8 @@ dependencies:
     - paragraphs.paragraphs_type.map
   module:
     - text
+_core:
+  default_config_hash: wmFqvJHZ4YBgQf6tWjN2zwr6sXyqoWGcv441cwJoQR0
 id: paragraph.map.default
 targetEntityType: paragraph
 bundle: map

@@ -10,6 +10,8 @@ dependencies:
   module:
     - media_library
     - text
+_core:
+  default_config_hash: 8PkD28wd76Uxb7Lxrd8Js9613dKfCawFNWaoOv5PhF0
 id: paragraph.map.default
 targetEntityType: paragraph
 bundle: map

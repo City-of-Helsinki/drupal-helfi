@@ -1,4 +1,4 @@
-uuid: 1357760b-7c8a-4c5d-8ef1-1d4f7d0f446c
+uuid: 5ef131eb-4ecf-4a53-9da8-5f5cada1531f
 langcode: en
 status: false
 dependencies:
@@ -8,6 +8,8 @@ dependencies:
     - media.type.hel_map
   module:
     - helfi_media_map
+_core:
+  default_config_hash: PPY8kAB9w6Y50NI58k4CEZzyHD3iZAJo6jtujL8VG0Y
 id: media.hel_map.media_library
 targetEntityType: media
 bundle: hel_map
