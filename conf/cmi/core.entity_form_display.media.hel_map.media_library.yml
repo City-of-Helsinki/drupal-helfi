@@ -6,6 +6,8 @@ dependencies:
     - core.entity_form_mode.media.media_library
     - field.field.media.hel_map.field_media_hel_map
     - media.type.hel_map
+_core:
+  default_config_hash: uACm2qWCVRNNnPa4PkDsVUeKT0DiLVT6lqG9y2S4Cds
 id: media.hel_map.media_library
 targetEntityType: media
 bundle: hel_map

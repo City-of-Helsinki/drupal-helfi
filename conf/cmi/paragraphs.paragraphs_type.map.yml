@@ -7,6 +7,8 @@ dependencies:
 third_party_settings:
   paragraphs_library:
     allow_library_conversion: true
+_core:
+  default_config_hash: 42GDtoS2mo49FnPc1c03LOFH9DbKaoPQOhdlThp6Xvc
 id: map
 label: Map
 icon_uuid: null

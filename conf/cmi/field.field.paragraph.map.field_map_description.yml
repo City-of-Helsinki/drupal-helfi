@@ -7,6 +7,8 @@ dependencies:
     - paragraphs.paragraphs_type.map
   module:
     - text
+_core:
+  default_config_hash: rqd6X8jCKPW9YN_jsj8nDaSuHC1UzUteKtnGBWGA2lA
 id: paragraph.map.field_map_description
 field_name: field_map_description
 entity_type: paragraph

@@ -11,6 +11,7 @@
         "cweagans/composer-patches": "^1.6.7",
         "drupal/admin_toolbar": "^2.4.0",
         "drupal/aet": "^2.0@alpha",
+        "drupal/config_ignore": "^2.3",
         "drupal/config_replace": "^2.0",
         "drupal/core-composer-scaffold": "^9.0",
         "drupal/core-recommended": "^9.0",
