@@ -71,4 +71,3 @@ cookie_session: 0
 set_cookie_session_zero_on_disagree: 0
 _core:
   default_config_hash: hQ7DNLHTlQh0_X_bDls8Gwa7MA_vHoOePmKn2NASjM4
-popup_link_target: modal_window
