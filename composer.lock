@@ -3418,7 +3418,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-3.0-alpha35",
-                    "datestamp": "1622412154",
+                    "datestamp": "1622635855",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -3522,12 +3522,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt.git",
-                "reference": "56c148845cba3229cda4571a8401b2ea738b4552"
+                "reference": "43c0b33005009e12dba8b74489e982555bfb7ba4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/56c148845cba3229cda4571a8401b2ea738b4552",
-                "reference": "56c148845cba3229cda4571a8401b2ea738b4552",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/43c0b33005009e12dba8b74489e982555bfb7ba4",
+                "reference": "43c0b33005009e12dba8b74489e982555bfb7ba4",
                 "shasum": ""
             },
             "require": {
@@ -3545,7 +3545,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/latest",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt/issues"
             },
-            "time": "2021-06-16T07:16:06+00:00"
+            "time": "2021-06-21T13:04:00+00:00"
         },
         {
             "name": "drupal/hdbt_admin",
@@ -3553,12 +3553,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt-admin.git",
-                "reference": "29db27768cc85dde5fc57942020fc8360cf57ec2"
+                "reference": "99d188accceb5cc9b1208a3fdbf80edd2d316c96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt-admin/zipball/29db27768cc85dde5fc57942020fc8360cf57ec2",
-                "reference": "29db27768cc85dde5fc57942020fc8360cf57ec2",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt-admin/zipball/99d188accceb5cc9b1208a3fdbf80edd2d316c96",
+                "reference": "99d188accceb5cc9b1208a3fdbf80edd2d316c96",
                 "shasum": ""
             },
             "require": {
@@ -3577,7 +3577,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-hdbt-admin/tree/latest",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt-admin/issues"
             },
-            "time": "2021-06-16T07:22:19+00:00"
+            "time": "2021-06-21T13:07:40+00:00"
         },
         {
             "name": "drupal/helfi_ahjo",
@@ -3747,17 +3747,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "b51ad90cd1e3215248fed351b5380c738caabed6"
+                "reference": "0418b8f90af50b6cbc73f83d5a2e4dbf2fbf89d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/b51ad90cd1e3215248fed351b5380c738caabed6",
-                "reference": "b51ad90cd1e3215248fed351b5380c738caabed6",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/0418b8f90af50b6cbc73f83d5a2e4dbf2fbf89d8",
+                "reference": "0418b8f90af50b6cbc73f83d5a2e4dbf2fbf89d8",
                 "shasum": ""
             },
             "require": {
                 "drupal/admin_toolbar": "^2.4.0",
                 "drupal/aet": "^2.0@alpha",
+                "drupal/config_ignore": "^2.3",
                 "drupal/config_replace": "^2.0",
                 "drupal/crop": "^2.1",
                 "drupal/default_content": "^2.0.0-alpha1",
@@ -3827,7 +3828,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/latest",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2021-06-17T08:39:05+00:00"
+            "time": "2021-06-21T13:07:15+00:00"
         },
         {
             "name": "drupal/helfi_tpr",
@@ -13552,6 +13553,7 @@
                     "type": "github"
                 }
             ],
+            "abandoned": true,
             "time": "2020-09-28T06:45:17+00:00"
         },
         {
@@ -13776,16 +13778,16 @@
         },
         {
             "name": "sirbrillig/phpcs-variable-analysis",
-            "version": "v2.11.0",
+            "version": "v2.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sirbrillig/phpcs-variable-analysis.git",
-                "reference": "e76e816236f401458dd8e16beecab905861b5867"
+                "reference": "9df9ade5961a3505d0d24b0e6be2ab82e335f753"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sirbrillig/phpcs-variable-analysis/zipball/e76e816236f401458dd8e16beecab905861b5867",
-                "reference": "e76e816236f401458dd8e16beecab905861b5867",
+                "url": "https://api.github.com/repos/sirbrillig/phpcs-variable-analysis/zipball/9df9ade5961a3505d0d24b0e6be2ab82e335f753",
+                "reference": "9df9ade5961a3505d0d24b0e6be2ab82e335f753",
                 "shasum": ""
             },
             "require": {
@@ -13825,7 +13827,7 @@
                 "source": "https://github.com/sirbrillig/phpcs-variable-analysis",
                 "wiki": "https://github.com/sirbrillig/phpcs-variable-analysis/wiki"
             },
-            "time": "2021-03-09T22:32:14+00:00"
+            "time": "2021-06-18T20:54:59+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
