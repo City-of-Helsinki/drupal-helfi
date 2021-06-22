@@ -5,6 +5,8 @@ dependencies:
   module:
     - media
     - paragraphs
+_core:
+  default_config_hash: l_djI5MB-VhzHJ65G0PQy-DVIg0F89PAhjjIXh_A6Uc
 id: paragraph.field_map_map
 field_name: field_map_map
 entity_type: paragraph
