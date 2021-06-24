@@ -9,7 +9,7 @@ dependencies:
 id: reactandshare
 theme: hdbt
 region: after_content
-weight: 0
+weight: -7
 provider: null
 plugin: react_and_share
 settings:
