@@ -8,11 +8,11 @@ dependencies:
   theme:
     - hdbt
 _core:
-  default_config_hash: Ofp5Nv8E3DryORBw9DXtbN860LdYomjt-klGkC0fCHs
+  default_config_hash: MBTcJvv4f9xm7ZVKXhsE06U_lAR8tU2abqOElmVZ-oA
 id: eucookiecomplianceblock
 theme: hdbt
-region: content
-weight: 10
+region: after_content
+weight: -8
 provider: null
 plugin: eu_cookie_compliance_block
 settings:
