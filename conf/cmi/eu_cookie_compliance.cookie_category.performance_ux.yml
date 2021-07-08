@@ -1,9 +1,7 @@
-uuid: 19414f2a-edd8-42b2-bf84-605146e25a10
+uuid: e780cf52-5c25-48f1-952f-808c1f75d35d
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: wa_zmdwSs-6ufH07Ky5QzIOeWw1S9xoutR3PyEI_rtg
 id: performance_ux
 label: 'Performance and user experience related cookies'
 description:
