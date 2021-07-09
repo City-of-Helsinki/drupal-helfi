@@ -82,7 +82,7 @@ display:
             name: name
             langcode: langcode
             content_translation_status: content_translation_status
-            changed: changed
+            content_translation_changed: content_translation_changed
             operations: operations
           info:
             tpr_service_bulk_form:
