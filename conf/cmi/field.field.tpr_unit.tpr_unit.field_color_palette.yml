@@ -1,0 +1,21 @@
+uuid: 18781617-e991-494e-a951-6c3b8bb07bee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.tpr_unit.field_color_palette
+  module:
+    - helfi_tpr
+    - options
+id: tpr_unit.tpr_unit.field_color_palette
+field_name: field_color_palette
+entity_type: tpr_unit
+bundle: tpr_unit
+label: 'Color palette'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: hdbt_admin_tools_color_palette_default_value
+settings: {  }
+field_type: list_string
