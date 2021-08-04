@@ -723,8 +723,7 @@ display:
     display_title: Page
     position: 1
     display_options:
-      display_extenders:
-        metatag_display_extender: {  }
+      display_extenders: { }
       path: admin/content/integrations/tpr-service
       rendering_language: '***LANGUAGE_entity_translation***'
     cache_metadata:
