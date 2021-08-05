@@ -33,4 +33,4 @@ resources:
     name: multiple-uiapi-test12/multiple-uiapi-test12-pipelines
 
 extends:
-  template: azure-pipelines-drupal-multiple-test5-devtest.yml@multiple-uiapi-test12
+  template: azure-pipelines-drupal-multiple-test5-devtest.yml@multiple-uiapi-test12-pipelines
