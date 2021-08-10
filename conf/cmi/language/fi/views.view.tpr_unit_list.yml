@@ -56,7 +56,7 @@ display:
       empty:
         area:
           content:
-            value: 'Ei tuloksia.'
+            value: 'Toimipisteitä ei löytynyt.'
     display_title: Isäntä
   page_1:
     display_title: Sivu
