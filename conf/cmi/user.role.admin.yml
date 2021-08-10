@@ -5,7 +5,7 @@ dependencies: {  }
 _core:
   default_config_hash: fnOpQQ5r1eprWvQPrJPWRfDqxozQiZnwIdYFPKb0lbM
 id: admin
-label: Admin
+label: Ylläpitäjä
 weight: 2
 is_admin: null
 permissions:
@@ -28,6 +28,7 @@ permissions:
   - 'administer nodes'
   - 'administer pathauto'
   - 'administer redirects'
+  - 'administer siteimprove'
   - 'administer sitemap settings'
   - 'administer tpr_service'
   - 'administer tpr_unit'
@@ -113,6 +114,8 @@ permissions:
   - 'update media'
   - 'update tpr_service'
   - 'update tpr_unit'
+  - 'use siteimprove'
+  - 'use siteimprove prepublish'
   - 'view all media revisions'
   - 'view all revisions'
   - 'view all tpr_service revisions'

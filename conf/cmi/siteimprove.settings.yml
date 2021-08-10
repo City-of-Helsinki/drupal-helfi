@@ -1,0 +1,13 @@
+token: 1bac00ce21474ab6bd1c4c3bbe116396
+_core:
+  default_config_hash: t5W6QbLZA8s7VAoHDDldhRB2Emm1blOGOOKHMV855Gk
+domain_plugin_id: siteimprovedomain_simple
+prepublish_enabled: false
+api_username: ''
+api_key: ''
+enabled_content_types:
+  article: '0'
+  landing_page: '0'
+  page: '0'
+enabled_taxonomies:
+  keywords: '0'
