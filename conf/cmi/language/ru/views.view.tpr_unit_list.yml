@@ -2,8 +2,8 @@ display:
   default:
     display_options:
       fields:
-        changed:
-          label: Изменение
+        content_translation_changed:
+          label: Обновлено
         tpr_unit_bulk_form:
           label: 'Массовое обновление'
           action_title: Действие
@@ -26,7 +26,7 @@ display:
           label: Операции
       exposed_form:
         options:
-          submit_button: Применить
+          submit_button: фильтр
           reset_button_label: Сбросить
           exposed_sorts_label: 'Сортировать по'
           sort_asc_label: 'По возрастанию'
