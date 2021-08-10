@@ -3,7 +3,7 @@ display:
     display_options:
       fields:
         content_translation_changed:
-          label: Ändrad
+          label: Uppdaterad
         tpr_unit_bulk_form:
           label: Massuppdatera
           action_title: Åtgärd

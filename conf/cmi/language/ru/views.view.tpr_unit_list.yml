@@ -3,7 +3,7 @@ display:
     display_options:
       fields:
         content_translation_changed:
-          label: Изменение
+          label: Обновлено
         tpr_unit_bulk_form:
           label: 'Массовое обновление'
           action_title: Действие

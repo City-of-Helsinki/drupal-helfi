@@ -3,7 +3,7 @@ display:
     display_options:
       fields:
         content_translation_changed:
-          label: Muuttunut
+          label: Päivitetty
         tpr_unit_bulk_form:
           label: Massapäivitys
           action_title: Toiminto
