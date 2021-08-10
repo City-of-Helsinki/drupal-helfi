@@ -30,7 +30,7 @@ display:
           settings:
             format_custom_true: Julkaistu
             format_custom_false: Julkaisematon
-        changed:
+        content_translation_changed:
           label: Päivitetty
         operations:
           label: Toimenpiteet

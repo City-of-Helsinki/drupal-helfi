@@ -2,7 +2,7 @@ display:
   default:
     display_options:
       fields:
-        changed:
+        content_translation_changed:
           label: Изменение
         tpr_unit_bulk_form:
           label: 'Массовое обновление'
