@@ -5,7 +5,7 @@ dependencies: {  }
 _core:
   default_config_hash: fnOpQQ5r1eprWvQPrJPWRfDqxozQiZnwIdYFPKb0lbM
 id: admin
-label: Ylläpitäjä
+label: Admin
 weight: 2
 is_admin: null
 permissions:
