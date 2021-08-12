@@ -3,8 +3,8 @@ _core:
   default_config_hash: t5W6QbLZA8s7VAoHDDldhRB2Emm1blOGOOKHMV855Gk
 domain_plugin_id: siteimprovedomain_simple
 prepublish_enabled: true
-api_username: kalle.mikkolainen@hel.fi
-api_key: 666b824061cab00ee83c02a13603f5a7
+api_username: ''
+api_key: ''
 enabled_content_types:
   article: article
   landing_page: landing_page
