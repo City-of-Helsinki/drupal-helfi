@@ -48,6 +48,7 @@ $config['openid_connect.settings.tunnistamo']['settings']['client_id'] = getenv(
 $config['openid_connect.settings.tunnistamo']['settings']['client_secret'] = getenv('TUNNISTAMO_CLIENT_SECRET');
 $config['openid_connect.settings.tunnistamo']['settings']['is_production'] = getenv('TUNNISTAMO_ENV') === 'production';
 
+$config['siteimprove.settings']['token'] = getenv('SITEIMPROVE_API_TOKEN');
 $config['siteimprove.settings']['api_username'] = getenv('SITEIMPROVE_API_USERNAME');
 $config['siteimprove.settings']['api_key'] = getenv('SITEIMPROVE_API_KEY');
 
