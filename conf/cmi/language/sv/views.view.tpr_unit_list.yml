@@ -2,8 +2,8 @@ display:
   default:
     display_options:
       fields:
-        changed:
-          label: Ändrad
+        content_translation_changed:
+          label: Uppdaterad
         tpr_unit_bulk_form:
           label: Massuppdatera
           action_title: Åtgärd
@@ -26,7 +26,7 @@ display:
           label: Funktioner
       exposed_form:
         options:
-          submit_button: Verkställ
+          submit_button: Filtera
           reset_button_label: Återställ
           exposed_sorts_label: 'Sortera efter'
           sort_asc_label: Stigande
