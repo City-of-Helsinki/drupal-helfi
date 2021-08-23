@@ -28,10 +28,10 @@ pool: Default
 resources:
   repositories:
   # Azure DevOps repository
-  - repository: drupal-helfi
+  - repository: kasko-content-migration-pipelines
     type: git
     # project/repository
-    name: drupal-helfi/drupal-helfi
+    name: kasko-content-migration/kasko-content-migration-pipelines
 
 extends:
-  template: azure-pipelines-drupal-release.yml@drupal-helfi
+  template: azure-pipelines-kasko-content-migration-stageprod.yml@kasko-content-migration-pipelines
