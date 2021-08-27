@@ -3645,12 +3645,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt.git",
-                "reference": "2e68e1ac298bb5a1b15efe99fcbd78e957e1c50c"
+                "reference": "21a35891b0cbc8da365609819cafa8393ade508e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/2e68e1ac298bb5a1b15efe99fcbd78e957e1c50c",
-                "reference": "2e68e1ac298bb5a1b15efe99fcbd78e957e1c50c",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/21a35891b0cbc8da365609819cafa8393ade508e",
+                "reference": "21a35891b0cbc8da365609819cafa8393ade508e",
                 "shasum": ""
             },
             "require": {
@@ -3668,7 +3668,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/latest",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt/issues"
             },
-            "time": "2021-08-26T10:11:27+00:00"
+            "time": "2021-08-27T08:34:42+00:00"
         },
         {
             "name": "drupal/hdbt_admin",
@@ -3676,12 +3676,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt-admin.git",
-                "reference": "4128df0354804f56d399768b0e570e7cc51d5c50"
+                "reference": "bb1eec9ca80a7ea0f80b59c7a007423bf19df553"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt-admin/zipball/4128df0354804f56d399768b0e570e7cc51d5c50",
-                "reference": "4128df0354804f56d399768b0e570e7cc51d5c50",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt-admin/zipball/bb1eec9ca80a7ea0f80b59c7a007423bf19df553",
+                "reference": "bb1eec9ca80a7ea0f80b59c7a007423bf19df553",
                 "shasum": ""
             },
             "require": {
@@ -3700,7 +3700,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-hdbt-admin/tree/latest",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt-admin/issues"
             },
-            "time": "2021-08-25T14:06:38+00:00"
+            "time": "2021-08-27T07:45:42+00:00"
         },
         {
             "name": "drupal/helfi_ahjo",
@@ -3873,12 +3873,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "a7c4a5b2d5e10d6f734fae125eb12eb2229b7691"
+                "reference": "cfe2448687d356b4db920651ee49016c92c3fff9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/a7c4a5b2d5e10d6f734fae125eb12eb2229b7691",
-                "reference": "a7c4a5b2d5e10d6f734fae125eb12eb2229b7691",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/cfe2448687d356b4db920651ee49016c92c3fff9",
+                "reference": "cfe2448687d356b4db920651ee49016c92c3fff9",
                 "shasum": ""
             },
             "require": {
@@ -3952,7 +3952,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/latest",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2021-08-26T08:31:21+00:00"
+            "time": "2021-08-27T07:45:18+00:00"
         },
         {
             "name": "drupal/helfi_tpr",
@@ -8347,12 +8347,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ruflin/Elastica.git",
-                "reference": "e137d9f52b15af5f38bfd16c0d74a54bc2af080c"
+                "reference": "0114e1dc12f561675a393a5cdd30bf6ddde256cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ruflin/Elastica/zipball/e137d9f52b15af5f38bfd16c0d74a54bc2af080c",
-                "reference": "e137d9f52b15af5f38bfd16c0d74a54bc2af080c",
+                "url": "https://api.github.com/repos/ruflin/Elastica/zipball/0114e1dc12f561675a393a5cdd30bf6ddde256cb",
+                "reference": "0114e1dc12f561675a393a5cdd30bf6ddde256cb",
                 "shasum": ""
             },
             "require": {
@@ -8408,7 +8408,7 @@
                 "issues": "https://github.com/ruflin/Elastica/issues",
                 "source": "https://github.com/ruflin/Elastica/tree/master"
             },
-            "time": "2021-08-05T10:32:31+00:00"
+            "time": "2021-08-26T12:02:50+00:00"
         },
         {
             "name": "stack/builder",
