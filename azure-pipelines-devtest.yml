@@ -33,6 +33,6 @@ resources:
     name: unique-appname-test/unique-appname-test-pipelines
 
 extends:
-  template: azure-pipelines-appname-drupal-devtest.yml@unique-appname-test-pipelines
+  template: azure-pipelines-appname-without-var-devtest.yml@unique-appname-test-pipelines
 
 
