@@ -8,6 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.banner
     - paragraphs.paragraphs_type.columns
     - paragraphs.paragraphs_type.content_cards
+    - paragraphs.paragraphs_type.content_liftup
     - paragraphs.paragraphs_type.from_library
     - paragraphs.paragraphs_type.liftup_with_image
     - paragraphs.paragraphs_type.list_of_links
@@ -38,60 +39,64 @@ settings:
       list_of_links: list_of_links
       liftup_with_image: liftup_with_image
       content_cards: content_cards
+      content_liftup: content_liftup
       from_library: from_library
       remote_video: remote_video
       unit_search: unit_search
       map: map
     target_bundles_drag_drop:
       accordion:
-        weight: -22
+        weight: -31
         enabled: false
       accordion_item:
-        weight: -21
+        weight: -30
         enabled: false
       banner:
         enabled: true
-        weight: -26
+        weight: -36
       columns:
         enabled: true
-        weight: -27
+        weight: -37
       content_cards:
         enabled: true
-        weight: -23
+        weight: -33
+      content_liftup:
+        enabled: true
+        weight: -32
       from_library:
         enabled: true
-        weight: 21
+        weight: -23
       gallery:
-        weight: -20
+        weight: -29
         enabled: false
       gallery_slide:
-        weight: -19
+        weight: -28
         enabled: false
       hero:
-        weight: -18
+        weight: -27
         enabled: false
       image:
-        weight: -17
+        weight: -26
         enabled: false
       liftup_with_image:
         enabled: true
-        weight: -24
+        weight: -34
       list_of_links:
         enabled: true
-        weight: -25
+        weight: -35
       list_of_links_item:
-        weight: -16
+        weight: -25
         enabled: false
       map:
         enabled: true
-        weight: 31
+        weight: -20
       remote_video:
         enabled: true
-        weight: 27
+        weight: -22
       text:
-        weight: -15
+        weight: -24
         enabled: false
       unit_search:
         enabled: true
-        weight: 28
+        weight: -21
 field_type: entity_reference_revisions

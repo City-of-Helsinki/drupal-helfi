@@ -1,0 +1,23 @@
+uuid: 2d9c22de-5420-4aa3-bbee-991ee6b3888d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_liftup.field_content_liftup_content
+    - paragraphs.paragraphs_type.content_liftup
+  module:
+    - dynamic_entity_reference
+id: paragraph.content_liftup.default
+targetEntityType: paragraph
+bundle: content_liftup
+mode: default
+content:
+  field_content_liftup_content:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: dynamic_entity_reference_label
+    region: content
+hidden: {  }
