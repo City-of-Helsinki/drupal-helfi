@@ -1,0 +1,10 @@
+uuid: e9a0ad09-532e-4add-9c90-ce40d075596d
+langcode: en
+status: true
+dependencies:
+  module:
+    - helfi_tpr
+id: tpr_unit.wide_teaser
+label: 'Wide Teaser'
+targetEntityType: tpr_unit
+cache: true
