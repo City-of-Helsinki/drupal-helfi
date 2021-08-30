@@ -27,10 +27,12 @@ pool: Default
 resources:
   repositories:
   # Azure DevOps repository
-  - repository: kasko-content-migration-pipelines
+  - repository: unique-appname-test-pipelines
     type: git
     # project/repository
-    name: kasko-content-migration/kasko-content-migration-pipelines
+    name: unique-appname-test/unique-appname-test-pipelines
 
 extends:
-  template: azure-pipelines-kasko-content-migration-devtest.yml@kasko-content-migration-pipelines
+  template: azure-pipelines-appname-without-var-devtest.yml@unique-appname-test-pipelines
+
+
