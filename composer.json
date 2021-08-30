@@ -53,7 +53,7 @@
         "drupal/twig_tweak": "^3.0",
         "drupal/views_infinite_scroll": "^1.8",
         "drush/drush": "^10.4"
-        "drupal/rest_ui": "^8.x-1.20"
+        "drupal/restui": "^8.x-1.20"
     },
     "require-dev": {
         "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
