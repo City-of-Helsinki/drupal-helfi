@@ -5,7 +5,7 @@ dependencies: {  }
 _core:
   default_config_hash: fnOpQQ5r1eprWvQPrJPWRfDqxozQiZnwIdYFPKb0lbM
 id: admin
-label: Admin
+label: Ylläpitäjä
 weight: 2
 is_admin: null
 permissions:
@@ -119,6 +119,7 @@ permissions:
   - 'view all revisions'
   - 'view all tpr_service revisions'
   - 'view all tpr_unit revisions'
+  - 'view files'
   - 'view landing_page revisions'
   - 'view media'
   - 'view own unpublished content'

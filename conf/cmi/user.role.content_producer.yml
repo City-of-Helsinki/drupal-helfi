@@ -5,7 +5,7 @@ dependencies: {  }
 _core:
   default_config_hash: vrZv05Y6x-5ZH874GNgfIMO8AetqjY7vB0pzfvXDtUY
 id: content_producer
-label: 'Content producer'
+label: Sisällöntuottaja
 weight: 3
 is_admin: null
 permissions:
@@ -49,6 +49,7 @@ permissions:
   - 'update media'
   - 'view all media revisions'
   - 'view all revisions'
+  - 'view files'
   - 'view landing_page revisions'
   - 'view own unpublished content'
   - 'view own unpublished media'

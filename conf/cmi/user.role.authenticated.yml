@@ -5,7 +5,7 @@ dependencies: {  }
 _core:
   default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
 id: authenticated
-label: 'Authenticated user'
+label: 'Sisäänkirjautunut käyttäjä'
 weight: 1
 is_admin: false
 permissions:
@@ -13,6 +13,7 @@ permissions:
   - 'display eu cookie compliance popup'
   - 'opt-in or out of matomo tracking'
   - 'use text format full_html'
+  - 'view files'
   - 'view media'
   - 'view remote entities'
   - 'view tpr_service'
