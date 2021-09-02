@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.tpr_unit.teaser_with_image
+    - field.field.tpr_unit.tpr_unit.field_content
+    - field.field.tpr_unit.tpr_unit.field_lower_content
     - field.field.tpr_unit.tpr_unit.field_metatags
   module:
     - address
@@ -11,7 +13,7 @@ dependencies:
     - imagecache_external
     - telephone
 _core:
-  default_config_hash: zeIZgnO7dmftQ4pBdnaPjqLBKPRDsSMUSMJjQhEe54A
+  default_config_hash: 9seJXDTSgRhpxOuoOCXPTrbvXiwREpzz0CrsfDsgBk8
 id: tpr_unit.tpr_unit.teaser_with_image
 targetEntityType: tpr_unit
 bundle: tpr_unit
@@ -19,14 +21,14 @@ mode: teaser_with_image
 content:
   address:
     type: address_plain
-    weight: 2
+    weight: 3
     region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
   name:
     type: string
-    weight: 1
+    weight: 2
     region: content
     label: hidden
     settings:
@@ -34,7 +36,7 @@ content:
     third_party_settings: {  }
   phone:
     type: telephone_link
-    weight: 3
+    weight: 4
     region: content
     label: hidden
     settings:
@@ -48,6 +50,15 @@ content:
     settings:
       imagecache_external_responsive_style: image__3_2
       imagecache_external_link: ''
+    third_party_settings: {  }
+  picture_url_override:
+    type: entity_reference_entity_view
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      view_mode: image
+      link: false
     third_party_settings: {  }
 hidden:
   accessibility_email: true
@@ -67,7 +78,6 @@ hidden:
   longitude: true
   name_override: true
   opening_hours: true
-  picture_url_override: true
   service_map_embed: true
   services: true
   streetview_entrance_url: true

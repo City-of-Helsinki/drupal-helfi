@@ -16,6 +16,8 @@ dependencies:
   module:
     - entity_reference_revisions
     - helfi_tpr
+_core:
+  default_config_hash: XgLLpoybKl95It7y1bZIN5KlnSM4boQN6z5z0eI_kRg
 id: tpr_service.tpr_service.field_lower_content
 field_name: field_lower_content
 entity_type: tpr_service
