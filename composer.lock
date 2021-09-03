@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "08a60b57e24dd23bcca9f7784b156b53",
+    "content-hash": "a9a4239021a2aa0c08c68033d385abc0",
     "packages": [
         {
             "name": "City-of-Helsinki/php-hauki-client",
@@ -3869,16 +3869,16 @@
         },
         {
             "name": "drupal/helfi_platform_config",
-            "version": "dev-UHF-2093_update_helper",
+            "version": "1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "fffa8bf309efaf6ac6da896a152a7a03380a6299"
+                "reference": "eb52807a6b11ce3dc7df78d2b5654b02ad3cca54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/fffa8bf309efaf6ac6da896a152a7a03380a6299",
-                "reference": "fffa8bf309efaf6ac6da896a152a7a03380a6299",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/eb52807a6b11ce3dc7df78d2b5654b02ad3cca54",
+                "reference": "eb52807a6b11ce3dc7df78d2b5654b02ad3cca54",
                 "shasum": ""
             },
             "require": {
@@ -3917,8 +3917,7 @@
                 "drupal/siteimprove": "^1.11",
                 "drupal/social_media": "^1.8",
                 "drupal/token": "^1.9",
-                "drupal/token_filter": "^1.2",
-                "drupal/update_helper": "^2.0"
+                "drupal/token_filter": "^1.2"
             },
             "type": "drupal-module",
             "extra": {
@@ -3950,10 +3949,10 @@
             ],
             "description": "HELfi platform config",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/UHF-2093_update_helper",
+                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/latest",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2021-09-02T07:21:03+00:00"
+            "time": "2021-08-31T07:19:11+00:00"
         },
         {
             "name": "drupal/helfi_tpr",
@@ -5531,77 +5530,6 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/twig_tweak",
                 "issues": "https://www.drupal.org/project/issues/twig_tweak"
-            }
-        },
-        {
-            "name": "drupal/update_helper",
-            "version": "2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/update_helper.git",
-                "reference": "2.0.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/update_helper-2.0.0.zip",
-                "reference": "2.0.0",
-                "shasum": "1c442d26f316f59ae790d126b1148309468e8d78"
-            },
-            "require": {
-                "chi-teck/drupal-code-generator": "^1.32.0",
-                "drupal/config_update": "^1.5",
-                "drupal/core": "^8 || ^9",
-                "symfony/console": "~3.4.0 || ^4.4"
-            },
-            "require-dev": {
-                "drupal/checklistapi": "~1.0",
-                "drush/drush": "~10.2"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "2.0.0",
-                    "datestamp": "1591777960",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Mladen Todorovic",
-                    "homepage": "https://www.drupal.org/user/157725",
-                    "email": "mladen.todorovic@burda.com"
-                },
-                {
-                    "name": "Christian Fritsch",
-                    "homepage": "https://www.drupal.org/user/2103716",
-                    "email": "christian.fritsch@burda.com"
-                },
-                {
-                    "name": "Daniel Bosen",
-                    "homepage": "https://www.drupal.org/user/404865",
-                    "email": "daniel.bosen@burda.com"
-                },
-                {
-                    "name": "Volker Killesreiter",
-                    "homepage": "https://www.drupal.org/user/3453049",
-                    "email": "killesreiter@burda.com"
-                },
-                {
-                    "name": "thunderbot",
-                    "homepage": "https://www.drupal.org/user/3511180"
-                }
-            ],
-            "description": "This module offers supporting functionalities to make configuration updates easier.",
-            "homepage": "https://www.drupal.org/project/update_helper",
-            "support": {
-                "source": "https://git.drupalcode.org/project/update_helper"
             }
         },
         {
@@ -14369,6 +14297,7 @@
                     "type": "github"
                 }
             ],
+            "abandoned": true,
             "time": "2020-09-28T06:45:17+00:00"
         },
         {
