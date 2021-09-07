@@ -80,3 +80,8 @@ RUN wget https://www.digicert.com/CACerts/BaltimoreCyberTrustRoot.crt.pem -O /us
 ENTRYPOINT ["/opt/drupal/docker/openshift/docker-entrypoint.sh"]
 
 CMD []
+
+# Copy cron scripts
+RUN mkdir /crons
+COPY docker/openshift/crons/ /crons
+RUN chmod +x /crons/*
