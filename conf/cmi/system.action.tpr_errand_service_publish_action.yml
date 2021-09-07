@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - helfi_tpr
+id: tpr_errand_service_publish_action
+label: 'Publish errand service'
+type: tpr_errand_service
+plugin: 'entity:publish_action:tpr_errand_service'
+configuration: {  }
+uuid: 6f662739-eaee-48fe-ba50-b32b2673c18a

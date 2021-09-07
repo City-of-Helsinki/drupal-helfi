@@ -9,6 +9,8 @@ dependencies:
     - helfi_tpr
     - user
     - views_infinite_scroll
+_core:
+  default_config_hash: CW2I1XoMjZPgOdUAa0gWChUd2sowOYiOP3BEHXmhlL4
 id: unit_search
 label: 'Unit search'
 module: views
