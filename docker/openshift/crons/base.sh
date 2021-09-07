@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "Starting cron: $(date)"
 
 # You can add any additional cron "daemons" here:
@@ -13,8 +15,6 @@ echo "Starting cron: $(date)"
 #   sleep 600
 # done
 # @endcode
-
-exec "/crons/migrate-tpr.sh" &
 
 while true
 do
