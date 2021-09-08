@@ -16,7 +16,6 @@ display:
           expose:
             items_per_page_label: 'Merkintöjä sivua kohti'
             items_per_page_options_all_label: '- Kaikki -'
-            offset_label: Offset
           tags:
             previous: '‹ Edellinen'
             next: 'Seuraava ›'
@@ -55,7 +54,6 @@ display:
         name_1:
           expose:
             label: 'Nimi (Z-A)'
-      title: Media
       empty:
         area_text_custom:
           content: 'Ei mediatiedostoja saatavilla.'
@@ -65,8 +63,6 @@ display:
       fields:
         media_bulk_form:
           action_title: Toiminto
-        name:
-          separator: ', '
         edit_media:
           alter:
             text: 'Muokkaa {{ name }}'

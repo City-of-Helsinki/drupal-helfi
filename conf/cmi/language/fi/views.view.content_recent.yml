@@ -11,9 +11,6 @@ display:
           exposed_sorts_label: Lajittele
           sort_asc_label: Nousevasti
           sort_desc_label: Laskevasti
-      fields:
-        changed:
-          separator: ', '
       title: 'Uusin sisältö'
       empty:
         area_text_custom:

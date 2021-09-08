@@ -12,8 +12,6 @@ display:
       pager:
         options:
           tags:
-            previous: ‹‹
-            next: ››
             first: '« Första'
             last: 'Sista »'
           expose:
@@ -23,7 +21,6 @@ display:
       fields:
         name:
           label: Titel
-          separator: ', '
         operations:
           label: Funktioner
       filters:

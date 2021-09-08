@@ -19,11 +19,9 @@ display:
           expose:
             items_per_page_label: 'Merkintöjä sivua kohti'
             items_per_page_options_all_label: '- Kaikki -'
-            offset_label: Offset
       fields:
         name:
           label: Otsikko
-          separator: ', '
         operations:
           label: Toimenpiteet
       filters:
