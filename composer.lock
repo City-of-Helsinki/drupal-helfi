@@ -3645,12 +3645,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt.git",
-                "reference": "d9db8750d57d401adad183623c74a8299aaf6134"
+                "reference": "f787cfe008ff4bb5bc457f4bfbcfdca65d77b283"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/d9db8750d57d401adad183623c74a8299aaf6134",
-                "reference": "d9db8750d57d401adad183623c74a8299aaf6134",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/f787cfe008ff4bb5bc457f4bfbcfdca65d77b283",
+                "reference": "f787cfe008ff4bb5bc457f4bfbcfdca65d77b283",
                 "shasum": ""
             },
             "require": {
@@ -3668,7 +3668,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/latest",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt/issues"
             },
-            "time": "2021-09-02T07:12:51+00:00"
+            "time": "2021-09-07T07:21:25+00:00"
         },
         {
             "name": "drupal/hdbt_admin",
@@ -3960,12 +3960,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr.git",
-                "reference": "2482b78bfeed3fd681935b45d3f4444e79e157b4"
+                "reference": "22fb57588878b70a909a0048f7ab2666ac9edd04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-tpr/zipball/2482b78bfeed3fd681935b45d3f4444e79e157b4",
-                "reference": "2482b78bfeed3fd681935b45d3f4444e79e157b4",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-tpr/zipball/22fb57588878b70a909a0048f7ab2666ac9edd04",
+                "reference": "22fb57588878b70a909a0048f7ab2666ac9edd04",
                 "shasum": ""
             },
             "require": {
@@ -3989,7 +3989,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/tree/1.x",
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/issues"
             },
-            "time": "2021-08-31T08:13:11+00:00"
+            "time": "2021-09-06T10:38:19+00:00"
         },
         {
             "name": "drupal/helfi_tunnistamo",
@@ -4215,6 +4215,10 @@
                     "homepage": "https://stjerneman.com",
                     "email": "emil@stjerneman.com",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "johnwebdev",
+                    "homepage": "https://www.drupal.org/user/3331569"
                 }
             ],
             "description": "Linkit - Enriched linking experience",
