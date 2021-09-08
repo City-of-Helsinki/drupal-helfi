@@ -1,4 +1,4 @@
-uuid: d3a5b694-0c50-4e23-a5ee-29d4d022a978
+uuid: 6d614be1-99b4-4d56-950c-002c7e099864
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - helfi_tpr
     - user
 _core:
-  default_config_hash: ZliIw3MTabPVgN2saPq0LQcrFhHsWf-Or6qd_aA7tZk
+  default_config_hash: Tb2vJF5MOKSTZABjldL27pSh6pCL0kl_SJTU7pboRik
 id: tpr_service_channel_list
 label: 'TPR service channel list'
 module: views

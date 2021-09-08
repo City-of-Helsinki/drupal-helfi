@@ -1,3 +1,4 @@
+uuid: e936fdc2-dda1-4d9b-a7b7-ca1219a876be
 langcode: en
 status: true
 dependencies:
@@ -8,4 +9,3 @@ label: 'Unpublish service channel'
 type: tpr_service_channel
 plugin: 'entity:unpublish_action:tpr_service_channel'
 configuration: {  }
-uuid: b4a9bf5a-9325-4b08-a982-2d9210553faa

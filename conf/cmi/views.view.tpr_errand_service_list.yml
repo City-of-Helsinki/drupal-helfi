@@ -1,4 +1,4 @@
-uuid: 02e69fb9-0a72-4d1e-9ea7-b6ef0d4057c6
+uuid: 7ec2cee2-0436-4cdd-9395-56e36d33a7d2
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - helfi_tpr
     - user
 _core:
-  default_config_hash: 0wDqZhJn8tnNhEq6QJNITXspmRbtFffjYqD82wc3myE
+  default_config_hash: VnYk_0qbCOqtjjC1IFfy4z0NUvq1EEdZo8mG1Od24VY
 id: tpr_errand_service_list
 label: 'TPR errand service list'
 module: views
