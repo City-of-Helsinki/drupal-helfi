@@ -1,12 +1,12 @@
-uuid: dca31589-ad30-4c41-ab66-503fb24f13ef
+uuid: e16334fa-c49e-43b0-a3c8-fd74a864b48d
 langcode: en
 status: true
 dependencies:
   module:
     - helfi_tpr
     - user
-id: der_tpr_unit
-label: 'Dynamic entity reference - TPR Unit'
+id: er_tpr_unit
+label: 'Entity reference - TPR Unit'
 module: views
 description: ''
 tag: ''
