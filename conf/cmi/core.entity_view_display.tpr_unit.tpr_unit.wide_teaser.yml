@@ -1,9 +1,9 @@
-uuid: 00904626-f644-4c44-b2e8-cc1ab442e7c2
+uuid: 9cec6a91-5258-4fbe-93e9-2e12f481d4e2
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.tpr_unit.teaser_with_image
+    - core.entity_view_mode.tpr_unit.wide_teaser
     - field.field.tpr_unit.tpr_unit.field_content
     - field.field.tpr_unit.tpr_unit.field_lower_content
     - field.field.tpr_unit.tpr_unit.field_metatags
@@ -13,15 +13,15 @@ dependencies:
     - imagecache_external
     - telephone
 _core:
-  default_config_hash: 9seJXDTSgRhpxOuoOCXPTrbvXiwREpzz0CrsfDsgBk8
-id: tpr_unit.tpr_unit.teaser_with_image
+  default_config_hash: NpF2Iv_kDtBgLKKMQ8qPQuvbAAZtLjTxfqDkjpywK0s
+id: tpr_unit.tpr_unit.wide_teaser
 targetEntityType: tpr_unit
 bundle: tpr_unit
-mode: teaser_with_image
+mode: wide_teaser
 content:
   address:
     type: address_plain
-    weight: 3
+    weight: 4
     region: content
     label: hidden
     settings: {  }
@@ -34,9 +34,24 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+  name_override:
+    type: string
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  opening_hours:
+    type: tpr_connection
+    weight: 6
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
   phone:
     type: telephone_link
-    weight: 4
+    weight: 5
     region: content
     label: hidden
     settings:
@@ -76,8 +91,6 @@ hidden:
   langcode: true
   latitude: true
   longitude: true
-  name_override: true
-  opening_hours: true
   service_map_embed: true
   services: true
   streetview_entrance_url: true
