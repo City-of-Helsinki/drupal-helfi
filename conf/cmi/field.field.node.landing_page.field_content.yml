@@ -14,6 +14,7 @@ dependencies:
     - paragraphs.paragraphs_type.list_of_links
     - paragraphs.paragraphs_type.map
     - paragraphs.paragraphs_type.remote_video
+    - paragraphs.paragraphs_type.service_list
     - paragraphs.paragraphs_type.unit_search
   module:
     - entity_reference_revisions
@@ -42,8 +43,9 @@ settings:
       content_liftup: content_liftup
       from_library: from_library
       remote_video: remote_video
-      unit_search: unit_search
       map: map
+      unit_search: unit_search
+      service_list: service_list
     target_bundles_drag_drop:
       accordion:
         weight: -31
@@ -93,6 +95,9 @@ settings:
       remote_video:
         enabled: true
         weight: -22
+      service_list:
+        enabled: true
+        weight: 36
       text:
         weight: -24
         enabled: false
