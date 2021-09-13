@@ -14,7 +14,7 @@ VALUE=$(drush state:get last_deploy)
 # start more than one Drupal container and this is used to make sure we run deploy
 # tasks only once per deploy.
 # Test it's been at least 5 minutes since last deploy.
-if [ ! -n "$VALUE" ] || [ ($(date +%s) -qt $(expr "$VALUE" + 300)) ]; then
+if [ ! -n "$VALUE" ] || [ $(date +%s) -gt $(expr "$VALUE" + 300) ]; then
   drush state:set last_deploy $(date +%s)
   drush deploy
   exit 0
