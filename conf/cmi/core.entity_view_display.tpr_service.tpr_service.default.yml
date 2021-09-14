@@ -60,6 +60,15 @@ content:
     third_party_settings: {  }
     type: metatag_empty_formatter
     region: content
+  field_sidebar_content:
+    type: entity_reference_revisions_entity_view
+    weight: 8
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
   links:
     type: link
     weight: 7
