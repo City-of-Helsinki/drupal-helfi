@@ -16,9 +16,7 @@ fi
 # This script is run every time a container is spawned and certain environments might
 # start more than one Drupal container. This is used to make sure we run deploy
 # tasks only once per deploy.
-if [ "$(drush state:get deploy_id)" == "$OPENSHIFT_BUILD_NAME" ]; then
-  echo "Deployment is done already. Exiting."
-  exit 0
+if [ "$(drush state:get deploy_id)" != "$OPENSHIFT_BUILD_NAME" ]; then
+  drush state:set deploy_id $OPENSHIFT_BUILD_NAME
+  drush deploy
 fi
-drush state:set deploy_id $OPENSHIFT_BUILD_NAME
-drush deploy
