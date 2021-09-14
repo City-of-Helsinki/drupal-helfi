@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e360066abf2bb41c0aa92c943e320362",
+    "content-hash": "ad7de33c0d8d8910e8c487652f63dc38",
     "packages": [
         {
             "name": "City-of-Helsinki/php-hauki-client",
@@ -4286,116 +4286,6 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/linkit",
                 "issues": "http://drupal.org/project/linkit"
-            }
-        },
-        {
-            "name": "drupal/matomo",
-            "version": "1.11.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/matomo.git",
-                "reference": "8.x-1.11"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/matomo-8.x-1.11.zip",
-                "reference": "8.x-1.11",
-                "shasum": "82be96c20ab15df03d199ab98d047cef6e67d40b"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9"
-            },
-            "require-dev": {
-                "drupal/php": "*",
-                "drupal/token": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.11",
-                    "datestamp": "1601651459",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Carsten Logemann",
-                    "homepage": "https://www.drupal.org/u/C_Logemann"
-                },
-                {
-                    "name": "Shelane French",
-                    "homepage": "https://www.drupal.org/u/shelane"
-                },
-                {
-                    "name": "See other contributors",
-                    "homepage": "https://www.drupal.org/node/247808/committers"
-                }
-            ],
-            "description": "Adds Matomo javascript tracking code to all your site's pages",
-            "homepage": "https://www.drupal.org/project/matomo",
-            "support": {
-                "source": "https://git.drupal.org/project/matomo.git",
-                "issues": "https://www.drupal.org/project/issues/matomo"
-            }
-        },
-        {
-            "name": "drupal/matomo_reports",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/matomo_reports.git",
-                "reference": "8.x-1.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/matomo_reports-8.x-1.1.zip",
-                "reference": "8.x-1.1",
-                "shasum": "390bbf04f94ef1c668415f50b6e1e21de1d26ad9"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1626815767",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Shelane French (shelane)",
-                    "homepage": "https://www.drupal.org/u/shelane",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "xlyz",
-                    "homepage": "https://www.drupal.org/user/310584"
-                }
-            ],
-            "description": "Display analytics reports from Matomo server.",
-            "homepage": "https://www.drupal.org/project/matomo_reports",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "http://cgit.drupalcode.org/matomo_reports",
-                "issues": "https://www.drupal.org/project/issues/matomo_reports"
             }
         },
         {
@@ -15140,5 +15030,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.0.0"
 }
