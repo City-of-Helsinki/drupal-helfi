@@ -5,13 +5,14 @@ dependencies:
   config:
     - core.entity_view_mode.tpr_service.teaser
     - field.field.tpr_service.tpr_service.field_content
-    - field.field.tpr_service.tpr_service.field_metatags
     - field.field.tpr_service.tpr_service.field_lower_content
+    - field.field.tpr_service.tpr_service.field_metatags
+    - field.field.tpr_service.tpr_service.field_sidebar_content
   module:
     - helfi_tpr
     - text
 _core:
-  default_config_hash: KVVLTF4MlHLi_G2VN0nuP8HED7EieeuNYbu9NN-UCNk
+  default_config_hash: iX1n7R2opBVSjXmJ-aELkTyFJ2_hJ2Q4fGU0ue950KA
 id: tpr_service.tpr_service.teaser
 targetEntityType: tpr_service
 bundle: tpr_service
@@ -46,5 +47,6 @@ hidden:
   field_content: true
   field_lower_content: true
   field_metatags: true
+  field_sidebar_content: true
   langcode: true
   links: true

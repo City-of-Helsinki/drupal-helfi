@@ -13,6 +13,8 @@ dependencies:
     - paragraphs.paragraphs_type.unit_search
   module:
     - text
+_core:
+  default_config_hash: AhvDZp4iBinv5b_7Vw8ZZ1IUnf2UjFm4wg12mvHITeU
 id: paragraph.unit_search.default
 targetEntityType: paragraph
 bundle: unit_search
