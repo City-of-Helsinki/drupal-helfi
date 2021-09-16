@@ -21,7 +21,6 @@ display:
           expose:
             items_per_page_label: 'Merkintöjä sivua kohti'
             items_per_page_options_all_label: '- Kaikki -'
-            offset_label: Offset
       fields:
         user_bulk_form:
           label: Massapäivitys
@@ -40,8 +39,6 @@ display:
           label: 'Viimeksi paikalla'
         operations:
           label: Toimenpiteet
-        mail:
-          separator: ', '
       filters:
         combine:
           expose:

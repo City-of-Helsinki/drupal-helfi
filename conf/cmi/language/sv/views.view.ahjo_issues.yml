@@ -12,8 +12,6 @@ display:
       pager:
         options:
           tags:
-            previous: ‹‹
-            next: ››
             first: '« Första'
             last: 'Sista »'
           expose:
@@ -21,12 +19,8 @@ display:
             items_per_page_options_all_label: '- Alla -'
             offset_label: Kompensera
       fields:
-        id:
-          label: ID
-          separator: ', '
         title:
           label: Titel
-          separator: ', '
         operations:
           label: Funktioner
       filters:

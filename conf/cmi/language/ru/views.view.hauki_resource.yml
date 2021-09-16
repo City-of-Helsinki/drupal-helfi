@@ -12,8 +12,6 @@ display:
       pager:
         options:
           tags:
-            previous: ‹‹
-            next: ››
             first: '« Первая'
             last: 'Последняя »'
           expose:
@@ -23,7 +21,6 @@ display:
       fields:
         name:
           label: Заголовок
-          separator: ', '
         operations:
           label: Операции
       filters:

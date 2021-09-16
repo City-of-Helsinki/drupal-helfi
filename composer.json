@@ -12,7 +12,6 @@
         "drupal/admin_toolbar": "^2.4.0",
         "drupal/aet": "^2.0@alpha",
         "drupal/config_ignore": "^2.3",
-        "drupal/config_replace": "^2.0",
         "drupal/core-composer-scaffold": "^9.0",
         "drupal/core-recommended": "^9.0",
         "drupal/diff": "^1.0",
@@ -129,6 +128,9 @@
             },
             "drupal/paragraphs_asymmetric_translation_widgets": {
                 "https://www.drupal.org/project/paragraphs_asymmetric_translation_widgets/issues/3171810#comment-13836806": "https://www.drupal.org/files/issues/2020-09-25/3171810-2.patch"
+            },
+            "drupal/update_helper": {
+                "Helfi-specific customizations to Update Helper module. Switch the direction of active configuration and yml-files.": "./patches/update_helper_switch_direction.patch"
             }
         }
     },
