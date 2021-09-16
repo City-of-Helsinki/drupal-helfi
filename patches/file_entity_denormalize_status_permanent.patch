@@ -1,0 +1,12 @@
+diff --git a/src/Normalizer/FileEntityNormalizer.php b/src/Normalizer/FileEntityNormalizer.php
+index e2077b2..fd5c7c0 100644
+--- a/src/Normalizer/FileEntityNormalizer.php
++++ b/src/Normalizer/FileEntityNormalizer.php
+@@ -49,6 +49,7 @@ class FileEntityNormalizer extends ContentEntityNormalizer {
+     else {
+       throw new \RuntimeException(new FormattableMarkup('Failed to write @filename.', array('@filename' => $entity->getFilename())));
+     }
++    $entity->status = FILE_STATUS_PERMANENT;
+     return $entity;
+   }
+ }
