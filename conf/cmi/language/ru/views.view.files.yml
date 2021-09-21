@@ -2,7 +2,7 @@ label: Файлы
 description: 'Поиск файлов и управление ими.'
 display:
   default:
-    display_title: 'По умолчанию'
+    display_title: Основной
     display_options:
       exposed_form:
         options:
@@ -21,8 +21,11 @@ display:
             items_per_page_options_all_label: '- Все -'
             offset_label: Пропустить
       fields:
+        fid:
+          label: Fid
         filename:
           label: Название
+          separator: ', '
         filemime:
           label: MIME-тип
         filesize:

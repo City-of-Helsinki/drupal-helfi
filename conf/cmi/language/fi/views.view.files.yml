@@ -19,11 +19,13 @@ display:
           expose:
             items_per_page_label: 'Merkintöjä sivua kohti'
             items_per_page_options_all_label: '- Kaikki -'
+            offset_label: Offset
       fields:
         fid:
           label: FId
         filename:
           label: Nimi
+          separator: ', '
         filemime:
           label: 'MIME tyyppi'
         filesize:
@@ -69,6 +71,7 @@ display:
           expose:
             items_per_page_label: 'Merkintöjä sivua kohti'
             items_per_page_options_all_label: '- Kaikki -'
+            offset_label: Offset
       fields:
         entity_label:
           label: Entiteetti
