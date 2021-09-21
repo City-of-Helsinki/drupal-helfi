@@ -10,5 +10,5 @@ disagree_button_label: 'Ei kiitos'
 withdraw_message:
   value: "<h2>Hel.fi uses cookies</h2>\r\n\r\n<p>You have given your consent for us to set cookies.</p>\r\n"
 withdraw_tab_button_label: Tietosuoja-asetukset
-save_preferences_button_label: 'Tallenna asetukset'
+save_preferences_button_label: 'Hyväksy valitut evästeet'
 accept_all_categories_button_label: 'Hyväksy kaikki evästeet'

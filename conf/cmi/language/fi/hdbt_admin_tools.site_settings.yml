@@ -1,5 +1,5 @@
 footer_settings:
   footer_top_content:
     format: full_html
-    value: '<p><a href="#">Hae yhteystietoja ja numeroita</a></p><p><a href="#" class="hds-button hds-button--secondary"><span aria-hidden="true" class="hds-icon hds-icon--phone"></span><span class="hds-button__label">Helsinki-info 09 310 1691</span></a></p>'
+    value: "<p><a href=\"#\">Hae yhteystietoja ja numeroita</a></p>\r\n\r\n<p><a class=\"hds-button hds-button--secondary hdbt-icon hdbt-icon--phone\" data-design=\"hds-button hds-button--secondary\" data-icon=\"phone\" data-link-text=\"Helsinki-info 09 310 1691\" data-protocol=\"false\" href=\"#\"><span class=\"hds-button__label\">Helsinki-info 09 310 1691</span></a></p>\r\n"
   footer_top_title: Yhteystiedot
