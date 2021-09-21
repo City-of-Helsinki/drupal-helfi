@@ -4,7 +4,6 @@ display:
       fields:
         langcode:
           label: Kieli
-          separator: ', '
         title:
           label: Otsikko
         type:
