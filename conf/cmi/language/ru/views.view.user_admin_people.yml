@@ -2,7 +2,7 @@ label: Пользователи
 description: 'Поиск и управление людьми, взаимодействующих с вашим сайтом.'
 display:
   default:
-    display_title: 'По умолчанию'
+    display_title: Основной
     display_options:
       exposed_form:
         options:
@@ -40,6 +40,8 @@ display:
           label: 'Последнее посещение'
         operations:
           label: Операции
+        mail:
+          separator: ', '
       filters:
         combine:
           expose:

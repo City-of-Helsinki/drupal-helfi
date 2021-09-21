@@ -21,15 +21,20 @@ display:
             items_per_page_options_all_label: '- Alla -'
             offset_label: Kompensera
       fields:
+        fid:
+          label: Fid
         filename:
           label: Namn
+          separator: ', '
         filemime:
           label: 'Typ av MIME'
         filesize:
           label: Storlek
         status:
+          label: Status
           settings:
             format_custom_false: Temporär
+            format_custom_true: Permanent
         created:
           label: 'Datum för uppladdning'
         changed:
@@ -43,6 +48,9 @@ display:
         filemime:
           expose:
             label: 'Typ av MIME'
+        status:
+          expose:
+            label: Status
       title: Filer
       empty:
         area_text_custom:
