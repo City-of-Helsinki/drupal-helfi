@@ -1,3 +1,4 @@
+label: Media
 description: 'Hitta och hantera media.'
 display:
   default:
@@ -26,18 +27,25 @@ display:
           action_title: Åtgärd
         thumbnail__target_id:
           label: Miniatyr
+          separator: ', '
         name:
           label: Medianamn
+          separator: ', '
         bundle:
           label: Typ
+          separator: ', '
         uid:
           label: Författare
+          separator: ', '
         status:
+          label: Status
           settings:
             format_custom_true: Publicerad
             format_custom_false: 'Ej publicerad'
+          separator: ', '
         changed:
           label: Uppdaterad
+          separator: ', '
         operations:
           label: Funktioner
       filters:
@@ -60,6 +68,12 @@ display:
         langcode:
           expose:
             label: Språk
+      title: Media
       empty:
         area_text_custom:
           content: 'Ingen media tillgänglig.'
+  media_page_list:
+    display_title: Media
+    display_options:
+      menu:
+        title: Media

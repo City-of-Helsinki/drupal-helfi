@@ -26,6 +26,7 @@ display:
           action_title: 'С выделенным'
         redirect_source__path:
           label: От
+          separator: ', '
         created:
           label: Создано
       filters:
@@ -41,18 +42,6 @@ display:
           group_info:
             label: 'Код состояния'
             group_items:
-              1:
-                title: '300 Множество Выборов'
-              2:
-                title: '301 Перемещёно Окончательно'
-              3:
-                title: '302 Найдено'
-              4:
-                title: '303 Смотреть Другое'
-              5:
-                title: '304 Не Изменялось'
-              6:
-                title: '305 Использовать Прокси'
               7:
                 title: '307 - Временно перемещено'
         language:
