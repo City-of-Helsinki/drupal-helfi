@@ -52,5 +52,6 @@ safe_tokens:
   - url
   - url-brief
   - menu-link-parents
+  - menu-link-parents
 _core:
   default_config_hash: SwvLp8snyPEExF41CaJJYdPUVomofLqtXvwciHc4cPg
