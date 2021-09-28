@@ -114,9 +114,6 @@
                 "https://www.drupal.org/project/drupal/issues/2845437#comment-13784958": "https://www.drupal.org/files/issues/2020-08-12/2845437-32.patch",
                 "[#UHF-949] Drupal.views.ajaxView is not initializing pagers in nested views (https://www.drupal.org/project/drupal/issues/2858890).": "https://www.drupal.org/files/issues/2020-11-29/2858890-58.patch"
             },
-            "drupal/eu_cookie_compliance": {
-                "Helfi-specific customizations to EU Cookie Compliance": "./patches/eu_cookie_compliance_block.patch"
-            },
             "drupal/features": {
                 "https://www.drupal.org/project/features/issues/2869336": "https://www.drupal.org/files/issues/features_export-config-translation-2869336-2.patch",
                 "https://www.drupal.org/project/features/issues/3034826": "https://www.drupal.org/files/issues/2021-03-31/features-call_to_member_function_on_null-3034826-5.patch"
