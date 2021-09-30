@@ -1,0 +1,29 @@
+uuid: 536d1cb2-be24-4f17-8650-f885937f83f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.schools
+  module:
+    - system
+  theme:
+    - hdbt
+id: schools
+theme: hdbt
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:schools'
+settings:
+  id: 'system_menu_block:schools'
+  label: Schools
+  provider: system
+  label_display: '0'
+  level: 3
+  depth: 0
+  expand_all_items: true
+visibility:
+  request_path:
+    id: request_path
+    pages: '/schools/*'
+    negate: false

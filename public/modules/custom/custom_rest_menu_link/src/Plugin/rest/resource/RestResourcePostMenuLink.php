@@ -93,16 +93,17 @@ class RestResourcePostMenuLink extends ResourceBase
     {
 
       // Use current user after pass authentication to validate access.
-//        if (!$this->currentUser->hasPermission('administer site content')) {
-//          // Display the default access denied page.
-//            throw new AccessDeniedHttpException('Access Denied.');
-//        }
+        if (!$this->currentUser->hasPermission('restful post rest_resource_post_menu_links')) {
+          // Display the default access denied page.
+           throw new AccessDeniedHttpException('Access Denied.');
+        }
 
       foreach ($data as $key => $value) {
         $parent = NULL;
         if ($value['parent_link'] != NULL) {
           $parent = $value['parent_link'];
         }
+
         $menu_link = MenuLinkContent::create([
             'title' => $value['menu_title'],
              'link' => ['uri' => $value['node_link']],
@@ -111,7 +112,6 @@ class RestResourcePostMenuLink extends ResourceBase
             'weight' => 0,
             ])->save();
         $this->logger->notice($this->t("Menu saved!\n"));
-
         }
 
         $message = $this->t("New Menu Created");
