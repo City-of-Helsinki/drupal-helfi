@@ -1,0 +1,22 @@
+uuid: bd954eba-7a41-42d5-9c60-44be18cc579d
+langcode: en
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - hal
+    - media
+    - serialization
+id: entity.media
+plugin_id: 'entity:media'
+granularity: resource
+configuration:
+  methods:
+    - GET
+    - POST
+    - PATCH
+  formats:
+    - hal_json
+    - json
+  authentication:
+    - basic_auth

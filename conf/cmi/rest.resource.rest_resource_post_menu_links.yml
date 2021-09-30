@@ -1,0 +1,25 @@
+uuid: 53d59d29-e373-4918-ad3b-1eff35f09152
+langcode: en
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - csv_serialization
+    - custom_rest_menu_link
+    - hal
+    - serialization
+    - user
+id: rest_resource_post_menu_links
+plugin_id: rest_resource_post_menu_links
+granularity: resource
+configuration:
+  methods:
+    - POST
+  formats:
+    - csv
+    - hal_json
+    - json
+    - xml
+  authentication:
+    - basic_auth
+    - cookie

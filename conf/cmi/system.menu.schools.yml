@@ -1,0 +1,8 @@
+uuid: 8628db71-b4a3-4514-9aea-9aa32eb73be8
+langcode: und
+status: true
+dependencies: {  }
+id: schools
+label: Schools
+description: ''
+locked: false
