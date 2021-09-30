@@ -10,8 +10,10 @@ weight: 1
 is_admin: false
 permissions:
   - 'access content'
+  - 'administer rest resources'
   - 'display eu cookie compliance popup'
   - 'opt-in or out of matomo tracking'
+  - 'restful post rest_resource_post_menu_links'
   - 'use text format full_html'
   - 'view files'
   - 'view media'

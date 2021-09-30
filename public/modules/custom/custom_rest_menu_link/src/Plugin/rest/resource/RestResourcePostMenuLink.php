@@ -9,6 +9,7 @@ use Drupal\Core\Session\AccountInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
+use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 
 /**
  * Provides a resource to post nodes.
@@ -16,6 +17,7 @@ use Drupal\Core\StringTranslation\StringTranslationTrait;
  * @RestResource(
  *   id = "rest_resource_post_menu_links",
  *   label = @Translation("Create menu links using Rest API with POST method"),
+ *   serialization_class = "Drupal\custom_rest_menu_link\normalizer\JsonDenormalizer",
  *   uri_paths = {
  *     "create" = "/rest/api/post/menu-create"
  *   }
@@ -91,25 +93,28 @@ class RestResourcePostMenuLink extends ResourceBase
     {
 
       // Use current user after pass authentication to validate access.
-        if (!$this->currentUser->hasPermission('administer site content')) {
-          // Display the default access denied page.
-            throw new AccessDeniedHttpException('Access Denied.');
-        }
+//        if (!$this->currentUser->hasPermission('administer site content')) {
+//          // Display the default access denied page.
+//            throw new AccessDeniedHttpException('Access Denied.');
+//        }
 
-        foreach ($data as $key => $value) {
-            $menu_link = MenuLinkContent::create([
+      foreach ($data as $key => $value) {
+        $parent = NULL;
+        if ($value['parent_link'] != NULL) {
+          $parent = $value['parent_link'];
+        }
+        $menu_link = MenuLinkContent::create([
             'title' => $value['menu_title'],
-              'link' => ['uri' => $value['node_link']],
+             'link' => ['uri' => $value['node_link']],
             'menu_name' => $value['menu_parent'],
+            'parent' => $parent,
             'weight' => 0,
             ])->save();
+        $this->logger->notice($this->t("Menu saved!\n"));
 
-            $this->logger->notice($this->t("Menu with nid @nid saved!\n", ['@nid' => $menu_link->id()]));
-
-            $menus[] = $menu_link->id();
         }
 
-        $message = $this->t("New Menu Created with ids : @message", ['@message' => implode(",", $menus)]);
+        $message = $this->t("New Menu Created");
 
         return new ResourceResponse($message, 200);
     }

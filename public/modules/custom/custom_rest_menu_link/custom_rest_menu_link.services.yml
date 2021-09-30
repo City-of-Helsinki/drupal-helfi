@@ -1,0 +1,5 @@
+services:
+  serializer.normalizer.custom_rest_menu_link.json:
+    class: Drupal\custom_rest_menu_link\normalizer\JsonDenormalizer
+    tags:
+      - { name: normalizer }
