@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.page.field_atomid
     - field.field.node.page.field_content
     - field.field.node.page.field_has_hero
     - field.field.node.page.field_hero
@@ -10,13 +11,16 @@ dependencies:
     - field.field.node.page.field_liftup_image
     - field.field.node.page.field_lower_content
     - field.field.node.page.field_metatags
+    - field.field.node.page.field_parent_atomid
     - node.type.page
   module:
+    - hdbt_admin_editorial
     - media_library
     - metatag
     - paragraphs
     - path
     - scheduler
+    - text
 _core:
   default_config_hash: w5-wlvA5D1grlc1wSGRvqGnME-pEk6uFPMtDKJHvYag
 id: node.page.default
@@ -30,6 +34,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_atomid:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
   field_content:
     type: paragraphs
     weight: 13
@@ -115,6 +127,14 @@ content:
       sidebar: false
     third_party_settings: {  }
     type: metatag_firehose
+    region: content
+  field_parent_atomid:
+    weight: 27
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
     region: content
   langcode:
     type: language_select

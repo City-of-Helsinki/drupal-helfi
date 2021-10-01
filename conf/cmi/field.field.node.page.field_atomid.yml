@@ -1,0 +1,21 @@
+uuid: 9d39d286-2622-4c21-be94-2e8838e49dbc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_atomid
+    - node.type.page
+  module:
+    - text
+id: node.page.field_atomid
+field_name: field_atomid
+entity_type: node
+bundle: page
+label: AtomID
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

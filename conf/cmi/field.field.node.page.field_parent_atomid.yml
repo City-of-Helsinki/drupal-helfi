@@ -1,0 +1,21 @@
+uuid: f396365d-a44e-46f4-abf7-586ce64c289d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_parent_atomid
+    - node.type.page
+  module:
+    - text
+id: node.page.field_parent_atomid
+field_name: field_parent_atomid
+entity_type: node
+bundle: page
+label: 'Parent AtomID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

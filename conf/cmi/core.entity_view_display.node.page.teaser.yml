@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.page.field_atomid
     - field.field.node.page.field_content
     - field.field.node.page.field_has_hero
     - field.field.node.page.field_hero
@@ -11,6 +12,7 @@ dependencies:
     - field.field.node.page.field_liftup_image
     - field.field.node.page.field_lower_content
     - field.field.node.page.field_metatags
+    - field.field.node.page.field_parent_atomid
     - node.type.page
   module:
     - user
@@ -31,11 +33,13 @@ content:
       link: false
     third_party_settings: {  }
 hidden:
+  field_atomid: true
   field_content: true
   field_has_hero: true
   field_hero: true
   field_lead_in: true
   field_lower_content: true
   field_metatags: true
+  field_parent_atomid: true
   langcode: true
   links: true
