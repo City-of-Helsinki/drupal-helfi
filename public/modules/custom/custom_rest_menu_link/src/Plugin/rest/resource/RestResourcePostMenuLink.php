@@ -135,14 +135,14 @@ class RestResourcePostMenuLink extends ResourceBase
            throw new AccessDeniedHttpException('Access Denied.');
         }
 
-      foreach ($data as $key => $value) {
+
         $parent = NULL;
-        if ($value['parent_link'] != NULL) {
-          $parent = $value['parent_link'];
+        if ($data['parent_link'] != NULL) {
+          $parent = $data['parent_link'];
         }
 
         $tree = \Drupal::menuTree()->load('schools', new \Drupal\Core\Menu\MenuTreeParameters());
-        $node_load = $this->entityTypeManager->getStorage('node')->load($value['node_id']);
+        $node_load = $this->entityTypeManager->getStorage('node')->load($data['node_id']);
         foreach ($this->loadMenu($tree) as $item) {
           if ($item['node_atom_id'] == $node_load->field_parent_atom_id) {
             $parent = $item['pluginid'];
@@ -150,14 +150,14 @@ class RestResourcePostMenuLink extends ResourceBase
         }
 
         MenuLinkContent::create([
-            'title' => $value['menu_title'],
-            'link' => ['uri' => 'entity:node/' . $value['node_id']],
-            'menu_name' => $value['menu_parent'],
+            'title' => $data['menu_title'],
+            'link' => ['uri' => 'entity:node/' . $data['node_id']],
+            'menu_name' => $data['menu_parent'],
             'parent' => $parent,
             'weight' => 0,
             ])->save();
           $this->logger->notice($this->t("Menu saved!\n"));
-        }
+
 
         $message = $this->t("New Menu Created");
 
