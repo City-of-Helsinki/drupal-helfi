@@ -10,6 +10,9 @@ use Psr\Log\LoggerInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
+use Drupal\Core\Entity\EntityTypeManagerInterface;
+use Drupal\Core\Menu\MenuLinkTree;
+use Drupal\Core\Menu\MenuTreeParameters;
 
 /**
  * Provides a resource to post nodes.
@@ -36,6 +39,13 @@ class RestResourcePostMenuLink extends ResourceBase
     protected $currentUser;
 
   /**
+   * Entity type manager.
+   *
+   * @var \Drupal\Core\Entity\EntityTypeManagerInterface
+   */
+  protected $entityTypeManager;
+
+  /**
    * Constructs a Drupal\rest\Plugin\ResourceBase object.
    *
    * @param array $configuration
@@ -50,6 +60,8 @@ class RestResourcePostMenuLink extends ResourceBase
    *   A logger instance.
    * @param \Drupal\Core\Session\AccountInterface $current_user
    *   The currently authenticated user.
+   * @param \Drupal\Core\Entity\EntityTypeManagerInterface $entityTypeManager
+   *   Entity type manager parameter.
    */
     public function __construct(
         array $configuration,
@@ -57,10 +69,12 @@ class RestResourcePostMenuLink extends ResourceBase
         $plugin_definition,
         $serializer_formats,
         LoggerInterface $logger,
-        AccountInterface $current_user
+        AccountInterface $current_user,
+        EntityTypeManagerInterface $entityTypeManager
     ) {
         parent::__construct($configuration, $plugin_id, $plugin_definition, $serializer_formats, $logger);
         $this->currentUser = $current_user;
+        $this->entityTypeManager = $entityTypeManager;
     }
 
   /**
@@ -74,9 +88,32 @@ class RestResourcePostMenuLink extends ResourceBase
             $plugin_definition,
             $container->getParameter('serializer.formats'),
             $container->get('logger.factory')->get('rest'),
-            $container->get('current_user')
+            $container->get('current_user'),
+            $container->get('entity_type.manager')
         );
     }
+
+  function loadMenu($tree) {
+      $menu = [];
+    foreach ($tree as $item) {
+      if($item->link->isEnabled()) {
+        if ($item->hasChildren) {
+          $menu = $this->loadMenu($item->subtree);
+        }
+        if ($item->link->getUrlObject()->isRouted() == TRUE) {
+
+          $menu[] = [
+             'title' => $item->link->getTitle(),
+             'pluginid' => $item->link->pluginId,
+             'nodeid' => $item->link->getUrlObject()->getRouteParameters()['node'],
+             'node_atom_id' => $this->entityTypeManager->getStorage('node')->load($item->link->getUrlObject()->getRouteParameters()['node'])->field_parent_atomid->value,
+             'node_parent_atom_id' => $this->entityTypeManager->getStorage('node')->load($item->link->getUrlObject()->getRouteParameters()['node'])->field_atomid->value
+           ];
+         }
+      }
+    }
+    return $menu;
+  }
 
   /**
    * Responds to POST requests.
@@ -104,14 +141,22 @@ class RestResourcePostMenuLink extends ResourceBase
           $parent = $value['parent_link'];
         }
 
-        $menu_link = MenuLinkContent::create([
+        $tree = \Drupal::menuTree()->load('schools', new \Drupal\Core\Menu\MenuTreeParameters());
+        $node_load = $this->entityTypeManager->getStorage('node')->load($value['node_id']);
+        foreach ($this->loadMenu($tree) as $item) {
+          if ($item['node_atom_id'] == $node_load->field_parent_atom_id) {
+            $parent = $item['pluginid'];
+          }
+        }
+
+        MenuLinkContent::create([
             'title' => $value['menu_title'],
-             'link' => ['uri' => $value['node_link']],
+            'link' => ['uri' => 'entity:node/' . $value['node_id']],
             'menu_name' => $value['menu_parent'],
             'parent' => $parent,
             'weight' => 0,
             ])->save();
-        $this->logger->notice($this->t("Menu saved!\n"));
+          $this->logger->notice($this->t("Menu saved!\n"));
         }
 
         $message = $this->t("New Menu Created");
