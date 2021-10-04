@@ -141,6 +141,7 @@ class RestResourcePostMenuLink extends ResourceBase
           $parent = $data['parent_link'];
         }
 
+        dump($data);
         $tree = \Drupal::menuTree()->load('schools', new \Drupal\Core\Menu\MenuTreeParameters());
         $node_load = $this->entityTypeManager->getStorage('node')->load($data['node_id']);
         foreach ($this->loadMenu($tree) as $item) {
@@ -160,7 +161,6 @@ class RestResourcePostMenuLink extends ResourceBase
 
 
         $message = $this->t("New Menu Created");
-
         return new ResourceResponse($message, 200);
     }
 }
