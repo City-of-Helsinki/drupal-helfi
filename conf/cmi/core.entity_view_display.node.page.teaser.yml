@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.page.field_lower_content
     - field.field.node.page.field_metatags
     - field.field.node.page.field_parent_atomid
+    - field.field.node.page.field_parent_parent_atom_id
     - node.type.page
   module:
     - user
@@ -41,5 +42,6 @@ hidden:
   field_lower_content: true
   field_metatags: true
   field_parent_atomid: true
+  field_parent_parent_atom_id: true
   langcode: true
   links: true
