@@ -93,14 +93,17 @@ class SyncAtomIds extends ControllerBase {
           $menu = $this->loadMenu($item->subtree);
         }
         if ($item->link->getUrlObject()->isRouted() == TRUE) {
-
+          $parent_parent = [];
+          if (!empty($item->link->getUrlObject()->getRouteParameters()['node']->field_parent_parent_atomid->value)) {
+            $parent_parent = ['node_parent_parent_atom_id' => \Drupal::entityTypeManager()->getStorage('node')->load($item->link->getUrlObject()->getRouteParameters()['node'])->field_parent_parent_atomid->value];
+          }
           $menu[] = [
             'title' => $item->link->getTitle(),
             'pluginid' => $item->link->getPluginId(),
             'nodeid' => $item->link->getUrlObject()->getRouteParameters()['node'],
             'node_atom_id' => \Drupal::entityTypeManager()->getStorage('node')->load($item->link->getUrlObject()->getRouteParameters()['node'])->field_atomid->value,
             'node_parent_atom_id' => \Drupal::entityTypeManager()->getStorage('node')->load($item->link->getUrlObject()->getRouteParameters()['node'])->field_parent_atomid->value,
-            'node_parent_parent_atom_id' => \Drupal::entityTypeManager()->getStorage('node')->load($item->link->getUrlObject()->getRouteParameters()['node'])->field_parent_parent_atomid->value
+            $parent_parent
           ];
         }
       }
