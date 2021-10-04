@@ -106,8 +106,8 @@ class RestResourcePostMenuLink extends ResourceBase
              'title' => $item->link->getTitle(),
              'pluginid' => $item->link->pluginId,
              'nodeid' => $item->link->getUrlObject()->getRouteParameters()['node'],
-             'node_atom_id' => $this->entityTypeManager->getStorage('node')->load($item->link->getUrlObject()->getRouteParameters()['node'])->field_parent_atomid->value,
-             'node_parent_atom_id' => $this->entityTypeManager->getStorage('node')->load($item->link->getUrlObject()->getRouteParameters()['node'])->field_atomid->value
+             'node_atom_id' => $this->entityTypeManager->getStorage('node')->load($item->link->getUrlObject()->getRouteParameters()['node'])->field_atomid->value,
+             'node_parent_atom_id' => $this->entityTypeManager->getStorage('node')->load($item->link->getUrlObject()->getRouteParameters()['node'])->field_parent_atomid->value
            ];
          }
       }
@@ -141,11 +141,10 @@ class RestResourcePostMenuLink extends ResourceBase
           $parent = $data['parent_link'];
         }
 
-        dump($data);
         $tree = \Drupal::menuTree()->load('schools', new \Drupal\Core\Menu\MenuTreeParameters());
         $node_load = $this->entityTypeManager->getStorage('node')->load($data['node_id']);
         foreach ($this->loadMenu($tree) as $item) {
-          if ($item['node_atom_id'] == $node_load->field_parent_atom_id) {
+          if ($item['node_atom_id'] == $node_load->field_parent_atomid->value) {
             $parent = $item['pluginid'];
           }
         }
