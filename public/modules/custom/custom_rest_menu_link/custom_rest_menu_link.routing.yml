@@ -1,0 +1,7 @@
+custom_rest_menu_link.my_page:
+  path: '/admin/content/atomid-sync'
+  defaults:
+    _controller: '\Drupal\custom_rest_menu_link\Controller\SyncAtomIds::syncPage'
+    _title: 'Sync the atom ids'
+  requirements:
+    _permission: 'access content'
