@@ -18,7 +18,7 @@ class SyncAtomIds extends ControllerBase {
     $tree = \Drupal::menuTree()->load('schools', new \Drupal\Core\Menu\MenuTreeParameters());
     foreach ($this->loadMenu($tree) as $menu_item) {
       if (!empty($menu_item['node_parent_atom_id'])) {
-        $node_load = \Drupal::entityTypeManager()->getStorage('node')->loadByProperties(['field_atomid' => $menu_item['node_parent_atom_id']]);
+        $node_load = \Drupal::entityTypeManager()->getStorage('node')->loadByProperties(['field_atomid' => $menu_item['field_parent_parent_atom_id']]);
         dump(array_values($node_load));
         $result_node_link = \Drupal::service('plugin.manager.menu.link')->loadLinksByRoute('entity.node.canonical', ['node' => array_values($node_load)[0]->id()]);
 
@@ -40,8 +40,8 @@ class SyncAtomIds extends ControllerBase {
         }
       }
 
-      if (!empty($menu_item['node_parent_parent_atom_id'])) {
-        $node_parent_load = \Drupal::entityTypeManager()->getStorage('node')->loadByProperties(['field_atomid' => $menu_item['node_parent_parent_atom_id']]);
+      if (!empty($menu_item['field_parent_parent_atom_id'])) {
+        $node_parent_load = \Drupal::entityTypeManager()->getStorage('node')->loadByProperties(['field_atomid' => $menu_item['field_parent_parent_atom_id']]);
         $result_node_parent_link = \Drupal::service('plugin.manager.menu.link')->loadLinksByRoute('entity.node.canonical', ['node' => array_values($node_parent_load)[0]->id()]);
 
         foreach ($result_node_parent_link as $menu_item2) {
@@ -80,7 +80,8 @@ class SyncAtomIds extends ControllerBase {
             'pluginid' => $item->link->getPluginId(),
             'nodeid' => $item->link->getUrlObject()->getRouteParameters()['node'],
             'node_atom_id' => \Drupal::entityTypeManager()->getStorage('node')->load($item->link->getUrlObject()->getRouteParameters()['node'])->field_atomid->value,
-            'node_parent_atom_id' => \Drupal::entityTypeManager()->getStorage('node')->load($item->link->getUrlObject()->getRouteParameters()['node'])->field_parent_atomid->value
+            'node_parent_atom_id' => \Drupal::entityTypeManager()->getStorage('node')->load($item->link->getUrlObject()->getRouteParameters()['node'])->field_parent_atomid->value,
+            'node_parent_parent_atom_id' => \Drupal::entityTypeManager()->getStorage('node')->load($item->link->getUrlObject()->getRouteParameters()['node'])->field_parent_parent_atomid->value
           ];
         }
       }
