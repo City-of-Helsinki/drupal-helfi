@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "62aeeccbf0292525f89fc7b7eef7e14f",
+    "content-hash": "14a83b8041414376a927ed76dc7433f0",
     "packages": [
         {
             "name": "City-of-Helsinki/php-hauki-client",
@@ -4584,6 +4584,50 @@
             }
         },
         {
+            "name": "drupal/menu_delete",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/menu_delete.git",
+                "reference": "8.x-2.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/menu_delete-8.x-2.2.zip",
+                "reference": "8.x-2.2",
+                "shasum": "6b1925043e426d3b6ff9bc17bc5956fa40f52450"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.2",
+                    "datestamp": "1592346540",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "rrrob",
+                    "homepage": "https://www.drupal.org/user/273533"
+                }
+            ],
+            "description": "Selectively delete menu items.",
+            "homepage": "https://www.drupal.org/project/menu_delete",
+            "support": {
+                "source": "https://git.drupalcode.org/project/menu_delete"
+            }
+        },
+        {
             "name": "drupal/menu_link_attributes",
             "version": "1.2.0",
             "source": {
@@ -8555,12 +8599,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ruflin/Elastica.git",
-                "reference": "0114e1dc12f561675a393a5cdd30bf6ddde256cb"
+                "reference": "0cadecb6466a626e615fc493b4625c0ea560249a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ruflin/Elastica/zipball/0114e1dc12f561675a393a5cdd30bf6ddde256cb",
-                "reference": "0114e1dc12f561675a393a5cdd30bf6ddde256cb",
+                "url": "https://api.github.com/repos/ruflin/Elastica/zipball/0cadecb6466a626e615fc493b4625c0ea560249a",
+                "reference": "0cadecb6466a626e615fc493b4625c0ea560249a",
                 "shasum": ""
             },
             "require": {
@@ -8611,11 +8655,7 @@
                 "client",
                 "search"
             ],
-            "support": {
-                "issues": "https://github.com/ruflin/Elastica/issues",
-                "source": "https://github.com/ruflin/Elastica/tree/master"
-            },
-            "time": "2021-08-26T12:02:50+00:00"
+            "time": "2021-09-28T22:59:23+00:00"
         },
         {
             "name": "stack/builder",
