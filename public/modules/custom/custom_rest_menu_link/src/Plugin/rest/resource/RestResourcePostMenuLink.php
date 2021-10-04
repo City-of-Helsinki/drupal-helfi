@@ -149,21 +149,19 @@ class RestResourcePostMenuLink extends ResourceBase
           if (!empty($node_load->field_parent_atomid->value) && $item['node_atom_id'] == $node_load->field_parent_atomid->value) {
             $parent = $item['pluginid'];
           }
-          dump($node_load);
           if (!empty($node_load->field_parent_parent_atom_id->value) && $item['node_atom_id'] == $node_load->field_parent_parent_atom_id->value) {
-            dump('true');
             $parent = $item['pluginid'];
           }
 
         }
 
-//        MenuLinkContent::create([
-//            'title' => $data['menu_title'],
-//            'link' => ['uri' => 'entity:node/' . $data['node_id']],
-//            'menu_name' => $data['menu_parent'],
-//            'parent' => $parent,
-//            'weight' => 0,
-//            ])->save();
+        MenuLinkContent::create([
+            'title' => $data['menu_title'],
+            'link' => ['uri' => 'entity:node/' . $data['node_id']],
+            'menu_name' => $data['menu_parent'],
+            'parent' => $parent,
+            'weight' => 0,
+            ])->save();
           $this->logger->notice($this->t("Menu saved!\n"));
 
 

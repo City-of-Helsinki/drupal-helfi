@@ -16,10 +16,12 @@ class SyncAtomIds extends ControllerBase {
    */
   public function syncPage() {
     $tree = \Drupal::menuTree()->load('schools', new \Drupal\Core\Menu\MenuTreeParameters());
+    if ($this->loadMenu($tree) <= 1) {
+      return ['#markup' => 'No links found!'];
+    }
     foreach ($this->loadMenu($tree) as $menu_item) {
       if (!empty($menu_item['node_parent_atom_id'])) {
         $node_load = \Drupal::entityTypeManager()->getStorage('node')->loadByProperties(['field_atomid' => $menu_item['node_parent_atom_id']]);
-        dump(array_values($node_load));
         $result_node_link = \Drupal::service('plugin.manager.menu.link')->loadLinksByRoute('entity.node.canonical', ['node' => array_values($node_load)[0]->id()]);
 
         foreach ($result_node_link as $menu_item2) {
