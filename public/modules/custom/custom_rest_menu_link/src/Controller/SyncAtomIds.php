@@ -17,7 +17,6 @@ class SyncAtomIds extends ControllerBase {
   public function syncPage() {
     $tree = \Drupal::menuTree()->load('schools', new \Drupal\Core\Menu\MenuTreeParameters());
 
-    \Drupal\Core\Menu\MenuTreeParameters());
     if (count($this->loadMenu($tree)) <= 1) {
       return ['#markup' => 'No links found!'];
     }
