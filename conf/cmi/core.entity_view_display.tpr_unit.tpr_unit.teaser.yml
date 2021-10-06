@@ -20,27 +20,47 @@ mode: teaser
 content:
   address:
     type: address_plain
-    weight: 1
+    weight: 4
     region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
   name:
     type: string
-    weight: 0
+    weight: 2
     region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
   phone:
-    type: telephone_link
-    weight: 2
-    region: content
+    settings: {  }
+  name_override:
     label: hidden
+    region: content
     settings:
-      title: ''
+      link_to_entity: false
     third_party_settings: {  }
+    type: string
+    weight: 3
+  picture_url:
+    label: hidden
+    region: content
+    settings:
+      imagecache_external_link: ''
+      imagecache_external_responsive_style: image__3_2
+    third_party_settings: {  }
+    type: imagecache_external_responsive_image
+    weight: 0
+  picture_url_override:
+    label: hidden
+    region: content
+    settings:
+      link: false
+      view_mode: image
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    weight: 1
 hidden:
   accessibility_email: true
   accessibility_phone: true
@@ -57,11 +77,10 @@ hidden:
   langcode: true
   latitude: true
   longitude: true
-  name_override: true
   opening_hours: true
-  picture_url: true
-  picture_url_override: true
   service_map_embed: true
   services: true
   streetview_entrance_url: true
   www: true
+  phone: true
+  provided_languages: true
