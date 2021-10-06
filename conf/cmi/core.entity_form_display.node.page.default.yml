@@ -12,7 +12,6 @@ dependencies:
     - field.field.node.page.field_lower_content
     - field.field.node.page.field_metatags
     - field.field.node.page.field_parent_atomid
-    - field.field.node.page.field_parent_parent_atom_id
     - node.type.page
   module:
     - hdbt_admin_editorial
@@ -131,14 +130,6 @@ content:
     region: content
   field_parent_atomid:
     weight: 27
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textfield
-    region: content
-  field_parent_parent_atom_id:
-    weight: 28
     settings:
       size: 60
       placeholder: ''

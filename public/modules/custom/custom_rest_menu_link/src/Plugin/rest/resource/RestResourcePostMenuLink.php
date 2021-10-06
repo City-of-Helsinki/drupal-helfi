@@ -146,10 +146,7 @@ class RestResourcePostMenuLink extends ResourceBase
         $node_load = $this->entityTypeManager->getStorage('node')->load($data['node_id']);
         foreach ($this->loadMenu($tree) as $item) {
           $this->logger->notice("Atom id: " . $item['node_atom_id'] . " parent atom id: " . $node_load->field_parent_atomid->value);
-          if (!empty($node_load->field_parent_atomid->value) && $item['node_atom_id'] == $node_load->field_parent_atomid->value) {
-            $parent = $item['pluginid'];
-          }
-          if (!empty($node_load->field_parent_parent_atom_id->value) && $item['node_atom_id'] == $node_load->field_parent_parent_atom_id->value) {
+          if ($item['node_atom_id'] == $node_load->field_parent_atomid->value) {
             $parent = $item['pluginid'];
           }
 

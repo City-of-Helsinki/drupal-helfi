@@ -12,12 +12,10 @@ dependencies:
     - field.field.node.page.field_lower_content
     - field.field.node.page.field_metatags
     - field.field.node.page.field_parent_atomid
-    - field.field.node.page.field_parent_parent_atom_id
     - node.type.page
   module:
     - entity_reference_revisions
     - metatag
-    - text
     - user
 _core:
   default_config_hash: i22XraOl4gS7_CJgs4Rz9EUcPl88E0ripb7VPtyUGho
@@ -57,13 +55,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: metatag_empty_formatter
-    region: content
-  field_parent_parent_atom_id:
-    weight: 5
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
     region: content
   links:
     weight: 0

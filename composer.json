@@ -16,7 +16,6 @@
         "drupal/core-composer-scaffold": "^9.0",
         "drupal/core-recommended": "^9.0",
         "drupal/csv_serialization": "^2.0",
-        "drupal/delete_all": "^2.0",
         "drupal/diff": "^1.0",
         "drupal/entity_usage": "^2.0@beta",
         "drupal/eu_cookie_compliance": "^1.14",
