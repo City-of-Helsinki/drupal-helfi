@@ -107,9 +107,7 @@ class RestResourcePostMenuLink extends ResourceBase
              'pluginid' => $item->link->pluginId,
              'nodeid' => $item->link->getUrlObject()->getRouteParameters()['node'],
              'node_atom_id' => $this->entityTypeManager->getStorage('node')->load($item->link->getUrlObject()->getRouteParameters()['node'])->field_atomid->value,
-             'node_parent_atom_id' => $this->entityTypeManager->getStorage('node')->load($item->link->getUrlObject()->getRouteParameters()['node'])->field_parent_atomid->value,
-             'node_parent_parent_atom_id' => $this->entityTypeManager->getStorage('node')->load($item->link->getUrlObject()->getRouteParameters()['node'])->field_parent_parent_atom_id->value
-           ];
+             'node_parent_atom_id' => $this->entityTypeManager->getStorage('node')->load($item->link->getUrlObject()->getRouteParameters()['node'])->field_parent_atomid->value,           ];
          }
       }
     }
