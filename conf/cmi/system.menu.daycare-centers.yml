@@ -1,0 +1,8 @@
+uuid: ec609df3-8cbf-4dfa-b785-3403a1abab0d
+langcode: en
+status: true
+dependencies: {  }
+id: daycare-centers
+label: 'Daycare Centers'
+description: ''
+locked: false
