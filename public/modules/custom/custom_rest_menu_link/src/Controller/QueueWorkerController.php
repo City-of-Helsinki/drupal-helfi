@@ -108,6 +108,12 @@ class QueueWorkerController extends ControllerBase {
     }
     // 4. Get the total of item in the Queue.
     $totalItemsAfter = $queue->numberOfItems();
+    if($totalItemsAfter == 0) {
+      return [
+        '#type' => 'markup',
+        '#markup' => $this->t('No data found'),
+      ];
+    }
     // 5. Get what's in the queue now.
     $tableVariables = $this->getItemList($queue);
     $clear_queue = Url::fromRoute('custom_rest_menu_link.atomid-sync-delete-worker');
@@ -222,9 +228,6 @@ class QueueWorkerController extends ControllerBase {
     $items = [];
     // Claim each item in queue.
     while ($item = $queue->claimItem()) {
-    if ($item->data == "No links found!") {
-      return;
-    }
       $retrieved_items[] = [
         'data' => [$item->data['title'], $item->item_id],
       ];
