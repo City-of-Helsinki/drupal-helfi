@@ -13,3 +13,11 @@ custom_rest_menu_link.atomid-sync-delete-worker:
     _title: 'Sync the atom ids'
   requirements:
     _permission: 'access content'
+
+custom_rest_menu_link.delete_nodes:
+  path: '/admin/content/delete-content'
+  defaults:
+    _controller: '\Drupal\custom_rest_menu_link\Controller\DeleteContent::deleteContent'
+    _title: 'Sync the atom ids'
+  requirements:
+    _permission: 'access content'
