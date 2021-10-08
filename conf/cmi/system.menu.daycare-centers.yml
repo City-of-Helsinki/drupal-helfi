@@ -1,8 +1,0 @@
-uuid: 6ae7f5e8-fb76-4170-91eb-7953290af9f4
-langcode: fi
-status: true
-dependencies: {  }
-id: daycare-centers
-label: 'Daycare Centers'
-description: ''
-locked: false
