@@ -222,7 +222,7 @@ class QueueWorkerController extends ControllerBase {
     $items = [];
     // Claim each item in queue.
     while ($item = $queue->claimItem()) {
-
+    dump($item);
       $retrieved_items[] = [
         'data' => [$item->data['title'], $item->item_id],
       ];
