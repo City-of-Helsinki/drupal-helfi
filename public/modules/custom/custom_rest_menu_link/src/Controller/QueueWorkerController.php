@@ -14,13 +14,12 @@ use Drupal\Core\Url;
  * 1) \Drupal\exqueue01\Controller\ExQueueController::getData
  * The getData() methods allows to load external data and
  * for each array element create a queue element
- * Then on Cron run, we create a page node for each element with
+ * Then on Cron run, we update the position of the menu link for each element with
  * 2) \Drupal\exqueue01\Controller\ExQueueController::deleteTheQueue
  * The deleteTheQueue() methods delete the queue "syncatomids_worker_queue"
  * and all its elements
  * Once the queue is created with tha data, on Cron run
- * we create a new page node for each item in the queue with the QueueWorker
- * plugin ExQueue01.php .
+ * we updated the order of menu for each item in the queue with the QueueWorker
  */
 class QueueWorkerController extends ControllerBase {
   /**
@@ -180,12 +179,6 @@ class QueueWorkerController extends ControllerBase {
       return FALSE;
     }
     return $content;
-    /*
-    // Using simplexml_load_file
-    $xml = simplexml_load_file($uri);
-    $data = json_decode(json_encode($xml));
-    ksm($data);
-     */
   }
 
   /**
