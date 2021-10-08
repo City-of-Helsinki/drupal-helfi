@@ -11,11 +11,11 @@ use Drupal\Core\Url;
  *
  * Demonstrates the use of the Queue API
  * There is two routes.
- * 1) \Drupal\exqueue01\Controller\ExQueueController::getData
+ * 1) \Drupal\custom_rest_menu_link\Controller\QueueWorkerController::getData
  * The getData() methods allows to load external data and
  * for each array element create a queue element
  * Then on Cron run, we update the position of the menu link for each element with
- * 2) \Drupal\exqueue01\Controller\ExQueueController::deleteTheQueue
+ * 2) \Drupal\custom_rest_menu_link\Controller\QueueWorkerController::deleteTheQueue
  * The deleteTheQueue() methods delete the queue "syncatomids_worker_queue"
  * and all its elements
  * Once the queue is created with tha data, on Cron run

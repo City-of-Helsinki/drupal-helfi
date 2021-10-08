@@ -136,9 +136,9 @@ class RestResourcePostMenuLink extends ResourceBase
 
 
         $parent = NULL;
-        if ($data['parent_link'] != NULL && $data['menu_parent' == 'schools']) {
+        if ($data['menu_parent'] != NULL && $data['menu_parent' == 'schools']) {
           $parent = "menu_link_content:0f788e10-fb7a-49d6-af6d-4682785ecb0f";
-        } elseif ($data['parent_link'] != NULL && $data['menu_parent' == 'daycare']) {
+        } elseif ($data['menu_parent'] != NULL && $data['menu_parent' == 'daycare']) {
           $parent = "menu_link_content:0e24a91d-16bf-49de-976d-f04b13c2b3c7";
         }
 
@@ -151,7 +151,7 @@ class RestResourcePostMenuLink extends ResourceBase
 //          }
 //
 //        }
-
+dump($parent);
         MenuLinkContent::create([
             'title' => $data['menu_title'],
             'link' => ['uri' => 'entity:node/' . $data['node_id']],
