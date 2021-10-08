@@ -113,26 +113,28 @@ class QueueWorkerController extends ControllerBase {
         '#type' => 'markup',
         '#markup' => $this->t('No data found'),
       ];
+    } else {
+      // 5. Get what's in the queue now.
+      $tableVariables = $this->getItemList($queue);
+      $clear_queue = Url::fromRoute('custom_rest_menu_link.atomid-sync-delete-worker');
+      $finalMessage = $this->t('The Queue had @totalBefore items. We should have added @count items in the Queue. Now the Queue has @totalAfter items. <a href="@clear_queue_link">Clear queue</a>',
+        [
+          '@count' => count($data),
+          '@totalAfter' => $totalItemsAfter,
+          '@totalBefore' => $totalItemsBefore,
+          '@clear_queue_link' => $clear_queue->toString(),
+        ]);
+      return [
+        '#type' => 'table',
+        '#caption' => $finalMessage,
+        '#header' => $tableVariables['header'],
+        '#rows' => $tableVariables['rows'],
+        '#attributes' => $tableVariables['attributes'],
+        '#sticky' => $tableVariables['sticky'],
+        //      'empty' => $this->t('No items.'),
+      ];
     }
-    // 5. Get what's in the queue now.
-    $tableVariables = $this->getItemList($queue);
-    $clear_queue = Url::fromRoute('custom_rest_menu_link.atomid-sync-delete-worker');
-    $finalMessage = $this->t('The Queue had @totalBefore items. We should have added @count items in the Queue. Now the Queue has @totalAfter items. <a href="@clear_queue_link">Clear queue</a>',
-      [
-        '@count' => count($data),
-        '@totalAfter' => $totalItemsAfter,
-        '@totalBefore' => $totalItemsBefore,
-        '@clear_queue_link' => $clear_queue->toString(),
-      ]);
-    return [
-      '#type' => 'table',
-      '#caption' => $finalMessage,
-      '#header' => $tableVariables['header'],
-      '#rows' => $tableVariables['rows'],
-      '#attributes' => $tableVariables['attributes'],
-      '#sticky' => $tableVariables['sticky'],
-//      'empty' => $this->t('No items.'),
-    ];
+
   }
 
   /**
