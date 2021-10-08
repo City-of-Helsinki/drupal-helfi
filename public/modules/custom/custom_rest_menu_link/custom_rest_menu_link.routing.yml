@@ -1,7 +1,15 @@
-custom_rest_menu_link.my_page:
+custom_rest_menu_link.atomid-sync-worker:
   path: '/admin/content/atomid-sync'
   defaults:
-    _controller: '\Drupal\custom_rest_menu_link\Controller\SyncAtomIds::syncPage'
+    _controller: '\Drupal\custom_rest_menu_link\Controller\QueueWorkerController::getData'
+    _title: 'Sync the atom ids'
+  requirements:
+    _permission: 'access content'
+
+custom_rest_menu_link.atomid-sync-delete-worker:
+  path: '/admin/content/delete-atomid-sync-worker'
+  defaults:
+    _controller: '\Drupal\custom_rest_menu_link\Controller\QueueWorkerController::deleteTheQueue'
     _title: 'Sync the atom ids'
   requirements:
     _permission: 'access content'
