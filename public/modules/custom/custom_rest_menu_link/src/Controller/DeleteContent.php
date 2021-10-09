@@ -17,7 +17,7 @@ class DeleteContent extends ControllerBase {
   public function deleteContent() {
     $nids = \Drupal::entityQuery('node')->execute();
     foreach ($nids as $nid) {
-      if ($nid == '10022' || $nid == '4166') {
+      if ($nid == '10258' || $nid == '4166') {
         continue;
       }
       $node =  Node::load($nid)->delete();
