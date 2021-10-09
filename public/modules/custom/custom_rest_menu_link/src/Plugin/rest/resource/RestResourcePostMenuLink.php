@@ -139,7 +139,7 @@ class RestResourcePostMenuLink extends ResourceBase
         if ($data['menu_parent'] != NULL && $data['menu_parent'] == 'schools') {
           $parent = "menu_link_content:0f788e10-fb7a-49d6-af6d-4682785ecb0f";
         } elseif ($data['menu_parent'] != NULL && $data['menu_parent'] == 'daycare') {
-          $parent = "menu_link_content:55d4e2f6-6736-4c12-9e32-88221f0f0ada";
+          $parent = "menu_link_content:ef334336-70b7-47b0-9e6b-6579ed351b4d";
         }
 
 //        $tree = \Drupal::menuTree()->load('schools', new \Drupal\Core\Menu\MenuTreeParameters());
