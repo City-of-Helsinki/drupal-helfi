@@ -95,45 +95,47 @@ class QueueWorkerController extends ControllerBase {
         '#type' => 'markup',
         '#markup' => $this->t('No data found'),
       ];
-    }
-    // 2. Get the queue and the total of items before the operations
-    // Get the queue implementation for 'syncatomids_worker_queue' queue.
-    $queue = $this->queueFactory->get('syncatomids_worker_queue');
-    // Get the total of items in the queue before adding new items.
-    $totalItemsBefore = $queue->numberOfItems();
-    // 3. For each element of the array, create a new queue item.
-    foreach ($data as $element) {
-      // Create new queue item.
-      $queue->createItem($element);
-    }
-    // 4. Get the total of item in the Queue.
-    $totalItemsAfter = $queue->numberOfItems();
-    if($totalItemsAfter == 0) {
-      return [
-        '#type' => 'markup',
-        '#markup' => $this->t('No data found'),
-      ];
     } else {
-      // 5. Get what's in the queue now.
-      $tableVariables = $this->getItemList($queue);
-      $clear_queue = Url::fromRoute('custom_rest_menu_link.atomid-sync-delete-worker');
-      $finalMessage = $this->t('The Queue had @totalBefore items. We should have added @count items in the Queue. Now the Queue has @totalAfter items. <a href="@clear_queue_link">Clear queue</a>',
-        [
-          '@count' => count($data),
-          '@totalAfter' => $totalItemsAfter,
-          '@totalBefore' => $totalItemsBefore,
-          '@clear_queue_link' => $clear_queue->toString(),
-        ]);
-      return [
-        '#type' => 'table',
-        '#caption' => $finalMessage,
-        '#header' => $tableVariables['header'],
-        '#rows' => $tableVariables['rows'],
-        '#attributes' => $tableVariables['attributes'],
-        '#sticky' => $tableVariables['sticky'],
-        //      'empty' => $this->t('No items.'),
-      ];
+      // 2. Get the queue and the total of items before the operations
+      // Get the queue implementation for 'syncatomids_worker_queue' queue.
+      $queue = $this->queueFactory->get('syncatomids_worker_queue');
+      // Get the total of items in the queue before adding new items.
+      $totalItemsBefore = $queue->numberOfItems();
+      // 3. For each element of the array, create a new queue item.
+      foreach ($data as $element) {
+        // Create new queue item.
+        $queue->createItem($element);
+      }
+      // 4. Get the total of item in the Queue.
+      $totalItemsAfter = $queue->numberOfItems();
+      if($totalItemsAfter == 0) {
+        return [
+          '#type' => 'markup',
+          '#markup' => $this->t('No data found'),
+        ];
+      } else {
+        // 5. Get what's in the queue now.
+        $tableVariables = $this->getItemList($queue);
+        $clear_queue = Url::fromRoute('custom_rest_menu_link.atomid-sync-delete-worker');
+        $finalMessage = $this->t('The Queue had @totalBefore items. We should have added @count items in the Queue. Now the Queue has @totalAfter items. <a href="@clear_queue_link">Clear queue</a>',
+          [
+            '@count' => count($data),
+            '@totalAfter' => $totalItemsAfter,
+            '@totalBefore' => $totalItemsBefore,
+            '@clear_queue_link' => $clear_queue->toString(),
+          ]);
+        return [
+          '#type' => 'table',
+          '#caption' => $finalMessage,
+          '#header' => $tableVariables['header'],
+          '#rows' => $tableVariables['rows'],
+          '#attributes' => $tableVariables['attributes'],
+          '#sticky' => $tableVariables['sticky'],
+          //      'empty' => $this->t('No items.'),
+        ];
+      }
     }
+
 
   }
 
