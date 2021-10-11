@@ -6,6 +6,14 @@ custom_rest_menu_link.atomid-sync-worker:
   requirements:
     _permission: 'access content'
 
+custom_rest_menu_link.atomid-sync-worker-old:
+  path: '/admin/content/atomid-sync-old'
+  defaults:
+    _controller: '\Drupal\custom_rest_menu_link\Controller\QueueWorkerController::getData'
+    _title: 'Sync the atom ids'
+  requirements:
+    _permission: 'access content'
+
 custom_rest_menu_link.atomid-sync-worker-form:
   path: '/admin/content/atomid-sync-form'
   defaults:
