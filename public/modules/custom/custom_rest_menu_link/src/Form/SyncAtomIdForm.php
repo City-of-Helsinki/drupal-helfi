@@ -25,7 +25,7 @@ class SyncAtomIdForm extends FormBase {
       '#title' => t('Select which to sync'),
       '#options' => [
         'schools' => t('Schools'),
-        'daycare' => t('Daycare Centers'),
+        'daycare-centers' => t('Daycare Centers'),
       ],
       '#default_value' => 'schools',
     ];
