@@ -1,5 +1,5 @@
 custom_rest_menu_link.atomid-sync-worker:
-  path: '/admin/content/atomid-sync'
+  path: '/admin/content/atomid-sync-worker'
   defaults:
     _controller: '\Drupal\custom_rest_menu_link\Controller\QueueWorkerController::getData'
     _title: 'Sync the atom ids'
@@ -14,8 +14,8 @@ custom_rest_menu_link.atomid-sync-worker-old:
   requirements:
     _permission: 'access content'
 
-custom_rest_menu_link.atomid-sync-worker-form:
-  path: '/admin/content/atomid-sync-form'
+custom_rest_menu_link.atomid-sync-batch-form:
+  path: '/admin/content/atomid-sync'
   defaults:
     _form: '\Drupal\custom_rest_menu_link\Form\SyncAtomIdForm'
     _title: 'Batch process for menu links'
