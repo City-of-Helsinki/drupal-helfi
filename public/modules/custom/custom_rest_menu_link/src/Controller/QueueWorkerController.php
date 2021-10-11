@@ -88,14 +88,7 @@ class QueueWorkerController extends ControllerBase {
     // We can choose between two methods
     // getDataFromMenu()
 
-    $data = $this->getDataFromMenu();
-
-    if (!$data) {
-      return [
-        '#type' => 'markup',
-        '#markup' => $this->t('No data found'),
-      ];
-    } else {
+    if ($data = $this->getDataFromMenu()) {
       // 2. Get the queue and the total of items before the operations
       // Get the queue implementation for 'syncatomids_worker_queue' queue.
       $queue = $this->queueFactory->get('syncatomids_worker_queue');
@@ -108,12 +101,13 @@ class QueueWorkerController extends ControllerBase {
       }
       // 4. Get the total of item in the Queue.
       $totalItemsAfter = $queue->numberOfItems();
-      if($totalItemsAfter == 0) {
+      if ($totalItemsAfter == 0) {
         return [
           '#type' => 'markup',
           '#markup' => $this->t('No data found'),
         ];
-      } else {
+      }
+      else {
         // 5. Get what's in the queue now.
         $tableVariables = $this->getItemList($queue);
         $clear_queue = Url::fromRoute('custom_rest_menu_link.atomid-sync-delete-worker');
@@ -134,9 +128,12 @@ class QueueWorkerController extends ControllerBase {
           //      'empty' => $this->t('No items.'),
         ];
       }
+    } else {
+      return [
+        '#type' => 'markup',
+        '#markup' => $this->t('No data found'),
+      ];
     }
-
-
   }
 
   /**
