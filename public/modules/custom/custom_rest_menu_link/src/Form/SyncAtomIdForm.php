@@ -20,7 +20,15 @@ class SyncAtomIdForm extends FormBase {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-
+    $form['schools_daycare'] = [
+      '#type' => 'radios',
+      '#title' => t('Select which to sync'),
+      '#options' => [
+        'schools' => t('Schools'),
+        'daycare' => t('Daycare Centers'),
+      ],
+      '#default_value' => 'schools',
+    ];
     $form['sync_atom_id'] = array(
       '#type' => 'submit',
       '#value' => $this->t('Sync all Atom IDs with parents'),
@@ -40,7 +48,7 @@ class SyncAtomIdForm extends FormBase {
       'error_message'    => t('An error occurred during processing'),
       'finished' => 'sync_atomid_finished',
     );
-    $tree = \Drupal::menuTree()->load('schools', new \Drupal\Core\Menu\MenuTreeParameters());
+    $tree = \Drupal::menuTree()->load($form_state->getValue('schools_daycare'), new \Drupal\Core\Menu\MenuTreeParameters());
 
     if (count($this->loadMenu($tree)) <= 1) {
       return ['#markup' => 'No links found!'];
