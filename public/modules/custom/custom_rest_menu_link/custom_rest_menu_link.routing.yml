@@ -6,6 +6,14 @@ custom_rest_menu_link.atomid-sync-worker:
   requirements:
     _permission: 'access content'
 
+custom_rest_menu_link.atomid-sync-worker-form:
+  path: '/admin/content/atomid-sync-form'
+  defaults:
+    _form: '\Drupal\custom_rest_menu_link\Form\SyncAtomIdForm'
+    _title: 'Batch process for menu links'
+  requirements:
+    _permission: 'access content'
+
 custom_rest_menu_link.atomid-sync-delete-worker:
   path: '/admin/content/delete-atomid-sync-worker'
   defaults:

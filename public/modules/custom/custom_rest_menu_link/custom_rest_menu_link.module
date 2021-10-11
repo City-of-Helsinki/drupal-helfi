@@ -1,1 +1,54 @@
 <?php
+
+/**
+ * Sync Atom Id with the parent menu.
+ */
+function sync_atom_ids_batch($menu_item, $context) {
+  if (!empty($menu_item['node_parent_atom_id'])) {
+    $node_load = \Drupal::entityTypeManager()->getStorage('node')->loadByProperties(['field_atomid' => $menu_item['node_parent_atom_id']]);
+    if (!empty(array_values($node_load))) {
+      $result_node_link = \Drupal::service('plugin.manager.menu.link')
+        ->loadLinksByRoute('entity.node.canonical', ['node' => array_values($node_load)[0]->id()]);
+      foreach ($result_node_link as $menu_item2) {
+        if (is_object($menu_item2)
+          && ($menu_item2->getPluginDefinition()['menu_name'] == 'schools' || $menu_item2->getPluginDefinition()['menu_name'] == 'daycare')) {
+          $id = $menu_item2->getPluginDefinition()['metadata']['entity_id'];
+          $node_menu_link = \Drupal::entityTypeManager()
+            ->getStorage('menu_link_content')
+            ->load($id);
+
+          $result = \Drupal::service('plugin.manager.menu.link')
+            ->loadLinksByRoute('entity.node.canonical', ['node' => $menu_item['nodeid']]);
+          foreach ($result as $menu_item2) {
+            if (is_object($menu_item2) && $menu_item2->getPluginDefinition()['menu_name'] == 'schools'
+              && 'menu_link_content:' . $node_menu_link->uuid() != $menu_item2->getPluginDefinition()['parent']) {
+              $id = $menu_item2->getPluginDefinition()['metadata']['entity_id'];
+
+              $menu_link_storage = \Drupal::entityTypeManager()
+                ->getStorage('menu_link_content')
+                ->load($id);
+              $menu_link_storage->parent = 'menu_link_content:' . $node_menu_link->uuid();
+              $menu_link_storage->save();
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Finished sync atom ids.
+ */
+function sync_atomid_finished($success, $results, $operations) {
+  if ($success) {
+    $message = \Drupal::translation()->formatPlural(
+      count($results),
+      'One post processed.', '@count posts processed.'
+    );
+  }
+  else {
+    $message = t('Finished with an error.');
+  }
+  \Drupal::messenger()->addStatus($message);
+}

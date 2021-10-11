@@ -65,7 +65,7 @@ class SyncAtomIDQueueWorker extends QueueWorkerBase implements ContainerFactoryP
     try {
       // Check if we have a menu link id and a node uuid.
       if (!$menu_link_id || !$node_uuid) {
-        throw new \Exception('Missing mnu link id or node uuid');
+        throw new \Exception('Missing menu link id or node uuid');
       }
       $menu_link_storage = \Drupal::entityTypeManager()
         ->getStorage('menu_link_content')
