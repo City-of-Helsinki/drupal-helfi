@@ -3,6 +3,6 @@ langcode: en
 status: true
 dependencies: {  }
 id: daycare-centers
-label: 'Daycare Centers'
+label: Päiväkodit
 description: ''
 locked: false
