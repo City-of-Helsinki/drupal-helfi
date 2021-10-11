@@ -78,9 +78,9 @@ hidden:
   latitude: true
   longitude: true
   opening_hours: true
+  provided_languages: true
   service_map_embed: true
   services: true
   streetview_entrance_url: true
   www: true
   phone: true
-  provided_languages: true
