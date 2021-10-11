@@ -150,37 +150,37 @@ class QueueWorkerController extends ControllerBase {
     }
 
     foreach ($this->loadMenu($tree) as $menu_item) {
-      if (!empty($menu_item['node_parent_atom_id'])) {
-        $node_load = \Drupal::entityTypeManager()->getStorage('node')->loadByProperties(['field_atomid' => $menu_item['node_parent_atom_id']]);
-        if (!empty(array_values($node_load))) {
-          $result_node_link = \Drupal::service('plugin.manager.menu.link')
-            ->loadLinksByRoute('entity.node.canonical', ['node' => array_values($node_load)[0]->id()]);
-          foreach ($result_node_link as $menu_item2) {
-            if (is_object($menu_item2)
-              && ($menu_item2->getPluginDefinition()['menu_name'] == 'schools' || $menu_item2->getPluginDefinition()['menu_name'] == 'daycare')) {
-              $id = $menu_item2->getPluginDefinition()['metadata']['entity_id'];
-              $node_menu_link = \Drupal::entityTypeManager()
-                ->getStorage('menu_link_content')
-                ->load($id);
-
-              $result = \Drupal::service('plugin.manager.menu.link')
-                ->loadLinksByRoute('entity.node.canonical', ['node' => $menu_item['nodeid']]);
-              foreach ($result as $menu_item2) {
-                if (is_object($menu_item2) && $menu_item2->getPluginDefinition()['menu_name'] == 'schools'
-                  && 'menu_link_content:' . $node_menu_link->uuid() != $menu_item2->getPluginDefinition()['parent']) {
-                  $id = $menu_item2->getPluginDefinition()['metadata']['entity_id'];
-                  $content[] = [
-                    'title' => $menu_item2->getPluginDefinition()['title'],
-                    'menu_link_id' => $id,
-                    'node_uuid' => $node_menu_link->uuid()
-                  ];
-                }
-              }
-            }
-
-          }
-        }
-      }
+//      if (!empty($menu_item['node_parent_atom_id'])) {
+//        $node_load = \Drupal::entityTypeManager()->getStorage('node')->loadByProperties(['field_atomid' => $menu_item['node_parent_atom_id']]);
+//        if (!empty(array_values($node_load))) {
+//          $result_node_link = \Drupal::service('plugin.manager.menu.link')
+//            ->loadLinksByRoute('entity.node.canonical', ['node' => array_values($node_load)[0]->id()]);
+//          foreach ($result_node_link as $menu_item2) {
+//            if (is_object($menu_item2)
+//              && ($menu_item2->getPluginDefinition()['menu_name'] == 'schools' || $menu_item2->getPluginDefinition()['menu_name'] == 'daycare')) {
+//              $id = $menu_item2->getPluginDefinition()['metadata']['entity_id'];
+//              $node_menu_link = \Drupal::entityTypeManager()
+//                ->getStorage('menu_link_content')
+//                ->load($id);
+//
+//              $result = \Drupal::service('plugin.manager.menu.link')
+//                ->loadLinksByRoute('entity.node.canonical', ['node' => $menu_item['nodeid']]);
+//              foreach ($result as $menu_item2) {
+//                if (is_object($menu_item2) && $menu_item2->getPluginDefinition()['menu_name'] == 'schools'
+//                  && 'menu_link_content:' . $node_menu_link->uuid() != $menu_item2->getPluginDefinition()['parent']) {
+//                  $id = $menu_item2->getPluginDefinition()['metadata']['entity_id'];
+//                  $content[] = [
+//                    'title' => $menu_item2->getPluginDefinition()['title'],
+//                    'menu_link_id' => $id,
+//                    'node_uuid' => $node_menu_link->uuid()
+//                  ];
+//                }
+//              }
+//            }
+//
+//          }
+//        }
+//      }
     }
     if (empty($content)) {
       return FALSE;
