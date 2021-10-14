@@ -3716,12 +3716,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt.git",
-                "reference": "6efd631202ffbc1c0f3d648bffb56c8b36a1aeb9"
+                "reference": "9a8365e08a4b65513179e82685075049e0bb1974"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/6efd631202ffbc1c0f3d648bffb56c8b36a1aeb9",
-                "reference": "6efd631202ffbc1c0f3d648bffb56c8b36a1aeb9",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/9a8365e08a4b65513179e82685075049e0bb1974",
+                "reference": "9a8365e08a4b65513179e82685075049e0bb1974",
                 "shasum": ""
             },
             "require": {
@@ -3739,7 +3739,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/latest",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt/issues"
             },
-            "time": "2021-10-13T15:29:13+00:00"
+            "time": "2021-10-14T14:51:13+00:00"
         },
         {
             "name": "drupal/hdbt_admin",
@@ -3747,12 +3747,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt-admin.git",
-                "reference": "c68a0d697fd9e2e7ed0c60ffd375c183ca22f31f"
+                "reference": "eba449a1702ec22b7ac1b3d11037326ef25db42f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt-admin/zipball/c68a0d697fd9e2e7ed0c60ffd375c183ca22f31f",
-                "reference": "c68a0d697fd9e2e7ed0c60ffd375c183ca22f31f",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt-admin/zipball/eba449a1702ec22b7ac1b3d11037326ef25db42f",
+                "reference": "eba449a1702ec22b7ac1b3d11037326ef25db42f",
                 "shasum": ""
             },
             "require": {
@@ -3771,7 +3771,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-hdbt-admin/tree/latest",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt-admin/issues"
             },
-            "time": "2021-10-07T10:57:20+00:00"
+            "time": "2021-10-14T14:54:19+00:00"
         },
         {
             "name": "drupal/helfi_ahjo",
@@ -3977,12 +3977,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "2c8f316022d9251fa796f0174e5d3b98dd1d9dff"
+                "reference": "81d53790da4dcd7f29adf72f1fd9f28019b97f47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/2c8f316022d9251fa796f0174e5d3b98dd1d9dff",
-                "reference": "2c8f316022d9251fa796f0174e5d3b98dd1d9dff",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/81d53790da4dcd7f29adf72f1fd9f28019b97f47",
+                "reference": "81d53790da4dcd7f29adf72f1fd9f28019b97f47",
                 "shasum": ""
             },
             "require": {
@@ -4009,6 +4009,8 @@
                 "drupal/image_style_quality": "^1.4",
                 "drupal/imagecache_external": "^3.0",
                 "drupal/linkit": "^6.0@beta",
+                "drupal/matomo": "^1.11",
+                "drupal/matomo_reports": "^1.1",
                 "drupal/media_entity_soundcloud": "^3.0.0",
                 "drupal/menu_block_current_language": "^1.5",
                 "drupal/menu_link_attributes": "^1.2",
@@ -4063,7 +4065,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/latest",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2021-10-13T15:28:57+00:00"
+            "time": "2021-10-14T14:53:48+00:00"
         },
         {
             "name": "drupal/helfi_tpr",
@@ -4071,12 +4073,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr.git",
-                "reference": "57e63e7eabe0dc6ae1f07a87165050058146d6dd"
+                "reference": "54feebeaff443a90a5abb78680d9f914d9871e65"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-tpr/zipball/57e63e7eabe0dc6ae1f07a87165050058146d6dd",
-                "reference": "57e63e7eabe0dc6ae1f07a87165050058146d6dd",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-tpr/zipball/54feebeaff443a90a5abb78680d9f914d9871e65",
+                "reference": "54feebeaff443a90a5abb78680d9f914d9871e65",
                 "shasum": ""
             },
             "require": {
@@ -4097,10 +4099,10 @@
             ],
             "description": "TPR integration",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/tree/1.4.5",
+                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/tree/1.4.6",
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/issues"
             },
-            "time": "2021-10-12T06:27:16+00:00"
+            "time": "2021-10-14T06:56:33+00:00"
         },
         {
             "name": "drupal/helfi_tunnistamo",
@@ -12587,16 +12589,16 @@
         },
         {
             "name": "instaclick/php-webdriver",
-            "version": "1.4.9",
+            "version": "1.4.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/instaclick/php-webdriver.git",
-                "reference": "961b12178cb71f8667afaf2f66ab3e000e060e1c"
+                "reference": "6bc1f44cf23031e68c326cd61e14ec32486f241b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/instaclick/php-webdriver/zipball/961b12178cb71f8667afaf2f66ab3e000e060e1c",
-                "reference": "961b12178cb71f8667afaf2f66ab3e000e060e1c",
+                "url": "https://api.github.com/repos/instaclick/php-webdriver/zipball/6bc1f44cf23031e68c326cd61e14ec32486f241b",
+                "reference": "6bc1f44cf23031e68c326cd61e14ec32486f241b",
                 "shasum": ""
             },
             "require": {
@@ -12644,9 +12646,9 @@
             ],
             "support": {
                 "issues": "https://github.com/instaclick/php-webdriver/issues",
-                "source": "https://github.com/instaclick/php-webdriver/tree/1.4.9"
+                "source": "https://github.com/instaclick/php-webdriver/tree/1.4.10"
             },
-            "time": "2021-06-28T22:23:20+00:00"
+            "time": "2021-10-14T03:25:34+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
