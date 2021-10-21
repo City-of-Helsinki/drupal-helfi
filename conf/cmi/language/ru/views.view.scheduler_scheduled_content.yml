@@ -20,25 +20,19 @@ display:
           action_title: Действие
         title:
           label: Заголовок
-          separator: ', '
         type:
           label: 'Тип материала'
-          separator: ', '
         name:
           label: Автор
-          separator: ', '
         status:
           label: Статус
           settings:
             format_custom_true: Опубликовано
             format_custom_false: 'Снято с публикации'
-          separator: ', '
         publish_on:
           label: Опубликовать
-          separator: ', '
         unpublish_on:
           label: 'Снять с публикации'
-          separator: ', '
         operations:
           label: Операции
       filters:

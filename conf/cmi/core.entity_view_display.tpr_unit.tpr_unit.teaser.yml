@@ -33,8 +33,6 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-  phone:
-    settings: {  }
   name_override:
     label: hidden
     region: content
@@ -43,6 +41,9 @@ content:
     third_party_settings: {  }
     type: string
     weight: 3
+  phone:
+    settings: {  }
+    region: content
   picture_url:
     label: hidden
     region: content
@@ -78,9 +79,9 @@ hidden:
   latitude: true
   longitude: true
   opening_hours: true
+  phone: true
   provided_languages: true
   service_map_embed: true
   services: true
   streetview_entrance_url: true
   www: true
-  phone: true
