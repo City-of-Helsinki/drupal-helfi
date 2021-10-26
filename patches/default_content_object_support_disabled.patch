@@ -1,0 +1,28 @@
+diff --git a/src/Normalizer/ContentEntityNormalizer.php b/src/Normalizer/ContentEntityNormalizer.php
+index 9a303fa..12dccff 100644
+--- a/src/Normalizer/ContentEntityNormalizer.php
++++ b/src/Normalizer/ContentEntityNormalizer.php
+@@ -194,7 +194,12 @@ class ContentEntityNormalizer implements ContentEntityNormalizerInterface {
+     if (!empty($data['translations'])) {
+       foreach ($data['translations'] as $langcode => $translation_data) {
+         if ($this->languageManager->getLanguage($langcode)) {
+-          $translation = $entity->addTranslation($langcode, $entity->toArray());
++          if (!$entity->hasTranslation($langcode)) {
++            $translation = $entity->addTranslation($langcode, $entity->toArray());
++          }
++          else {
++            $translation = $entity->getTranslation($langcode, $entity->toArray());
++          }
+           foreach ($translation_data as $field_name => $values) {
+             $this->setFieldValues($translation, $field_name, $values);
+           }
+@@ -360,7 +365,8 @@ class ContentEntityNormalizer implements ContentEntityNormalizerInterface {
+           foreach ($field_item->getProperties(TRUE) as $property_name => $property) {
+             $value = $this->getValueFromProperty($property, $field_item, $translation_normalization[$field_name][$delta]);
+ 
+-            if ($value !== NULL) {
++            // Do not try to normalize objects.
++            if ($value !== NULL && !is_object($value)) {
+               if (is_string($value) && in_array($property_name, $serialized_property_names)) {
+                 $value = unserialize($value);
+               }
