@@ -6,14 +6,6 @@ custom_rest_menu_link.atomid-sync-batch-form:
   requirements:
     _permission: 'access content'
 
-custom_rest_menu_link.atomid-sync-delete-worker:
-  path: '/admin/content/delete-atomid-sync-worker'
-  defaults:
-    _controller: '\Drupal\custom_rest_menu_link\Controller\QueueWorkerController::deleteTheQueue'
-    _title: 'Sync the atom ids'
-  requirements:
-    _permission: 'access content'
-
 custom_rest_menu_link.delete_nodes:
   path: '/admin/content/delete-content'
   defaults:
