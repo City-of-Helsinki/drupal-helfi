@@ -22,7 +22,7 @@ class SyncAtomIdForm extends FormBase {
   public function buildForm(array $form, FormStateInterface $form_state) {
     $form['schools_daycare'] = [
       '#type' => 'radios',
-      '#title' => t('Select which to sync'),
+      '#title' => t('Select which menu to sync'),
       '#options' => [
         'schools' => t('Schools'),
         'daycare-centers' => t('Daycare Centers'),

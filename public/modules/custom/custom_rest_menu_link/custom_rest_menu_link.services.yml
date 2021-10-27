@@ -3,7 +3,3 @@ services:
     class: Drupal\custom_rest_menu_link\normalizer\JsonDenormalizer
     tags:
       - { name: normalizer }
-
-  custom_rest_menu_link.order_mapper:
-    class: Drupal\my_module\Service\AmazonOrderMapper
-    arguments: ['@database', '@queue', '@state', '@logger.factory']

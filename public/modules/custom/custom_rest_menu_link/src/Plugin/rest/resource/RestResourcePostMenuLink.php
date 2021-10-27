@@ -28,7 +28,6 @@ use Drupal\Core\Menu\MenuTreeParameters;
  */
 class RestResourcePostMenuLink extends ResourceBase
 {
-
     use StringTranslationTrait;
 
   /**
@@ -141,16 +140,6 @@ class RestResourcePostMenuLink extends ResourceBase
         } elseif ($data['menu_parent'] != NULL && $data['menu_parent'] == 'daycare') {
           $parent = "menu_link_content:ef334336-70b7-47b0-9e6b-6579ed351b4d";
         }
-
-//        $tree = \Drupal::menuTree()->load('schools', new \Drupal\Core\Menu\MenuTreeParameters());
-//        $node_load = $this->entityTypeManager->getStorage('node')->load($data['node_id']);
-//        foreach ($this->loadMenu($tree) as $item) {
-//          $this->logger->notice("Atom id: " . $item['node_atom_id'] . " parent atom id: " . $node_load->field_parent_atomid->value);
-//          if ($item['node_atom_id'] == $node_load->field_parent_atomid->value) {
-//            $parent = $item['pluginid'];
-//          }
-//
-//        }
 
         MenuLinkContent::create([
             'title' => $data['menu_title'],

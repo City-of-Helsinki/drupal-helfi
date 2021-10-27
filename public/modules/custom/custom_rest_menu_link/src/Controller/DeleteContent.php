@@ -20,7 +20,7 @@ class DeleteContent extends ControllerBase {
       if ($nid == '10258' || $nid == '4166') {
         continue;
       }
-      $node =  Node::load($nid)->delete();
+      Node::load($nid)->delete();
     }
     return [
       '#markup' => 'All nodes deleted',
