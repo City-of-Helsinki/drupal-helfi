@@ -4,7 +4,7 @@ custom_rest_menu_link.atomid-sync-batch-form:
     _form: '\Drupal\custom_rest_menu_link\Form\SyncAtomIdForm'
     _title: 'Batch process for menu links'
   requirements:
-    _permission: 'access content'
+    _permission: 'administer actions'
 
 custom_rest_menu_link.delete_nodes:
   path: '/admin/content/delete-content'
@@ -12,4 +12,4 @@ custom_rest_menu_link.delete_nodes:
     _controller: '\Drupal\custom_rest_menu_link\Controller\DeleteContent::deleteContent'
     _title: 'Sync the atom ids'
   requirements:
-    _permission: 'access content'
+    _permission: 'administer actions'
