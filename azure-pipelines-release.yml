@@ -31,7 +31,7 @@ resources:
   - repository: drupal-helfi
     type: git
     # project/repository
-    name: drupal-helfi/drupal-helfi
+    name: drupal-helfi/drupal-helfi-pipelines
 
 extends:
   template: azure-pipelines-drupal-release.yml@drupal-helfi
