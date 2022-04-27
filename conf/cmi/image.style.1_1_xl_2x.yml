@@ -4,6 +4,9 @@ status: true
 dependencies:
   module:
     - focal_point
+    - image_style_quality
+_core:
+  default_config_hash: mSu_PVZ2IsbYmYWJPYRLZvE3cUo_tRZ1SG-TarGzzmU
 name: 1_1_xl_2x
 label: '1:1 XL (2x)'
 effects:
@@ -20,4 +23,4 @@ effects:
     id: image_style_quality
     weight: 2
     data:
-      quality: 35
+      quality: 65

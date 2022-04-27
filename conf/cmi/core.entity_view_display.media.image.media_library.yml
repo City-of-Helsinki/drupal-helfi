@@ -5,10 +5,13 @@ dependencies:
   config:
     - core.entity_view_mode.media.media_library
     - field.field.media.image.field_media_image
+    - field.field.media.image.field_photographer
     - image.style.medium
     - media.type.image
   module:
     - image
+_core:
+  default_config_hash: tIr0c3VKCjIEwona_CNdAizKfL6Ila8H7tXqFA3IsOU
 id: media.image.media_library
 targetEntityType: media
 bundle: image
@@ -26,6 +29,7 @@ content:
 hidden:
   created: true
   field_media_image: true
+  field_photographer: true
   langcode: true
   name: true
   uid: true

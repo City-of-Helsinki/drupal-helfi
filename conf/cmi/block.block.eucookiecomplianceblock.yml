@@ -3,15 +3,16 @@ langcode: en
 status: true
 dependencies:
   module:
-    - ctools
     - eu_cookie_compliance
     - system
   theme:
     - hdbt
+_core:
+  default_config_hash: MBTcJvv4f9xm7ZVKXhsE06U_lAR8tU2abqOElmVZ-oA
 id: eucookiecomplianceblock
 theme: hdbt
 region: after_content
-weight: -5
+weight: -8
 provider: null
 plugin: eu_cookie_compliance_block
 settings:
@@ -24,14 +25,7 @@ settings:
       value: ''
       format: full_html
 visibility:
-  'entity_bundle:node':
-    id: 'entity_bundle:node'
-    bundles:
-      page: page
-    negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
   request_path:
     id: request_path
-    pages: /node/1
+    pages: /cookie-information-and-settings
     negate: false

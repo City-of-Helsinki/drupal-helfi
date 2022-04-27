@@ -1,0 +1,52 @@
+uuid: 6e358c28-eaa8-49b7-b508-3466e71f2f6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.liftup_with_image.field_liftup_with_image_desc
+    - field.field.paragraph.liftup_with_image.field_liftup_with_image_design
+    - field.field.paragraph.liftup_with_image.field_liftup_with_image_image
+    - field.field.paragraph.liftup_with_image.field_liftup_with_image_title
+    - paragraphs.paragraphs_type.liftup_with_image
+  module:
+    - options
+    - text
+_core:
+  default_config_hash: _4_uiqhvbMk-B5FJacrpOJ4XQH0I16G-VNfCtpamvq4
+id: paragraph.liftup_with_image.default
+targetEntityType: paragraph
+bundle: liftup_with_image
+mode: default
+content:
+  field_liftup_with_image_desc:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_liftup_with_image_design:
+    weight: 3
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_liftup_with_image_image:
+    type: entity_reference_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: image
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_liftup_with_image_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

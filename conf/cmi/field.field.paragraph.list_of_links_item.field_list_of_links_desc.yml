@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.storage.paragraph.field_list_of_links_desc
     - paragraphs.paragraphs_type.list_of_links_item
+_core:
+  default_config_hash: 2weUqlC7tDnXqChgBu1xhIAq2wqiRut2kVEjLrwv5H0
 id: paragraph.list_of_links_item.field_list_of_links_desc
 field_name: field_list_of_links_desc
 entity_type: paragraph

@@ -1,7 +1,8 @@
 label: Tiedostot
+description: 'Etsi ja hallitse tiedostoja.'
 display:
   default:
-    display_title: Isäntä
+    display_title: Oletus
     display_options:
       exposed_form:
         options:
@@ -55,6 +56,7 @@ display:
         area_text_custom:
           content: 'Tiedostoja ei ole saatavilla.'
   page_1:
+    display_title: Tiedostot
     display_options:
       menu:
         title: Tiedostot
@@ -84,3 +86,4 @@ display:
         fid:
           exception:
             title: Kaikki
+          title: Kaikki

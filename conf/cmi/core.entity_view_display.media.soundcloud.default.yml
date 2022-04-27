@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.field.media.soundcloud.field_media_soundcloud
     - media.type.soundcloud
+_core:
+  default_config_hash: XuZ6xIU9vR6JJsFf09GODwOHrBpAiWYR04dWrEIKNgo
 id: media.soundcloud.default
 targetEntityType: media
 bundle: soundcloud

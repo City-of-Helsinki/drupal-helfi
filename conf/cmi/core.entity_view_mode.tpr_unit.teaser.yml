@@ -1,0 +1,12 @@
+uuid: 528c9aec-6006-4936-acb1-f133ad598f96
+langcode: en
+status: true
+dependencies:
+  module:
+    - helfi_tpr
+_core:
+  default_config_hash: LAmS3Xr8vByI6fypZQ0FRSMklP5vCrEDqIj7XnQ7sRE
+id: tpr_unit.teaser
+label: Teaser
+targetEntityType: tpr_unit
+cache: true

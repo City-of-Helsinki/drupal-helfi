@@ -1,10 +1,7 @@
 <?php
 
-// Only in Wodby environment.
-// @see https://wodby.com/docs/stacks/drupal/#overriding-settings-from-wodbysettingsphp
-if (isset($_SERVER['WODBY_APP_NAME'])) {
-  // The include won't be added automatically if it's already there.
-  include '/var/www/conf/wodby.settings.php';
+if (PHP_SAPI === 'cli') {
+  ini_set('memory_limit', '512M');
 }
 
 if ($simpletest_db = getenv('SIMPLETEST_DB')) {
@@ -14,11 +11,6 @@ if ($simpletest_db = getenv('SIMPLETEST_DB')) {
   putenv(sprintf('DRUPAL_DB_PASS=%s', $parts['pass']));
   putenv(sprintf('DRUPAL_DB_HOST=%s', $parts['host']));
 }
-
-$settings['hash_salt'] = getenv('DRUPAL_HASH_SALT') ?: '000';
-
-$config['openid_connect.settings.tunnistamo']['settings']['client_id'] = getenv('TUNNISTAMO_CLIENT_ID');
-$config['openid_connect.settings.tunnistamo']['settings']['client_secret'] = getenv('TUNNISTAMO_CLIENT_SECRET');
 
 $databases['default']['default'] = [
   'database' => getenv('DRUPAL_DB_NAME'),
@@ -31,13 +23,30 @@ $databases['default']['default'] = [
   'driver' => 'mysql',
 ];
 
+$settings['hash_salt'] = getenv('DRUPAL_HASH_SALT') ?: '000';
+
 if ($ssl_ca_path = getenv('AZURE_SQL_SSL_CA_PATH')) {
-  $databases['default']['default']['namespace'] = 'Drupal\\Driver\\Database\\mysql';
   $databases['default']['default']['pdo'] = [
     \PDO::MYSQL_ATTR_SSL_CA => $ssl_ca_path,
     \PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT => FALSE,
   ];
+  // Azure specific filesystem fixes.
+  $settings['php_storage']['twig']['directory'] = '/tmp';
+  $settings['php_storage']['twig']['secret'] = $settings['hash_salt'];
+  $settings['file_chmod_directory'] = 16895;
+  $settings['file_chmod_file'] = 16895;
 }
+
+// Only in Wodby environment.
+// @see https://wodby.com/docs/stacks/drupal/#overriding-settings-from-wodbysettingsphp
+if (isset($_SERVER['WODBY_APP_NAME'])) {
+  // The include won't be added automatically if it's already there.
+  include '/var/www/conf/wodby.settings.php';
+}
+
+$config['openid_connect.settings.tunnistamo']['settings']['client_id'] = getenv('TUNNISTAMO_CLIENT_ID');
+$config['openid_connect.settings.tunnistamo']['settings']['client_secret'] = getenv('TUNNISTAMO_CLIENT_SECRET');
+$config['openid_connect.settings.tunnistamo']['settings']['is_production'] = getenv('TUNNISTAMO_ENV') === 'production';
 
 // Drupal route(s).
 $routes = (getenv('DRUPAL_ROUTES')) ? explode(',', getenv('DRUPAL_ROUTES')) : [];
@@ -59,6 +68,17 @@ $settings['config_sync_directory'] = '../conf/cmi';
 $settings['file_public_path'] = getenv('DRUPAL_FILES_PUBLIC') ?: 'sites/default/files';
 $settings['file_private_path'] = getenv('DRUPAL_FILES_PRIVATE');
 $settings['file_temp_path'] = getenv('DRUPAL_TMP_PATH') ?: '/tmp';
+
+if ($reverse_proxy_address = getenv('DRUPAL_REVERSE_PROXY_ADDRESS')) {
+  $reverse_proxy_address = explode(',', $reverse_proxy_address);
+
+  if (isset($_SERVER['REMOTE_ADDR'])) {
+    $reverse_proxy_address[] = $_SERVER['REMOTE_ADDR'];
+  }
+  $settings['reverse_proxy'] = TRUE;
+  $settings['reverse_proxy_addresses'] = $reverse_proxy_address;
+  $settings['reverse_proxy_trusted_headers'] = \Symfony\Component\HttpFoundation\Request::HEADER_X_FORWARDED_ALL;
+}
 
 if ($env = getenv('APP_ENV')) {
   if (file_exists(__DIR__ . '/' . $env . '.settings.php')) {

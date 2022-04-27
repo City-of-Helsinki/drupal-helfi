@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: W4EpQlxo0B7n-dVAglfpj0n2fhjwKOwB0wm9LE9tIvs
+  default_config_hash: 93-C6EyFSiOc1kFOPTWfTfIYQFgLaGAjlmJVhYWK3tY
 id: ru
 label: Russian
 direction: ltr

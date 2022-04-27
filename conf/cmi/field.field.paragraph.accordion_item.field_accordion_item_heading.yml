@@ -1,0 +1,21 @@
+uuid: bdda3f5f-721d-4c4b-8b85-6178edb58cf2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_accordion_item_heading
+    - paragraphs.paragraphs_type.accordion_item
+_core:
+  default_config_hash: ub76tTWnromBzCxP7Fh285sgZFQVw6Yyr7e2mefo-E0
+id: paragraph.accordion_item.field_accordion_item_heading
+field_name: field_accordion_item_heading
+entity_type: paragraph
+bundle: accordion_item
+label: Heading
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

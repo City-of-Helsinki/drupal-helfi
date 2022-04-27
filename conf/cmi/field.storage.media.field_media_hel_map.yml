@@ -1,0 +1,21 @@
+uuid: be0951be-562e-4c92-972c-b382af250489
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - media
+_core:
+  default_config_hash: vbleWrj8_V2DjBoBU1oIT_J4TlbrChZzdZOC5glJ54U
+id: media.field_media_hel_map
+field_name: field_media_hel_map
+entity_type: media
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

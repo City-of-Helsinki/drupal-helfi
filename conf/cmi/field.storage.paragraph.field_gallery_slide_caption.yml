@@ -1,0 +1,21 @@
+uuid: 82e66ce5-3f2b-4202-b03d-3af1faafd3d2
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: c6CQovDzUy1TO76PqB0OZYyHI91TPVLzcKx2NXUvJsg
+id: paragraph.field_gallery_slide_caption
+field_name: field_gallery_slide_caption
+entity_type: paragraph
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

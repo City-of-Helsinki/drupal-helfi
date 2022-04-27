@@ -5,11 +5,12 @@ env:
   SIMPLETEST_BASE_URL: "http://127.0.0.1:8888"
   EXISTING_CONFIG: true
   INSTALLER_TYPE: composer-project
+  SYMFONY_DEPRECATIONS_HELPER: max[direct]=0
 jobs:
   tests:
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/city-of-helsinki/drupal-php-docker:7.4
+      image: ghcr.io/city-of-helsinki/drupal-php-docker:8.0
 
     services:
       db:
@@ -36,8 +37,6 @@ jobs:
 
       - name: Run PHPUnit tests
         run: |
-          # Remove mysql56 driver
-          composer remove drupal/mysql56
           drupal-tr run-drush-server &
           chromedriver --port=4444 > /dev/null 2>&1 &
           drupal-tr run-tests

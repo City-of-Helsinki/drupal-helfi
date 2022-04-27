@@ -1,0 +1,8 @@
+uuid: 37997ae2-e38d-4301-adf6-8d3285e5f61e
+langcode: en
+status: true
+dependencies: {  }
+id: time
+label: 'Default time'
+locked: false
+pattern: 'H:i'

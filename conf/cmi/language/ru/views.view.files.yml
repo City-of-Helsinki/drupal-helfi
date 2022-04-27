@@ -23,7 +23,6 @@ display:
       fields:
         filename:
           label: Название
-          separator: ', '
         filemime:
           label: MIME-тип
         filesize:

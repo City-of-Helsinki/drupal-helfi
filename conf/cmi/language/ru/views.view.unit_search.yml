@@ -1,0 +1,27 @@
+display:
+  default:
+    display_title: Основной
+    display_options:
+      pager:
+        options:
+          tags:
+            previous: '‹ Предыдущий'
+            next: 'Следующий ›'
+          expose:
+            items_per_page_label: 'Элементов на страницу'
+            items_per_page_options_all_label: '- Все -'
+            offset_label: Пропустить
+      filters:
+        combine:
+          expose:
+            label: Поиск
+      empty:
+        area:
+          content:
+            value: 'Нет результатов'
+      arguments:
+        id:
+          exception:
+            title: Все
+  block:
+    display_title: Блок

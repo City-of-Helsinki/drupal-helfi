@@ -3,12 +3,12 @@
 BUILD_TARGETS :=
 CLEAN_FOLDERS :=
 COMPOSER_BIN := $(shell which composer || echo no)
-COMPOSER_JSON_EXISTS := $(shell test -f composer.json && echo yes || echo no)
+COMPOSER_JSON_PATH ?= .
 DOCKER_COMPOSE_BIN := $(shell which docker-compose > /dev/null 2>&1 && which docker-compose || echo no)
 DOCKER_COMPOSE_YML_EXISTS := $(shell test -f docker-compose.yml && echo yes || echo no)
 DRUIDFI_TOOLS_MAKE_DIR := $(dir $(lastword $(MAKEFILE_LIST)))
 ENV := dev
-PACKAGE_JSON_EXISTS := $(shell test -f package.json && echo yes || echo no)
+PACKAGE_JSON_PATH ?= .
 PHP_BIN := $(shell which php)
 UNAME_S := $(shell uname -s)
 # Shorten with https://git.io/ : https://raw.githubusercontent.com/druidfi/tools/master/update.sh
@@ -16,19 +16,16 @@ UPDATE_SCRIPT_URL := https://git.io/fh771
 WEBROOT ?= public
 
 # Detect app
-IS_DRUPAL := $(shell test -f $(WEBROOT)/sites/default/settings.php && echo yes || echo no)
-IS_SYMFONY := $(shell test -f config/bundles.php && echo yes || echo no)
-IS_WP := $(shell test -f $(WEBROOT)/wp-settings.php && echo yes || echo no)
+IS_DRUPAL ?= $(shell test -f $(WEBROOT)/sites/default/settings.php && echo yes || echo no)
+IS_SYMFONY ?= $(shell test -f config/bundles.php && echo yes || echo no)
+IS_WP ?= $(shell (test -f $(WEBROOT)/wp-settings.php || test -f conf/wp-config.php) && echo yes || echo no)
 
 # Detect additional tooling
-AMAZEEIO_LEGACY := $(shell test -f .amazeeio.yml && echo yes || echo no)
-AMAZEEIO_LAGOON := $(shell test -f .lagoon.yml && echo yes || echo no)
+LAGOON := $(shell test -f .lagoon.yml && echo yes || echo no)
 WODBY := $(shell test -f wodby.yml && echo yes || echo no)
 
-ifeq ($(AMAZEEIO_LEGACY),yes)
-	SYSTEM := AMAZEEIO
-else ifeq ($(AMAZEEIO_LAGOON),yes)
-	SYSTEM := AMAZEEIO
+ifeq ($(LAGOON),yes)
+	SYSTEM := LAGOON
 else ifeq ($(WODBY),yes)
 	SYSTEM := WODBY
 else
@@ -70,8 +67,7 @@ debug: ## Show debug information
 	$(call dbg,IS_DRUPAL,${IS_DRUPAL})
 	$(call dbg,IS_SYMFONY,${IS_SYMFONY})
 	$(call dbg,IS_WP,${IS_WP})
-	$(call dbg,AMAZEEIO_LEGACY,${AMAZEEIO_LEGACY})
-	$(call dbg,AMAZEEIO_LAGOON,${AMAZEEIO_LAGOON})
+	$(call dbg,LAGOON,${LAGOON})
 	$(call dbg,WODBY,${WODBY})
 	$(call dbg,SYSTEM,${SYSTEM})
 	$(call dbg,WEBROOT,${WEBROOT})

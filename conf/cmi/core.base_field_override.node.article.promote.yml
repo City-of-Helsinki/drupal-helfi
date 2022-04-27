@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - node.type.article
+_core:
+  default_config_hash: QkBquY6qG2KyWAqc5vcPXiX3CL8Eor4GkLczlOHaxAE
 id: node.article.promote
 field_name: promote
 entity_type: node

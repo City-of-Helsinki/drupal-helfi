@@ -8,6 +8,8 @@ dependencies:
     - paragraphs.paragraphs_type.list_of_links_item
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: jtaF2CwemKcuajhKx2LIBb_l2W1135sdeoFEXbxl5uc
 id: paragraph.list_of_links.field_list_of_links_links
 field_name: field_list_of_links_links
 entity_type: paragraph

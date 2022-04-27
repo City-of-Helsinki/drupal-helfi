@@ -1,0 +1,51 @@
+label: Toimipistehaku
+display:
+  default:
+    display_title: Oletus
+    display_options:
+      pager:
+        options:
+          tags:
+            previous: '‹ Edellinen'
+            next: 'Seuraava ›'
+          expose:
+            items_per_page_label: 'Merkintöjä sivua kohti'
+            items_per_page_options_all_label: '- Kaikki -'
+            offset_label: Offset
+          views_infinite_scroll:
+            button_text: 'Lataa lisää'
+      fields:
+        name:
+          separator: ', '
+        address__postal_code:
+          separator: ', '
+        address__address_line1:
+          separator: ', '
+        address__address_line2:
+          separator: ', '
+      filters:
+        combine:
+          expose:
+            label: Etsi
+          group_info:
+            label: 'Kentät yhdistävä suodatin'
+      empty:
+        area:
+          content:
+            value: "<p>Ei tuloksia</p>\r\n"
+      arguments:
+        id:
+          exception:
+            title: Kaikki
+  block:
+    display_title: Lohko
+  entity_reference:
+    display_title: Entiteettiviittaus
+    display_options:
+      fields:
+        name_override:
+          separator: ', '
+        id:
+          separator: ', '
+        name:
+          separator: ', '

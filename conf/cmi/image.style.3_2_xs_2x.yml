@@ -4,6 +4,9 @@ status: true
 dependencies:
   module:
     - focal_point
+    - image_style_quality
+_core:
+  default_config_hash: D-wljM-La1ONoED7XAaDqUz9vaELsn-yWz1elc1tkGc
 name: 3_2_xs_2x
 label: '3:2 XS (2x)'
 effects:
@@ -20,4 +23,4 @@ effects:
     id: image_style_quality
     weight: 2
     data:
-      quality: 35
+      quality: 65

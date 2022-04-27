@@ -2,7 +2,7 @@ social_media:
   facebook_share:
     text: 'Jaa Facebook-palvelussa'
   linkedin:
-    text: 'Jaa Linkedin-palvelussa'
+    text: 'Jaa LinkedIn-palvelussa'
   twitter:
     text: 'Jaa Twitter-palvelussa'
   email:

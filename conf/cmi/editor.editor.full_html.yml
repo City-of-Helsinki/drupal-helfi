@@ -6,6 +6,8 @@ dependencies:
     - filter.format.full_html
   module:
     - ckeditor
+_core:
+  default_config_hash: B_05skT8XzNcFBBxONOB0GEqvqAbs_Qf0uf-lErTMGQ
 format: full_html
 editor: ckeditor
 settings:
@@ -49,12 +51,18 @@ settings:
             - Paste
             - PasteFromWord
             - SpecialChar
+            - Table
             - Source
   plugins:
+    drupallink:
+      linkit_enabled: true
+      linkit_profile: tpr_content
     language:
       language_list: un
     stylescombo:
       styles: ''
+    tokenbrowser:
+      token_types: {  }
 image_upload:
   status: false
   scheme: public

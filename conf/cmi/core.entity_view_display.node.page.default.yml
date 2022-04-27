@@ -6,11 +6,18 @@ dependencies:
     - field.field.node.page.field_content
     - field.field.node.page.field_has_hero
     - field.field.node.page.field_hero
+    - field.field.node.page.field_lead_in
     - field.field.node.page.field_liftup_image
+    - field.field.node.page.field_lower_content
+    - field.field.node.page.field_metatags
+    - field.field.node.page.field_sidebar_content
     - node.type.page
   module:
     - entity_reference_revisions
+    - metatag
     - user
+_core:
+  default_config_hash: i22XraOl4gS7_CJgs4Rz9EUcPl88E0ripb7VPtyUGho
 id: node.page.default
 targetEntityType: node
 bundle: page
@@ -25,14 +32,37 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-  field_hero:
+  field_lead_in:
     weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_lower_content:
+    type: entity_reference_revisions_entity_view
+    weight: 4
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    region: content
+  field_metatags:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_sidebar_content:
     type: entity_reference_revisions_entity_view
+    weight: 5
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
     region: content
   links:
     weight: 0
@@ -41,5 +71,6 @@ content:
     third_party_settings: {  }
 hidden:
   field_has_hero: true
+  field_hero: true
   field_liftup_image: true
   langcode: true

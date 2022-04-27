@@ -1,0 +1,25 @@
+uuid: de12afd0-916f-447c-a4dc-7c7ea334a4e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_liftup.field_content_liftup_unit
+    - paragraphs.paragraphs_type.content_liftup
+id: paragraph.content_liftup.default
+targetEntityType: paragraph
+bundle: content_liftup
+mode: default
+content:
+  field_content_liftup_unit:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

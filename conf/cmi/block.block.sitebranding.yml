@@ -6,10 +6,12 @@ dependencies:
     - system
   theme:
     - hdbt
+_core:
+  default_config_hash: zieswfNu7cMhhsRwkEpe2HFgOvWeHcKNW9iXlTcq49k
 id: sitebranding
 theme: hdbt
-region: header_top
-weight: -4
+region: header_branding
+weight: 1
 provider: null
 plugin: system_branding_block
 settings:

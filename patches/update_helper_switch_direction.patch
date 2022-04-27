@@ -1,0 +1,23 @@
+diff --git a/src/ConfigHandler.php b/src/ConfigHandler.php
+index 0ce43c9..2b6874c 100644
+--- a/src/ConfigHandler.php
++++ b/src/ConfigHandler.php
+@@ -194,14 +194,14 @@ class ConfigHandler {
+     if (!$this->configDiffer->same($file_config, $active_config)) {
+       if ($from_active) {
+         $update_diff = $this->configDiffer->diff(
+-          $active_config,
+-          $file_config
++          $file_config,
++          $active_config
+         );
+       }
+       else {
+         $update_diff = $this->configDiffer->diff(
+-          $file_config,
+-          $active_config
++          $active_config,
++          $file_config
+         );
+       }
+ 
