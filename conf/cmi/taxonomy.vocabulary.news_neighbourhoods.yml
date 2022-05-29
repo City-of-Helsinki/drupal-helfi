@@ -1,0 +1,8 @@
+uuid: 775d6473-8def-409c-89ff-1d17a6a144d6
+langcode: en
+status: true
+dependencies: {  }
+name: 'News neighbourhoods'
+vid: news_neighbourhoods
+description: ''
+weight: 0
