@@ -1,0 +1,29 @@
+uuid: abbf936a-e850-42da-8834-d15bd0f16956
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_radioactivity
+    - node.type.news_item
+  module:
+    - radioactivity
+id: node.news_item.field_radioactivity
+field_name: field_radioactivity
+entity_type: node
+bundle: news_item
+label: Radioactivity
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:radioactivity'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+  default_energy: !!float 0
+field_type: radioactivity_reference

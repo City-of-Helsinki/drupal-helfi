@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "14a83b8041414376a927ed76dc7433f0",
+    "content-hash": "7a8c4f49685c3926498dac3b5a92504c",
     "packages": [
         {
             "name": "City-of-Helsinki/php-hauki-client",
@@ -5105,6 +5105,68 @@
             "homepage": "https://www.drupal.org/project/rabbit_hole",
             "support": {
                 "source": "https://git.drupalcode.org/project/rabbit_hole"
+            }
+        },
+        {
+            "name": "drupal/radioactivity",
+            "version": "4.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/radioactivity.git",
+                "reference": "4.0.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/radioactivity-4.0.2.zip",
+                "reference": "4.0.2",
+                "shasum": "5c865894800def89cd2eab338f5816a39cb451fe"
+            },
+            "require": {
+                "drupal/core": "^9",
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "drupal/rules": "^3.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "4.0.2",
+                    "datestamp": "1650436293",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^10"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Sutharsan",
+                    "homepage": "https://www.drupal.org/user/73854"
+                },
+                {
+                    "name": "matthewmessmer",
+                    "homepage": "https://www.drupal.org/user/2496364"
+                },
+                {
+                    "name": "skiminki",
+                    "homepage": "https://www.drupal.org/user/265179"
+                }
+            ],
+            "description": "Provides a field which can be used to track popularity, views, etc.",
+            "homepage": "https://www.drupal.org/project/radioactivity",
+            "support": {
+                "source": "https://git.drupalcode.org/project/radioactivity",
+                "issues": "https://www.drupal.org/project/issues/radioactivity"
             }
         },
         {
@@ -14566,5 +14628,6 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
 }

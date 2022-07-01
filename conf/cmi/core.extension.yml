@@ -92,6 +92,7 @@ module:
   path: 0
   path_alias: 0
   rabbit_hole: 0
+  radioactivity: 0
   rdf: 0
   readonly_field_widget: 0
   redirect: 0

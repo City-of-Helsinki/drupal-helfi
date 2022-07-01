@@ -1,0 +1,21 @@
+uuid: 455a2819-7a95-44bd-9724-8ff8f82de253
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+_core:
+  default_config_hash: IKGakXurTUXi0aOe5T1ZKFnR2NTKGGFPMziie1cc8JI
+id: node.field_news_item_links_link
+field_name: field_news_item_links_link
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

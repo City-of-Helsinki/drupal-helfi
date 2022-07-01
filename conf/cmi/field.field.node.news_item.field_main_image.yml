@@ -1,0 +1,31 @@
+uuid: b9739ce9-1ddf-4526-b830-a88507a9c4f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_main_image
+    - media.type.image
+    - node.type.news_item
+_core:
+  default_config_hash: jsDTyYWgRYi599qWSx1AeDAXKP0oj0Of7tcZqV1kjHw
+id: node.news_item.field_main_image
+field_name: field_main_image
+entity_type: node
+bundle: news_item
+label: 'Main image'
+description: 'Main image is also used as liftup image in listings and social media shares.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference
