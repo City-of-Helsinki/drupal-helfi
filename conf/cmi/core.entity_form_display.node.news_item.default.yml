@@ -18,7 +18,6 @@ dependencies:
   module:
     - field_group
     - hdbt_admin_editorial
-    - linkit
     - media_library
     - paragraphs
     - path
