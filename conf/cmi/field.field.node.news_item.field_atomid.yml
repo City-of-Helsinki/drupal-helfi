@@ -1,0 +1,21 @@
+uuid: dcc8f249-6c06-46a5-9291-5088607b1aa7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_atomid
+    - node.type.news_item
+  module:
+    - text
+id: node.news_item.field_atomid
+field_name: field_atomid
+entity_type: node
+bundle: news_item
+label: AtomID
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

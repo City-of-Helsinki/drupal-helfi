@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.news_item.field_atomid
     - field.field.node.news_item.field_content
     - field.field.node.news_item.field_lead_in
     - field.field.node.news_item.field_main_image
@@ -24,6 +25,7 @@ dependencies:
     - publication_date
     - radioactivity
     - scheduler
+    - text
 id: node.news_item.default
 targetEntityType: node
 bundle: news_item
@@ -35,6 +37,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_atomid:
+    weight: 27
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
   field_content:
     type: paragraphs_classic_asymmetric
     weight: 17
@@ -109,11 +119,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_radioactivity:
-    type: radioactivity_reference
-    weight: 22
-    region: content
+    weight: 26
     settings: {  }
     third_party_settings: {  }
+    type: radioactivity_reference
+    region: content
   field_short_title:
     type: string_textfield
     weight: 2
